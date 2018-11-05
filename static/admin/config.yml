@@ -1,0 +1,58 @@
+backend:
+  name: bitbucket
+  repo: nodevision/havven-website
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+# -------- Site Settings --------
+- name: "site-settings"
+  label: "Site Settings"
+  files:
+  # -------- Main Site Settings --------
+  - name: "main-site-settings"
+    label: "Main Site Settings"
+    description: "Allows control of the site settings"
+    file: "content/siteSettings.json"
+    fields:
+    - {label: "Display Promotion Banner", name: "display_banner", widget: "boolean"}
+    - {label: "Promotion Banner Text", name: "banner_text", widget: "string"}
+    - {label: "Promotion Banner Link Text", name: "banner_link_text", widget: "string"}
+    - {label: "Promotion Banner Link URL", name: "banner_link_url", widget: "string"}
+
+# -------- Pages --------
+- name: "pages"
+  label: "Pages"
+  files:
+  # -------- 404 --------
+  - name: "404-page"
+    label: "404 Error Page"
+    description: "Content for the 404 Error Page"
+    file: "content/pages/404.json"
+    fields:
+    - {label: "Heading", name: "heading", widget: "string"}
+    - {label: "Subheading", name: "subheading", widget: "string"}
+    - {label: "Body", name: "body_markdown", widget: "markdown"}
+    - label: "Links"
+      name: "links"
+      widget: "list"
+      fields:
+      - {label: "Link Text", name: "link_text", widget: "string"}
+      - {label: "Link URL", name: "link_url", widget: "string"}
+
+  # -------- Home --------
+  - name: "home"
+    label: "Home Page"
+    description: "Content for the Home Page"
+    file: "content/pages/index.json"
+    fields:
+    - {label: "Page Title", name: "page_title", widget: "string"}
+    - {label: "Page Description", name: "page_description", widget: "string"}
+    - {label: "Heading", name: "heading", widget: "string"}
+    - {label: "Intro Text", name: "intro_text", widget: "string"}
+    - {label: "ETH to nUSD MetaMask Modal Content", name: "eth_to_nusd_metamask_modal_content_markdown", widget: "markdown"}
+    - {label: "ETH to nUSD MyEtherWallet Modal Content", name: "eth_to_nusd_myetherwallet_modal_content_markdown", widget: "markdown"}
+    - {label: "nUSD to HAV MetaMask Modal Content", name: "nusd_to_hav_metamask_modal_content_markdown", widget: "markdown"}
+    - {label: "nUSD to HAV MyEtherWallet Modal Content", name: "nusd_to_hav_myetherwallet_modal_content_markdown", widget: "markdown"}
+    - {label: "Tooltip content", name: "tooltip_content", widget: "string"}
