@@ -1,5 +1,10 @@
+@import "bulma/utilities/_all"
+@import "nav"
+@import "buttons"
+
 h1.page-title
-  font-family: Guillon-Demi
+  font-family: Guillon
+  font-weight: 500
   font-size: 66px
   color: #FFFFFF
   text-align: center
@@ -7,3 +12,56 @@ h1.page-title
   width: 900px
   margin: auto
   padding-bottom: 20px
+
+div.page-subtitle
+  width: 647px
+  color: $blue-light
+  font-family: Guillon
+  font-size: 22px
+  letter-spacing: -0.26px
+  line-height: 36px
+  text-align: center
+  margin: auto
+  padding-bottom: 40px
+
+div.section-title
+  width: 825px
+  color: #0D0A31
+  font-family: Guillon
+  font-size: 46px
+  font-weight: 500
+  letter-spacing: -0.53px
+  line-height: 55px
+  text-align: center
+  padding-bottom: 18px
+  margin: auto
+  &.is-white
+    color: #fff
+  &.is-narrow
+    width: 670px
+
+div.section-desc
+  width: 523px
+  color: #6F6DA0
+  font-family: Guillon
+  font-size: 22px
+  letter-spacing: -0.26px
+  line-height: 36px
+  text-align: center
+  margin: auto
+
+div.box
+  width: 782px
+  border: 1px solid #414067
+  border-radius: 4px
+  background-color: #100C37
+  box-shadow: 0 10px 50px 0 rgba(19,16,72,0.16)
+
+.pb-110
+  padding-bottom: 110px
+
++touch
+  h1.page-title
+    width: auto
+  div.page-subtitle
+    width: auto

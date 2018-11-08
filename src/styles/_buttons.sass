@@ -1,0 +1,53 @@
+@import "bulma/utilities/_all"
+
+.is-button
+  border-radius: 4px
+  display: inline-block
+  padding: 15px 20px
+  font-family: Guillon
+  font-size: 22px
+  letter-spacing: -0.26px
+  line-height: 36px
+  text-align: center
+  color: #FFFFFF
+  transition: 300ms all ease
+
+  &:hover
+    transform: translateY(-4px)
+    box-shadow: 0 10px 40px 0 rgba(255,255,255,0.14)
+
+  &.is-blue
+    background: linear-gradient(180deg, $btn-gradient-from 0%, $btn-gradient-to 100%)
+
+  &.is-simple
+    border: 1px solid #302F61
+    &:hover
+      background-color: #FFFFFF
+      border-color: #FFFFFF
+      color: $blue-dark
+
+  &.is-wide
+    width: 270px
+
+.is-announcement
+  color: #FFFFFF
+  font-family: Guillon
+  font-size: 14px
+  border-radius: 27px
+  background-color: $blue-accent-1
+  display: inline-block
+  padding: 5px 20px 5px 8px
+  line-height: 1
+  box-shadow: none !important
+  span
+    display: inline-block
+    &:first-child
+      background: linear-gradient(180deg, $btn-gradient-from 0%, $btn-gradient-to 100%)
+      border-radius: 27px
+      padding: 5px 8px
+      line-height: 1
+      margin-right: 5px
+
+.is-announcement.test
+  font-family: sans-serif !important
+
