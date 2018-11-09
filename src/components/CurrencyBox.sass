@@ -8,9 +8,13 @@
   box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
   margin: 10px
   padding: 29px 29px 40px 29px
+  +mobile
+    margin-bottom: 20px
 
   .currency-dot
     margin-bottom: 25px
+    +mobile
+      float: right
 
   .currency-label-1
     color: #25244B
@@ -32,6 +36,11 @@
         padding-right: 5px
       &:last-child
         color: #8180B9
+
+  .currency-line
+    padding-top: 30px
+    width: 100%
+
 
 +desktop
   .currency-box

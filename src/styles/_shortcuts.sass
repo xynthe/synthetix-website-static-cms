@@ -1,22 +1,45 @@
 @import "bulma/utilities/_all"
 
+// Desktop multiplier
+$mx: 1
+.p-0
+  padding: 0
 .p-40
-  padding: 40px
-
-.pb-110
-  padding-bottom: 110px !important
-
+  padding: 40px*$mx
+.pt-70
+  padding-top: 70px*$mx
+.pb-30
+  padding-bottom: 30px*$mx
 .pb-50
-  padding-bottom: 50px
-
+  padding-bottom: 50px*$mx
 .pb-70
-  padding-bottom: 70px
-
+  padding-bottom: 70px*$mx
+.pb-110
+  padding-bottom: 110px*$mx !important
 .mb-50
-  margin-bottom: 50px
-
+  margin-bottom: 50px*$mx
 .mb-80
-  margin-bottom: 80px
+  margin-bottom: 80px*$mx
+
+// Mobile Device multiplier
+$mx: 0.5
++mobile
+  .p-40
+    padding: 40px*$mx
+  .pt-70
+    padding-top: 70px*$mx
+  .pb-30
+    padding-bottom: 30px*$mx
+  .pb-50
+    padding-bottom: 50px*$mx
+  .pb-70
+    padding-bottom: 70px*$mx
+  .pb-110
+    padding-bottom: 110px*$mx !important
+  .mb-50
+    margin-bottom: 50px*$mx
+  .mb-80
+    margin-bottom: 80px*$mx
 
 .code-green
   color: #00CE63

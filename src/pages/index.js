@@ -23,7 +23,7 @@ const currencies = [
 const IndexPage = () => (
 	<Layout>
 		<div className="home-page">
-			<section className="section">
+			<section className="section pb-30">
 				<div className="container">
 					<div className="has-text-centered announcement-box">
 						<a href="https://dashboard.havven.io" className="is-button is-announcement">
@@ -58,7 +58,7 @@ const IndexPage = () => (
 					</div>
 				</div>
 			</section>
-			<section className="section currency-section pb-110">
+			<section className="section currency-section pb-110 pt-70">
 				<div className="container">
 					<div className="columns is-centered currency-row">
 						{currencies.slice(0, 3).map(el => (
@@ -141,12 +141,16 @@ const IndexPage = () => (
 				</div>
 				<div className="columns is-centered feature-boxes">
 					<div className="column">
-						<img src={icoTriangle} />
+						<div className="c-img">
+							<img src={icoTriangle} />
+						</div>
 						<div className="p1">Trustless</div>
 						<div className="p2">HAV holders are responsible for maintaining stability.</div>
 					</div>
 					<div className="column">
-						<img src={icoShield} />
+						<div className="c-img">
+							<img src={icoShield} />
+						</div>
 						<div className="p1">Censorship Resistant</div>
 						<div className="p2">
 							Collateral is provided by a distributed network of HAV holders, which means it can’t
@@ -154,7 +158,9 @@ const IndexPage = () => (
 						</div>
 					</div>
 					<div className="column">
-						<img src={icoEye} />
+						<div className="c-img">
+							<img src={icoEye} />
+						</div>
 						<div className="p1">Transparent</div>
 						<div className="p2">
 							Our collateral is fully visible on the blockchain and does not require auditing from a
