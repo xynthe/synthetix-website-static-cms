@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: "Havven Mintr"
+    title: "Havven Website"
   },
   plugins: [
     // Page Settings

@@ -58,7 +58,7 @@ const IndexPage = () => (
 					</div>
 				</div>
 			</section>
-			<section className="section currency-section">
+			<section className="section currency-section pb-110">
 				<div className="container">
 					<div className="columns is-centered currency-row">
 						{currencies.slice(0, 3).map(el => (
