@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="59px" viewBox="0 0 68 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-269.000000, -3708.000000)" stroke="#402BDC" stroke-width="2">
+            <g id="Group-8" transform="translate(0.000000, 3337.968750)">
+                <g id="Group-21" transform="translate(141.500000, 134.593750)">
+                    <g id="Group-9" transform="translate(0.000000, 232.000000)">
+                        <g id="Group-10" transform="translate(0.000000, 4.000000)">
+                            <g id="ico-triangle" transform="translate(129.274568, 0.997237)">
+                                <path d="M9.39342105,44.0316612 L28.767352,11.7417763" id="Shape"></path>
+                                <path d="M52.8379934,49.9025493 L11.7417763,49.9025493" id="Shape"></path>
+                                <path d="M35.8124178,11.7403086 L55.1878164,44.0331289" id="Shape"></path>
+                                <rect id="Rectangle-path" stroke-linecap="square" x="26.4189967" y="0" width="11.7417763" height="11.7417763"></rect>
+                                <polygon id="Rectangle-path" stroke-linecap="square" points="52.8379934 44.0316612 64.5797697 44.0316612 64.5797697 55.7734375 52.8379934 55.7734375"></polygon>
+                                <polygon id="Rectangle-path" stroke-linecap="square" points="0 44.0316612 11.7417763 44.0316612 11.7417763 55.7734375 0 55.7734375"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

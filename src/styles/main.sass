@@ -1,6 +1,7 @@
 @import "bulma/utilities/_all"
 @import "nav"
 @import "buttons"
+@import "layout"
 
 h1.page-title
   font-family: Guillon
@@ -13,7 +14,7 @@ h1.page-title
   margin: auto
   padding-bottom: 20px
 
-div.page-subtitle
+.page-subtitle
   width: 647px
   color: $blue-light
   font-family: Guillon
@@ -24,7 +25,7 @@ div.page-subtitle
   margin: auto
   padding-bottom: 40px
 
-div.section-title
+.section-title
   width: 825px
   color: #0D0A31
   font-family: Guillon
@@ -39,8 +40,14 @@ div.section-title
     color: #fff
   &.is-narrow
     width: 670px
+  &.is-large
+    width: 783px
+    font-size: 66px
+    font-weight: 500
+    letter-spacing: -0.77px
+    line-height: 75px
 
-div.section-desc
+.section-desc
   width: 523px
   color: #6F6DA0
   font-family: Guillon
@@ -50,18 +57,33 @@ div.section-desc
   text-align: center
   margin: auto
 
-div.box
+.ui-box
   width: 782px
   border: 1px solid #414067
   border-radius: 4px
   background-color: #100C37
   box-shadow: 0 10px 50px 0 rgba(19,16,72,0.16)
+  margin-left: auto
+  margin-right: auto
+  font-size: 16px
 
-.pb-110
-  padding-bottom: 110px
+  &.is-code
+    padding: 38px
 
 +touch
   h1.page-title
     width: auto
-  div.page-subtitle
+  .page-subtitle
     width: auto
+  .ui-box
+    width: auto
+  .section-title
+    width: auto
+    &.is-narrow
+      width: auto
+    &.is-large
+      width: auto
+  .section-desc
+    width: auto
+
+@import "shortcuts"

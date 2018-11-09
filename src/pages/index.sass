@@ -13,7 +13,69 @@
     margin-top: -50px
     background-position-y: -650px
 
-+tablet
-.home-page
-  .announcement-box
-    padding: 25px 0
+  .get-rewarded-boxes
+    .column
+      cursor: pointer
+      width: 380px
+      border: 1px solid #D1D1E8
+      border-radius: 4px
+      background-color: #FFFFFF
+      box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
+      margin: 10px
+      padding: 40px 40px 50px 44px
+      display: flex
+      flex-direction: column
+      transition: 200ms all ease
+      &:hover
+        transform: translateY(4px)
+        box-shadow: 0 5px 5px 0 rgba(64,43,220,0.09)
+
+      .c-top
+        flex-grow: 1
+        padding-bottom: 25px
+      .c-bottom
+        flex-grow: 0
+      .p1
+        float: right
+        font-size: 16px
+        letter-spacing: -0.33px
+        text-align: right
+        line-height: 24px
+      .p2
+        font-size: 24px
+        font-weight: 500
+        letter-spacing: -0.5px
+        line-height: 26px
+        padding-bottom: 10px
+      .p3
+        font-size: 20px
+        letter-spacing: -0.42px
+        line-height: 31px
+
+  .feature-boxes
+    .column
+      width: 380px
+      text-align: center
+    img
+      padding-bottom: 40px
+    .p1
+      color: #0D0A31
+      font-size: 18px
+      padding-bottom: 13px
+    .p2
+      font-size: 18px
+      line-height: 30px
+      width: 310px
+      margin: auto
+
+  +tablet
+    .announcement-box
+      padding: 25px 0
+
+  +desktop
+    .get-rewarded-boxes .column, .feature-boxes .column
+      flex: none
+
+  +touch
+    .get-rewarded-boxes .column, .feature-boxes .column, .feature-boxes .column .p2
+      width: auto

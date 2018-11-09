@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-user-level-1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-175.000000, -2931.000000)">
+            <g id="Group-16" transform="translate(130.000000, 2890.750000)">
+                <g id="ico-user-level-1" transform="translate(44.500000, 40.585938)">
+                    <circle id="Oval-2" fill="#5641F2" cx="38.3886719" cy="37.6162109" r="37.5"></circle>
+                    <g id="loop-83" transform="translate(22.388672, 21.616211)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M13,8 L24,8 L24,14 L32,7 L24,0 L24,6 L13,6 C6.935,6 2,10.935 2,17 L4,17 C4,12.037 8.038,8 13,8 Z" id="Shape"></path>
+                        <path d="M19,24 L8,24 L8,18 L0,25 L8,32 L8,26 L19,26 C25.065,26 30,21.065 30,15 L28,15 C28,19.963 23.962,24 19,24 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

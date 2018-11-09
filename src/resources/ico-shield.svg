@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-shield</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-686.000000, -3704.000000)" stroke="#402BDC" stroke-width="2">
+            <g id="Group-8" transform="translate(0.000000, 3337.968750)">
+                <g id="Group-21" transform="translate(141.500000, 134.593750)">
+                    <g id="Group-9" transform="translate(0.000000, 232.000000)">
+                        <g id="Group-14" transform="translate(422.000000, 0.000000)">
+                            <g id="ico-shield" transform="translate(124.417969, 0.997237)">
+                                <path d="M31.8789062,0 L31.8789062,63.7578125" id="Shape"></path>
+                                <path d="M60.2622904,31.8789062 L3.49552207,31.8789062" id="Shape"></path>
+                                <path d="M31.8789062,0 C22.3152344,6.37578125 9.56367187,9.56367187 0,9.56367187 C0,31.8789062 9.56367187,54.1941406 31.8789062,63.7578125 C54.1941406,54.1941406 63.7578125,31.8789062 63.7578125,9.56367187 C54.1941406,9.56367187 41.4425781,6.37578125 31.8789062,0 Z" id="Shape" stroke-linecap="square"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

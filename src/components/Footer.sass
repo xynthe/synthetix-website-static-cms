@@ -1,0 +1,43 @@
+@import "../styles/bulma/utilities/_all"
+
+footer
+  background-color: #402BDC
+  color: #ffffff
+  padding-top: 80px
+  padding-bottom: 120px
+
+  a
+    color: #fff
+
+  .links
+    li
+      padding: 3px 0
+
+  .last-column
+    display: flex
+    & > div
+      display: flex
+      flex-grow: 1
+      flex-direction: column
+      .c-top
+        flex-grow: 1
+      .c-bottom
+        flex-grow: 0
+        padding-bottom: 10px
+        .column
+          padding: 3px 10px
+      a
+        white-space: nowrap
+
+    .media-links
+      padding-bottom: 30px
+      a
+        padding: 0 10px
+
+  +tablet
+    .links
+      width: 140px
+    .footer-columns > div
+      min-width: 240px
+    .media-links
+      text-align: right
