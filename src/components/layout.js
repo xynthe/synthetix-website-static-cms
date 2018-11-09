@@ -5,8 +5,8 @@ import { StaticQuery, graphql } from "gatsby";
 
 import "../styles/bulma/bulma.sass";
 import "../styles/main.sass";
-import Header from "./header";
-import Footer from "./footer";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => (
 	<StaticQuery
