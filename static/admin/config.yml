@@ -1,6 +1,6 @@
 backend:
-  name: bitbucket
-  repo: nodevision/havven-website
+  name: github
+  repo: havven/havven-website-static-cms
 
 media_folder: static/img
 public_folder: /img
