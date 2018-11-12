@@ -31,12 +31,6 @@ const IndexPage = () => (
 							<span>Try the new Havven Dashboard!</span>
 						</a>
 					</div>
-					<div className="has-text-centered announcement-box">
-						<a href="https://dashboard.havven.io" className="is-button is-announcement test">
-							<span>NEW</span>
-							<span>Try the new Havven Dashboard!</span>
-						</a>
-					</div>
 					<h1 className="page-title">Powering payments for decentralised applications.</h1>
 					<div className="page-subtitle">
 						Havven enables stable, censorship resistant payments for dApps in over 10 currencies.

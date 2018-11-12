@@ -1,24 +1,20 @@
-//@font-face
-//  font-family: Guillon
-//  font-weight: normal
-//  font-style: normal
-//  src: url("../../resources/fonts/Guillon-Regular.otf") format("opentype")
+$font-path: '../../resources/fonts/'
 
 @font-face
   font-family: Guillon
-  src: url('../../resources/fonts/eot/Guillon-Regular.eot')
-  src: url('../../resources/fonts/eot/Guillon-Regular.eot?#iefix') format('embedded-opentype'), url('../../resources/fonts/woff/Guillon-Regular.woff') format('woff'), url('../../resources/fonts/woff2/Guillon-Regular.woff2') format('woff2'), url('../../resources/fonts/ttf/Guillon-Regular.ttf') format('truetype')
+  src: url(#{$font-path}guillon-regular-webfont.woff) format('woff2'), url(#{$font-path}guillon-regular-webfont.woff) format('woff'), url(#{$font-path}guillon-regular-webfont.svg#guillonregular) format('svg')
   font-weight: normal
   font-style: normal
+
 
 @font-face
   font-family: Guillon
   font-weight: 500
   font-style: normal
-  src: url("../../resources/fonts/Guillon-Demi.otf") format("opentype")
+  src: url(#{$font-path}guillon-demi-webfont.woff2) format('woff2'), url(#{$font-path}guillon-demi-webfont.woff) format('woff'), url(#{$font-path}guillon-demi-webfont.svg#guillondemi) format('svg')
 
 @font-face
   font-family: Akkurat-Mono
   font-weight: normal
   font-style: normal
-  src: url("../../resources/fonts/Akkurat-Mono.otf") format("opentype")
+  src: url(#{$font-path}Akkurat-Mono.otf) format("opentype")
