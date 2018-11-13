@@ -5,9 +5,13 @@ import Layout from "../components/layout";
 import "./team.sass";
 import TeamMember from "../components/TeamMember";
 
-const TeamPage = () => (
+const TeamPage = props => (
 	<Layout>
 		<div className="team-page">
+			<h1>
+				Test
+				{JSON.stringify(props)}
+			</h1>
 			<section className="section header-section">
 				<div className="container">
 					<h1 className="page-title">Meet the Team</h1>
@@ -73,3 +77,17 @@ const TeamPage = () => (
 );
 
 export default TeamPage;
+
+export const query = graphql`
+	query TeamPageQuery {
+		page: allPagesJson(filter: { id: { regex: "/team.json/" } }) {
+			edges {
+				node {
+					team_members {
+						fullname
+					}
+				}
+			}
+		}
+	}
+`;

@@ -3,6 +3,9 @@ import { Link } from "gatsby";
 import "./index.sass";
 import Layout from "../components/layout";
 import "./partners.sass";
+import icoTriangle from "../resources/ico-triangle.svg";
+import icoShield from "../resources/ico-shield.svg";
+import icoEye from "../resources/ico-eye.svg";
 
 const PartnersPage = () => (
 	<Layout>
@@ -17,31 +20,84 @@ const PartnersPage = () => (
 					</div>
 				</div>
 			</section>
-			<section className="section is-white join-team-section">
+			<section className="section is-white">
 				<div className="container">
-					<div className="section-title">Join the Team</div>
-					<div className="section-desc pb-70">
-						We are looking for highly skilled individuals to join the Havven team and help us
-						deliver a decentralised payment network and stablecoin to the world. If you're looking
-						for a challenging project and want to contribute to building a critical layer of the
-						blockchain ecosystem, then please get in touch!
+					<div className="section-title">Why integrate with Havven</div>
+					<div className="section-desc sp1 pb-90">
+						Nomins are <span className="strong">stable</span>,{" "}
+						<span className="strong">decentralised</span>, and{" "}
+						<span className="strong">scalable</span>.
 					</div>
-					<div className="section-title is-subtle pb-30">Open Positions</div>
-					<div className="columns open-positions pb-60">
+					<div className="columns is-centered feature-boxes pb-70">
 						<div className="column">
-							<div>Senior Blockchain Engineer</div>
+							<div className="c-img">
+								<img src={icoTriangle} />
+							</div>
+							<div className="p1">Stable</div>
+							<div className="p2">
+								Holders of the network’s collateral, HAV tokens, are incentivised to keep the value
+								of nomins at $1.
+							</div>
 						</div>
 						<div className="column">
-							<div>Head of Marketing and Communication</div>
+							<div className="c-img">
+								<img src={icoShield} />
+							</div>
+							<div className="p1">Decentralised</div>
+							<div className="p2">
+								HAV is on the blockchain, totally transparent, and censorship resistant. Nomins are
+								not collateralized by a centralised party.
+							</div>
 						</div>
 						<div className="column">
-							<div>Creative Director</div>
+							<div className="c-img">
+								<img src={icoEye} />
+							</div>
+							<div className="p1">Scalable</div>
+							<div className="p2">
+								The value of HAV and how many nomins can be minted are primarily dependent on nomin
+								transactions, which means that use of the network encourages the expansion of the
+								network.
+							</div>
 						</div>
 					</div>
-					<div className="section-desc join-team-desc">
-						Looking to join the team but don’t see a position suited to you? We’re always interested
-						in hearing from people who are interested in joining our mission. Say hello at{" "}
-						<a href="mailto:careers@havven.io">careers@havven.io</a>
+					<div className="section-title sp2 pb-50">
+						Adopting a stablecoin that is already available reduces friction for the user
+					</div>
+					<div className="section-desc sp3 pb-30">
+						Users shouldn’t need to go through the process of acquiring different native tokens to
+						act throughout the blockchain ecosystem.
+					</div>
+					<div className="section-desc sp3 pb-90">
+						If your platform has a native token, its value can come from staking or other
+						reputation-based actions. We can guide you on the tokenomics of your platform and how
+						nomins can fit within it.
+					</div>
+
+					<div className="section-title sp2 pb-50">Existing Partnerships</div>
+					<div className="section-desc sp4 pb-50">
+						Our existing partnerships include a range of use-cases such as e-Commerce, Trading,
+						Payments, and operating as a medium of exchange for other protocols.
+					</div>
+				</div>
+			</section>
+			<section className="section is-grey integrate-with-havven">
+				<div className="container">
+					<div className="columns">
+						<div className="column is-half first-column">
+							<div className="section-title sp5">How to Integrate with Havven</div>
+							<div className="section-desc sp6 pb-40">
+								All of our code is open source, and our Developer Portal makes it easy for
+								developers to build on top of the Havven Network.
+							</div>
+							<a href="#" className="is-button is-blue is-wide is-subtle is-center mb-20">
+								View our Developer Hub
+							</a>
+							<a href="#" className="is-button is-dark is-wide is-subtle is-center">
+								Contact our Partnership Team
+							</a>
+						</div>
+						<div className="column is-half">Test</div>
 					</div>
 				</div>
 			</section>
