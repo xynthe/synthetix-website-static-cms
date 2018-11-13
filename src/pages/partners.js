@@ -1,42 +1,19 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { Link } from "gatsby";
 import "./index.sass";
 import Layout from "../components/layout";
-import "./team.sass";
-import TeamMember from "../components/TeamMember";
+import "./partners.sass";
 
-const TeamPage = () => (
+const PartnersPage = () => (
 	<Layout>
-		<div className="team-page">
+		<div className="partners-page">
 			<section className="section header-section">
 				<div className="container">
-					<h1 className="page-title">Meet the Team</h1>
+					<h1 className="page-title">Leave stability to the experts</h1>
 					<div className="page-subtitle">
-						A multi disciplinary team with proven ability to deliver complex solutions
-					</div>
-				</div>
-			</section>
-			<section className="section team-members">
-				<div className="container">
-					<div className="columns is-multiline">
-						<TeamMember
-							name="Kain Warwick"
-							imgUrl="team-kain.png"
-							title="Founder"
-							bio="Before launching Havven, Kain built the largest cryptocurrency payment platform in Australia, with tens of millions in transaction volume."
-						/>
-						<TeamMember
-							name="Kain Warwick"
-							imgUrl="team-kain.png"
-							title="Founder"
-							bio="Before launching Havven, Kain built the largest cryptocurrency payment platform in Australia, with tens of millions in transaction volume."
-						/>
-						<TeamMember
-							name="Kain Warwick"
-							imgUrl="team-kain.png"
-							title="Founder"
-							bio="Before launching Havven, Kain built the largest cryptocurrency payment platform in Australia, with tens of millions in transaction volume."
-						/>
+						A stablecoin is a cryptocurrency that is resistant to price volatility, allowing it to
+						be used as a stable store of value, medium of exchange, and unit of account. Partner
+						with Havven to use our stablecoin, nomins, for all your payment needs!
 					</div>
 				</div>
 			</section>
@@ -72,4 +49,4 @@ const TeamPage = () => (
 	</Layout>
 );
 
-export default TeamPage;
+export default PartnersPage;
