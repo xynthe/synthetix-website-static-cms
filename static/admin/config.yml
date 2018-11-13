@@ -64,10 +64,13 @@ collections:
     description: "Content for Team Page"
     file: "content/pages/team.json"
     fields:
-    - label: "Team"
-      name: "team"
+    - label: "Team members"
+      name: "team_members"
       widget: "list"
       fields:
       - {label: "Full Name", name: "fullname", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Bio", name: "bio", widget: "string"}
+      - {label: "LinkedIn URL", name: "linkedInUrl", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+
