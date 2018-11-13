@@ -57,3 +57,17 @@ collections:
     - {label: "nUSD to HAV MyEtherWallet Modal Content", name: "nusd_to_hav_myetherwallet_modal_content_markdown", widget: "markdown"}
     - {label: "Tooltip content", name: "tooltip_content", widget: "string"}
 
+
+  # -------- Team --------
+  - name: "team"
+    label: "Team Page"
+    description: "Content for Team Page"
+    file: "content/pages/team.json"
+    fields:
+    - label: "Team"
+      name: "team"
+      widget: "list"
+      fields:
+      - {label: "Full Name", name: "fullname", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Bio", name: "bio", widget: "string"}
