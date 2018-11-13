@@ -16,6 +16,7 @@ collections:
     description: "Allows control of the site settings"
     file: "content/siteSettings.json"
     fields:
+    - {label: "Site Title", name: "title", widget: "string"}
     - {label: "Meta - Keywords", name: "keywords", widget: "string"}
     - {label: "Meta - Description", name: "description", widget: "string"}
 

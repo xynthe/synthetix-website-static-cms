@@ -1,9 +1,9 @@
 const path = require("path");
 
+let siteMeta = require("./content/siteSettings");
+
 module.exports = {
-	siteMetadata: {
-		title: "Havven Website"
-	},
+	siteMetadata: siteMeta,
 	plugins: [
 		// Page Settings
 		{

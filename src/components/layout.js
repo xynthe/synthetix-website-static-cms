@@ -14,27 +14,32 @@ const Layout = ({ children }) => (
 			query SiteTitleQuery {
 				site {
 					siteMetadata {
+						keywords
+						description
 						title
 					}
 				}
 			}
 		`}
-		render={data => (
-			<>
-				<Helmet
-					title={data.site.siteMetadata.title}
-					meta={[
-						{ name: "description", content: "Sample" },
-						{ name: "keywords", content: "sample, something" }
-					]}
-				>
-					<html lang="en" />
-				</Helmet>
-				<Header siteTitle={data.site.siteMetadata.title} />
-				<>{children}</>
-				<Footer />
-			</>
-		)}
+		render={data => {
+			let { title, keywords, description } = data.site.siteMetadata;
+			return (
+				<>
+					<Helmet
+						title={title}
+						meta={[
+							{ name: "description", content: description },
+							{ name: "keywords", content: keywords }
+						]}
+					>
+						<html lang="en" />
+					</Helmet>
+					<Header siteTitle={title} />
+					<>{children}</>
+					<Footer />
+				</>
+			);
+		}}
 	/>
 );
 
