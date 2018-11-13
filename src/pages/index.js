@@ -91,7 +91,7 @@ const IndexPage = () => (
 				<div className="columns is-centered get-rewarded-boxes">
 					<div className="column">
 						<div className="c-top">
-							<img src={icoUser1} />
+							<img src={icoUser1} alt="For new users" />
 							<div className="p1 blue">For New Users</div>
 						</div>
 						<div className="c-bottom">
@@ -101,7 +101,7 @@ const IndexPage = () => (
 					</div>
 					<div className="column">
 						<div className="c-top">
-							<img src={icoUser2} />
+							<img src={icoUser2} alt="For new and experienced users" />
 							<div className="p1 red">
 								For New and <br /> Experienced Users
 							</div>
@@ -115,7 +115,7 @@ const IndexPage = () => (
 					</div>
 					<div className="column">
 						<div className="c-top">
-							<img src={icoUser3} />
+							<img src={icoUser3} alt="For experienced users" />
 							<div className="p1 green">For Experienced Users</div>
 						</div>
 						<div className="c-bottom">
@@ -136,14 +136,14 @@ const IndexPage = () => (
 				<div className="columns is-centered feature-boxes">
 					<div className="column">
 						<div className="c-img">
-							<img src={icoTriangle} />
+							<img src={icoTriangle} alt="Trustless" />
 						</div>
 						<div className="p1">Trustless</div>
 						<div className="p2">HAV holders are responsible for maintaining stability.</div>
 					</div>
 					<div className="column">
 						<div className="c-img">
-							<img src={icoShield} />
+							<img src={icoShield} alt="Censorship resistant" />
 						</div>
 						<div className="p1">Censorship Resistant</div>
 						<div className="p2">
@@ -153,7 +153,7 @@ const IndexPage = () => (
 					</div>
 					<div className="column">
 						<div className="c-img">
-							<img src={icoEye} />
+							<img src={icoEye} alt="Transparent" />
 						</div>
 						<div className="p1">Transparent</div>
 						<div className="p2">

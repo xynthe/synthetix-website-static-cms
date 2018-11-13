@@ -5,7 +5,7 @@ import "./TeamMember.sass";
 const TeamMember = ({ imgUrl, name, title, bio, linkedInUrl }) => {
 	return (
 		<div className="column team-member-box">
-			<div className="tm-img" style={{ backgroundImage: `url(${withPrefix("img/" + imgUrl)})` }} />
+			<div className="tm-img" style={{ backgroundImage: `url(${imgUrl})` }} />
 			<div className="tm-name">{name}</div>
 			<div className="tm-title">{title}</div>
 			<div className="tm-bio">{bio}</div>

@@ -31,7 +31,7 @@ const PartnersPage = () => (
 					<div className="columns is-centered feature-boxes pb-70">
 						<div className="column">
 							<div className="c-img">
-								<img src={icoTriangle} />
+								<img src={icoTriangle} alt="Stable" />
 							</div>
 							<div className="p1">Stable</div>
 							<div className="p2">
@@ -41,7 +41,7 @@ const PartnersPage = () => (
 						</div>
 						<div className="column">
 							<div className="c-img">
-								<img src={icoShield} />
+								<img src={icoShield} alt="Decentralised" />
 							</div>
 							<div className="p1">Decentralised</div>
 							<div className="p2">
@@ -51,7 +51,7 @@ const PartnersPage = () => (
 						</div>
 						<div className="column">
 							<div className="c-img">
-								<img src={icoEye} />
+								<img src={icoEye} alt="Scalable" />
 							</div>
 							<div className="p1">Scalable</div>
 							<div className="p2">
