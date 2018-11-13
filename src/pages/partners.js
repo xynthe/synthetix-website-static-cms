@@ -68,20 +68,20 @@ const PartnersPage = () => (
 						Users shouldn’t need to go through the process of acquiring different native tokens to
 						act throughout the blockchain ecosystem.
 					</div>
-					<div className="section-desc sp3 pb-90">
+					<div className="section-desc sp3 pb-80">
 						If your platform has a native token, its value can come from staking or other
 						reputation-based actions. We can guide you on the tokenomics of your platform and how
 						nomins can fit within it.
 					</div>
 
-					<div className="section-title sp2 pb-50">Existing Partnerships</div>
+					<div className="section-title sp2 pb-40">Existing Partnerships</div>
 					<div className="section-desc sp4 pb-50">
 						Our existing partnerships include a range of use-cases such as e-Commerce, Trading,
 						Payments, and operating as a medium of exchange for other protocols.
 					</div>
 				</div>
 			</section>
-			<section className="section is-grey integrate-with-havven">
+			<section className="section is-grey integrate-with-havven is-padded">
 				<div className="container">
 					<div className="columns">
 						<div className="column is-half first-column">
@@ -97,7 +97,19 @@ const PartnersPage = () => (
 								Contact our Partnership Team
 							</a>
 						</div>
-						<div className="column is-half">Test</div>
+						<div className="column is-half second-column">
+							<div className="p-title pb-10">Full Support</div>
+							<div className="p-text pb-20">
+								Recieve full suport from the Havven Partnerships team, giving you everything you
+								need to integrate Nomins into your project.
+							</div>
+							<div className="p-title pb-10">Easy Ethereum Integration</div>
+							<div className="p-text pb-20">
+								For all Ethereum-based integrations, there is extremely little setup required, and
+								for non-blockchain integrations, a simple setup is required using Web 3.0 extensions
+								(as seen in our eStore Proof of Concept)
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
