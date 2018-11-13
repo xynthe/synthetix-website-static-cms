@@ -16,10 +16,8 @@ collections:
     description: "Allows control of the site settings"
     file: "content/siteSettings.json"
     fields:
-    - {label: "Display Promotion Banner", name: "display_banner", widget: "boolean"}
-    - {label: "Promotion Banner Text", name: "banner_text", widget: "string"}
-    - {label: "Promotion Banner Link Text", name: "banner_link_text", widget: "string"}
-    - {label: "Promotion Banner Link URL", name: "banner_link_url", widget: "string"}
+    - {label: "Meta - Keywords", name: "keywords", widget: "string"}
+    - {label: "Meta - Description", name: "description", widget: "string"}
 
 # -------- Pages --------
 - name: "pages"
