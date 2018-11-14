@@ -1,5 +1,7 @@
 {
-  "team_members": [
+  "pageTitle": "Havven | nUSD Converter Tool",
+  "pageDescription": "This tool allows users to convert their ETH into nUSD. This conversion can be made with a MetaMask browser extension or through MyEtherWallet. Users can also convert their nUSD into HAV, which ensures that nomins are fully backed by havvens.",
+  "teamMembers": [
     {
       "fullName": "Kain Warwick",
       "title": "Founder",

@@ -51,16 +51,8 @@ collections:
     description: "Content for the Home Page"
     file: "content/pages/index.json"
     fields:
-    - {label: "Page Title", name: "page_title", widget: "string"}
-    - {label: "Page Description", name: "page_description", widget: "string"}
-    - {label: "Heading", name: "heading", widget: "string"}
-    - {label: "Intro Text", name: "intro_text", widget: "string"}
-    - {label: "ETH to nUSD MetaMask Modal Content", name: "eth_to_nusd_metamask_modal_content_markdown", widget: "markdown"}
-    - {label: "ETH to nUSD MyEtherWallet Modal Content", name: "eth_to_nusd_myetherwallet_modal_content_markdown", widget: "markdown"}
-    - {label: "nUSD to HAV MetaMask Modal Content", name: "nusd_to_hav_metamask_modal_content_markdown", widget: "markdown"}
-    - {label: "nUSD to HAV MyEtherWallet Modal Content", name: "nusd_to_hav_myetherwallet_modal_content_markdown", widget: "markdown"}
-    - {label: "Tooltip content", name: "tooltip_content", widget: "string"}
-
+    - {label: "Page Title", name: "pageTitle", widget: "string"}
+    - {label: "Page Description", name: "pageDescription", widget: "string"}
 
   # -------- Team --------
   - name: "team"
@@ -68,8 +60,10 @@ collections:
     description: "Content for Team Page"
     file: "content/pages/team.json"
     fields:
+    - {label: "Page Title", name: "pageTitle", widget: "string"}
+    - {label: "Page Description", name: "pageDescription", widget: "string"}
     - label: "Team members"
-      name: "team_members"
+      name: "teamMembers"
       widget: "list"
       fields:
       - {label: "Full Name", name: "fullName", widget: "string"}
@@ -83,3 +77,6 @@ collections:
     label: "How it works page"
     description: "Content for How it works page"
     file: "content/pages/how-it-works.json"
+    fields:
+    - {label: "Page Title", name: "pageTitle", widget: "string"}
+    - {label: "Page Description", name: "pageDescription", widget: "string"}
