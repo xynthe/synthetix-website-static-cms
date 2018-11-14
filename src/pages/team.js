@@ -24,10 +24,11 @@ const TeamPage = ({ data }) => {
 						<div className="columns is-multiline">
 							{teamMembers.map(el => (
 								<TeamMember
-									name={el.fullname}
+									name={el.fullName}
 									imgUrl={withPrefix(el.image)}
 									title={el.title}
 									bio={el.bio}
+									linkedInUrl={el.linkedInUrl}
 								/>
 							))}
 						</div>
@@ -75,10 +76,10 @@ export const query = graphql`
 				node {
 					childPagesJson {
 						team_members {
-							fullname
+							fullName
 							title
 							bio
-							linkedin_url
+							linkedInUrl
 							image
 						}
 					}

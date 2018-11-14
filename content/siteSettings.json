@@ -1,5 +1,9 @@
 {
   "keywords": "Keywords",
   "description": "Site Description",
-  "title": "Havven | Website"
+  "title": "Havven | Website",
+  "twitterUrl": "https://twitter.com/havven_io",
+  "mediumUrl": "https://blog.havven.io/",
+  "discordUrl": "",
+  "redditUrl": ""
 }

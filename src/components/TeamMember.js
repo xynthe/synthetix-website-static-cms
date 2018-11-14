@@ -1,6 +1,7 @@
 import React from "react";
 import { withPrefix } from "gatsby";
 import "./TeamMember.sass";
+import icoLinkedIn from "../resources/logo-linkedin.svg";
 
 const TeamMember = ({ imgUrl, name, title, bio, linkedInUrl }) => {
 	return (
@@ -10,7 +11,7 @@ const TeamMember = ({ imgUrl, name, title, bio, linkedInUrl }) => {
 			<div className="tm-title">{title}</div>
 			<div className="tm-bio">{bio}</div>
 			<a href={linkedInUrl} className="tm-li">
-				<img src={""} />
+				<img src={icoLinkedIn} alt="LinkedIn" />
 			</a>
 		</div>
 	);

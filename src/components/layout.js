@@ -17,6 +17,10 @@ const Layout = ({ children }) => (
 						keywords
 						description
 						title
+						twitterUrl
+						mediumUrl
+						discordUrl
+						redditUrl
 					}
 				}
 			}
@@ -36,7 +40,7 @@ const Layout = ({ children }) => (
 					</Helmet>
 					<Header siteTitle={title} />
 					<>{children}</>
-					<Footer />
+					<Footer {...data.site.siteMetadata} />
 				</>
 			);
 		}}

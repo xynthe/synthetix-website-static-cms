@@ -19,6 +19,10 @@ collections:
     - {label: "Site Title", name: "title", widget: "string"}
     - {label: "Meta - Keywords", name: "keywords", widget: "string"}
     - {label: "Meta - Description", name: "description", widget: "string"}
+    - {label: "Twitter URL", name: "twitterUrl", widget: "string"}
+    - {label: "Medium URL", name: "mediumUrl", widget: "string"}
+    - {label: "Discord URL", name: "discordUrl", widget: "string"}
+    - {label: "Reddit URL", name: "redditUrl", widget: "string"}
 
 # -------- Pages --------
 - name: "pages"
@@ -67,9 +71,9 @@ collections:
       name: "team_members"
       widget: "list"
       fields:
-      - {label: "Full Name", name: "fullname", widget: "string"}
+      - {label: "Full Name", name: "fullName", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Bio", name: "bio", widget: "string"}
-      - {label: "LinkedIn URL", name: "linkedin_url", widget: "string"}
+      - {label: "LinkedIn URL", name: "linkedInUrl", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
 

@@ -1,10 +1,10 @@
 {
   "team_members": [
     {
-      "fullname": "Kain Warwick",
+      "fullName": "Kain Warwick",
       "title": "Founder",
       "bio": "Before launching Havven, Kain built the largest cryptocurrency payment platform in Australia, with tens of millions in transaction volume.",
-      "linkedin_url": "https://au.linkedin.com/in/kainwarwick",
+      "linkedInUrl": "https://au.linkedin.com/in/kainwarwick",
       "image": "/img/team-kain.png"
     }
   ]

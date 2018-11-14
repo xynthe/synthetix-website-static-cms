@@ -7,7 +7,7 @@ import logoMedium from "../resources/logo-medium.svg";
 import logoDiscord from "../resources/logo-discord.svg";
 import logoReddit from "../resources/logo-reddit.svg";
 
-const Footer = ({}) => (
+const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 	<footer>
 		<section className="section p-0">
 			<div className="container">
@@ -54,18 +54,18 @@ const Footer = ({}) => (
 					<div className="column is-narrow has-text-centered-mobile last-column">
 						<div>
 							<div className="c-top media-links">
-								<Link>
-									<img src={logoTwitter} />
-								</Link>
-								<Link>
-									<img src={logoMedium} />
-								</Link>
-								<Link>
-									<img src={logoDiscord} />
-								</Link>
-								<Link>
-									<img src={logoReddit} />
-								</Link>
+								<a href={twitterUrl} target="_blank">
+									<img src={logoTwitter} alt="Twitter" />
+								</a>
+								<a href={mediumUrl} target="_blank">
+									<img src={logoMedium} alt="Medium" />
+								</a>
+								<a href={discordUrl} target="_blank">
+									<img src={logoDiscord} alt="Discord" />
+								</a>
+								<a href={redditUrl} target="_blank">
+									<img src={logoReddit} alt="Reddit" />
+								</a>
 							</div>
 							<div className="c-bottom">
 								<div className="columns">
