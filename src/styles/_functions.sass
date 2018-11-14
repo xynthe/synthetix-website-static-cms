@@ -1,0 +1,12 @@
+@import "node_modules/mathsass/dist/math"
+
+@function nrmlz($number, $multiplier, $base: 100)
+  $number-base: $number
+  @if $number > $base
+    $number-base: $base
+
+  $ratio: $number-base / $base
+
+  $ratio-adjusted: pow($ratio, 0.8)
+
+  @return ($ratio-adjusted/$ratio)*$number*$multiplier*1px

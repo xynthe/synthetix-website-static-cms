@@ -9,7 +9,7 @@ import logoReddit from "../resources/logo-reddit.svg";
 
 const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 	<footer>
-		<section className="section p-0">
+		<section className="section ph-20 pv-0">
 			<div className="container">
 				<div className="columns justify-content--space-between footer-columns">
 					<div className="column is-narrow has-text-centered-mobile">
