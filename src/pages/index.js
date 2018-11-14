@@ -14,10 +14,10 @@ import icoPlay from "../resources/ico-play.svg";
 const currencies = [
 	{ nCurrency: "nUSD", currency: "USD", currencyNumber: "$1.00" },
 	{ nCurrency: "nEURO", currency: "EURO", currencyNumber: "€1.00" },
-	{ nCurrency: "nJPY", currency: "YEN", currencyNumber: "¥100.00" },
+	{ nCurrency: "nJPY", currency: "YEN", currencyNumber: "¥1.00" },
 	{ nCurrency: "nAUD", currency: "AUD", currencyNumber: "$1.00" },
-	{ nCurrency: "nKRW", currency: "WON", currencyNumber: "₩1000.00" },
-	{ nCurrency: "nAUg", currency: "gram/gold", currencyNumber: "1.00" }
+	{ nCurrency: "nKRW", currency: "WON", currencyNumber: "₩1.00" },
+	{ nCurrency: "nXAU", currency: "ounce/gold", currencyNumber: "1.00" }
 ];
 
 const IndexPage = () => (
@@ -171,29 +171,39 @@ export default IndexPage;
 
 const CodeBox = () => (
 	<div className="ui-box is-code code-regular mb-50">
-		<span className="code-comment">{"//"} Require the Stripe library with a test secret key.</span>
+		<span className="code-comment">
+			{"//"} Initialize havven-js library with any signer (Metamsak, Trezor, Ledger, PrivateKey
+			supported)
+		</span>
 		<br />
 		<span className="code-green">const </span>
-		stripe = <span className="code-green">require</span>(
-		<span className="code-white">'stripe'</span>
-		)(
-		<span className="code-white">'sk_test_BQokikJOvBiI2HlWgH4olfQ2'</span>
+		{"{"} HavvenJs {"}"} = <span className="code-green">require</span>(
+		<span className="code-white">'havven-js'</span>
 		);
 		<br />
+		<span className="code-green">const </span> metaMaskSigner ={" "}
+		<span className="code-green">new</span> HavvenJs.signers.Metamask();
 		<br />
-		<span className="code-comment">{"//"} Create a payment from a test card token.</span>
-		<br />
-		<span className="code-green">const </span>
-		charge = <span className="code-green">await</span> <span className="code-white">stripe</span>
-		.charges.create(
+		<span className="code-green">const </span> havjs = new HavvenJs(
 		{"{"}
-		<br />
-		&nbsp;&nbsp;&nbsp;amount: <span className="code-red">2000</span>,<br />
-		&nbsp;&nbsp;&nbsp;currency: <span className="code-white">'usd'</span>,<br />
-		&nbsp;&nbsp;&nbsp;source: <span className="code-white">'tok_mastercard'</span>,<br />
-		&nbsp;&nbsp;&nbsp;description: <span className="code-white">'My first payment'</span>
-		<br />
+		signer: metaMaskSigner
 		{"}"}
 		);
+		<br />
+		<br />
+		<span className="code-comment">
+			{"//"} Transfer stablecoins to any ethereum address, wallet or smart contract
+		</span>
+		<br />
+		<span className="code-green">const </span>
+		txObj = <span className="code-green">await</span> havjs
+		<br />
+		&nbsp;&nbsp;&nbsp;.StablePayments
+		<br />
+		&nbsp;&nbsp;&nbsp;.transfer(
+		<span className="code-white">'0x5C545CA7f9D34857664FDCe6aDC22edcF1D5061f'</span>,<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;havjs.util.parseEther(
+		<span className="code-white">'100'</span>
+		));
 	</div>
 );
