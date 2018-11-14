@@ -20,29 +20,40 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 							<div className="column has-text-centered-mobile">
 								<ul className="links">
 									<li>
-										<Link>Swappr</Link>
+										<a href="https://swappr.io/" target="_blank">
+											Swappr
+										</a>
 									</li>
 									<li>
-										<Link>Mintr</Link>
+										<a href="https://mintr.havven.io/" target="_blank">
+											Mintr
+										</a>
 									</li>
 									<li>
-										<Link>Dashboard</Link>
+										<a href="https://dashboard.havven.io/" target="_blank">
+											Dashboard
+										</a>
 									</li>
 									<li>
-										<Link>iOS App</Link>
+										<a
+											href="https://itunes.apple.com/au/app/havven-mobile-app/id1394993748"
+											target="_blank"
+										>
+											iOS App
+										</a>
 									</li>
 								</ul>
 							</div>
 							<div className="column has-text-centered-mobile">
 								<ul className="links">
 									<li>
-										<Link>How it Works</Link>
+										<Link to="/how-it-works">How it Works</Link>
 									</li>
 									<li>
 										<Link>About</Link>
 									</li>
 									<li>
-										<Link>Team</Link>
+										<Link to="/team">Team</Link>
 									</li>
 									<li>
 										<Link>Developers</Link>
