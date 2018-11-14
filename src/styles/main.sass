@@ -82,6 +82,8 @@ h1.page-title
   font-size: 16px
 
   &.is-code
+    overflow: hidden
+    text-overflow: ellipsis
     padding: 38px
     font-family: Akkurat-Mono
     +mobile
@@ -103,5 +105,10 @@ h1.page-title
       width: auto
   .section-desc
     width: auto
+
+.modal.is-video
+  +desktop
+    .modal-content
+      width: 840px
 
 @import "shortcuts"

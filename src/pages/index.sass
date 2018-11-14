@@ -1,4 +1,5 @@
 @import "../styles/bulma/utilities/_all"
+@import "../styles/shortcuts"
 
 .home-page
   .currency-row
@@ -56,7 +57,8 @@
       width: 380px
       text-align: center
     .c-img
-      height: 110px
+      min-height: 68px
+      @extend .pb-50
     .p1
       color: #0D0A31
       font-size: 18px
@@ -66,10 +68,6 @@
       line-height: 30px
       width: 310px
       margin: auto
-
-  +tablet
-    .announcement-box
-      padding: 25px 0
 
   +desktop
     .get-rewarded-boxes .column, .feature-boxes .column

@@ -9,9 +9,12 @@ $mx: 1
   padding-top: 0
   padding-bottom: 0
 
+.pv-30
+  padding-top: nrmlz(30,$mx)
+  padding-bottom: nrmlz(30,$mx)
 .pv-50
-  padding-top: 50px*$mx
-  padding-bottom: 50px*$mx
+  padding-top: nrmlz(50,$mx)
+  padding-bottom: nrmlz(50,$mx)
 .p-40
   padding: 40px*$mx
 .pt-70
@@ -29,9 +32,9 @@ $mx: 1
 .pb-40
   padding-bottom: 40px*$mx
 .pb-50
-  padding-bottom: 50px*$mx
+  padding-bottom: nrmlz(50,$mx)
 .pb-60
-  padding-bottom: 60px*$mx
+  padding-bottom: nrmlz(60,$mx)
 .pb-70
   padding-bottom: 70px*$mx
 .pb-80
@@ -57,13 +60,18 @@ $mx: 1
 .ph-20
   padding-left: nrmlz(20,$mx)
   padding-right: nrmlz(20,$mx)
+.h-110
+  height: nrmlz(110,$mx)
 
 // Mobile Device multiplier
 $mx: 0.5
 +mobile
-  pv-50
-    padding-top: 50px*$mx
-    padding-bottom: 50px*$mx
+  .pv-30
+    padding-top: nrmlz(30,$mx)
+    padding-bottom: nrmlz(30,$mx)
+  .pv-50
+    padding-top: nrmlz(50,$mx)
+    padding-bottom: nrmlz(50,$mx)
   .p-40
     padding: 40px*$mx
   .pt-70
@@ -81,9 +89,9 @@ $mx: 0.5
   .pb-40
     padding-bottom: 40px*$mx
   .pb-50
-    padding-bottom: 50px*$mx
+    padding-bottom: nrmlz(50,$mx)
   .pb-60
-    padding-bottom: 60px*$mx
+    padding-bottom: nrmlz(60,$mx)
   .pb-70
     padding-bottom: nrmlz(70,$mx)
   .pb-80
@@ -109,6 +117,8 @@ $mx: 0.5
   .ph-20
     padding-left: nrmlz(20,$mx)
     padding-right: nrmlz(20,$mx)
+  .h-110
+    height: nrmlz(110,$mx)
 
 .code-green
   color: #00CE63
