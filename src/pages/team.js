@@ -74,7 +74,7 @@ export const query = graphql`
 			edges {
 				node {
 					childPagesJson {
-						team_members {
+						teamMembers {
 							fullName
 							title
 							bio
