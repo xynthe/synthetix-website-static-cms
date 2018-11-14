@@ -1,0 +1,77 @@
+@import "../styles/bulma/utilities/_all"
+@import "../styles/partials"
+
+.community-page
+  .page-subtitle
+    +tablet
+      width: 500px
+
+  .header-section
+    min-height: 550px
+    background-color: #fff
+    background-image: url("../resources/bg-meet-the-team.svg")
+    background-size: 100% auto
+    background-repeat: no-repeat
+    background-position-y: 100%
+
+  .s-title
+    color: #0D0A31
+    font-size: 36px
+    font-weight: 500
+    letter-spacing: -0.42px
+    line-height: 55px
+    text-align: center
+    margin: auto
+    +tablet
+      width: 580px
+
+  .s-desc
+    color: #6F6DA0
+    font-size: 18px
+    letter-spacing: -0.21px
+    line-height: 30px
+    text-align: center
+    margin: auto
+    +tablet
+      width: 350px
+
+  .join-our-discord-box
+    @extend %box
+    display: block
+    cursor: pointer
+    margin: auto
+    padding: 40px 50px
+    +tablet
+      width: 525px
+    .column
+      display: flex
+      align-items: center
+      justify-content: center
+      &:last-child
+        color: #5641F2
+        font-size: 30px
+        font-weight: 500
+        letter-spacing: -0.63px
+
+  .channels
+    justify-content: center
+    .column
+      @extend %box
+      padding: 30px
+      color: #5641F2
+      font-size: 18px
+      letter-spacing: -0.21px
+      display: flex
+      justify-content: center
+      img
+        padding-right: 20px
+
+  .subscribe-section
+    color: #FFFFFF
+    font-size: 36px
+    font-weight: 500
+    letter-spacing: -0.42px
+    text-align: center
+
+    .sub-inputs
+      justify-content: center
