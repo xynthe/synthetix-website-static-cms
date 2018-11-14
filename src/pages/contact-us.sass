@@ -1,0 +1,41 @@
+@import "../styles/bulma/utilities/_all"
+@import "../styles/partials"
+
+.contact-us-page
+  .page-subtitle
+    +tablet
+      width: 550px
+
+  .header-section
+    min-height: 380px
+    background-color: #fff
+    background-image: url("../resources/bg-contact-us.svg")
+    background-size: 100% auto
+    background-repeat: no-repeat
+    background-position-y: 100%
+
+  .contacts-section
+    justify-content: center
+    .column
+      @extend %box
+      cursor: pointer
+      padding: 45px 53px
+      +tablet
+        flex-basis: 380px
+        flex-grow: 0
+
+      .line-1
+        color: #0D0A31
+        font-size: 24px
+        font-weight: 500
+        letter-spacing: -0.5px
+
+      .line-2
+        color: #5641F2
+        font-size: 18px
+        letter-spacing: -0.21px
+
+  .discord-section
+    font-size: 22px
+    letter-spacing: -0.26px
+    line-height: 36px
