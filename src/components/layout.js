@@ -21,12 +21,14 @@ const Layout = ({ children }) => (
 						mediumUrl
 						discordUrl
 						redditUrl
+						ogImage
+						siteIcon
 					}
 				}
 			}
 		`}
 		render={data => {
-			let { title, keywords, description } = data.site.siteMetadata;
+			let { title, keywords, description, ogImage, siteIcon } = data.site.siteMetadata;
 			return (
 				<>
 					<Helmet
@@ -37,6 +39,9 @@ const Layout = ({ children }) => (
 						]}
 					>
 						<html lang="en" />
+						<meta property="og:image" content={ogImage} />
+						<meta property="og:description" content={description} />
+						<link rel="shortcut icon" href={siteIcon} />
 					</Helmet>
 					<Header siteTitle={title} />
 					<>{children}</>
