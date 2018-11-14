@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="57px" viewBox="0 0 61 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-handout</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="How-Havven-Works" transform="translate(-690.000000, -2287.000000)" stroke="#5641F2" stroke-width="2">
+            <g id="ico-handout" transform="translate(691.000000, 2288.000000)">
+                <path d="M8,28 L10,28 C14.535,28 19.653,30.495 22,34 L30,34 C34.014,34 38,37.986 38,42 L20,42" id="Shape"></path>
+                <path d="M36.722,38 L50,38 C57.25,38 58,42 58,42 L29.36,53.632 C27.081,54.544 24.521,54.437 22.326,53.339 L8,46.063" id="Shape"></path>
+                <circle id="Oval" stroke-linecap="square" cx="46" cy="20" r="8"></circle>
+                <rect id="Rectangle-path" stroke-linecap="square" x="0" y="24" width="8" height="26"></rect>
+                <circle id="Oval" stroke-linecap="square" cx="22" cy="8" r="8"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

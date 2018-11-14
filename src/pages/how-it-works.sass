@@ -4,42 +4,55 @@
 .how-it-works-page
   .page-subtitle
     +tablet
-      width: 430px
+      width: 450px
 
   .header-section
-    min-height: 500px
+    min-height: 650px
     background-color: #fff
     background-image: url("../resources/bg-meet-the-team.svg")
     background-size: 100% auto
     background-repeat: no-repeat
     background-position-y: 100%
 
-  .team-members
-    background-color: #fff
-
-  .join-team-section
-    .section-desc
-      +tablet
-        width: 765px
-
-    .open-positions
-      justify-content: center
-      .column
-        @extend %box
-        padding: 45px 53px
+  .steps-section
+    & > div
+      text-align: center
+      & > div
         +tablet
-          flex-basis: 380px
-          flex-grow: 0
-        div
-          color: #5641F2
-          font-family: Guillon
-          font-size: 24px
-          font-weight: 500
-          letter-spacing: -0.5px
-          line-height: 28px
-          +tablet
-            width: 220px
+          width: 850px
+          margin: auto
 
-    .join-team-desc
-      +tablet
-        width: 680px
+      .step-number-title
+        color: #5641F2
+        font-size: 18px
+        font-weight: 500
+        letter-spacing: 1px
+
+      .step-title
+        color: #0D0A31
+        font-size: 56px
+        font-weight: 500
+        letter-spacing: -0.65px
+        line-height: 55px
+
+      .step-desc
+        color: #6F6DA0
+        font-size: 22px
+        letter-spacing: -0.26px
+        line-height: 36px
+        +tablet
+          width: 430px
+          margin: auto
+
+    .step-1 > div
+      background: url(../resources/bg-1.svg) no-repeat
+      background-size: contain
+
+    .step-2 > div
+      background: url(../resources/bg-2.svg) no-repeat
+      background-size: contain
+      background-position-x: right
+
+    .step-3 > div
+      background: url(../resources/bg-3.svg) no-repeat
+      background-size: contain

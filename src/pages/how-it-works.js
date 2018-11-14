@@ -1,46 +1,70 @@
 import React from "react";
-import { graphql, withPrefix } from "gatsby";
-import "./index.sass";
+import "./how-it-works.sass";
 import Layout from "../components/layout";
 import "./how-it-works.sass";
+import icoPlay from "../resources/ico-play.svg";
+import icoPlayDark from "../resources/ico-play-dark.svg";
+import icoLock from "../resources/ico-lock.svg";
+import icoCoins from "../resources/ico-coins.svg";
+import icoHandout from "../resources/ico-handout.svg";
 
 const HowItWorksPage = ({ data }) => {
 	return (
 		<Layout>
-			<div className="team-page">
+			<div className="how-it-works-page">
 				<section className="section header-section">
 					<div className="container">
-						<h1 className="page-title">Meet the Team</h1>
+						<h1 className="page-title">How Havven Works</h1>
 						<div className="page-subtitle">
-							A multi disciplinary team with proven ability to deliver complex solutions
+							There are two tokens in the Havven payment network: HAV, the collateral token, and
+							nomins, our stablecoin.
+						</div>
+					</div>
+					<div className="columns is-centered">
+						<div className="column is-narrow has-text-centered">
+							<a href="#video" className="is-button is-blue is-subtle-alt">
+								<img src={icoPlay} className="is-icon" alt="How it works" /> Intro Video
+							</a>
+						</div>
+						<div className="column is-narrow has-text-centered">
+							<a to="#how-nomins-are-minted" className="is-button is-white is-subtle-alt">
+								<img src={icoPlayDark} className="is-icon" alt="How nomins are minted" /> How Nomins
+								are Minted
+							</a>
 						</div>
 					</div>
 				</section>
-				<section className="section is-white join-team-section">
-					<div className="container">
-						<div className="section-title">Join the Team</div>
-						<div className="section-desc pb-70">
-							We are looking for highly skilled individuals to join the Havven team and help us
-							deliver a decentralised payment network and stablecoin to the world. If you're looking
-							for a challenging project and want to contribute to building a critical layer of the
-							blockchain ecosystem, then please get in touch!
+				<section className="section is-white steps-section">
+					<div className="container step-1 pb-90">
+						<div className="pt-80">
+							<div className="step-number-title pb-40">STEP ONE</div>
+							<div className="step-title pb-40">Lock HAV as collateral</div>
+							<div className="step-desc pb-50">
+								HAV holders lock their HAV as collateral to back nUSD, our stablecoin.
+							</div>
+							<img src={icoLock} alt="Step One" />
 						</div>
-						<div className="section-title is-subtle pb-30">Open Positions</div>
-						<div className="columns open-positions pb-60">
-							<div className="column">
-								<div>Senior Blockchain Engineer</div>
+					</div>
+					<div className="container step-2 pb-90">
+						<div className="pt-80">
+							<div className="step-number-title pb-40">STEP TWO</div>
+							<div className="step-title pb-40">Mint stablecoins</div>
+							<div className="step-desc pb-50">
+								Nomins are minted into the market, where they can be used as a stable medium of
+								exchange.
 							</div>
-							<div className="column">
-								<div>Head of Marketing and Communication</div>
-							</div>
-							<div className="column">
-								<div>Creative Director</div>
-							</div>
+							<img src={icoCoins} alt="Step Two" />
 						</div>
-						<div className="section-desc join-team-desc">
-							Looking to join the team but don’t see a position suited to you? We’re always
-							interested in hearing from people who are interested in joining our mission. Say hello
-							at <a href="mailto:careers@havven.io">careers@havven.io</a>
+					</div>
+					<div className="container step-3 pb-90">
+						<div className="pt-80">
+							<div className="step-number-title pb-40">STEP THREE</div>
+							<div className="step-title pb-40">Reward HAV holders</div>
+							<div className="step-desc pb-50">
+								Circulating nomins generate transaction fees that are distributed to HAV holders,
+								rewarding them for providing stability.
+							</div>
+							<img src={icoHandout} alt="Step Three" />
 						</div>
 					</div>
 				</section>
@@ -50,23 +74,3 @@ const HowItWorksPage = ({ data }) => {
 };
 
 export default HowItWorksPage;
-
-export const query = graphql`
-	query HowItWorksPageQuery {
-		allFile(filter: { name: { eq: "how-it-works" } }) {
-			edges {
-				node {
-					childPagesJson {
-						team_members {
-							fullName
-							title
-							bio
-							linkedInUrl
-							image
-						}
-					}
-				}
-			}
-		}
-	}
-`;

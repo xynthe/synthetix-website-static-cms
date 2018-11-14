@@ -23,6 +23,10 @@
   &.is-dark
     background: linear-gradient(180deg, #0D0A31 0%, #2E2A5E 100%)
 
+  &.is-white
+    background: linear-gradient(0deg, #E9E8F2 0%, #FFFFFF 100%)
+    color: #0D0A31
+
 
   &.is-simple
     border: 1px solid #302F61
@@ -42,6 +46,21 @@
     padding: 12px 20px
     +mobile
       width: 100%
+
+  &.is-subtle-alt
+    font-size: 18px
+    padding: 14px 30px
+    +mobile
+      width: 100%
+    .is-icon
+      position: relative
+      display: inline
+      left: unset
+      top: unset
+      transform: unset
+      vertical-align: sub
+      padding-right: 20px
+
 
   &.is-center
     text-align: center !important
