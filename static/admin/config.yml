@@ -77,3 +77,8 @@ collections:
       - {label: "LinkedIn URL", name: "linkedInUrl", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
 
+  # -------- How it works --------
+  - name: "how-it-works"
+    label: "How it works page"
+    description: "Content for How it works page"
+    file: "content/pages/how-it-works.json"

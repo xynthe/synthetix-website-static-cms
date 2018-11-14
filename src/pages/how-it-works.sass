@@ -1,0 +1,45 @@
+@import "../styles/bulma/utilities/_all"
+@import "../styles/partials"
+
+.how-it-works-page
+  .page-subtitle
+    +tablet
+      width: 430px
+
+  .header-section
+    min-height: 500px
+    background-color: #fff
+    background-image: url("../resources/bg-meet-the-team.svg")
+    background-size: 100% auto
+    background-repeat: no-repeat
+    background-position-y: 100%
+
+  .team-members
+    background-color: #fff
+
+  .join-team-section
+    .section-desc
+      +tablet
+        width: 765px
+
+    .open-positions
+      justify-content: center
+      .column
+        @extend %box
+        padding: 45px 53px
+        +tablet
+          flex-basis: 380px
+          flex-grow: 0
+        div
+          color: #5641F2
+          font-family: Guillon
+          font-size: 24px
+          font-weight: 500
+          letter-spacing: -0.5px
+          line-height: 28px
+          +tablet
+            width: 220px
+
+    .join-team-desc
+      +tablet
+        width: 680px

@@ -40,12 +40,12 @@ const IndexPage = () => (
 
 					<div className="columns is-centered">
 						<div className="column is-narrow has-text-centered">
-							<Link to="#" className="is-button is-blue is-wide">
-								<img src={icoPlay} className="is-icon" /> How it works
+							<Link to="/how-it-works" className="is-button is-blue is-wide">
+								<img src={icoPlay} className="is-icon" alt="How it works" /> How it works
 							</Link>
 						</div>
 						<div className="column is-narrow has-text-centered">
-							<Link to="#" className="is-button is-simple is-wide">
+							<Link to="/contact-us" className="is-button is-simple is-wide">
 								Contact Us
 							</Link>
 						</div>
@@ -80,7 +80,7 @@ const IndexPage = () => (
 				</div>
 				<CodeBox />
 				<div className="has-text-centered">
-					<a href="#" className="is-button is-blue is-wide is-subtle">
+					<a href="#developer-hub" className="is-button is-blue is-wide is-subtle">
 						View our Developer Hub
 					</a>
 				</div>
@@ -171,7 +171,7 @@ export default IndexPage;
 
 const CodeBox = () => (
 	<div className="ui-box is-code code-regular mb-50">
-		<span className="code-comment">// Require the Stripe library with a test secret key.</span>
+		<span className="code-comment">{"//"} Require the Stripe library with a test secret key.</span>
 		<br />
 		<span className="code-green">const </span>
 		stripe = <span className="code-green">require</span>(
@@ -181,7 +181,7 @@ const CodeBox = () => (
 		);
 		<br />
 		<br />
-		<span className="code-comment">// Create a payment from a test card token.</span>
+		<span className="code-comment">{"//"} Create a payment from a test card token.</span>
 		<br />
 		<span className="code-green">const </span>
 		charge = <span className="code-green">await</span> <span className="code-white">stripe</span>

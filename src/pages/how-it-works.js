@@ -2,11 +2,9 @@ import React from "react";
 import { graphql, withPrefix } from "gatsby";
 import "./index.sass";
 import Layout from "../components/layout";
-import "./team.sass";
-import TeamMember from "../components/TeamMember";
+import "./how-it-works.sass";
 
-const TeamPage = ({ data }) => {
-	let teamMembers = data.allFile.edges[0].node.childPagesJson.team_members;
+const HowItWorksPage = ({ data }) => {
 	return (
 		<Layout>
 			<div className="team-page">
@@ -15,21 +13,6 @@ const TeamPage = ({ data }) => {
 						<h1 className="page-title">Meet the Team</h1>
 						<div className="page-subtitle">
 							A multi disciplinary team with proven ability to deliver complex solutions
-						</div>
-					</div>
-				</section>
-				<section className="section team-members">
-					<div className="container">
-						<div className="columns is-multiline">
-							{teamMembers.map(el => (
-								<TeamMember
-									name={el.fullName}
-									imgUrl={withPrefix(el.image)}
-									title={el.title}
-									bio={el.bio}
-									linkedInUrl={el.linkedInUrl}
-								/>
-							))}
 						</div>
 					</div>
 				</section>
@@ -66,11 +49,11 @@ const TeamPage = ({ data }) => {
 	);
 };
 
-export default TeamPage;
+export default HowItWorksPage;
 
 export const query = graphql`
-	query TeamPageQuery {
-		allFile(filter: { name: { eq: "team" } }) {
+	query HowItWorksPageQuery {
+		allFile(filter: { name: { eq: "how-it-works" } }) {
 			edges {
 				node {
 					childPagesJson {

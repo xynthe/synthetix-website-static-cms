@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import "./index.sass";
 import Layout from "../components/layout";
 import "./partners.sass";
@@ -90,10 +89,16 @@ const PartnersPage = () => (
 								All of our code is open source, and our Developer Portal makes it easy for
 								developers to build on top of the Havven Network.
 							</div>
-							<a href="#" className="is-button is-blue is-wide is-subtle is-center mb-20">
+							<a
+								href="#developer-hub"
+								className="is-button is-blue is-wide is-subtle is-center mb-20"
+							>
 								View our Developer Hub
 							</a>
-							<a href="#" className="is-button is-dark is-wide is-subtle is-center">
+							<a
+								href="mailto:info@havven.io"
+								className="is-button is-dark is-wide is-subtle is-center"
+							>
 								Contact our Partnership Team
 							</a>
 						</div>

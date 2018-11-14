@@ -1,5 +1,4 @@
 import React from "react";
-import { withPrefix } from "gatsby";
 import "./TeamMember.sass";
 import icoLinkedIn from "../resources/logo-linkedin.svg";
 
