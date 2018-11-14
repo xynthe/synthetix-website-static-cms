@@ -6,7 +6,7 @@ import "./team.sass";
 import TeamMember from "../components/TeamMember";
 
 const TeamPage = ({ data }) => {
-	let teamMembers = data.allFile.edges[0].node.childPagesJson.team_members;
+	let teamMembers = data.allFile.edges[0].node.childPagesJson.teamMembers;
 	return (
 		<Layout>
 			<div className="team-page">
