@@ -45,14 +45,22 @@
           margin: auto
 
     .step-1 > div
-      background: url(../resources/bg-1.svg) no-repeat
+      background: url(../resources/bg-1.png) no-repeat
       background-size: contain
+      +mobile
+        background-position-x: center
 
     .step-2 > div
-      background: url(../resources/bg-2.svg) no-repeat
+      background: url(../resources/bg-2.png) no-repeat
       background-size: contain
       background-position-x: right
+      +mobile
+        background-position-x: center
+
 
     .step-3 > div
-      background: url(../resources/bg-3.svg) no-repeat
+      background: url(../resources/bg-3.png) no-repeat
       background-size: contain
+      +mobile
+        background-position-x: center
+
