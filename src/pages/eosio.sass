@@ -1,5 +1,6 @@
 @import "../styles/bulma/utilities/_all"
 @import "../styles/partials"
+@import "../styles/layout"
 
 .iosio-page
   .page-title
@@ -23,54 +24,43 @@
     background-repeat: no-repeat
     background-position-y: 100%
     +tablet
-      min-height: 650px
+      min-height: 870px
 
-  .steps-section
-    & > div
-      text-align: center
-      & > div
-        +tablet
-          width: 850px
-          margin: auto
+  .st-1
+    color: #0D0A31
+    font-size: 56px
+    font-weight: 500
+    letter-spacing: -0.65px
+    text-align: center
+    line-height: 1.4em
+    +mobile
+      font-size: 40px
 
-      .step-number-title
-        color: #5641F2
-        font-size: 18px
-        font-weight: 500
-        letter-spacing: 1px
+  .sd-1
+    +tablet
+      width: 680px
 
-      .step-title
-        color: #0D0A31
-        font-size: 56px
-        font-weight: 500
-        letter-spacing: -0.65px
-        line-height: 55px
+  .st-2
+    color: #0D0A31
+    font-size: 36px
+    font-weight: 500
+    letter-spacing: -0.42px
+    line-height: 55px
+    text-align: center
+    +mobile
+      font-size: 28px
 
-      .step-desc
-        color: #6F6DA0
-        font-size: 22px
-        letter-spacing: -0.26px
-        line-height: 36px
-        +tablet
-          width: 430px
-          margin: auto
+  .sl-1
+    text-align: left
+    @extend .section-desc
+    +tablet
+      width: 700px
+    li
+      padding-left: 10px
+      padding-bottom: 0.5em
 
-    .step-1 > div
-      background: url(../resources/bg-1.png) no-repeat
-      background-size: contain
-      +mobile
-        background-position-x: center
-
-    .step-2 > div
-      background: url(../resources/bg-2.png) no-repeat
-      background-size: contain
-      background-position-x: right
-      +mobile
-        background-position-x: center
-
-
-    .step-3 > div
-      background: url(../resources/bg-3.png) no-repeat
-      background-size: contain
-      +mobile
-        background-position-x: center
+  .st-3
+    @extend .st-2
+    +tablet
+      width: 850px
+      margin: auto

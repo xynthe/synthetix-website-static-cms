@@ -1,6 +1,9 @@
 @import "node_modules/mathsass/dist/math"
 
 @function nrmlz($number, $multiplier, $base: 100)
+  @if $multiplier == 1
+    @return $number*1px
+
   $number-base: $number
   @if $number > $base
     $number-base: $base
