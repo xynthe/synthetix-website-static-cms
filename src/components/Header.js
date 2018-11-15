@@ -93,9 +93,9 @@ export default class Header extends React.Component {
 							{menu.map((el, idx) => (
 								<div className="dropdown is-hoverable" key={idx}>
 									<div className="dropdown-trigger">
-										<a className="navbar-item" aria-haspopup="true" aria-controls={el.name}>
+										<UiLink className="navbar-item" aria-haspopup="true" aria-controls={el.name}>
 											<span>{el.name}</span>
-										</a>
+										</UiLink>
 									</div>
 									<div className="dropdown-menu" id={el.name} role="menu">
 										{el.children.map((el2, idx2) => (
