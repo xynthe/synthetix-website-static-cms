@@ -10,10 +10,11 @@
       "image": "/img/team-kain.png"
     },
     {
-      "fullName": "David Kvas",
-      "title": "dApp developer",
-      "bio": "some bio",
-      "image": "/img/naud-dot.svg"
+      "fullName": "Justin Moses",
+      "title": "CTO",
+      "bio": "Justin is a former Director of Engineering at MongoDB and has significant experience designing and deploying high availability systems at scale.",
+      "linkedInUrl": "https://www.linkedin.com/in/justinjmoses/",
+      "image": "/img/justin.png"
     }
   ]
 }

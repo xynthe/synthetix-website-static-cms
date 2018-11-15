@@ -33,12 +33,13 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				short_name: "starter",
+				short_name: "Havven",
+				name: "Havven Website",
 				start_url: "/",
-				background_color: "#663399",
-				theme_color: "#663399",
+				background_color: "#0D0A31",
+				theme_color: "#0D0A31",
 				display: "minimal-ui",
-				icon: "static/img/favicon.ico"
+				icon: "src/resources/gatsby-icon.png" // This path is relative to the root of the site.
 			}
 		},
 		"gatsby-plugin-offline",

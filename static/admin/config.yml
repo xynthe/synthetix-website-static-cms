@@ -25,7 +25,6 @@ collections:
     - {label: "Reddit URL", name: "redditUrl", widget: "string"}
     - {label: "Telegram URL", name: "telegramUrl", widget: "string"}
     - {label: "OG Image", name: "ogImage", widget: "image"}
-    - {label: "Site Icon", name: "siteIcon", widget: "image"}
 
 # -------- Pages --------
 - name: "pages"
