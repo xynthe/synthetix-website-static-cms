@@ -37,12 +37,14 @@
     {
       "fullName": "Mikael Sundelind",
       "title": "VP Operations",
-      "bio": "Mikael has worked in director-level positions at Unibet and MyLotto24, focusing on corporate strategy and marketing/sales."
+      "bio": "Mikael has worked in director-level positions at Unibet and MyLotto24, focusing on corporate strategy and marketing/sales.",
+      "image": "/img/mikael_sundelin.png"
     },
     {
       "fullName": "Garth Travers",
       "title": "Communications Manager",
-      "bio": "Garth graduated in Communications from the University of Sydney and has experience managing a national payments network."
+      "bio": "Garth graduated in Communications from the University of Sydney and has experience managing a national payments network.",
+      "image": "/img/garth_travers.png"
     },
     {
       "fullName": "Clement Balestrat",
