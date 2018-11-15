@@ -7,19 +7,20 @@
       width: 550px
 
   .header-section
-    min-height: 230px
-    background-color: #fff
-    background-image: url("../resources/bg-contact-us.svg")
+    min-height: 200px
+    background-color: #0f0833
+    background-image: url("../resources/bg-wave-01.svg")
     background-size: 100% auto
     background-repeat: no-repeat
     background-position-y: 100%
+    +tablet
+      min-height: 380px
 
   .terms-of-use-list
-    width: 780px
-    text-align: center
     margin: auto
     li
       padding-bottom: 25px
       span
         font-weight: 500
-
+    +tablet
+      width: 780px

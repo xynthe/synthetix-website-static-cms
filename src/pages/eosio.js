@@ -2,9 +2,13 @@ import React from "react";
 import "./eosio.sass";
 import Layout from "../components/layout";
 import logo from "../resources/logo-eosio.svg";
+import { graphql } from "gatsby";
+import logoKuCoin from "../resources/logo-kucoin.svg";
+import logoGate from "../resources/logo-gate.svg";
 
 export default class IosIoPage extends React.Component {
 	render() {
+		const { discordUrl, mediumUrl } = this.props.data.site.siteMetadata;
 		return (
 			<Layout>
 				<div className="iosio-page">
@@ -48,9 +52,36 @@ export default class IosIoPage extends React.Component {
 								</li>
 							</ul>
 						</div>
-						<div className="st-3 pb-30">
+						<div className="st-3 pb-50">
 							If you wish to purchase HAVeth to receive HAVeos, you can do so at the following
 							exchanges
+						</div>
+						<div className="columns exchanges pb-80">
+							<a className="column" href="#kucoin" target="_blank">
+								<img src={logoKuCoin} alt="KuCoin" />
+								<div>
+									<div>KuCoin</div>
+									<div>USDT, BTC, ETH</div>
+								</div>
+							</a>
+							<a className="column" href="#gate" target="_blank">
+								<img src={logoGate} alt="Gate.io" />
+								<div>
+									<div>Gate.io</div>
+									<div>USDT, ETH</div>
+								</div>
+							</a>
+						</div>
+						<div className="sd-2 pb-90">
+							For more details on the HAVeos Distribution, please visit our{" "}
+							<a href={discordUrl} target="_blank">
+								blog
+							</a>
+							, and if you have any more questions, please come join our community on{" "}
+							<a href={discordUrl} target="_blank">
+								Discord
+							</a>
+							.
 						</div>
 					</section>
 				</div>
@@ -58,3 +89,14 @@ export default class IosIoPage extends React.Component {
 		);
 	}
 }
+
+export const query = graphql`
+	query EosIoPageQuery {
+		site {
+			siteMetadata {
+				mediumUrl
+				discordUrl
+			}
+		}
+	}
+`;
