@@ -15,6 +15,36 @@
       "bio": "Justin is a former Director of Engineering at MongoDB and has significant experience designing and deploying high availability systems at scale.",
       "linkedInUrl": "https://www.linkedin.com/in/justinjmoses/",
       "image": "/img/justin.png"
+    },
+    {
+      "fullName": "Jordan Momtazi",
+      "title": "VP Partnerships",
+      "bio": "Jordan has extensive experience in sales and business development in online payments, he structured numerous enterprise deals while at Paypal.",
+      "image": "/img/jordan.png"
+    },
+    {
+      "fullName": "Clinton Ennis",
+      "title": "Senior Architect",
+      "bio": "Clinton has 18 years experience in software engineering and is a former Architect Lead at JPMorgan Chase in trading technology."
+    },
+    {
+      "fullName": "Charlie Karaboga",
+      "title": "Head of Product",
+      "bio": "Charlie has a background in senior product management in both emerging and developed markets. He has managed several international launches for products with millions of users."
+    },
+    {
+      "fullName": "Mikael Sundelind",
+      "title": "VP Operations",
+      "bio": "Mikael has worked in director-level positions at Unibet and MyLotto24, focusing on corporate strategy and marketing/sales."
+    },
+    {
+      "fullName": "Garth Travers",
+      "title": "Communications",
+      "bio": "Garth studied Communications from the University of Sydney, graduating with First Class Honours, and has experience managing a national payments network."
+    },
+    {
+      "fullName": "Clement Balestrat",
+      "title": "dApp Engineer"
     }
   ]
 }
