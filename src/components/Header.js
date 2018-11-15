@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => (
 			>
 				<div className="navbar-end">
 					<Link className="navbar-item">Foundation</Link>
-					<Link className="navbar-item">Developers</Link>
+					<a className="navbar-item" href="https://developer.havven.io/" target="_blank">Developers</a>
 					<Link className="navbar-item">Learn</Link>
 					<Link className="navbar-item">Products</Link>
 					<Link className="navbar-item">Connect</Link>
