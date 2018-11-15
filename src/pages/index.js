@@ -15,7 +15,7 @@ import Player from "@vimeo/player";
 
 const currencies = [
 	{ nCurrency: "nUSD", currency: "USD", currencyNumber: "$1.00" },
-	{ nCurrency: "nEURO", currency: "EURO", currencyNumber: "€1.00" },
+	{ nCurrency: "nEUR", currency: "EURO", currencyNumber: "€1.00" },
 	{ nCurrency: "nJPY", currency: "YEN", currencyNumber: "¥1.00" },
 	{ nCurrency: "nAUD", currency: "AUD", currencyNumber: "$1.00" },
 	{ nCurrency: "nKRW", currency: "WON", currencyNumber: "₩1.00" },
@@ -101,8 +101,8 @@ class IndexPage extends React.Component {
 						Havven provides a suite of stablecoins available in a variety of currencies.
 					</div>
 					<div className="section-desc">
-						Our stablecoin, nomins, are currently available in nUSD, nEURO, nJPY, nKRW, nAUD, and
-						nAUg, and we’ll be adding more in the near future!
+						Our stablecoin, nomins, are currently available in nUSD, nEUR, nJPY, nKRW, nAUD, and
+						nXAU, and we’ll be adding more in the near future!
 					</div>
 				</section>
 				<section className="section is-padded">
