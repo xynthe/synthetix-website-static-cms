@@ -20,34 +20,43 @@
       "fullName": "Jordan Momtazi",
       "title": "VP Partnerships",
       "bio": "Jordan has extensive experience in sales and business development in online payments, he structured numerous enterprise deals while at Paypal.",
+      "linkedInUrl": "https://www.linkedin.com/in/jordanmomtazi/",
       "image": "/img/jordan.png"
     },
     {
       "fullName": "Clinton Ennis",
       "title": "Senior Architect",
       "bio": "Clinton has 18 years experience in software engineering and is a former Architect Lead at JPMorgan Chase in trading technology.",
+      "linkedInUrl": "https://www.linkedin.com/in/clintonennis/",
       "image": "/img/clinton.png"
     },
     {
       "fullName": "Charlie Karaboga",
       "title": "Head of Product",
       "bio": "Charlie has a background in senior product management in both emerging and developed markets. He has managed several international launches for products with millions of users.",
+      "linkedInUrl": "https://www.linkedin.com/in/ckaraboga/",
       "image": "/img/charlie.png"
     },
     {
       "fullName": "Mikael Sundelind",
       "title": "VP Operations",
       "bio": "Mikael has worked in director-level positions at Unibet and MyLotto24, focusing on corporate strategy and marketing/sales.",
+      "linkedInUrl": "https://www.linkedin.com/in/mikaelsundelin/",
       "image": "/img/mikael_sundelin.png"
     },
     {
       "fullName": "Garth Travers",
       "title": "Communications Manager",
-      "bio": "Garth graduated in Communications from the University of Sydney and has experience managing a national payments network."
+      "bio": "Garth graduated in Communications from the University of Sydney and has experience managing a national payments network.",
+      "linkedInUrl": "https://www.linkedin.com/in/garth-travers-266b5339/",
+      "image": "/img/garth_travers.png"
     },
     {
       "fullName": "Clement Balestrat",
-      "title": "dApp Engineer"
+      "title": "dApp Engineer",
+      "bio": "Bio coming soon",
+      "linkedInUrl": "https://www.linkedin.com/in/clementbalestrat/",
+      "image": "/img/clem.png"
     }
   ]
 }
