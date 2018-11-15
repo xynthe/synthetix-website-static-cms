@@ -45,6 +45,7 @@ const Layout = ({ children }) => (
 					<Header siteTitle={title} />
 					<>{children}</>
 					<Footer {...data.site.siteMetadata} />
+					<a className="discord-btn" href="https://discord.gg/AEdUHzt"></a>
 				</>
 			);
 		}}

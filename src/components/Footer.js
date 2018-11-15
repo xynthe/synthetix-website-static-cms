@@ -78,10 +78,10 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 							<div className="c-bottom">
 								<div className="columns">
 									<div className="column">
-										<Link>Terms of Use</Link>
+										<Link to="/terms-of-use">Terms of Use</Link>
 									</div>
 									<div className="column">
-										<Link>Privacy Policy</Link>
+										<Link to="/privacy-policy">Privacy Policy</Link>
 									</div>
 								</div>
 							</div>
