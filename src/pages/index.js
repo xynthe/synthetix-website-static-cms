@@ -49,7 +49,7 @@ class IndexPage extends React.Component {
 				<div className="home-page">
 					<section className="section pb-30">
 						<div className="container">
-							<div className="has-text-centered pv-30">
+							<div className="has-text-centered pb-30">
 								<a href="https://dashboard.havven.io" className="is-button is-announcement">
 									<span>NEW</span>
 									<span>Try the new Havven Dashboard!</span>
