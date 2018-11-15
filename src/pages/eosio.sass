@@ -1,0 +1,76 @@
+@import "../styles/bulma/utilities/_all"
+@import "../styles/partials"
+
+.iosio-page
+  .page-title
+    +tablet
+      width: 650px
+
+  .page-subtitle
+    +tablet
+      width: 550px
+
+  .logo
+    +mobile
+      width: 50%
+
+  .header-section
+    text-align: center
+    min-height: 500px
+    background-color: #0f0833
+    background-image: url("../resources/bg-wave-01.svg")
+    background-size: 100% auto
+    background-repeat: no-repeat
+    background-position-y: 100%
+    +tablet
+      min-height: 650px
+
+  .steps-section
+    & > div
+      text-align: center
+      & > div
+        +tablet
+          width: 850px
+          margin: auto
+
+      .step-number-title
+        color: #5641F2
+        font-size: 18px
+        font-weight: 500
+        letter-spacing: 1px
+
+      .step-title
+        color: #0D0A31
+        font-size: 56px
+        font-weight: 500
+        letter-spacing: -0.65px
+        line-height: 55px
+
+      .step-desc
+        color: #6F6DA0
+        font-size: 22px
+        letter-spacing: -0.26px
+        line-height: 36px
+        +tablet
+          width: 430px
+          margin: auto
+
+    .step-1 > div
+      background: url(../resources/bg-1.png) no-repeat
+      background-size: contain
+      +mobile
+        background-position-x: center
+
+    .step-2 > div
+      background: url(../resources/bg-2.png) no-repeat
+      background-size: contain
+      background-position-x: right
+      +mobile
+        background-position-x: center
+
+
+    .step-3 > div
+      background: url(../resources/bg-3.png) no-repeat
+      background-size: contain
+      +mobile
+        background-position-x: center

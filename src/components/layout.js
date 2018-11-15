@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
-
 import "../styles/bulma/bulma.sass";
 import "../styles/main.sass";
 import Header from "./Header";
 import Footer from "./Footer";
+import favicon from "../resources/favicon.ico";
 
 const Layout = ({ children }) => (
 	<StaticQuery
@@ -22,13 +22,12 @@ const Layout = ({ children }) => (
 						discordUrl
 						redditUrl
 						ogImage
-						siteIcon
 					}
 				}
 			}
 		`}
 		render={data => {
-			let { title, keywords, description, ogImage, siteIcon } = data.site.siteMetadata;
+			let { title, keywords, description, ogImage } = data.site.siteMetadata;
 			return (
 				<>
 					<Helmet
@@ -37,11 +36,11 @@ const Layout = ({ children }) => (
 							{ name: "description", content: description },
 							{ name: "keywords", content: keywords }
 						]}
+						link={[{ rel: "shortcut icon", href: `${favicon}` }]}
 					>
 						<html lang="en" />
 						<meta property="og:image" content={ogImage} />
 						<meta property="og:description" content={description} />
-						<link rel="shortcut icon" href={siteIcon} />
 					</Helmet>
 					<Header siteTitle={title} />
 					<>{children}</>
