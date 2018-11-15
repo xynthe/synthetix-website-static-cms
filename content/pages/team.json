@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Havven | A decentralised payment network & stablecoin",
+  "pageDescription": "Havven’s dual token system reduces price volatility, enabling everyday cryptocurrency purchases with a stable medium of exchange.",
+  "teamMembers": [
+    {
+      "fullName": "Kain Warwick",
+      "title": "Founder",
+      "bio": "Before launching Havven, Kain built the largest cryptocurrency payment platform in Australia, with tens of millions in transaction volume.",
+      "linkedInUrl": "https://au.linkedin.com/in/kainwarwick",
+      "image": "/img/team-kain.png"
+    },
+    {
+      "fullName": "David KVAS",
+      "title": "dApp developer",
+      "bio": "some bio",
+      "image": "/img/nusd-1x.png"
+    }
+  ]
+}
