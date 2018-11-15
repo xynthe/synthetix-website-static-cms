@@ -93,7 +93,7 @@ const Header = ({ siteTitle }) => (
 							</div>
 							<div className="dropdown-menu" id={el.name} role="menu">
 								{el.children.map((el2, idx2) => (
-									<UiLink key={idx2} to={el2.link}>
+									<UiLink key={idx2} to={el2.link} isExt={el2.isExt}>
 										{el2.name}
 									</UiLink>
 								))}
@@ -107,13 +107,18 @@ const Header = ({ siteTitle }) => (
 );
 
 const UiLink = props => {
-	const { to, ...rest } = props;
+	const { to, isExt, ...rest } = props;
 	if (to && to.startsWith("/")) {
-		return <Link {...props}>{props.children}</Link>;
+		return <Link {...rest}>{props.children}</Link>;
+	}
+
+	let target = {};
+	if (isExt) {
+		target.target = "_blank";
 	}
 
 	return (
-		<a {...rest} href={to}>
+		<a {...rest} href={to} {...target}>
 			{props.children}
 		</a>
 	);
