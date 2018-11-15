@@ -50,13 +50,10 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 										<Link to="/how-it-works">How it Works</Link>
 									</li>
 									<li>
-										<Link>About</Link>
-									</li>
-									<li>
 										<Link to="/team">Team</Link>
 									</li>
 									<li>
-										<Link>Developers</Link>
+										<a href="https://developer.havven.io/" target="_blank">Developers</a>
 									</li>
 								</ul>
 							</div>
