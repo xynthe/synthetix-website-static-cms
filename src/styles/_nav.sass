@@ -1,4 +1,24 @@
 @import "bulma/utilities/_all"
+@import "bulma/components/navbar"
+
+.navbar
+  .dropdown.navbar-item
+    background-color: transparent
+  .dropdown-menu
+    left: 50%
+    transform: translateX(-50%)
+    margin-top: -10px
+    a
+      display: block
+      text-align: center
+      padding: 2px 0
+
+
+.navbar-end
+  .dropdown
+    @extend .navbar-item
+    padding: 5px
+
 
 .navbar-item img
   max-height: unset

@@ -31,12 +31,14 @@
     {
       "fullName": "Charlie Karaboga",
       "title": "Head of Product",
-      "bio": "Charlie has a background in senior product management in both emerging and developed markets. He has managed several international launches for products with millions of users."
+      "bio": "Charlie has a background in senior product management in both emerging and developed markets. He has managed several international launches for products with millions of users.",
+      "image": "/img/charlie.png"
     },
     {
       "fullName": "Mikael Sundelind",
       "title": "VP Operations",
-      "bio": "Mikael has worked in director-level positions at Unibet and MyLotto24, focusing on corporate strategy and marketing/sales."
+      "bio": "Mikael has worked in director-level positions at Unibet and MyLotto24, focusing on corporate strategy and marketing/sales.",
+      "image": "/img/mikael_sundelin.png"
     },
     {
       "fullName": "Garth Travers",
