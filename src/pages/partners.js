@@ -90,7 +90,7 @@ const PartnersPage = () => (
 								developers to build on top of the Havven Network.
 							</div>
 							<a
-								href="#developer-hub"
+								href="https://developer.havven.io/" target="_blank"
 								className="is-button is-blue is-wide is-subtle is-center mb-20"
 							>
 								View our Developer Hub

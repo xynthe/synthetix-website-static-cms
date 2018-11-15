@@ -111,7 +111,7 @@ class IndexPage extends React.Component {
 					</div>
 					<CodeBox />
 					<div className="has-text-centered">
-						<a href="#developer-hub" className="is-button is-blue is-wide is-subtle">
+						<a href="https://developer.havven.io/" target="_blank" className="is-button is-blue is-wide is-subtle">
 							View our Developer Hub
 						</a>
 					</div>
@@ -120,16 +120,6 @@ class IndexPage extends React.Component {
 					<div className="section-title is-large">Get rewarded for maintaining stability</div>
 					<div className="section-desc pb-70">Become a part of the Havven Network today.</div>
 					<div className="columns is-centered get-rewarded-boxes">
-						<div className="column">
-							<div className="c-top">
-								<img src={icoUser1} alt="For new users" />
-								<div className="p1 blue">For New Users</div>
-							</div>
-							<div className="c-bottom">
-								<div className="p2 blue">Swappr</div>
-								<div className="p3">Easily swap your ETH for HAV or nUSD</div>
-							</div>
-						</div>
 						<div className="column">
 							<div className="c-top">
 								<img src={icoUser2} alt="For new and experienced users" />
@@ -142,6 +132,16 @@ class IndexPage extends React.Component {
 								<div className="p3">
 									Get a full overview of the Havven network, including where to buy HAV and nomins
 								</div>
+							</div>
+						</div>
+						<div className="column">
+							<div className="c-top">
+								<img src={icoUser1} alt="For new users" />
+								<div className="p1 blue">For New Users</div>
+							</div>
+							<div className="c-bottom">
+								<div className="p2 blue">Swappr</div>
+								<div className="p3">Easily swap your ETH for HAV or nUSD</div>
 							</div>
 						</div>
 						<div className="column">
@@ -161,7 +161,7 @@ class IndexPage extends React.Component {
 				<section className="section is-grey is-padded">
 					<div className="section-title">Our stablecoins are decentralised</div>
 					<div className="section-desc mb-80">
-						Nomins, the stablecoins powering the Havven Network, are completely decentralised and
+						Nomins, the stablecoins powering the Havven network, are completely decentralised and
 						trustless.
 					</div>
 					<div className="columns is-centered feature-boxes">
