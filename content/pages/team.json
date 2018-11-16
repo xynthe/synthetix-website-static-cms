@@ -42,7 +42,7 @@
       "title": "VP Operations",
       "bio": "Mikael has worked in director-level positions at Unibet and MyLotto24, focusing on corporate strategy and marketing/sales.",
       "linkedInUrl": "https://www.linkedin.com/in/mikaelsundelin/",
-      "image": "/img/mikael_sundelin.png"
+      "image": "/img/mikael.png"
     },
     {
       "fullName": "Garth Travers",
@@ -57,6 +57,12 @@
       "bio": "Bio coming soon",
       "linkedInUrl": "https://www.linkedin.com/in/clementbalestrat/",
       "image": "/img/clem.png"
+    },
+    {
+      "fullName": "Meagan Bruce",
+      "title": "Executive Assistant",
+      "linkedInUrl": "https://www.linkedin.com/in/meagan-bruce-93a800120/",
+      "image": "/img/meagan_bruce.png"
     }
   ]
 }
