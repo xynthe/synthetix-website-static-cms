@@ -1,14 +1,14 @@
 import React from "react";
 import "./index.sass";
 import Layout from "../components/layout";
-import "./partners.sass";
+import "./partner-with-us.sass";
 import icoTriangle from "../resources/ico-triangle.svg";
 import icoShield from "../resources/ico-shield.svg";
 import icoEye from "../resources/ico-eye.svg";
 
 const PartnersPage = () => (
 	<Layout>
-		<div className="partners-page">
+		<div className="partner-with-us-page">
 			<section className="section header-section">
 				<div className="container">
 					<h1 className="page-title">Leave stability to the experts</h1>
