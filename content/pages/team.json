@@ -64,6 +64,12 @@
       "linkedInUrl": "https://www.linkedin.com/in/meagan-bruce-93a800120/",
       "image": "/img/meagan_bruce.png"
     },
-    {}
+    {
+      "fullName": "Matt Vernon",
+      "title": "Designer",
+      "bio": "Matt is a freelance Product Designer, aiming to bring great UX and design to decentralised applications.",
+      "linkedInUrl": "https://www.linkedin.com/in/matthew-vernon-7394b597/",
+      "image": "/img/matt_vernon.png"
+    }
   ]
 }
