@@ -73,11 +73,11 @@ class IndexPage extends React.Component {
 										this.startVideo();
 									}}
 								>
-									<img src={icoPlay} className="is-icon" alt="How it works" /> How it works
+									<img src={icoPlay} className="is-icon" alt="Intro" /> Intro
 								</a>
 							</div>
 							<div className="column is-narrow has-text-centered">
-								<Link to="/contact-us" className="is-button is-simple is-wide">
+								<Link to="/contact-us" className="is-button is-simple">
 									Contact Us
 								</Link>
 							</div>
@@ -121,7 +121,7 @@ class IndexPage extends React.Component {
 					<div className="section-title is-large">Get rewarded for maintaining stability</div>
 					<div className="section-desc pb-70">Become a part of the Havven Network today.</div>
 					<div className="columns is-centered get-rewarded-boxes">
-						<div className="column">
+						<a className="column" href="https://dashboard.havven.io/" target="_blank">
 							<div className="c-top">
 								<img src={icoUser2} alt="For new and experienced users" />
 								<div className="p1 red">
@@ -134,8 +134,8 @@ class IndexPage extends React.Component {
 									Get a full overview of the Havven network, including where to buy HAV and nomins
 								</div>
 							</div>
-						</div>
-						<div className="column">
+						</a>
+						<a className="column" href="https://swappr.io/" target="_blank">
 							<div className="c-top">
 								<img src={icoUser1} alt="For new users" />
 								<div className="p1 blue">For New Users</div>
@@ -144,8 +144,8 @@ class IndexPage extends React.Component {
 								<div className="p2 blue">Swappr</div>
 								<div className="p3">Easily swap your ETH for HAV or nUSD</div>
 							</div>
-						</div>
-						<div className="column">
+						</a>
+						<a className="column" href="https://mintr.havven.io/" target="_blank">
 							<div className="c-top">
 								<img src={icoUser3} alt="For experienced users" />
 								<div className="p1 green">For Experienced Users</div>
@@ -156,7 +156,7 @@ class IndexPage extends React.Component {
 									Use your HAV holdings to Mint nUSD and collect fees from the Havven Network.
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 				</section>
 				<section className="section is-grey is-padded">
