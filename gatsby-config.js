@@ -21,6 +21,15 @@ module.exports = {
 				name: "content"
 			}
 		},
+		{
+			resolve: "gatsby-plugin-robots-txt",
+			options: {
+				host: "https://havven.io",
+				sitemap: "https://havven.io/assets/sitemap.xml",
+				policy: [{ userAgent: "*", allow: "/" }]
+			}
+		},
+		`gatsby-plugin-sitemap`,
 		"gatsby-transformer-json",
 		"gatsby-plugin-react-helmet",
 		{
