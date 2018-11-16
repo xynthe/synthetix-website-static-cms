@@ -10,7 +10,7 @@ let menu = [
 		isExt: false,
 		children: [
 			{ name: "Team", link: "/team", isExt: false },
-			{ name: "Partner with us", link: "/partners", isExt: false }
+			{ name: "Partner with us", link: "/partner-with-us", isExt: false }
 		]
 	},
 	{
@@ -21,7 +21,7 @@ let menu = [
 			{ name: "Dev Portal", link: "https://developer.havven.io/api/docs/home.html", isExt: true },
 			{ name: "Havven-JS Lib", link: "https://havvenjs.havven.io/", isExt: true },
 			{
-				name: "ABIs",
+				name: "Contracts",
 				link: "https://developer.havven.io/api/docs/deployed-contracts.html",
 				isExt: true
 			}
@@ -32,7 +32,9 @@ let menu = [
 		link: "",
 		isExt: false,
 		children: [
-			{ name: "Whitepaper", link: "https://havven.io/uploads/havven_whitepaper.pdf", isExt: true }
+			{ name: "Whitepaper", link: "https://havven.io/uploads/havven_whitepaper.pdf", isExt: true },
+			{ name: "Blog", link: "https://blog.havven.io/", isExt: true },
+			{ name: "How It Works ", link: "/how-it-works", isExt: false }
 		]
 	},
 	{
