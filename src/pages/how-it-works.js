@@ -37,7 +37,7 @@ export default class HowItWorksPage extends React.Component {
 				<div className="how-it-works-page">
 					<section className="section header-section">
 						<div className="container">
-							<h1 className="page-title">How Havven Works</h1>
+							<h1 className="page-title">How It Works</h1>
 							<div className="page-subtitle">
 								There are two tokens in the Havven payment network: HAV, the collateral token, and
 								nomins, our stablecoin.
@@ -53,13 +53,13 @@ export default class HowItWorksPage extends React.Component {
 										this.startVideo();
 									}}
 								>
-									<img src={icoPlay} className="is-icon" alt="How it works" /> Intro Video
+									<img src={icoPlay} className="is-icon" alt="How it works" /> Intro
 								</a>
 							</div>
 							<div className="column is-narrow has-text-centered">
 								<a to="#how-nomins-are-minted" className="is-button is-white is-subtle-alt">
 									<img src={icoPlayDark} className="is-icon" alt="How nomins are minted" /> How
-									Nomins are Minted
+									nomins are minted
 								</a>
 							</div>
 						</div>
@@ -70,7 +70,7 @@ export default class HowItWorksPage extends React.Component {
 								<div className="step-number-title pb-40">STEP ONE</div>
 								<div className="step-title pb-40">Lock HAV as collateral</div>
 								<div className="step-desc pb-50">
-									HAV holders lock their HAV as collateral to back nUSD, our stablecoin.
+									HAV holders lock their HAV as collateral to back nomins, our stablecoin.
 								</div>
 								<img src={icoLock} alt="Step One" />
 							</div>
@@ -89,7 +89,7 @@ export default class HowItWorksPage extends React.Component {
 						<div className="container step-3 pb-90">
 							<div className="pt-80">
 								<div className="step-number-title pb-40">STEP THREE</div>
-								<div className="step-title pb-40">Reward HAV holders</div>
+								<div className="step-title pb-40">Receive reward as HAV holder</div>
 								<div className="step-desc pb-50">
 									Circulating nomins generate transaction fees that are distributed to HAV holders,
 									rewarding them for providing stability.
