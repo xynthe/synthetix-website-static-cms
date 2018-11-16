@@ -17,15 +17,17 @@
       width: 50%
 
   .header-section
+    $min-height: 350px
     text-align: center
-    min-height: 500px
-    background-color: #0f0833
-    background-image: url("../resources/bg-wave-01.svg")
+    background-color: #0D0A31
+    background-image: url("../resources/bg-wave-long.svg")
     background-size: 100% auto
     background-repeat: no-repeat
     background-position-y: 100%
     +tablet
-      min-height: 870px
+      min-height: $min-height*2.2
+    +desktop
+      min-height: $min-height*2.7
 
   .st-1
     color: #0D0A31

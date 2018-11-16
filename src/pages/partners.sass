@@ -2,17 +2,23 @@
 @import "../styles/partials"
 
 .partners-page
+
   .header-section
-    min-height: 500px
-    background-color: #fff
-    background-image: url("../resources/bg-meet-the-team.svg")
+    $min-height: 200px
+    text-align: center
+    background-color: #0D0A31
+    background-image: url("../resources/bg-wave-short.svg")
     background-size: 100% auto
     background-repeat: no-repeat
     background-position-y: 100%
+    +tablet
+      min-height: $min-height*2
+    +desktop
+      min-height: $min-height*2.4
 
-    .page-subtitle
-      +tablet
-        width: 800px
+  .page-subtitle
+    +tablet
+      width: 800px
 
   .sp1
     color: #0D0A31
