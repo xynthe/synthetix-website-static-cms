@@ -45,13 +45,10 @@ const TeamPage = ({ data }) => {
 						<div className="section-title is-subtle pb-30">Open Positions</div>
 						<div className="columns open-positions pb-60">
 							<div className="column">
-								<div>Senior Blockchain Engineer</div>
+								<div>Blockchain Engineer</div>
 							</div>
 							<div className="column">
-								<div>Head of Marketing and Communication</div>
-							</div>
-							<div className="column">
-								<div>Creative Director</div>
+								<div>Full Stack Developer</div>
 							</div>
 						</div>
 						<div className="section-desc join-team-desc">
