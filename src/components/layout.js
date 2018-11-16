@@ -21,7 +21,7 @@ const mobileCheck = () => {
 			)
 		)
 			check = true;
-	})(navigator.userAgent || navigator.vendor || window.opera);
+	})(window.navigator.userAgent || window.navigator.vendor || window.opera);
 	return check;
 };
 
