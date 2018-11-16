@@ -8,6 +8,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import favicon from "../resources/favicon.ico";
 
+let siteUrl = process.env.SITE_URL || "https://havven.io";
+
 const Layout = ({ children }) => (
 	<StaticQuery
 		query={graphql`
@@ -40,7 +42,7 @@ const Layout = ({ children }) => (
 					>
 						<html lang="en" />
 						<meta property="og:type" content="website" />
-						<meta property="og:image" content={withPrefix(ogImage)} />
+						<meta property="og:image" content={siteUrl + withPrefix(ogImage)} />
 						<meta property="og:description" content={description} />
 					</Helmet>
 					<Header siteTitle={title} />
