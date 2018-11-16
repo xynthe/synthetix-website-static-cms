@@ -9,29 +9,31 @@ import icoCoins from "../resources/ico-coins.svg";
 import icoHandout from "../resources/ico-handout.svg";
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
+const HOW_IT_WORKS = "howItWorks";
+const HOW_NOMINS_ARE_MINTED = "howNominsAreMinted";
 
 export default class HowItWorksPage extends React.Component {
 	state = {
 		isOpen: false
 	};
 
-	player = null;
+	howItWorks = null;
+	howNominsAreMinted = null;
 
-	startVideo() {
-		this.player = new Player("video-how-it-works", {
-			id: 254987969,
+	startVideo(playerId) {
+		this[playerId] = new Player(playerId, {
+			id: playerId === HOW_IT_WORKS ? 254987969 : 287966988,
 			width: 640
 		});
-
-		this.player.play();
+		this[playerId].play();
 	}
 
-	pauseVideo() {
-		if (this.player) this.player.pause();
+	pauseVideo(playerId) {
+		if (this[playerId]) this[playerId].pause();
 	}
 
 	render() {
-		let { isOpen } = this.state;
+		let { isOpen, playerId } = this.state;
 		return (
 			<Layout>
 				<div className="how-it-works-page">
@@ -49,15 +51,28 @@ export default class HowItWorksPage extends React.Component {
 									href="javascript:void(0)"
 									className="is-button is-blue is-subtle-alt"
 									onClick={() => {
-										this.setState({ isOpen: true });
-										this.startVideo();
+										this.setState({
+											isOpen: true,
+											playerId: HOW_IT_WORKS
+										});
+										this.startVideo(HOW_IT_WORKS);
 									}}
 								>
 									<img src={icoPlay} className="is-icon" alt="How it works" /> Intro
 								</a>
 							</div>
 							<div className="column is-narrow has-text-centered">
-								<a to="#how-nomins-are-minted" className="is-button is-white is-subtle-alt">
+								<a
+									href="javascript:void(0)"
+									className="is-button is-white is-subtle-alt"
+									onClick={() => {
+										this.setState({
+											isOpen: true,
+											playerId: HOW_NOMINS_ARE_MINTED
+										});
+										this.startVideo(HOW_NOMINS_ARE_MINTED);
+									}}
+								>
 									<img src={icoPlayDark} className="is-icon" alt="How nomins are minted" /> How
 									nomins are minted
 								</a>
@@ -100,14 +115,33 @@ export default class HowItWorksPage extends React.Component {
 					</section>
 				</div>
 				<Modal
-					isOpen={isOpen}
+					isOpen={isOpen && playerId === HOW_IT_WORKS}
 					onRequestClose={() => {
 						this.setState({ isOpen: false });
-						this.pauseVideo();
+						this.pauseVideo(playerId);
 					}}
 					className="is-video"
 				>
-					<div data-vimeo-id="254987969" data-vimeo-width="840" id="video-how-it-works" />
+						<div
+							data-vimeo-id="254987969"
+							data-vimeo-width="840"
+							id={HOW_IT_WORKS}
+						/>
+
+				</Modal>
+				<Modal
+					isOpen={isOpen && playerId === HOW_NOMINS_ARE_MINTED}
+					onRequestClose={() => {
+						this.setState({ isOpen: false });
+						this.pauseVideo(playerId);
+					}}
+					className="is-video"
+				>
+					<div
+						data-vimeo-id="287966988"
+						data-vimeo-width="840"
+						id={HOW_NOMINS_ARE_MINTED}
+					/>
 				</Modal>
 			</Layout>
 		);
