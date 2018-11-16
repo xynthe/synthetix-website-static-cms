@@ -50,13 +50,7 @@ class IndexPage extends React.Component {
 				<div className="home-page">
 					<section className="section pb-30">
 						<div className="container">
-							<div className="has-text-centered pb-30">
-								<Link to="/eosio" className="is-button is-announcement">
-									<span>NEW</span>
-									<span>Don’t miss out on receiving HAVeos!</span>
-								</Link>
-							</div>
-							<h1 className="page-title">Payments for dApps</h1>
+							<h1 className="page-title">Powering payments for dApps</h1>
 							<div className="page-subtitle">
 								Havven enables stable, censorship resistant payments for dApps in multiple
 								currencies. Our stablecoins are backed by a network of eighty thousand token holders
@@ -82,9 +76,15 @@ class IndexPage extends React.Component {
 									</Link>
 								</div>
 							</div>
+							<div className="has-text-centered pb-10">
+								<Link to="/eosio" className="is-button is-announcement">
+									<span>NEW</span>
+									<span>Havven launching on EOSIO</span>
+								</Link>
+							</div>
 						</div>
 					</section>
-					<section className="section currency-section pb-110 pt-70">
+					<section className="section currency-section pb-110 pt-30">
 						<div className="container">
 							<div className="columns is-centered currency-row">
 								{currencies.slice(0, 3).map(el => (
