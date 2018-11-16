@@ -38,7 +38,7 @@
       "image": "/img/charlie.png"
     },
     {
-      "fullName": "Mikael Sundelind",
+      "fullName": "Mikael Sundelin",
       "title": "VP Operations",
       "bio": "Mikael has worked in director-level positions at Unibet and MyLotto24, focusing on corporate strategy and marketing/sales.",
       "linkedInUrl": "https://www.linkedin.com/in/mikaelsundelin/",
@@ -63,6 +63,7 @@
       "title": "Executive Assistant",
       "linkedInUrl": "https://www.linkedin.com/in/meagan-bruce-93a800120/",
       "image": "/img/meagan_bruce.png"
-    }
+    },
+    {}
   ]
 }
