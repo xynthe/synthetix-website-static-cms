@@ -32,9 +32,10 @@ const Layout = ({ children }) => (
 			let { title, keywords, description, ogImage } = data.site.siteMetadata;
 			return (
 				<>
-					<Helmet title={title} link={[{ rel: "shortcut icon", href: `${favicon}` }]}>
+					<Helmet title={title}>
 						<html lang="en" />
 						<meta name="description" content={description} />
+						<link rel="icon shortcut" type="image/x-icon" href={favicon} />
 						<meta name="keywords" content={keywords} />
 						<meta property="og:type" content="website" />
 						<meta property="og:image" content={siteUrl + withPrefix(ogImage)} />

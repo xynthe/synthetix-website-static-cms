@@ -69,53 +69,56 @@ export default class HowItWorksPage extends React.Component {
 						</div>
 						<div className="columns is-centered">
 							<div className="column is-narrow has-text-centered">
-								{ !isMobile ? (<a
-									href="javascript:void(0)"
-									className="is-button is-blue is-subtle-alt"
-									onClick={() => {
-										this.setState({
-											isOpen: true,
-											playerId: HOW_IT_WORKS
-										});
-										this.startVideo(HOW_IT_WORKS);
-									}}
-								>
-									<img src={icoPlay} className="is-icon" alt="Intro" /> Intro
-								</a>)
-									:
-									(<a
+								{!isMobile ? (
+									<a
+										href="javascript:void(0)"
+										className="is-button is-blue is-subtle-alt"
+										onClick={() => {
+											this.setState({
+												isOpen: true,
+												playerId: HOW_IT_WORKS
+											});
+											this.startVideo(HOW_IT_WORKS);
+										}}
+									>
+										<img src={icoPlay} className="is-icon" alt="Intro" /> Intro
+									</a>
+								) : (
+									<a
 										href="https://vimeo.com/254987969"
 										target="_blank"
 										className="is-button is-blue is-subtle-alt"
 									>
 										<img src={icoPlay} className="is-icon" alt="Intro" /> Intro
-									</a>)
-								}
+									</a>
+								)}
 							</div>
 							<div className="column is-narrow has-text-centered">
-								{ !isMobile ? (<a
-									href="javascript:void(0)"
-									className="is-button is-white is-subtle-alt"
-									onClick={() => {
-										this.setState({
-											isOpen: true,
-											playerId: HOW_NOMINS_ARE_MINTED
-										});
-										this.startVideo(HOW_NOMINS_ARE_MINTED);
-									}}
-								>
-									<img src={icoPlayDark} className="is-icon" alt="How nomins are minted" /> How
-									nomins are minted
-								</a>)
-								:
-									(<a
+								{!isMobile ? (
+									<a
+										href="javascript:void(0)"
+										className="is-button is-white is-subtle-alt"
+										onClick={() => {
+											this.setState({
+												isOpen: true,
+												playerId: HOW_NOMINS_ARE_MINTED
+											});
+											this.startVideo(HOW_NOMINS_ARE_MINTED);
+										}}
+									>
+										<img src={icoPlayDark} className="is-icon" alt="How nomins are minted" /> How
+										nomins are minted
+									</a>
+								) : (
+									<a
 										href="https://vimeo.com/287966988"
 										target="_blank"
 										className="is-button is-white is-subtle-alt"
 									>
-										<img src={icoPlay} className="is-icon" alt="How nomins are minted" /> How
-										nomins are minted
-									</a>)}
+										<img src={icoPlay} className="is-icon" alt="How nomins are minted" /> How nomins
+										are minted
+									</a>
+								)}
 							</div>
 						</div>
 					</section>
@@ -162,12 +165,7 @@ export default class HowItWorksPage extends React.Component {
 					}}
 					className="is-video"
 				>
-						<div
-							data-vimeo-id="254987969"
-							data-vimeo-width="840"
-							id={HOW_IT_WORKS}
-						/>
-
+					<div data-vimeo-id="254987969" data-vimeo-width="840" id={HOW_IT_WORKS} />
 				</Modal>
 				<Modal
 					isOpen={isOpen && playerId === HOW_NOMINS_ARE_MINTED}
@@ -177,11 +175,7 @@ export default class HowItWorksPage extends React.Component {
 					}}
 					className="is-video"
 				>
-					<div
-						data-vimeo-id="287966988"
-						data-vimeo-width="840"
-						id={HOW_NOMINS_ARE_MINTED}
-					/>
+					<div data-vimeo-id="287966988" data-vimeo-width="840" id={HOW_NOMINS_ARE_MINTED} />
 				</Modal>
 			</Layout>
 		);
