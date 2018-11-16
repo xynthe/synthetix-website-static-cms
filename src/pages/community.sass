@@ -8,12 +8,8 @@
 
   .header-section
     $min-height: 200px
-    text-align: center
-    background-color: #0D0A31
+    @extend %wave-bg
     background-image: url("../resources/bg-wave-long.svg")
-    background-size: 100% auto
-    background-repeat: no-repeat
-    background-position-y: 100%
     +tablet
       min-height: $min-height*2.2
     +desktop
