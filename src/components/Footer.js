@@ -53,7 +53,9 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 										<Link to="/team">Team</Link>
 									</li>
 									<li>
-										<a href="https://developer.havven.io/" target="_blank">Developers</a>
+										<a href="https://developer.havven.io/" target="_blank">
+											Developers
+										</a>
 									</li>
 								</ul>
 							</div>
