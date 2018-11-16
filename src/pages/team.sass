@@ -7,14 +7,14 @@
       width: 430px
 
   .header-section
-    min-height: 300px
-    background-color: #0f0833
-    background-image: url("../resources/bg-wave-01.svg")
-    background-size: 100% auto
-    background-repeat: no-repeat
-    background-position-y: 100%
+    $min-height: 200px
+    background-image: url("../resources/bg-wave-long.svg")
+    @extend %wave-bg
     +tablet
-      min-height: 450px
+      min-height: $min-height*2.2
+    +desktop
+      min-height: $min-height*2.7
+
 
   .team-members
     background-color: #fff

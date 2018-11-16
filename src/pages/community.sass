@@ -7,12 +7,13 @@
       width: 500px
 
   .header-section
-    min-height: 550px
-    background-color: #fff
-    background-image: url("../resources/bg-meet-the-team.svg")
-    background-size: 100% auto
-    background-repeat: no-repeat
-    background-position-y: 100%
+    $min-height: 200px
+    @extend %wave-bg
+    background-image: url("../resources/bg-wave-long.svg")
+    +tablet
+      min-height: $min-height*2.2
+    +desktop
+      min-height: $min-height*2.7
 
   .s-title
     color: #0D0A31
