@@ -63,11 +63,11 @@ class IndexPage extends React.Component {
 							around the world.
 						</div>
 
-						<div className="columns is-centered">
+						<div className="columns is-centered main-buttons">
 							<div className="column is-narrow has-text-centered">
 								<a
 									href="javascript:void(0)"
-									className="is-button is-blue is-subtle-alt"
+									className="is-button is-subtle-alt is-blue main-button"
 									onClick={() => {
 										this.setState({ isOpen: true });
 										this.startVideo();
@@ -77,7 +77,7 @@ class IndexPage extends React.Component {
 								</a>
 							</div>
 							<div className="column is-narrow has-text-centered">
-								<Link to="/contact-us" className="is-button is-simple">
+								<Link to="/contact-us" className="is-button is-simple main-button">
 									Contact Us
 								</Link>
 							</div>
