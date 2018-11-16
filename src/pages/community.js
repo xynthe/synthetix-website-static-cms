@@ -61,19 +61,6 @@ const CommunityPage = ({ data }) => {
 						</div>
 					</div>
 				</section>
-				<section className="section is-blue subscribe-section pt-110 pb-130">
-					<div className="container">
-						<div className="sub-title pb-30">Subscribe to the Havven Mailing List</div>
-						<div className="columns sub-inputs">
-							<div className="column is-narrow">
-								<input type="text" className="input" placeholder="Enter your Email Address" />
-							</div>
-							<div className="column is-narrow">
-								<button className="is-button is-blue">Subscribe</button>
-							</div>
-						</div>
-					</div>
-				</section>
 			</div>
 		</Layout>
 	);

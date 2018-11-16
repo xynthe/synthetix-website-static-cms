@@ -50,7 +50,7 @@ class IndexPage extends React.Component {
 				<div className="home-page">
 					<section className="section pb-30">
 						<div className="container">
-							<h1 className="page-title">Powering payments for dApps</h1>
+							<h1 className="page-title">Powering payments<br /> for dApps</h1>
 							<div className="page-subtitle">
 								Havven enables stable, censorship resistant payments for dApps in multiple
 								currencies. Our stablecoins are backed by a network of eighty thousand token holders
