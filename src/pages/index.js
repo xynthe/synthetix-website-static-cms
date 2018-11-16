@@ -13,13 +13,14 @@ import icoPlay from "../resources/ico-play.svg";
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
 
+const bottomLabelTx = "Q4 2018";
 const currencies = [
 	{ nCurrency: "nUSD", currency: "USD", currencyNumber: "$1.00" },
-	{ nCurrency: "nEUR", currency: "EURO", currencyNumber: "€1.00" },
-	{ nCurrency: "nJPY", currency: "YEN", currencyNumber: "¥1.00" },
-	{ nCurrency: "nAUD", currency: "AUD", currencyNumber: "$1.00" },
-	{ nCurrency: "nKRW", currency: "WON", currencyNumber: "₩1.00" },
-	{ nCurrency: "nXAU", currency: "ounce/gold", currencyNumber: "1.00" }
+	{ nCurrency: "nEUR", currency: "EURO", currencyNumber: "€1.00", bottomLabel: bottomLabelTx },
+	{ nCurrency: "nJPY", currency: "YEN", currencyNumber: "¥1.00", bottomLabel: bottomLabelTx },
+	{ nCurrency: "nAUD", currency: "AUD", currencyNumber: "$1.00", bottomLabel: bottomLabelTx },
+	{ nCurrency: "nKRW", currency: "WON", currencyNumber: "₩1.00", bottomLabel: bottomLabelTx },
+	{ nCurrency: "nXAU", currency: "ounce/gold", currencyNumber: "1.00", bottomLabel: bottomLabelTx }
 ];
 
 class IndexPage extends React.Component {
