@@ -34,8 +34,8 @@ const Layout = ({ children }) => (
 				<>
 					<Helmet title={title} link={[{ rel: "shortcut icon", href: `${favicon}` }]}>
 						<html lang="en" />
-						<meta property="description" content={description} />
-						<meta property="keywords" content={keywords} />
+						<meta name="description" content={description} />
+						<meta name="keywords" content={keywords} />
 						<meta property="og:type" content="website" />
 						<meta property="og:image" content={siteUrl + withPrefix(ogImage)} />
 						<meta property="og:description" content={description} />
