@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, withPrefix } from "gatsby";
 import "../styles/bulma/bulma.sass";
 import "../styles/main.sass";
 import Header from "./Header";
@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
 					>
 						<html lang="en" />
 						<meta property="og:type" content="website" />
-						<meta property="og:image" content={ogImage} />
+						<meta property="og:image" content={withPrefix(ogImage)} />
 						<meta property="og:description" content={description} />
 					</Helmet>
 					<Header siteTitle={title} />
