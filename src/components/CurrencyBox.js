@@ -10,7 +10,7 @@ const CurrencyBox = ({nCurrency,currency,currencyNumber, bottomLabel}) => {
         <img src={dotSrc} className="currency-dot" />
         <div className="currency-label-1">{nCurrency}</div>
         <div className="currency-label-2"><span>{currencyNumber}</span><span>{currency}</span></div>
-        <img src={lineSrc} className="currency-line" />{bottomLabel && <div className="bottom-label-tx"><span>{bottomLabel}</span></div>}
+      {bottomLabel ? <div className="bottom-label-tx"><span>{bottomLabel}</span></div> : <img src={lineSrc} className="currency-line" />}
     </div>
   );
 };

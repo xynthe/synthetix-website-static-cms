@@ -1,11 +1,11 @@
 {
-  "keywords": "Keywords",
-  "description": "Site Description",
-  "title": "Havven | Website",
-  "twitterUrl": "https://twitter.com/havven_io",
-  "mediumUrl": "https://blog.havven.io/",
   "discordUrl": "https://discordapp.com/invite/AEdUHzt",
-  "telegramUrl": "",
-  "redditUrl": "",
-  "ogImage": ""
+  "ogImage": "/img/opengraph.png",
+  "keywords": "Keywords",
+  "telegramUrl": "https://t.me/havven_news",
+  "redditUrl": "https://reddit.com/r/havven",
+  "title": "Havven | Website",
+  "mediumUrl": "https://blog.havven.io/",
+  "twitterUrl": "https://twitter.com/havven_io",
+  "description": "Site Description"
 }

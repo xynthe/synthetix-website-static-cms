@@ -33,7 +33,7 @@
     {
       "fullName": "Charlie Karaboga",
       "title": "Head of Product",
-      "bio": "Charlie has a background in senior product management in both emerging and developed markets. He has managed several international launches for products with millions of users.",
+      "bio": "Charlie has over 10 years experience in leading product and delivery teams in Europe and Australia.. He has managed several international launches for products with millions of users.",
       "linkedInUrl": "https://www.linkedin.com/in/ckaraboga/",
       "image": "/img/charlie.png"
     },
@@ -52,9 +52,9 @@
       "image": "/img/garth_travers.png"
     },
     {
-      "fullName": "Clement Balestrat",
+      "fullName": "Clément Balestrat",
       "title": "dApp Engineer",
-      "bio": "",
+      "bio": "Clément completed his Masters in Maths and Computer Science before finding his passion in the start-up world. He has a strong background in full-stack engineering and crypto.",
       "linkedInUrl": "https://www.linkedin.com/in/clementbalestrat/",
       "image": "/img/clem.png"
     },
@@ -70,42 +70,6 @@
       "bio": "Matt is a freelance Product Designer, aiming to bring great UX and design to decentralised applications.",
       "linkedInUrl": "https://www.linkedin.com/in/matthew-vernon-7394b597/",
       "image": "/img/matt_vernon.png"
-    },
-    {
-      "fullName": "Jackson Chan",
-      "title": "Senior Blockchain Engineer",
-      "linkedInUrl": "https://www.linkedin.com/in/jackson-chan/",
-      "image": "/img/jackson-chan.png"
-    },
-    {
-      "fullName": "Kevin Brown",
-      "title": "Blockchain Engineer",
-      "linkedInUrl": "https://www.linkedin.com/in/kevinbrowntech/",
-      "image": "/img/kevin_brown.png"
-    },
-    {
-      "fullName": "Gavin Conway",
-      "title": "Blockchain Engineer",
-      "linkedInUrl": "https://www.linkedin.com/in/gavinconway/",
-      "image": "/img/gavin_conway.png"
-    },
-    {
-      "fullName": "Roman Mandryk",
-      "title": "dApp Engineer",
-      "linkedInUrl": "https://www.linkedin.com/in/roman-mandryk-b9572927/",
-      "image": "/img/roman_mandryk.png"
-    },
-    {
-      "fullName": "David Kvas",
-      "title": "dApp Engineer",
-      "linkedInUrl": "https://www.linkedin.com/in/davidkvas/",
-      "image": "/img/david_kvas.png"
-    },
-    {
-      "fullName": "Martin Torok",
-      "title": "dApp Engineer",
-      "linkedInUrl": "https://www.linkedin.com/in/martin-torok-4227a234/",
-      "image": "/img/martin_torok.png"
     }
   ]
 }
