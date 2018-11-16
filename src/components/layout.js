@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
 					>
 						<html lang="en" />
 						<meta property="og:type" content="website" />
-						<meta property="og:image" content={withPrefix(ogImage)} />
+						<meta property="og:image" content={`https://havven.io${withPrefix(ogImage)}`} />
 						<meta property="og:description" content={description} />
 					</Helmet>
 					<Header siteTitle={title} />
