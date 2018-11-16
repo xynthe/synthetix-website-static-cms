@@ -13,13 +13,14 @@ import icoPlay from "../resources/ico-play.svg";
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
 
+const bottomLabelTx = "Q4 2018";
 const currencies = [
 	{ nCurrency: "nUSD", currency: "USD", currencyNumber: "$1.00" },
-	{ nCurrency: "nEUR", currency: "EURO", currencyNumber: "€1.00" },
-	{ nCurrency: "nJPY", currency: "YEN", currencyNumber: "¥1.00" },
-	{ nCurrency: "nAUD", currency: "AUD", currencyNumber: "$1.00" },
-	{ nCurrency: "nKRW", currency: "WON", currencyNumber: "₩1.00" },
-	{ nCurrency: "nXAU", currency: "ounce/gold", currencyNumber: "1.00" }
+	{ nCurrency: "nEUR", currency: "EURO", currencyNumber: "€1.00", bottomLabel: bottomLabelTx },
+	{ nCurrency: "nJPY", currency: "YEN", currencyNumber: "¥1.00", bottomLabel: bottomLabelTx },
+	{ nCurrency: "nAUD", currency: "AUD", currencyNumber: "$1.00", bottomLabel: bottomLabelTx },
+	{ nCurrency: "nKRW", currency: "WON", currencyNumber: "₩1.00", bottomLabel: bottomLabelTx },
+	{ nCurrency: "nXAU", currency: "ounce/gold", currencyNumber: "1.00", bottomLabel: bottomLabelTx }
 ];
 
 class IndexPage extends React.Component {
@@ -50,10 +51,10 @@ class IndexPage extends React.Component {
 				<section className="section pb-30">
 					<div className="container">
 						<div className="has-text-centered pb-30">
-							<a href="https://dashboard.havven.io" className="is-button is-announcement">
+							<Link to="/eosio" className="is-button is-announcement">
 								<span>NEW</span>
-								<span>Try the new Havven Dashboard!</span>
-							</a>
+								<span>Don’t miss out on receiving HAVeos!</span>
+							</Link>
 						</div>
 						<h1 className="page-title">Powering payments for decentralised applications.</h1>
 						<div className="page-subtitle">
@@ -72,11 +73,11 @@ class IndexPage extends React.Component {
 										this.startVideo();
 									}}
 								>
-									<img src={icoPlay} className="is-icon" alt="How it works" /> How it works
+									<img src={icoPlay} className="is-icon" alt="Intro" /> Intro
 								</a>
 							</div>
 							<div className="column is-narrow has-text-centered">
-								<Link to="/contact-us" className="is-button is-simple is-wide">
+								<Link to="/contact-us" className="is-button is-simple">
 									Contact Us
 								</Link>
 							</div>
@@ -120,7 +121,7 @@ class IndexPage extends React.Component {
 					<div className="section-title is-large">Get rewarded for maintaining stability</div>
 					<div className="section-desc pb-70">Become a part of the Havven Network today.</div>
 					<div className="columns is-centered get-rewarded-boxes">
-						<div className="column">
+						<a className="column" href="https://dashboard.havven.io/" target="_blank">
 							<div className="c-top">
 								<img src={icoUser2} alt="For new and experienced users" />
 								<div className="p1 red">
@@ -133,8 +134,8 @@ class IndexPage extends React.Component {
 									Get a full overview of the Havven network, including where to buy HAV and nomins
 								</div>
 							</div>
-						</div>
-						<div className="column">
+						</a>
+						<a className="column" href="https://swappr.io/" target="_blank">
 							<div className="c-top">
 								<img src={icoUser1} alt="For new users" />
 								<div className="p1 blue">For New Users</div>
@@ -143,8 +144,8 @@ class IndexPage extends React.Component {
 								<div className="p2 blue">Swappr</div>
 								<div className="p3">Easily swap your ETH for HAV or nUSD</div>
 							</div>
-						</div>
-						<div className="column">
+						</a>
+						<a className="column" href="https://mintr.havven.io/" target="_blank">
 							<div className="c-top">
 								<img src={icoUser3} alt="For experienced users" />
 								<div className="p1 green">For Experienced Users</div>
@@ -155,7 +156,7 @@ class IndexPage extends React.Component {
 									Use your HAV holdings to Mint nUSD and collect fees from the Havven Network.
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 				</section>
 				<section className="section is-grey is-padded">

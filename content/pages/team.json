@@ -38,7 +38,7 @@
       "image": "/img/charlie.png"
     },
     {
-      "fullName": "Mikael Sundelind",
+      "fullName": "Mikael Sundelin",
       "title": "VP Operations",
       "bio": "Mikael has worked in director-level positions at Unibet and MyLotto24, focusing on corporate strategy and marketing/sales.",
       "linkedInUrl": "https://www.linkedin.com/in/mikaelsundelin/",
@@ -54,7 +54,7 @@
     {
       "fullName": "Clement Balestrat",
       "title": "dApp Engineer",
-      "bio": "Bio coming soon",
+      "bio": "",
       "linkedInUrl": "https://www.linkedin.com/in/clementbalestrat/",
       "image": "/img/clem.png"
     },
@@ -63,6 +63,49 @@
       "title": "Executive Assistant",
       "linkedInUrl": "https://www.linkedin.com/in/meagan-bruce-93a800120/",
       "image": "/img/meagan_bruce.png"
+    },
+    {
+      "fullName": "Matt Vernon",
+      "title": "Designer",
+      "bio": "Matt is a freelance Product Designer, aiming to bring great UX and design to decentralised applications.",
+      "linkedInUrl": "https://www.linkedin.com/in/matthew-vernon-7394b597/",
+      "image": "/img/matt_vernon.png"
+    },
+    {
+      "fullName": "Jackson Chan",
+      "title": "Senior Blockchain Engineer",
+      "linkedInUrl": "https://www.linkedin.com/in/jackson-chan/",
+      "image": "/img/jackson-chan.png"
+    },
+    {
+      "fullName": "Kevin Brown",
+      "title": "Blockchain Engineer",
+      "linkedInUrl": "https://www.linkedin.com/in/kevinbrowntech/",
+      "image": "/img/kevin_brown.png"
+    },
+    {
+      "fullName": "Gavin Conway",
+      "title": "Blockchain Engineer",
+      "linkedInUrl": "https://www.linkedin.com/in/gavinconway/",
+      "image": "/img/gavin_conway.png"
+    },
+    {
+      "fullName": "Roman Mandryk",
+      "title": "dApp Engineer",
+      "linkedInUrl": "https://www.linkedin.com/in/roman-mandryk-b9572927/",
+      "image": "/img/roman_mandryk.png"
+    },
+    {
+      "fullName": "David Kvas",
+      "title": "dApp Engineer",
+      "linkedInUrl": "https://www.linkedin.com/in/davidkvas/",
+      "image": "/img/david_kvas.png"
+    },
+    {
+      "fullName": "Martin Torok",
+      "title": "dApp Engineer",
+      "linkedInUrl": "https://www.linkedin.com/in/martin-torok-4227a234/",
+      "image": "/img/martin_torok.png"
     }
   ]
 }
