@@ -1,5 +1,0 @@
-[build.environment]
-  SITE_URL = "https://havven-website.netlify.com"
-
-[context.staging.environment]
-  SITE_URL = "https://havven-website.netlify.com"
