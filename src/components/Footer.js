@@ -13,7 +13,7 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 			<div className="container">
 				<div className="columns justify-content--space-between footer-columns">
 					<div className="column is-narrow has-text-centered-mobile">
-						<img src={logo} />
+						<img src={logo} alt="Havven" />
 					</div>
 					<div className="column is-narrow">
 						<div className="columns">

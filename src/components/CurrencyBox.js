@@ -18,7 +18,7 @@ const CurrencyBox = ({ nCurrency, currency, currencyNumber, bottomLabel }) => {
 					<span>{bottomLabel}</span>
 				</div>
 			) : (
-				<img src={lineSrc} className="currency-line" />
+				<img src={lineSrc} className="currency-line" alt={nCurrency} />
 			)}
 		</div>
 	);
