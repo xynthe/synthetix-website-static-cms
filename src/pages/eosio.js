@@ -57,14 +57,14 @@ export default class IosIoPage extends React.Component {
 							exchanges
 						</div>
 						<div className="columns exchanges pb-80">
-							<a className="column" href="#kucoin" target="_blank">
+							<a className="column" href="https://www.kucoin.com/#/trade.pro/HAV-ETH/" target="_blank">
 								<img src={logoKuCoin} alt="KuCoin" />
 								<div>
 									<div>KuCoin</div>
 									<div>USDT, BTC, ETH</div>
 								</div>
 							</a>
-							<a className="column" href="#gate" target="_blank">
+							<a className="column" href="https://www.gate.io/trade/hav_eth/" target="_blank">
 								<img src={logoGate} alt="Gate.io" />
 								<div>
 									<div>Gate.io</div>
@@ -74,7 +74,7 @@ export default class IosIoPage extends React.Component {
 						</div>
 						<div className="sd-2 pb-90">
 							For more details on the HAVeos Distribution, please visit our{" "}
-							<a href={discordUrl} target="_blank">
+							<a href="https://blog.havven.io/haveos-distribution-eligibility-snapshot-dates-and-more-57d928b12c8a" target="_blank">
 								blog
 							</a>
 							, and if you have any more questions, please come join our community on{" "}
