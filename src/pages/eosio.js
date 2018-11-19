@@ -61,6 +61,7 @@ export default class IosIoPage extends React.Component {
 								className="column"
 								href="https://www.kucoin.com/#/trade.pro/HAV-ETH/"
 								target="_blank"
+								onClick={() => window.ga('send', 'pageview', '/tracking/eosio/kucoin')}
 							>
 								<img src={logoKuCoin} alt="KuCoin" />
 								<div>
@@ -68,7 +69,12 @@ export default class IosIoPage extends React.Component {
 									<div>USDT, BTC, ETH</div>
 								</div>
 							</a>
-							<a className="column" href="https://www.gate.io/trade/hav_eth/" target="_blank">
+							<a
+								className="column"
+								href="https://www.gate.io/trade/hav_eth/"
+								target="_blank"
+								onClick={() => window.ga('send', 'pageview', '/tracking/eosio/gate')}
+							>
 								<img src={logoGate} alt="Gate.io" />
 								<div>
 									<div>Gate.io</div>
