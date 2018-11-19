@@ -6,7 +6,6 @@ import "../styles/bulma/bulma.sass";
 import "../styles/main.sass";
 import Header from "./Header";
 import Footer from "./Footer";
-import favicon from "../resources/favicon.ico";
 
 let siteUrl = process.env.SITE_URL || "https://havven.io";
 
@@ -35,7 +34,6 @@ const Layout = ({ children }) => (
 					<Helmet title={title}>
 						<html lang="en" />
 						<meta name="description" content={description} />
-						<link rel="icon shortcut" type="image/x-icon" href={favicon} />
 						<meta name="keywords" content={keywords} />
 						<meta property="og:type" content="website" />
 						<meta property="og:image" content={siteUrl + withPrefix(ogImage)} />

@@ -48,7 +48,14 @@ module.exports = {
 				background_color: "#0D0A31",
 				theme_color: "#0D0A31",
 				display: "minimal-ui",
-				icon: "src/resources/logo-havven-dark.png" // This path is relative to the root of the site.
+				icon: "src/resources/favicon.png", // This path is relative to the root of the site.
+				icons: [
+					{
+						src: `/favicons/favicon.ico`,
+						sizes: `32x32`,
+						type: `image/x-icon`
+					}
+				]
 			}
 		},
 		"gatsby-plugin-offline",
