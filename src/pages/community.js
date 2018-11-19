@@ -10,11 +10,33 @@ import icoTelegram from "../resources/logo-telegram-dark.svg";
 
 class CommunityPage extends React.Component {
 	state = {
-		showThanks: false
+		showThanks: false,
+		emailAddress: ""
 	};
 
-	showThanks = () => {
+	handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+	submitEmail = e => {
+		e.preventDefault();
+		const {  emailAddress } = this.state;
+		if (!emailAddress) return;
+		fetch("/", {
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: this.encode({
+				"form-name": "mailing-list",
+				emailAddress: emailAddress
+			})
+		})
+			.then(() => console.log("Success!"))
+			.catch(error => console.log("error", error));
 		this.setState({ showThanks: true });
+	};
+
+	encode = data => {
+		return Object.keys(data)
+			.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+			.join("&");
 	};
 
 	render() {
@@ -25,7 +47,7 @@ class CommunityPage extends React.Component {
 			mediumUrl,
 			telegramUrl
 		} = this.props.data.site.siteMetadata;
-		const { showThanks } = this.state;
+		const { showThanks, emailAddress } = this.state;
 		return (
 			<Layout>
 				<div className="community-page">
@@ -82,27 +104,30 @@ class CommunityPage extends React.Component {
 							{!showThanks ? (
 								<Fragment>
 									<div className="sub-title pb-30">Subscribe to the Havven Mailing List</div>
-									<div className="columns sub-inputs">
-										<div className="column is-narrow">
-											<form
-												name="mailing-list"
-												method="post"
-												data-netlify="true"
-												data-netlify-honeypot="bot-field"
-												onSubmit={() => this.showThanks}
-											>
+									<form
+										name="mailing-list"
+										method="post"
+										data-netlify="true"
+										data-netlify-honeypot="bot-field"
+										onSubmit={this.submitEmail}
+									>
+										<div className="columns sub-inputs">
+											<div className="column is-narrow">
 												<input type="hidden" name="bot-field" />
 												<input
+													name="emailAddress"
 													type="text"
 													className="input"
 													placeholder="Enter your Email Address"
+													value={emailAddress}
+													onChange={this.handleChange}
 												/>
-											</form>
+											</div>
+											<div className="column is-narrow">
+												<button className="is-button is-blue">Subscribe</button>
+											</div>
 										</div>
-										<div className="column is-narrow">
-											<button className="is-button is-blue">Subscribe</button>
-										</div>
-									</div>
+									</form>
 								</Fragment>
 							) : (
 								<div className="sub-title pb-30">Thanks for Subscribing!</div>
