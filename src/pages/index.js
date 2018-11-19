@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "gatsby";
 import "./index.sass";
 import Layout from "../components/layout";
@@ -26,7 +26,9 @@ const currencies = [
 class IndexPage extends React.Component {
 	state = {
 		isOpen: false,
-		isMobile: false
+		isMobile: false,
+		showThanks: false,
+		emailAddress: ""
 	};
 
 	player = null;
@@ -59,13 +61,38 @@ class IndexPage extends React.Component {
 		return check;
 	}
 
+	handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+	submitEmail = e => {
+		e.preventDefault();
+		const { emailAddress } = this.state;
+		if (!emailAddress) return;
+		fetch("/", {
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: this.encode({
+				"form-name": "mailing-list",
+				emailAddress: emailAddress
+			})
+		})
+			.then(() => console.log("Success!"))
+			.catch(error => console.log("error", error));
+		this.setState({ showThanks: true });
+	};
+
+	encode = data => {
+		return Object.keys(data)
+			.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+			.join("&");
+	};
+
 	componentDidMount() {
 		const isMobile = this.mobileCheck();
 		this.setState({ isMobile: isMobile });
 	}
 
 	render() {
-		let { isOpen, isMobile } = this.state;
+		let { isOpen, isMobile, showThanks, emailAddress } = this.state;
 		return (
 			<Layout>
 				<div className="home-page">
@@ -229,6 +256,41 @@ class IndexPage extends React.Component {
 									Our collateral is on-chain so doesn’t require pesky third party audits.
 								</div>
 							</div>
+						</div>
+					</section>
+					<section className="section is-blue subscribe-section pt-110 pb-130">
+						<div className="container">
+							{!showThanks ? (
+								<Fragment>
+									<div className="sub-title pb-30">Subscribe to the Havven Mailing List</div>
+									<form
+										name="mailing-list"
+										method="post"
+										data-netlify="true"
+										data-netlify-honeypot="bot-field"
+										onSubmit={this.submitEmail}
+									>
+										<div className="columns sub-inputs">
+											<div className="column is-narrow">
+												<input type="hidden" name="bot-field" />
+												<input
+													name="emailAddress"
+													type="text"
+													className="input"
+													placeholder="Enter your Email Address"
+													value={emailAddress}
+													onChange={this.handleChange}
+												/>
+											</div>
+											<div className="column is-narrow">
+												<button className="is-button is-blue">Subscribe</button>
+											</div>
+										</div>
+									</form>
+								</Fragment>
+							) : (
+								<div className="sub-title pb-30">Thanks for Subscribing!</div>
+							)}
 						</div>
 					</section>
 				</div>
