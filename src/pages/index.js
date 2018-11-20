@@ -314,7 +314,7 @@ export default IndexPage;
 const CodeBox = () => (
 	<div className="ui-box is-code code-regular mb-50">
 		<span className="code-comment">
-			{"//"} Initialize havven-js library with any signer (Metamsak, Trezor, Ledger, PrivateKey
+			{"//"} Initialize havven-js library with any signer (Metamask, Trezor, Ledger, PrivateKey
 			supported)
 		</span>
 		<br />
