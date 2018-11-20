@@ -78,6 +78,13 @@
       "bio": "Martin is a software engineer with a strong full-stack development background. He has a high level of expertise in working with various technology stacks.",
       "linkedInUrl": "https://www.linkedin.com/in/martin-torok-4227a234",
       "image": "/img/martin_torok.png"
+    },
+    {
+      "fullName": "Roman Mandryk",
+      "title": "dApp Engineer",
+      "bio": "Roman has built software products for European stock exchange Deutsche Borse and several startups in Australia, focusing on fintech, blockchain and cloud innovation.",
+      "linkedInUrl": "https://www.linkedin.com/in/roman-mandryk-b9572927/",
+      "image": "/img/roman_mandryk.jpg"
     }
   ]
 }
