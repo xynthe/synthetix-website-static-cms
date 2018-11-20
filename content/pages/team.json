@@ -71,6 +71,13 @@
       "bio": "Matt is a freelance Product Designer, aiming to bring great UX and design to decentralised applications.",
       "linkedInUrl": "https://www.linkedin.com/in/matthew-vernon-7394b597/",
       "image": "/img/matt_vernon.png"
+    },
+    {
+      "fullName": "Martin Torok",
+      "title": "dApp Engineer",
+      "bio": "Martin is a software engineer with a strong full-stack development background. He has a high level of expertise in working with various technology stacks.",
+      "linkedInUrl": "https://www.linkedin.com/in/martin-torok-4227a234",
+      "image": "/img/martin_torok.png"
     }
   ]
 }
