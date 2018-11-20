@@ -82,3 +82,14 @@ collections:
     fields:
     - {label: "Page Title", name: "pageTitle", widget: "string"}
     - {label: "Page Description", name: "pageDescription", widget: "string"}
+
+- label: "Top Navigation"
+  name: "topNav"
+  folder: "content/topNav"
+  create: true
+  fields:
+  - {label: "Name", name: "title", widget: "string"}
+  - {label: "Link", name: "link", widget: "string", required: false}
+  - {label: "Is External", name: "isExt", widget: "boolean", required: false}
+  - {label: "Order", name: "order", widget: "number", required: false}
+  - {label: "Parent", name: "parent", widget: "relation", collection: "topNav", searchFields: ["title"],valueField: "title", displayFields: ["title"], required: false}
