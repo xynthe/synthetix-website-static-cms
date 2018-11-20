@@ -32,9 +32,9 @@ let menu = [
 		link: "",
 		isExt: false,
 		children: [
-			{ name: "Whitepaper", link: "https://havven.io/uploads/havven_whitepaper.pdf", isExt: true },
+			{ name: "How It Works ", link: "/how-it-works", isExt: false },
 			{ name: "Blog", link: "https://blog.havven.io/", isExt: true },
-			{ name: "How It Works ", link: "/how-it-works", isExt: false }
+			{ name: "Whitepaper", link: "https://havven.io/uploads/havven_whitepaper.pdf", isExt: true }
 		]
 	},
 	{
