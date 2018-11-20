@@ -61,6 +61,13 @@ module.exports = {
 		"gatsby-plugin-offline",
 		"gatsby-plugin-sass",
 		"gatsby-plugin-netlify-cms",
-		"gatsby-plugin-netlify"
+		"gatsby-plugin-netlify",
+		{
+			resolve: `gatsby-plugin-google-tagmanager`,
+			options: {
+				id: "GTM-N2CF6MQ",
+				includeInDevelopment: false
+			},
+		}
 	]
 };
