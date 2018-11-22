@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import Logo from "../resources/logo-havven.svg";
 import cx from "classnames";
+import { StaticQuery } from "../../.cache/gatsby-browser-entry";
 
 let menu = [
 	{

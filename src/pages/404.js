@@ -11,7 +11,10 @@ const NotFoundPage = () => {
 					<div className="container">
 						<h1 className="page-title">404 — Page not found</h1>
 						<div className="page-subtitle">
-							The page you are looking for has a different URL or no longer<br />exists.<br />
+							The page you are looking for has a different URL or no longer
+							<br />
+							exists.
+							<br />
 							Try checking the URL, using the navigation bar above, or returning to our homepage.
 						</div>
 					</div>

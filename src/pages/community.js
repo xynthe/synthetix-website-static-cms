@@ -18,7 +18,7 @@ class CommunityPage extends React.Component {
 
 	submitEmail = e => {
 		e.preventDefault();
-		const {  emailAddress } = this.state;
+		const { emailAddress } = this.state;
 		if (!emailAddress) return;
 		fetch("/", {
 			method: "POST",
