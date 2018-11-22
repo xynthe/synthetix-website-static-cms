@@ -3,6 +3,6 @@
   "key": "developers",
   "link": "",
   "isExt": false,
-  "order": 2,
-  "parent": ""
+  "order": "2",
+  "parentMenu": ""
 }
