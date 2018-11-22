@@ -1,0 +1,8 @@
+{
+  "title": "Team",
+  "key": "team",
+  "link": "/team",
+  "isExt": false,
+  "order": 1,
+  "parent": "foundation"
+}
