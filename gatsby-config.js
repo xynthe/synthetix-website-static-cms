@@ -13,6 +13,14 @@ module.exports = {
 				name: "pages"
 			}
 		},
+		// Top Nav
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: path.join(__dirname, "content", "topNav"),
+				name: "topNav"
+			}
+		},
 		// Site Settings
 		{
 			resolve: `gatsby-source-filesystem`,
@@ -67,7 +75,7 @@ module.exports = {
 			options: {
 				id: "GTM-N2CF6MQ",
 				includeInDevelopment: false
-			},
+			}
 		}
 	]
 };

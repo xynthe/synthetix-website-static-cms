@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: havven/havven-website-static-cms
+  branch: staging
 
 media_folder: static/img
 public_folder: /img
@@ -83,13 +84,16 @@ collections:
     - {label: "Page Title", name: "pageTitle", widget: "string"}
     - {label: "Page Description", name: "pageDescription", widget: "string"}
 
+# -------- How it works --------
 - label: "Top Navigation"
   name: "topNav"
   folder: "content/topNav"
+  extension: "json"
   create: true
   fields:
   - {label: "Name", name: "title", widget: "string"}
-  - {label: "Link", name: "link", widget: "string", required: false}
-  - {label: "Is External", name: "isExt", widget: "boolean", required: false}
-  - {label: "Order", name: "order", widget: "number", required: false}
-  - {label: "Parent", name: "parent", widget: "relation", collection: "topNav", searchFields: ["title"],valueField: "title", displayFields: ["title"], required: false}
+  - {label: "Key", name: "key", widget: "string"}
+  - {label: "Link", name: "link", widget: "string", required: false, default: ""}
+  - {label: "Is External", name: "isExt", widget: "boolean", required: false, default: false}
+  - {label: "Order", name: "order", widget: "number", required: false, default: 1 }
+  - {label: "Parent", name: "parent", widget: "relation", collection: "topNav", searchFields: ["title"],valueField: "key", displayFields: ["title"], required: false, default: ""}
