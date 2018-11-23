@@ -1,0 +1,8 @@
+{
+  "title": "Dashboard",
+  "key": "dashboard",
+  "link": "https://dashboard.havven.io/",
+  "isExt": true,
+  "order": 1,
+  "parentMenu": "products"
+}
