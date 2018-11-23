@@ -1,0 +1,8 @@
+{
+  "title": "Community",
+  "key": "community",
+  "link": "/community",
+  "isExt": false,
+  "order": 1,
+  "parentMenu": "connect"
+}

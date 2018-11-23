@@ -1,0 +1,8 @@
+{
+  "title": "eStore",
+  "key": "e-store",
+  "link": "https://shop.havven.io/",
+  "isExt": true,
+  "order": 4,
+  "parentMenu": "products"
+}

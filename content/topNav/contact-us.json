@@ -1,0 +1,8 @@
+{
+  "title": "Contact Us",
+  "key": "contact-us",
+  "link": "/contact-us",
+  "isExt": false,
+  "order": 2,
+  "parentMenu": "connect"
+}
