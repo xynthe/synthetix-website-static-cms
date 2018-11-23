@@ -3,6 +3,6 @@
   "key": "partner-with-us",
   "link": "/partner-with-us",
   "isExt": false,
-  "order": "2",
+  "order": 2,
   "parentMenu": "foundation"
 }

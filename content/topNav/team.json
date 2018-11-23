@@ -3,6 +3,6 @@
   "key": "team",
   "link": "/team",
   "isExt": false,
-  "order": "1",
+  "order": 1,
   "parentMenu": "foundation"
 }
