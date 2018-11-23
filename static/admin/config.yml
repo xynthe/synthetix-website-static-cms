@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: havven/havven-website-static-cms
+  branch: staging
 
 media_folder: static/img
 public_folder: /img
