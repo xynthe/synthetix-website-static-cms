@@ -1,0 +1,8 @@
+{
+  "title": "Havven-JS Lib",
+  "key": "havven-js-lib",
+  "link": "https://developer.havven.io/api/docs/home.html",
+  "isExt": true,
+  "order": 2,
+  "parentMenu": "developers"
+}
