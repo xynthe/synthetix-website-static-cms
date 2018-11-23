@@ -8,5 +8,20 @@
 <body>
 <!-- Include the script that builds the page and powers Netlify CMS -->
 <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+<script>
+	// This global flag enables manual initialization.
+	window.CMS_MANUAL_INIT = true;
+	// Usage with script tag
+	const { CMS, initCMS: init } = window;
+
+
+	init({
+		config: {
+			backend: {
+				branch: 'master'
+			}
+		}
+	})
+</script>
 </body>
 </html>
