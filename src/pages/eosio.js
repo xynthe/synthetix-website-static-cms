@@ -61,6 +61,7 @@ export default class IosIoPage extends React.Component {
 								className="column"
 								href="https://www.kucoin.com/#/trade.pro/HAV-ETH/"
 								target="_blank"
+								rel="noopener noreferrer"
 								onClick={() => window.ga("send", "pageview", "/tracking/eosio/kucoin")}
 							>
 								<img src={logoKuCoin} alt="KuCoin" />
@@ -73,6 +74,7 @@ export default class IosIoPage extends React.Component {
 								className="column"
 								href="https://www.gate.io/trade/hav_eth/"
 								target="_blank"
+								rel="noopener noreferrer"
 								onClick={() => window.ga("send", "pageview", "/tracking/eosio/gate")}
 							>
 								<img src={logoGate} alt="Gate.io" />
@@ -87,11 +89,12 @@ export default class IosIoPage extends React.Component {
 							<a
 								href="https://blog.havven.io/haveos-distribution-eligibility-snapshot-dates-and-more-57d928b12c8a"
 								target="_blank"
+								rel="noopener noreferrer"
 							>
 								blog
 							</a>
 							, and if you have any more questions, please come join our community on{" "}
-							<a href={discordUrl} target="_blank">
+							<a href={discordUrl} target="_blank" rel="noopener noreferrer">
 								Discord
 							</a>
 							.

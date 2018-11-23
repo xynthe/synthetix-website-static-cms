@@ -92,6 +92,7 @@ const PartnersPage = () => (
 							<a
 								href="https://developer.havven.io/"
 								target="_blank"
+								rel="noopener noreferrer"
 								className="is-button is-blue is-wide is-subtle is-center mb-20"
 							>
 								View our Developer Hub

@@ -68,7 +68,12 @@ class CommunityPage extends React.Component {
 							<div className="s-desc pb-50">
 								Jump in and join the conversation with the Havven team and community!
 							</div>
-							<a className="join-our-discord-box" href={discordUrl} target="_blank">
+							<a
+								className="join-our-discord-box"
+								href={discordUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<div className="columns">
 									<div className="column is-narrow">
 										<img src={icoDiscord} alt="Discord" />

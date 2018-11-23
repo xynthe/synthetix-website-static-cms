@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Logo from "../resources/logo-havven.svg";
 import cx from "classnames";
 import { StaticQuery } from "../../.cache/gatsby-browser-entry";
@@ -66,56 +66,119 @@ export default class Header extends React.Component {
 	};
 
 	render() {
+		console.log(this.props.data);
 		const { isOpen } = this.state;
 		return (
-			<nav className="navbar" role="navigation" aria-label="main navigation">
-				<div className="container">
-					<div className="navbar-brand">
-						<a className="navbar-item site-title" href="/">
-							<img src={Logo} alt="Havven" />
-						</a>
+			<StaticQuery
+				query={graphql`
+					{
+						allFile(filter: { sourceInstanceName: { eq: "topNav" } }) {
+							edges {
+								node {
+									childTopNavJson {
+										id
+										title
+										key
+										link
+										isExt
+										order
+										parentMenu
+									}
+								}
+							}
+						}
+					}
+				`}
+				render={data => {
+					let allMenuItems = data.allFile.edges.map(el => {
+						return el.node.childTopNavJson;
+					});
+					let topMenuItems = allMenuItems.filter(el => !el.parentMenu).sort(numCompare);
+					return (
+						<nav className="navbar" role="navigation" aria-label="main navigation">
+							<div className="container">
+								<div className="navbar-brand">
+									<a className="navbar-item site-title" href="/">
+										<img src={Logo} alt="Havven" />
+									</a>
 
-						<a
-							role="button"
-							className={cx("navbar-burger", { "is-active": isOpen })}
-							aria-label="menu"
-							aria-expanded="false"
-							onClick={() => this.setState({ isOpen: !isOpen })}
-						>
-							<span aria-hidden="true" />
-							<span aria-hidden="true" />
-							<span aria-hidden="true" />
-						</a>
-					</div>
-					<div
-						className={cx("navbar-menu", {
-							"is-active": isOpen
-						})}
-					>
-						<div className="navbar-end">
-							{menu.map((el, idx) => (
-								<div className="dropdown is-hoverable" key={idx}>
-									<div className="dropdown-trigger">
-										<UiLink className="navbar-item" aria-haspopup="true" aria-controls={el.name}>
-											<span>{el.name}</span>
-										</UiLink>
-									</div>
-									<div className="dropdown-menu" id={el.name} role="menu">
-										{el.children.map((el2, idx2) => (
-											<UiLink key={idx2} to={el2.link} isExt={el2.isExt}>
-												{el2.name}
-											</UiLink>
+									<a
+										role="button"
+										className={cx("navbar-burger", { "is-active": isOpen })}
+										aria-label="menu"
+										aria-expanded="false"
+										onClick={() => this.setState({ isOpen: !isOpen })}
+									>
+										<span aria-hidden="true" />
+										<span aria-hidden="true" />
+										<span aria-hidden="true" />
+									</a>
+								</div>
+								<div
+									className={cx("navbar-menu", {
+										"is-active": isOpen
+									})}
+								>
+									<div className="navbar-end">
+										{topMenuItems.map((el, idx) => (
+											<div className="dropdown is-hoverable" key={idx}>
+												<div className="dropdown-trigger">
+													<UiLink
+														className="navbar-item"
+														aria-haspopup="true"
+														aria-controls={el.key}
+													>
+														<span>{el.title}</span>
+													</UiLink>
+												</div>
+												<div className="dropdown-menu" id={el.key} role="menu">
+													{allMenuItems
+														.filter(el2 => el2.parentMenu === el.key)
+														.sort(numCompare)
+														.map((el2, idx2) => (
+															<UiLink key={idx2} to={el2.link} isExt={el2.isExt}>
+																{el2.title}
+															</UiLink>
+														))}
+												</div>
+											</div>
+										))}
+										{menu.map((el, idx) => (
+											<div className="dropdown is-hoverable" key={idx}>
+												<div className="dropdown-trigger">
+													<UiLink
+														className="navbar-item"
+														aria-haspopup="true"
+														aria-controls={el.name}
+													>
+														<span>{el.name}</span>
+													</UiLink>
+												</div>
+												<div className="dropdown-menu" id={el.name} role="menu">
+													{el.children.map((el2, idx2) => (
+														<UiLink key={idx2} to={el2.link} isExt={el2.isExt}>
+															{el2.name}
+														</UiLink>
+													))}
+												</div>
+											</div>
 										))}
 									</div>
 								</div>
-							))}
-						</div>
-					</div>
-				</div>
-			</nav>
+							</div>
+						</nav>
+					);
+				}}
+			/>
 		);
 	}
 }
+
+const numCompare = function(a, b) {
+	if (a.order < b.order) return -1;
+	if (a.order > b.order) return 1;
+	return 0;
+};
 
 const UiLink = props => {
 	const { to, isExt, ...rest } = props;
