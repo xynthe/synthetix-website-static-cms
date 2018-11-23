@@ -1,0 +1,8 @@
+{
+  "title": "Contracts",
+  "key": "contracts",
+  "link": "https://developer.havven.io/api/docs/deployed-contracts.html",
+  "isExt": true,
+  "order": 3,
+  "parentMenu": "developers"
+}
