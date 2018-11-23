@@ -96,4 +96,4 @@ collections:
   - {label: "Link", name: "link", widget: "string", required: false, default: ""}
   - {label: "Is External", name: "isExt", widget: "boolean", required: false, default: false}
   - {label: "Order", name: "order", widget: "number", required: false, valueType: "float", default: 1 }
-  - {label: "Parent", name: "parentMenu", widget: "relation", collection: "topNav", searchFields: ["title"],valueField: "key", displayFields: ["title"], required: false, default: ""}
+  - {label: "Parent", name: "parentMenu", widget: "relation", collection: "topNav", searchFields: ["title","key"],valueField: "key", displayFields: ["title","key"], required: false, default: ""}

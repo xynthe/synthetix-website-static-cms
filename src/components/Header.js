@@ -1,8 +1,7 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql, Link, StaticQuery } from "gatsby";
 import Logo from "../resources/logo-havven.svg";
 import cx from "classnames";
-import { StaticQuery } from "../../.cache/gatsby-browser-entry";
 
 let menu = [
 	{
@@ -20,7 +19,11 @@ let menu = [
 		isExt: false,
 		children: [
 			{ name: "Dev Portal", link: "https://developer.havven.io/api/docs/home.html", isExt: true },
-			{ name: "Havven-JS Lib", link: "https://havvenjs.havven.io/", isExt: true },
+			{
+				name: "Havven-JS Lib",
+				link: "https://developer.havven.io/api/docs/home.html",
+				isExt: true
+			},
 			{
 				name: "Contracts",
 				link: "https://developer.havven.io/api/docs/deployed-contracts.html",
