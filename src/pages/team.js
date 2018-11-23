@@ -67,7 +67,7 @@ export default TeamPage;
 
 export const query = graphql`
 	query TeamPageQuery {
-		allFile(filter: { name: { eq: "team" } }) {
+		allFile(filter: { name: { eq: "team" }, sourceInstanceName: { eq: "pages" } }) {
 			edges {
 				node {
 					childPagesJson {
