@@ -1,0 +1,8 @@
+{
+  "title": "Blog",
+  "key": "blog",
+  "link": "https://blog.havven.io/",
+  "isExt": true,
+  "order": 2,
+  "parentMenu": "learn"
+}
