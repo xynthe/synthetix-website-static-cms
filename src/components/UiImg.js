@@ -20,8 +20,8 @@ export default class UiImg extends React.Component {
 		if (isResponsive) {
 			imgProps.srcSet = `${srcWithPrefix} 1x, ${srcWithPrefix.replace(
 				".",
-				"@2."
-			)}  2x,  ${srcWithPrefix.replace(".", "@3.")}  3x`;
+				"@2x."
+			)}  2x,  ${srcWithPrefix.replace(".", "@3x.")}  3x`;
 		}
 
 		return <img src={srcWithPrefix} {...rest} {...imgProps} />;
