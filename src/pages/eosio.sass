@@ -17,23 +17,18 @@
       width: 50%
 
   .header-section
-    $min-height: 350px
-    background-image: url("../resources/bg-wave-long.svg")
-    @extend %wave-bg
-    +tablet
-      min-height: $min-height*2.2
-    +desktop
-      min-height: $min-height*2.7
+    text-align: center
 
   .st-1
     color: #0A0817
-    font-size: 56px
-    font-weight: 500
+    font-weight: normal
     letter-spacing: -0.65px
     text-align: center
     line-height: 1.4em
-    +mobile
-      font-size: 40px
+    @include font-size(65)
+    //font-size: 56px
+    //+mobile
+    //  font-size: 40px
 
   .sd-1
     +tablet
@@ -41,13 +36,14 @@
 
   .st-2
     color: #0A0817
-    font-size: 36px
-    font-weight: 500
+    font-weight: normal
     letter-spacing: -0.42px
     line-height: 1.4em
     text-align: center
-    +mobile
-      font-size: 28px
+    @include font-size(36)
+    //font-size: 36px
+    //+mobile
+    //  font-size: 28px
 
   .sl-1
     text-align: left

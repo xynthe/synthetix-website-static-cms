@@ -1,4 +1,5 @@
 @import "node_modules/mathsass/dist/math"
+@import "bulma/utilities/_all"
 
 @function nrmlz($number, $multiplier, $base: 100)
   @if $multiplier == 1
@@ -13,3 +14,31 @@
   $ratio-adjusted: pow($ratio, 0.75)
 
   @return ($ratio-adjusted/$ratio)*$number*$multiplier*1px
+
+
+@function get-font-size($number, $multiplier)
+  $base: 50
+  @if $multiplier == 1
+    @return $number*1px
+
+  $number-base: $number
+  @if $number > $base
+    $number-base: $base
+
+  $ratio: $number-base / $base
+
+  $ratio-adjusted: pow($ratio, 0.65)
+
+  @return ($ratio-adjusted/$ratio)*$number*$multiplier*1px
+
+@mixin font-size($number)
+  font-size: get-font-size($number,0.7)
+  +tablet
+    font-size: get-font-size($number,0.8)
+  +desktop
+    font-size: get-font-size($number,1)
+
+
+
+
+
