@@ -1,5 +1,6 @@
 @import "../styles/bulma/utilities/_all"
 @import "../styles/partials"
+@import "../styles/functions"
 
 .partner-with-us-page
   .page-subtitle
@@ -76,23 +77,19 @@
           width: 265px
     .sp5
       color: #0A0817
-      font-family: Guillon
-      font-size: 36px
       font-weight: 500
       letter-spacing: -0.42px
       line-height: 55px
-      +tablet
-        width: 665px
+      @include font-size(36)
 
     .sp6
       color: #6F6DA0
-      font-family: Guillon
       font-size: 18px
       letter-spacing: -0.21px
       line-height: 36px
       margin: 0
       +tablet
-        width: 500px
+        max-width: 470px
 
     .second-column
       & > *

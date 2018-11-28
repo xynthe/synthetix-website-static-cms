@@ -36,7 +36,7 @@ const ContactUsPage = ({ data }) => {
 					</div>
 					<div className="container has-text-centered discord-section">
 						or say hello on{" "}
-						<a href={data.site.siteMetadata.discordUrl} target="_blank">
+						<a href={data.site.siteMetadata.discordUrl} target="_blank" rel="noopener noreferrer">
 							Discord!
 						</a>
 					</div>

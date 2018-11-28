@@ -80,11 +80,11 @@ const PartnersPage = () => (
 					</div>
 				</div>
 			</section>
-			<section className="section is-grey integrate-with-havven is-padded">
+			<section className="section integrate-with-havven is-padded">
 				<div className="container">
 					<div className="columns">
 						<div className="column is-half first-column">
-							<div className="section-title sp5">How to Integrate with Havven</div>
+							<div className="section-title sp5 white">How to Integrate with Havven</div>
 							<div className="section-desc sp6 pb-40">
 								All of our code is open source, and our Developer Portal makes it easy for
 								developers to build on top of the Havven Network.
@@ -93,24 +93,21 @@ const PartnersPage = () => (
 								href="https://developer.havven.io/"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="is-button is-blue is-wide is-subtle is-center mb-20"
+								className="is-button is-blue w-300 is-center mb-20"
 							>
 								View our Developer Hub
 							</a>
-							<a
-								href="mailto:info@havven.io"
-								className="is-button is-dark is-wide is-subtle is-center"
-							>
+							<a href="mailto:info@havven.io" className="is-button is-dark w-300 is-center">
 								Contact our Partnership Team
 							</a>
 						</div>
 						<div className="column is-half second-column">
-							<div className="p-title pb-10">Full Support</div>
+							<div className="p-title pb-10 purple-light">Full Support</div>
 							<div className="p-text pb-20">
 								Recieve full suport from the Havven Partnerships team, giving you everything you
 								need to integrate Nomins into your project.
 							</div>
-							<div className="p-title pb-10">Easy Ethereum Integration</div>
+							<div className="p-title pb-10 purple-light">Easy Ethereum Integration</div>
 							<div className="p-text pb-20">
 								For all Ethereum-based integrations, there is extremely little setup required, and
 								for non-blockchain integrations, a simple setup is required using Web 3.0 extensions

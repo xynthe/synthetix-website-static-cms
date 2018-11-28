@@ -49,6 +49,7 @@ export default class Header extends React.Component {
 										className={cx("navbar-burger", { "is-active": isOpen })}
 										aria-label="menu"
 										aria-expanded="false"
+										href="javascript:void(0)"
 										onClick={() => this.setState({ isOpen: !isOpen })}
 									>
 										<span aria-hidden="true" />

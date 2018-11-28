@@ -23,17 +23,21 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 							<div className="column has-text-centered-mobile">
 								<ul className="links">
 									<li>
-										<a href="https://swappr.io/" target="_blank">
+										<a href="https://swappr.io/" target="_blank" rel="noopener noreferrer">
 											Swappr
 										</a>
 									</li>
 									<li>
-										<a href="https://mintr.havven.io/" target="_blank">
+										<a href="https://mintr.havven.io/" target="_blank" rel="noopener noreferrer">
 											Mintr
 										</a>
 									</li>
 									<li>
-										<a href="https://dashboard.havven.io/" target="_blank">
+										<a
+											href="https://dashboard.havven.io/"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
 											Dashboard
 										</a>
 									</li>
@@ -41,6 +45,7 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 										<a
 											href="https://itunes.apple.com/au/app/havven-mobile-app/id1394993748"
 											target="_blank"
+											rel="noopener noreferrer"
 										>
 											iOS App
 										</a>
@@ -56,7 +61,11 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 										<Link to="/team">Team</Link>
 									</li>
 									<li>
-										<a href="https://developer.havven.io/" target="_blank">
+										<a
+											href="https://developer.havven.io/"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
 											Developers
 										</a>
 									</li>
@@ -67,16 +76,16 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 					<div className="column is-narrow has-text-centered-mobile last-column">
 						<div>
 							<div className="c-top media-links">
-								<a href={twitterUrl} target="_blank">
+								<a href={twitterUrl} target="_blank" rel="noopener noreferrer">
 									<img src={logoTwitter} alt="Twitter" />
 								</a>
-								<a href={mediumUrl} target="_blank">
+								<a href={mediumUrl} target="_blank" rel="noopener noreferrer">
 									<img src={logoMedium} alt="Medium" />
 								</a>
-								<a href={discordUrl} target="_blank">
+								<a href={discordUrl} target="_blank" rel="noopener noreferrer">
 									<img src={logoDiscord} alt="Discord" />
 								</a>
-								<a href={redditUrl} target="_blank">
+								<a href={redditUrl} target="_blank" rel="noopener noreferrer">
 									<img src={logoReddit} alt="Reddit" />
 								</a>
 							</div>

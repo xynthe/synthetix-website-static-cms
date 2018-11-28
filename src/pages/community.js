@@ -85,19 +85,19 @@ class CommunityPage extends React.Component {
 								or follow us on our other social channels for updates
 							</div>
 							<div className="columns channels pb-40">
-								<a className="column" href={twitterUrl} target="_blank">
+								<a className="column" href={twitterUrl} target="_blank" rel="noopener noreferrer">
 									<img src={icoTwitter} alt="Twitter" />
 									Twitter
 								</a>
-								<a className="column" href={redditUrl} target="_blank">
+								<a className="column" href={redditUrl} target="_blank" rel="noopener noreferrer">
 									<img src={icoReddit} alt="Reddit" />
 									Reddit
 								</a>
-								<a className="column" href={mediumUrl} target="_blank">
+								<a className="column" href={mediumUrl} target="_blank" rel="noopener noreferrer">
 									<img src={icoMedium} alt="Medium" />
 									Blog
 								</a>
-								<a className="column" href={telegramUrl} target="_blank">
+								<a className="column" href={telegramUrl} target="_blank" rel="noopener noreferrer">
 									<img src={icoTelegram} alt="Telegram" />
 									Telegram
 								</a>

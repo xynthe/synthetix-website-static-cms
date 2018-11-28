@@ -73,6 +73,11 @@ collections:
       - {label: "Bio", name: "bio", widget: "string"}
       - {label: "LinkedIn URL", name: "linkedInUrl", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
+    - label: "Open positions"
+      name: "openPositions"
+      widget: "list"
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
 
   # -------- How it works --------
   - name: "how-it-works"

@@ -30,6 +30,12 @@ $mx: 1
   padding-top: 70px*$mx
 .pt-80
   padding-top: 80px*$mx
+.pt-80
+  padding-top: nrmlz(80,$mx)
+.pt-90
+  padding-top: nrmlz(90,$mx)
+.pt-100
+  padding-top: nrmlz(100,$mx)
 .pt-110
   padding-top: nrmlz(110,$mx)
 .pb-10
@@ -96,7 +102,11 @@ $mx: 0.5
   .pt-70
     padding-top: nrmlz(70,$mx)
   .pt-80
-    padding-top: 80px*$mx
+    padding-top: nrmlz(80,$mx)
+  .pt-90
+    padding-top: nrmlz(90,$mx)
+  .pt-100
+    padding-top: nrmlz(100,$mx)
   .pt-110
     padding-top: nrmlz(110,$mx)
   .pb-10
@@ -163,5 +173,24 @@ $mx: 0.5
 .green
   color: #00CE63
 
+.white
+  color: #fff !important
+
+.purple-light
+  color: $purple-light !important
+
 .justify-content--space-between
   justify-content: space-between
+
+.w-auto
+  width: auto !important
+
+.w-270
+  width: 100%
+  +desktop
+    width: 270px
+
+.w-300
+  width: 100%
+  +desktop
+    width: 300px

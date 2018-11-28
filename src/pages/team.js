@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { graphql, withPrefix } from "gatsby";
 import "./index.sass";
 import Layout from "../components/layout";
@@ -7,6 +7,7 @@ import TeamMember from "../components/TeamMember";
 
 const TeamPage = ({ data }) => {
 	let teamMembers = data.allFile.edges[0].node.childPagesJson.teamMembers;
+	let openPositions = data.allFile.edges[0].node.childPagesJson.openPositions;
 	return (
 		<Layout>
 			<div className="team-page">
@@ -33,24 +34,30 @@ const TeamPage = ({ data }) => {
 						</div>
 					</div>
 				</section>
-				<section className="section is-white join-team-section">
+				<section className="section join-team-section pt-100 pb-100">
 					<div className="container">
-						<div className="section-title">Join the Team</div>
-						<div className="section-desc pb-70">
+						<div className="section-title white">Join the Team</div>
+						<div className="section-desc pb-50">
 							We are looking for highly skilled individuals to join the Havven team and help us
 							deliver a decentralised payment network and stablecoin to the world. If you're looking
 							for a challenging project and want to contribute to building a critical layer of the
 							blockchain ecosystem, then please get in touch!
 						</div>
-						<div className="section-title is-subtle pb-30">Open Positions</div>
-						<div className="columns open-positions pb-60">
-							<div className="column">
-								<div>Blockchain Engineer</div>
-							</div>
-							<div className="column">
-								<div>Full Stack Developer</div>
-							</div>
-						</div>
+						{openPositions &&
+							openPositions.length > 0 && (
+								<Fragment>
+									<div className="section-title is-subtle white pb-40">Open Positions</div>
+									<div className="columns open-positions pb-40">
+										{openPositions &&
+											openPositions.length > 0 &&
+											openPositions.map((el, idx) => (
+												<div className="column" key={idx}>
+													<div>{el.title}</div>
+												</div>
+											))}
+									</div>
+								</Fragment>
+							)}
 						<div className="section-desc join-team-desc">
 							Looking to join the team but don’t see a position suited to you? We’re always
 							interested in hearing from people who are interested in joining our mission. Say hello
@@ -77,6 +84,9 @@ export const query = graphql`
 							bio
 							linkedInUrl
 							image
+						}
+						openPositions {
+							title
 						}
 					}
 				}

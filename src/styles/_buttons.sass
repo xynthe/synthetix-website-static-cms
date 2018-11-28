@@ -1,17 +1,17 @@
 @import "bulma/utilities/_all"
 
 .is-button
-  border-radius: 4px
-  display: inline-block
-  padding: 15px 20px
-  font-family: Guillon
-  font-size: 22px
-  letter-spacing: -0.26px
-  line-height: 36px
+  height: 62px
+  font-size: 12px
+  letter-spacing: 0.86px
   text-align: center
   color: #FFFFFF
   transition: 200ms all ease
   position: relative
+  text-transform: uppercase
+  display: inline-flex
+  justify-content: center
+  align-items: center
 
   &:hover
     transform: translateY(-4px)
@@ -21,7 +21,8 @@
     background: #4525D0
 
   &.is-dark
-    background: linear-gradient(180deg, #0A0817 0%, #2E2A5E 100%)
+    border: 1px solid #1E1A31
+    background-color: #0A0817
 
   &.is-white
     background: linear-gradient(0deg, #E9E8F2 0%, #FFFFFF 100%)
@@ -66,10 +67,14 @@
 
   .is-icon
     position: absolute
-    left: 28px
+    left: 25px
     top: 50%
     transform: translateY(-50%)
 
+  &.has-icon
+    +desktop
+      span
+        padding-left: 20px
 
 button.is-button
   width: 100%
@@ -91,19 +96,23 @@ button.is-button
     box-shadow: 0 10px 40px 0 rgba(255,255,255,0.14)
 
 .is-announcement
-  color: #FFFFFF
-  font-family: Guillon
+  height: 34px
   font-size: 14px
+  color: #FFFFFF
   border-radius: 27px
-  background-color: $blue-accent-1
-  display: inline-block
+  background-color: #100D22
   padding: 5px 20px 5px 8px
   line-height: 1
   box-shadow: none !important
+  border: 1px solid #201D34
+  display: inline-flex
+
+  +tablet
+    margin-top: 15px
   span
     display: inline-block
     &:first-child
-      background: linear-gradient(180deg, $btn-gradient-from 0%, $btn-gradient-to 100%)
+      background:  linear-gradient(180deg, #4525D0 0%, #280AA7 100%)
       border-radius: 27px
       padding: 5px 8px
       line-height: 1
