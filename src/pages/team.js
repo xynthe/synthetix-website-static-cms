@@ -62,7 +62,6 @@ const TeamPage = ({ data }) => {
 							Looking to join the team but don’t see a position suited to you? We’re always
 							interested in hearing from people who are interested in joining our mission. Say hello
 							at <a href="mailto:careers@havven.io">careers@havven.io</a>
-							{""}
 						</div>
 					</div>
 				</section>
