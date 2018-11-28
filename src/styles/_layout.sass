@@ -1,4 +1,5 @@
 @import "bulma/utilities/_all"
+@import "functions"
 
 .section
   &.is-padded
@@ -64,18 +65,13 @@ h1.page-title
     font-size: 24px
     width: auto
   &.is-large
-    width: 783px
-    font-size: 66px
-    font-weight: 500
-    letter-spacing: -0.77px
+    letter-spacing: -1.16px
     line-height: 1.3em
-    +mobile
-      font-size: 32px
+    @include font-size(56)
 
 .section-desc
   width: 523px
   color: #6F6DA0
-  font-family: Guillon
   font-size: 22px
   line-height: 1.55em
   text-align: center

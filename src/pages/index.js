@@ -132,7 +132,9 @@ class IndexPage extends React.Component {
 						</div>
 					</section>
 					<section className="section is-white is-padded pb-110">
-						<div className="section-title is-large">Get rewarded for maintaining stability</div>
+						<div className="section-title is-large w-auto">
+							Get rewarded for maintaining stability
+						</div>
 						<div className="section-desc pb-70">Become a part of the Synthetix Network today.</div>
 						<div className="columns is-centered get-rewarded-boxes">
 							<a
