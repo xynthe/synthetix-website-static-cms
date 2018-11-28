@@ -1,5 +1,5 @@
 import * as React from "react";
-import { withPrefix } from "../../.cache/gatsby-browser-entry";
+import { withPrefix } from "gatsby";
 import * as PropTypes from "prop-types";
 
 export default class UiImg extends React.Component {
