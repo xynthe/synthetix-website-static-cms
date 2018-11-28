@@ -1,131 +1,128 @@
 @font-face {
     font-family: ‘GuillonBlack’;
-    src:    url(‘eot/guillon-black.eot');
-    src:    url(‘eot/guillon-black.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-black.woff') format('woff'),
-            url(‘woff2/guillon-black.woff2') format('woff2'),
-            url(’ttf/guillon-black.ttf') format('truetype'),
+    src:    url('eot/guillon-black.eot');
+    src:    url('eot/guillon-black.eot?#iefix') format('embedded-opentype'), url('woff/guillon-black.woff') format('woff'), url('woff2/guillon-black.woff2') format('woff2'), url('ttf/guillon-black.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: ‘GuillonBlackItalic’;
-    src:    url(‘eot/guillon-blackitalic.eot');
-    src:    url(‘eot/guillon-blackitalic.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-blackitalic.woff') format('woff'),
-            url(‘woff2/guillon-blackitalic.woff2') format('woff2'),
-            url(’ttf/guillon-blackitalic.ttf') format('truetype'),
+    font-family: 'GuillonBlackItalic';
+    src:    url('eot/guillon-blackitalic.eot');
+    src:    url('eot/guillon-blackitalic.eot?#iefix') format('embedded-opentype'),
+            url('woff/guillon-blackitalic.woff') format('woff'),
+            url('woff2/guillon-blackitalic.woff2') format('woff2'),
+            url('ttf/guillon-blackitalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: ‘GuillonBold’;
-    src:    url(‘eot/guillon-bold.eot');
-    src:    url(‘eot/guillon-bold.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-bold.woff') format('woff'),
-            url(‘woff2/guillon-bold.woff2') format('woff2'),
-            url(’ttf/guillon-bold.ttf') format('truetype'),
+    font-family: 'GuillonBold';
+    src:    url('eot/guillon-bold.eot');
+    src:    url('eot/guillon-bold.eot?#iefix') format('embedded-opentype'),
+            url('woff/guillon-bold.woff') format('woff'),
+            url('woff2/guillon-bold.woff2') format('woff2'),
+            url('ttf/guillon-bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: ‘GuillonBoldItalic’;
-    src:    url(‘eot/guillon-bolditalic.eot');
-    src:    url(‘eot/guillon-bolditalic.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-bolditalic.woff') format('woff'),
-            url(‘woff2/guillon-bolditalic.woff2') format('woff2'),
-            url(’ttf/guillon-bolditalic.ttf') format('truetype'),
+    font-family: 'GuillonBoldItalic';
+    src:    url('eot/guillon-bolditalic.eot');
+    src:    url('eot/guillon-bolditalic.eot?#iefix') format('embedded-opentype'),
+            url('woff/guillon-bolditalic.woff') format('woff'),
+            url('woff2/guillon-bolditalic.woff2') format('woff2'),
+            url('ttf/guillon-bolditalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: ‘GuillonDemi’;
-    src:    url(‘eot/guillon-demi.eot');
-    src:    url(‘eot/guillon-demi.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-demi.woff') format('woff'),
-            url(‘woff2/guillon-demi.woff2') format('woff2'),
-            url(’ttf/guillon-demi.ttf') format('truetype'),
+    font-family: 'GuillonDemi';
+    src:    url('eot/guillon-demi.eot');
+    src:    url('eot/guillon-demi.eot?#iefix') format('embedded-opentype'),
+            url('woff/guillon-demi.woff') format('woff'),
+            url('woff2/guillon-demi.woff2') format('woff2'),
+            url('ttf/guillon-demi.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: ‘GuillonDemiItalic’;
-    src:    url(‘eot/guillon-demiitalic.eot');
-    src:    url(‘eot/guillon-demiitalic.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-demiitalic.woff') format('woff'),
-            url(‘woff2/guillon-demiitalic.woff2') format('woff2'),
-            url(’ttf/guillon-demiitalic.ttf') format('truetype'),
+    font-family: 'GuillonDemiItalic';
+    src:    url('eot/guillon-demiitalic.eot');
+    src:    url('eot/guillon-demiitalic.eot?#iefix') format('embedded-opentype'),
+            url('woff/guillon-demiitalic.woff') format('woff'),
+            url('woff2/guillon-demiitalic.woff2') format('woff2'),
+            url('ttf/guillon-demiitalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: ‘GuillonRegular’;
-    src:    url(‘eot/guillon-regular.eot');
-    src:    url(‘eot/guillon-regular.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-regular.woff') format('woff'),
-            url(‘woff2/guillon-regular.woff2') format('woff2'),
-            url(’ttf/guillon-regular.ttf') format('truetype'),
+    font-family: 'GuillonRegular';
+    src:    url('eot/guillon-regular.eot');
+    src:    url('eot/guillon-regular.eot?#iefix') format('embedded-opentype'),
+            url('woff/guillon-regular.woff') format('woff'),
+            url('woff2/guillon-regular.woff2') format('woff2'),
+            url('ttf/guillon-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: ‘GuillonItalic’;
-    src:    url(‘eot/guillon-italic.eot');
-    src:    url(‘eot/guillon-italic.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-italic.woff') format('woff'),
-            url(‘woff2/guillon-italic.woff2') format('woff2'),
-            url(’ttf/guillon-italic.ttf') format('truetype'),
+    font-family: 'GuillonItalic';
+    src:    url('eot/guillon-italic.eot');
+    src:    url('eot/guillon-italic.eot?#iefix') format('embedded-opentype'),
+            url('woff/guillon-italic.woff') format('woff'),
+            url('woff2/guillon-italic.woff2') format('woff2'),
+            url('ttf/guillon-italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: ‘GuillonLight’;
-    src:    url(‘eot/guillon-light.eot');
-    src:    url(‘eot/guillon-light.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-light.woff') format('woff'),
-            url(‘woff2/guillon-light.woff2') format('woff2'),
-            url(’ttf/guillon-light.ttf') format('truetype'),
+    font-family: 'GuillonLight';
+    src:    url('eot/guillon-light.eot');
+    src:    url('eot/guillon-light.eot?#iefix') format('embedded-opentype'),
+            url('woff/guillon-light.woff') format('woff'),
+            url('woff2/guillon-light.woff2') format('woff2'),
+            url('ttf/guillon-light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: ‘GuillonLightItalic’;
-    src:    url(‘eot/guillon-lightitalic.eot');
-    src:    url(‘eot/guillon-lightitalic.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-lightitalic.woff') format('woff'),
-            url(‘woff2/guillon-lightitalic.woff2') format('woff2'),
-            url(’ttf/guillon-lightitalic.ttf') format('truetype'),
+    font-family: 'GuillonLightItalic';
+    src:    url('eot/guillon-lightitalic.eot');
+    src:    url('eot/guillon-lightitalic.eot?#iefix') format('embedded-opentype'),
+            url('woff/guillon-lightitalic.woff') format('woff'),
+            url('woff2/guillon-lightitalic.woff2') format('woff2'),
+            url('ttf/guillon-lightitalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: ‘GuillonThin’;
-    src:    url(‘eot/guillon-thin.eot');
-    src:    url(‘eot/guillon-thin.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-thin.woff') format('woff'),
-            url(‘woff2/guillon-thin.woff2') format('woff2'),
-            url(’ttf/guillon-thin.ttf') format('truetype'),
+    font-family: 'GuillonThin';
+    src:    url('eot/guillon-thin.eot');
+    src:    url('eot/guillon-thin.eot?#iefix') format('embedded-opentype'),
+            url('woff/guillon-thin.woff') format('woff'),
+            url('woff2/guillon-thin.woff2') format('woff2'),
+            url('ttf/guillon-thin.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: ‘GuillonThinItalic’;
-    src:    url(‘eot/guillon-thinitalic.eot');
-    src:    url(‘eot/guillon-thinitalic.eot?#iefix') format('embedded-opentype'),
-            url(‘woff/guillon-thinitalic.woff') format('woff'),
-            url(‘woff2/guillon-thinitalic.woff2') format('woff2'),
-            url(’ttf/guillon-thinitalic.ttf') format('truetype'),
+    font-family: 'GuillonThinItalic';
+    src:    url('eot/guillon-thinitalic.eot');
+    src:    url('eot/guillon-thinitalic.eot?#iefix') format('embedded-opentype'),
+            url('woff/guillon-thinitalic.woff') format('woff'),
+            url('woff2/guillon-thinitalic.woff2') format('woff2'),
+            url('ttf/guillon-thinitalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
