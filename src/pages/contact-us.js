@@ -16,7 +16,7 @@ const ContactUsPage = ({ data }) => {
 						</div>
 					</div>
 				</section>
-				<section className="section is-white pb-120">
+				<section className="section is-white pb-120 pt-80">
 					<div className="container pb-70">
 						<div className="columns contacts-section">
 							<div

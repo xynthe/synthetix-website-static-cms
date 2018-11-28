@@ -8,10 +8,10 @@
 
   .currency-section
     background-color: #fff
-    background-image: url("../resources/bg-main.svg")
-    background-size: 100% auto
-    background-repeat: no-repeat
-    background-position-y: top
+    background-image: url(../resources/bg-blue-line.png)
+    background-position: 0 -640px
+    background-repeat: repeat-x
+
 
   .is-announcement
     +tablet
@@ -56,6 +56,20 @@
         letter-spacing: -0.42px
         line-height: 31px
 
+  .page-title
+    +desktop
+      padding-top: 20px
+    +touch
+      width: 80%
+
+  .page-subtitle
+    color: #6F6E98
+    font-size: 36px
+    letter-spacing: -0.75px
+    text-align: center
+    +touch
+      font-size: 22px
+
   .feature-boxes
     .column
       width: 380px
@@ -64,7 +78,7 @@
       min-height: 68px
       @extend .pb-50
     .p1
-      color: #0D0A31
+      color: #0A0817
       font-size: 18px
       padding-bottom: 13px
     .p2
@@ -104,7 +118,3 @@
   +touch
     .get-rewarded-boxes .column, .feature-boxes .column, .feature-boxes .column .p2
       width: auto
-
-  +mobile
-    .currency-section
-      background-image: url("../resources/bg-main-mobile.svg")

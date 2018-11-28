@@ -1,7 +1,7 @@
 @import "../styles/bulma/utilities/_all"
 
 footer
-  background-color: #402BDC
+  background: linear-gradient(180deg, rgba(10,8,23,0) 0%, #0A0817 100%)
   color: #ffffff
   padding-top: 100px
   padding-bottom: 120px
@@ -44,3 +44,19 @@ footer
       min-width: 240px
     .media-links
       text-align: right
+
+  .logo-box
+    justify-content: space-between
+    flex-direction: column
+    display: flex
+    & > div:last-child
+      color: #6F6E98
+      font-size: 16px
+      letter-spacing: -0.19px
+      line-height: 26px
+      padding-top: 10px
+      +tablet
+        width: 180px
+
+
+

@@ -61,10 +61,9 @@ export default class HowItWorksPage extends React.Component {
 				<div className="how-it-works-page">
 					<section className="section header-section">
 						<div className="container">
-							<h1 className="page-title">How It Works</h1>
+							<h1 className="page-title">How Synthetix Works</h1>
 							<div className="page-subtitle">
-								There are two tokens in the Havven payment network: HAV, the collateral token, and
-								nomins, our stablecoin.
+								A multi disciplinary team with proven ability to deliver complex solutions
 							</div>
 						</div>
 						<div className="columns is-centered">
@@ -122,7 +121,7 @@ export default class HowItWorksPage extends React.Component {
 							</div>
 						</div>
 					</section>
-					<section className="section is-white steps-section">
+					<section className="section steps-section">
 						<div className="container step-1 pb-90">
 							<div className="pt-80">
 								<div className="step-number-title pb-40">STEP ONE</div>

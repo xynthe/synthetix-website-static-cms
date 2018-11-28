@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="815px" height="55px" viewBox="0 0 815 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>synatetic-title</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page-Variant" transform="translate(-307.000000, -280.000000)">
+            <g id="synatetic-title" transform="translate(310.100000, 274.182672)">
+                <g id="Group-5" transform="translate(0.112000, 7.754250)" stroke="#FFFFFF" stroke-width="6.72">
+                    <g id="Group-4" transform="translate(0.028875, 1.207431)">
+                        <path d="M21.1153618,24.3285691 L12.3937993,24.3285691 C5.80240802,24.3285691 0.459029605,18.9851907 0.459029605,12.3937993 C0.459029605,5.80240802 5.80240802,0.459029605 12.3937993,0.459029605 L34.88625,0.459029605" id="Rectangle-2" stroke-linecap="round"></path>
+                        <path d="M21.1153618,48.1981086 L12.3937993,48.1981086 C5.80240802,48.1981086 0.459029605,42.8547301 0.459029605,36.2633388 C0.459029605,29.6719475 5.80240802,24.3285691 12.3937993,24.3285691 L34.88625,24.3285691" id="Rectangle-2-Copy" stroke-linecap="round" transform="translate(17.672640, 36.263339) rotate(-180.000000) translate(-17.672640, -36.263339) "></path>
+                        <path d="M0.382823518,48.2456253 L34.7392171,0.299445094" id="Path-3" stroke-opacity="0.5"></path>
+                    </g>
+                </g>
+                <text id="Y-N-T-H-E-T-I-X" font-family="Akkurat-Mono" font-size="71.232" font-weight="normal" line-spacing="67.2" letter-spacing="4.45200005" fill="#FFFFFF">
+                    <tspan x="89.70425" y="52.490875">Y N T H E T I X</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

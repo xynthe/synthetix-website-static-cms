@@ -1,19 +1,22 @@
 import React from "react";
 import { Link } from "gatsby";
 import "./Footer.sass";
-import logo from "../resources/logo-havven.svg";
 import logoTwitter from "../resources/logo-twitter.svg";
 import logoMedium from "../resources/logo-medium.svg";
 import logoDiscord from "../resources/logo-discord.svg";
 import logoReddit from "../resources/logo-reddit.svg";
+import UiImg from "./UiImg";
 
 const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 	<footer>
 		<section className="section ph-20 pv-0">
 			<div className="container">
 				<div className="columns justify-content--space-between footer-columns">
-					<div className="column is-narrow has-text-centered-mobile">
-						<img src={logo} alt="Havven" />
+					<div className="column is-narrow has-text-centered-mobile logo-box">
+						<div>
+							<UiImg src="/assets/synthetix-title-sm.png" alt="Synthetix" isResponsive />
+						</div>
+						<div>A network of synthetix crypto assets.</div>
 					</div>
 					<div className="column is-narrow">
 						<div className="columns">

@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, Link, StaticQuery } from "gatsby";
-import Logo from "../resources/logo-havven.svg";
+import Logo from "../resources/logo.svg";
 import cx from "classnames";
 
 export default class Header extends React.Component {
@@ -9,7 +9,6 @@ export default class Header extends React.Component {
 	};
 
 	render() {
-		console.log(this.props.data);
 		const { isOpen } = this.state;
 		return (
 			<StaticQuery
@@ -42,7 +41,7 @@ export default class Header extends React.Component {
 							<div className="container">
 								<div className="navbar-brand">
 									<a className="navbar-item site-title" href="/">
-										<img src={Logo} alt="Havven" />
+										<img src={Logo} alt="Synthetix" />
 									</a>
 
 									<a
