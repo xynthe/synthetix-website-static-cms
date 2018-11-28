@@ -15,10 +15,13 @@
 	// Usage with script tag
 	const { CMS, initCMS: init } = window;
 
-	let branch = "synthetix";
+	let branch = "staging";
 	let hostname = window.location.hostname.toLowerCase();
 	if(hostname === "www.havven.io" || hostname === "havven.io") {
 		branch = "master";
+    }
+	if(hostname.indexOf("synthetix") > -1) {
+		branch = "synthetix";
     }
 
 	init({
