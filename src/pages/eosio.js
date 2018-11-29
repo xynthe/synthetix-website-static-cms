@@ -85,7 +85,7 @@ export default class IosIoPage extends React.Component {
 							</a>
 						</div>
 						<div className="sd-2 pb-90">
-							For more details on the FLUXeos Distribution, please visit our{" "}
+							For more details on the SNXeos Distribution, please visit our{" "}
 							<a
 								href="https://blog.havven.io/haveos-distribution-eligibility-snapshot-dates-and-more-57d928b12c8a"
 								target="_blank"

@@ -79,7 +79,7 @@ export default class HowItWorksPage extends React.Component {
 							</div>
 						</div>
 					</section>
-					<section className="section steps-section">
+					<section className="section is-white steps-section">
 						<div className="container step-1 pb-90">
 							<div className="pt-80">
 								<div className="step-number-title pb-40">STEP ONE</div>
