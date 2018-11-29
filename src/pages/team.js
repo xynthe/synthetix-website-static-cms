@@ -36,7 +36,7 @@ const TeamPage = ({ data }) => {
 				</section>
 				<section className="section join-team-section pt-100 pb-100">
 					<div className="container">
-						<div className="section-title white">Join the Team</div>
+						<div className="section-title white pb-30">Join the Team</div>
 						<div className="section-desc pb-50">
 							We are looking for highly skilled individuals to join the Synthetix team and help us
 							deliver a decentralised payment network and stablecoin to the world. If you're looking
