@@ -16,7 +16,7 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 						<div>
 							<UiImg src="/assets/synthetix-title-sm.png" alt="Synthetix" isResponsive />
 						</div>
-						<div>A network of synthetix crypto assets.</div>
+						<div>A synthetic assets platform</div>
 					</div>
 					<div className="column is-narrow">
 						<div className="columns">
