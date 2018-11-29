@@ -7,7 +7,15 @@ import logoDiscord from "../resources/logo-discord.svg";
 import logoReddit from "../resources/logo-reddit.svg";
 import UiImg from "./UiImg";
 
-const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
+const Footer = ({
+	twitterUrl,
+	mediumUrl,
+	redditUrl,
+	discordUrl,
+	swapprUrl,
+	dashboardUrl,
+	mintrUrl
+}) => (
 	<footer>
 		<section className="section ph-20 pv-0">
 			<div className="container">
@@ -23,21 +31,17 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl }) => (
 							<div className="column has-text-centered-mobile">
 								<ul className="links">
 									<li>
-										<a href="https://swappr.io/" target="_blank" rel="noopener noreferrer">
+										<a href={swapprUrl} target="_blank" rel="noopener noreferrer">
 											Swappr
 										</a>
 									</li>
 									<li>
-										<a href="https://mintr.havven.io/" target="_blank" rel="noopener noreferrer">
+										<a href={mintrUrl} target="_blank" rel="noopener noreferrer">
 											Mintr
 										</a>
 									</li>
 									<li>
-										<a
-											href="https://dashboard.havven.io/"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
+										<a href={dashboardUrl} target="_blank" rel="noopener noreferrer">
 											Dashboard
 										</a>
 									</li>

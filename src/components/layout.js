@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 let siteUrl = process.env.SITE_URL || "https://havven.io";
 
-const Layout = ({ children }) => (
+const Layout = ({ children, ...rest }) => (
 	<StaticQuery
 		query={graphql`
 			query SiteDataQuery {
@@ -23,6 +23,9 @@ const Layout = ({ children }) => (
 						discordUrl
 						redditUrl
 						ogImage
+						swapprUrl
+						dashboardUrl
+						mintrUrl
 					}
 				}
 			}

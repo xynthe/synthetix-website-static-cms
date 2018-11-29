@@ -72,6 +72,8 @@ class IndexPage extends React.Component {
 
 	render() {
 		let { isOpen, showThanks, emailAddress } = this.state;
+		const { swapprUrl, mintrUrl, dashboardUrl } = this.props.data.site.siteMetadata;
+
 		return (
 			<Layout>
 				<div className="home-page">
@@ -141,12 +143,7 @@ class IndexPage extends React.Component {
 							transactions.
 						</div>
 						<div className="columns is-centered get-rewarded-boxes">
-							<a
-								className="column"
-								href="https://dashboard.havven.io/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a className="column" href={dashboardUrl} target="_blank" rel="noopener noreferrer">
 								<div className="c-top">
 									<img src={icoUser2} alt="For new and experienced users" />
 									<div className="p1 red">
@@ -158,12 +155,7 @@ class IndexPage extends React.Component {
 									<div className="p3">An overview of the Synthetix network</div>
 								</div>
 							</a>
-							<a
-								className="column"
-								href="https://swappr.io/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a className="column" href={swapprUrl} target="_blank" rel="noopener noreferrer">
 								<div className="c-top">
 									<img src={icoUser1} alt="For new users" />
 									<div className="p1 blue">For New Users</div>
@@ -173,12 +165,7 @@ class IndexPage extends React.Component {
 									<div className="p3">Easily swap ETH for SNX and sUSD</div>
 								</div>
 							</a>
-							<a
-								className="column"
-								href="https://mintr.havven.io/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a className="column" href={mintrUrl} target="_blank" rel="noopener noreferrer">
 								<div className="c-top">
 									<img src={icoUser3} alt="For experienced users" />
 									<div className="p1 green">For Experienced Users</div>
@@ -316,3 +303,15 @@ const CodeBox = () => (
 		));
 	</div>
 );
+
+export const query = graphql`
+	query HomePageQuery {
+		site {
+			siteMetadata {
+				dashboardUrl
+				swapprUrl
+				mintrUrl
+			}
+		}
+	}
+`;

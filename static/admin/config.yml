@@ -26,6 +26,9 @@ collections:
     - {label: "Telegram URL", name: "telegramUrl", widget: "string"}
     - {label: "OG Image", name: "ogImage", widget: "image"}
     - {label: "Site URL", name: "siteUrl", widget: "string"}
+    - {label: "Dashboard URL", name: "dashboardUrl", widget: "string"}
+    - {label: "Swappr URL", name: "swapprUrl", widget: "string"}
+    - {label: "Mintr URL", name: "mintrUrl", widget: "string"}
 
 # -------- Pages --------
 - name: "pages"

@@ -8,5 +8,8 @@
   "mediumUrl": "https://blog.havven.io/",
   "twitterUrl": "https://twitter.com/havven_io",
   "description": "Synthetix is a decentralised payment network designed to enable everyday cryptocurrency purchases using a stable medium of exchange",
-  "siteUrl": "http://www.synthetix.io"
+  "siteUrl": "http://www.synthetix.io",
+  "dashboardUrl": "http://dashboard.synthetix.io",
+  "mintrUrl": "http://mintr.synthetix.io",
+  "swapprUrl": "http://swapper.io"
 }
