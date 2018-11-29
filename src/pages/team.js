@@ -38,7 +38,7 @@ const TeamPage = ({ data }) => {
 					<div className="container">
 						<div className="section-title white">Join the Team</div>
 						<div className="section-desc pb-50">
-							We are looking for highly skilled individuals to join the Havven team and help us
+							We are looking for highly skilled individuals to join the Synthetix team and help us
 							deliver a decentralised payment network and stablecoin to the world. If you're looking
 							for a challenging project and want to contribute to building a critical layer of the
 							blockchain ecosystem, then please get in touch!
@@ -61,7 +61,7 @@ const TeamPage = ({ data }) => {
 						<div className="section-desc join-team-desc">
 							Looking to join the team but don’t see a position suited to you? We’re always
 							interested in hearing from people who are interested in joining our mission. Say hello
-							at <a href="mailto:careers@havven.io">careers@havven.io</a>
+							at <a href="mailto:careers@synthetix.io">careers@synthetix.io</a>
 						</div>
 					</div>
 				</section>

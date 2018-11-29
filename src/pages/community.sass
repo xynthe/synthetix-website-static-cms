@@ -1,5 +1,6 @@
 @import "../styles/bulma/utilities/_all"
 @import "../styles/partials"
+@import "../styles/functions"
 
 .community-page
   .page-subtitle
@@ -8,15 +9,14 @@
 
 
   .s-title
-    color: #0A0817
-    font-size: 36px
-    font-weight: 500
-    letter-spacing: -0.42px
-    line-height: 55px
+    color: #1E1A31
+    letter-spacing: -1.16px
+    line-height: 1.3em
     text-align: center
     margin: auto
+    @include font-size(56)
     +tablet
-      width: 580px
+      width: 850px
 
   .s-desc
     color: #6F6DA0
@@ -58,6 +58,8 @@
       justify-content: center
       img
         padding-right: 20px
+
+
 
   .subscribe-section
     color: #FFFFFF

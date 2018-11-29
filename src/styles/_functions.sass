@@ -18,6 +18,8 @@
 
 @function get-font-size($number, $multiplier)
   $base: 50
+  @if $number > 50 and $multiplier != 1
+    $multiplier: 0.87 * $multiplier
   @if $multiplier == 1
     @return $number*1px
 
@@ -27,16 +29,19 @@
 
   $ratio: $number-base / $base
 
-  $ratio-adjusted: pow($ratio, 0.65)
+  $ratio-adjusted: pow($ratio, 0.7)
 
   @return ($ratio-adjusted/$ratio)*$number*$multiplier*1px
 
-@mixin font-size($number)
-  font-size: get-font-size($number,0.7)
+@mixin font-size($number, $important: false)
+  $important-text: null
+  @if $important
+    $important-text:  !important
+  font-size: get-font-size($number,0.6) $important-text
   +tablet
-    font-size: get-font-size($number,0.8)
+    font-size: get-font-size($number,0.75) $important-text
   +desktop
-    font-size: get-font-size($number,1)
+    font-size: get-font-size($number,1) $important-text
 
 
 

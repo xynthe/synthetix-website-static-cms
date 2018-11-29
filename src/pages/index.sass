@@ -31,7 +31,7 @@
 
       .c-top
         flex-grow: 0
-        padding-bottom: 25px
+        padding-bottom: 30px
       .c-bottom
         flex-grow: 0
       .p1
@@ -60,11 +60,11 @@
 
   .page-subtitle
     color: #6F6E98
-    font-size: 36px
     letter-spacing: -0.75px
     text-align: center
-    +touch
-      font-size: 22px
+    @include font-size(36)
+    +tablet
+      width: 850px
 
   .feature-boxes
     .column
@@ -74,7 +74,7 @@
       min-height: 68px
       @extend .pb-50
     .p1
-      color: #0A0817
+      color: #fff
       font-size: 18px
       padding-bottom: 13px
     .p2

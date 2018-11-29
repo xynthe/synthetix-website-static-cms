@@ -45,7 +45,7 @@ $mx: 1
 .pb-30
   padding-bottom: nrmlz(30,$mx)
 .pb-40
-  padding-bottom: 40px*$mx
+  padding-bottom: nrmlz(40,$mx)
 .pb-50
   padding-bottom: nrmlz(50,$mx)
 .pb-60
@@ -116,7 +116,7 @@ $mx: 0.5
   .pb-30
     padding-bottom: nrmlz(30,$mx)
   .pb-40
-    padding-bottom: 40px*$mx
+    padding-bottom: nrmlz(40,$mx)
   .pb-50
     padding-bottom: nrmlz(50,$mx)
   .pb-60
@@ -194,3 +194,9 @@ $mx: 0.5
   width: 100%
   +desktop
     width: 300px
+
+.d-flex
+  display: flex !important
+
+.fs-22
+  @include font-size(36,true)

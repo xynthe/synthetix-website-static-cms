@@ -11,8 +11,8 @@ const ContactUsPage = ({ data }) => {
 					<div className="container">
 						<h1 className="page-title">Contact Us</h1>
 						<div className="page-subtitle">
-							If you’d like to reach out to the Havven team in any way, please get in touch with us
-							via the following options.
+							If you’d like to reach out to the Synthetix team in any way, please get in touch with
+							us via the following options.
 						</div>
 					</div>
 				</section>
@@ -22,15 +22,20 @@ const ContactUsPage = ({ data }) => {
 							<div
 								className="column is-half"
 								onClick={() => {
-									window.location.href = "mailto:info@havven.io";
+									window.location.href = "mailto:info@synthetix.io";
 								}}
 							>
 								<div className="line-1">General Contact</div>
-								<div className="line-2">info@havven.io</div>
+								<div className="line-2">info@synthetix.io</div>
 							</div>
-							<div className="column is-half">
+							<div
+								className="column is-half"
+								onClick={() => {
+									window.location.href = "mailto:support@synthetix.io";
+								}}
+							>
 								<div className="line-1">Support</div>
-								<div className="line-2">support@havven.io</div>
+								<div className="line-2">support@synthetix.io</div>
 							</div>
 						</div>
 					</div>

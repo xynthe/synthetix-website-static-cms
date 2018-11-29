@@ -41,10 +41,11 @@ export default class HowItWorksPage extends React.Component {
 						<div className="container">
 							<h1 className="page-title">How Synthetix Works</h1>
 							<div className="page-subtitle">
-								A multi disciplinary team with proven ability to deliver complex solutions
+								There are two kinds of tokens in the Synthetix Network: SNX, the Synthetix network
+								token; and Synths such as sUSD, the synthetic assets.
 							</div>
 						</div>
-						<div className="columns is-centered">
+						<div className="columns is-centered is-hidden">
 							<div className="column is-narrow has-text-centered">
 								<a
 									href="javascript:void(0)"
@@ -82,9 +83,9 @@ export default class HowItWorksPage extends React.Component {
 						<div className="container step-1 pb-90">
 							<div className="pt-80">
 								<div className="step-number-title pb-40">STEP ONE</div>
-								<div className="step-title pb-40">Lock HAV as collateral</div>
+								<div className="step-title pb-40">Lock SNX as collateral</div>
 								<div className="step-desc pb-50">
-									HAV holders lock their HAV as collateral to back nomins, our stablecoin.
+									SNX holders lock their SNX as collateral to back Synths.
 								</div>
 								<img src={icoLock} alt="Step One" />
 							</div>
@@ -92,10 +93,10 @@ export default class HowItWorksPage extends React.Component {
 						<div className="container step-2 pb-90">
 							<div className="pt-80">
 								<div className="step-number-title pb-40">STEP TWO</div>
-								<div className="step-title pb-40">Mint stablecoins</div>
+								<div className="step-title pb-40">Mint Synths</div>
 								<div className="step-desc pb-50">
-									Nomins are minted into the market, where they can be used as a stable medium of
-									exchange.
+									Synths are minted into the market, where they can be used for a variety of
+									purposes including trading and remittance.
 								</div>
 								<img src={icoCoins} alt="Step Two" />
 							</div>
@@ -103,10 +104,10 @@ export default class HowItWorksPage extends React.Component {
 						<div className="container step-3 pb-90">
 							<div className="pt-80">
 								<div className="step-number-title pb-40">STEP THREE</div>
-								<div className="step-title pb-40">Receive reward as HAV holder</div>
+								<div className="step-title pb-40">Receive rewards as SNX holder</div>
 								<div className="step-desc pb-50">
-									Circulating nomins generate transaction fees that are distributed to HAV holders,
-									rewarding them for providing stability.
+									Circulating Synths generate transaction fees that are distributed to SNX holders,
+									rewarding them for providing on-chain synthetic assets.
 								</div>
 								<img src={icoHandout} alt="Step Three" />
 							</div>

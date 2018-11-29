@@ -55,18 +55,18 @@ class CommunityPage extends React.Component {
 						<div className="container">
 							<h1 className="page-title">Join our Community</h1>
 							<div className="page-subtitle">
-								Join the conversation with the rest of the Havven community, and get updates on
-								recent news an activity across the Havven Network.
+								Join the conversation with the rest of the Synthetix community, and get updates on
+								recent news an activity across the Synthetix Network.
 							</div>
 						</div>
 					</section>
-					<section className="section is-white">
+					<section className="section is-white is-padded">
 						<div className="container">
 							<div className="s-title pb-40">
-								Discord is the primary destination for all things Havven
+								Discord is the primary destination for all things Synthetix.
 							</div>
 							<div className="s-desc pb-50">
-								Jump in and join the conversation with the Havven team and community!
+								Jump in and join the conversation with the Synthetix team and community!
 							</div>
 							<a
 								className="join-our-discord-box"
@@ -84,7 +84,7 @@ class CommunityPage extends React.Component {
 							<div className="has-text-centered pv-50">
 								or follow us on our other social channels for updates
 							</div>
-							<div className="columns channels pb-40">
+							<div className="columns channels">
 								<a className="column" href={twitterUrl} target="_blank" rel="noopener noreferrer">
 									<img src={icoTwitter} alt="Twitter" />
 									Twitter
@@ -104,11 +104,13 @@ class CommunityPage extends React.Component {
 							</div>
 						</div>
 					</section>
-					<section className="section is-blue subscribe-section pt-110 pb-130">
+					<section className="section subscribe-section is-padded">
 						<div className="container">
 							{!showThanks ? (
 								<Fragment>
-									<div className="sub-title pb-30">Subscribe to the Havven Mailing List</div>
+									<div className="section-title white fs-22 pb-40">
+										Subscribe to the Synthetix Mailing List
+									</div>
 									<form
 										name="mailing-list"
 										method="post"
@@ -129,7 +131,7 @@ class CommunityPage extends React.Component {
 												/>
 											</div>
 											<div className="column is-narrow">
-												<button className="is-button is-blue">Subscribe</button>
+												<button className="is-button ">Subscribe</button>
 											</div>
 										</div>
 									</form>
