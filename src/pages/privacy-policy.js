@@ -20,8 +20,8 @@ const PrivacyPolicyPage = () => {
 										<span>Your privacy is important to us.</span>
 										 <br />
 										We don’t ask for your personal information unless we truly need it. It is
-										Havven's policy to respect your privacy regarding any information we may collect
-										from you across our website,http://havven.io.
+										Synthetix's policy to respect your privacy regarding any information we may
+										collect from you across our website,http://synthetix.io.
 									</li>
 									<li>
 										<span>Personal Information</span>

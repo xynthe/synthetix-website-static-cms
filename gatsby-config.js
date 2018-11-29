@@ -32,8 +32,8 @@ module.exports = {
 		{
 			resolve: "gatsby-plugin-robots-txt",
 			options: {
-				host: "https://havven.io",
-				sitemap: "https://havven.io/assets/sitemap.xml",
+				host: "https://synthetix.io",
+				sitemap: "https://synthetix.io/assets/sitemap.xml",
 				policy: [{ userAgent: "*", allow: "/" }]
 			}
 		},
@@ -50,8 +50,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				short_name: "Havven",
-				name: "Havven Website",
+				short_name: "Synthetix",
+				name: "Synthetix Website",
 				start_url: "/",
 				background_color: "#0D0A31",
 				theme_color: "#0D0A31",

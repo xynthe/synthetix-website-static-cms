@@ -229,7 +229,7 @@ class IndexPage extends React.Component {
 						<div className="container">
 							{!showThanks ? (
 								<Fragment>
-									<div className="sub-title pb-30">Subscribe to the Havven Mailing List</div>
+									<div className="sub-title pb-30">Subscribe to the Synthetix Mailing List</div>
 									<form
 										name="mailing-list"
 										method="post"

@@ -1,6 +1,6 @@
 {
-  "name": "havven-website",
-  "description": "Havven Website",
+  "name": "synthetix-website",
+  "description": "Synthetix Website",
   "version": "1.0.0",
   "author": "NodeVision <info@nodevision.com.au>",
   "dependencies": {
