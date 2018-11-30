@@ -7,7 +7,7 @@ import "../styles/main.sass";
 import Header from "./Header";
 import Footer from "./Footer";
 
-let siteUrl = process.env.SITE_URL || "https://havven.io";
+let siteUrl = process.env.SITE_URL || "https://synthetix.io";
 
 const Layout = ({ children, ...rest }) => (
 	<StaticQuery
