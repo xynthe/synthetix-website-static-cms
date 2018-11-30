@@ -1,15 +1,15 @@
 {
   "discordUrl": "https://discordapp.com/invite/AEdUHzt",
-  "ogImage": "/img/opengraph.png",
-  "keywords": "synthetix payments decentralised dApp nomin",
+  "ogImage": "/img/open-graph-image.png",
+  "siteUrl": "http://www.synthetix.io",
+  "keywords": "synthetix payments decentralised dApp synths",
   "telegramUrl": "https://t.me/havven_news",
   "redditUrl": "https://reddit.com/r/havven",
   "title": "Synthetix | Website",
   "mediumUrl": "https://blog.havven.io/",
-  "twitterUrl": "https://twitter.com/havven_io",
-  "description": "Synthetix is a decentralised payment network designed to enable everyday cryptocurrency purchases using a stable medium of exchange",
-  "siteUrl": "http://www.synthetix.io",
+  "swapprUrl": "http://swappr.io",
   "dashboardUrl": "http://dashboard.havven.io",
-  "mintrUrl": "http://mintr.havven.io",
-  "swapprUrl": "http://swapper.io"
+  "twitterUrl": "https://twitter.com/synthetix_io",
+  "description": "Synthetix, formerly Havven, is a cryptoasset-backed network that enables the creation of on-chain synthetic assets.",
+  "mintrUrl": "http://mintr.havven.io"
 }

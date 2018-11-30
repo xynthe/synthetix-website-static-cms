@@ -36,24 +36,24 @@ export default class IosIoPage extends React.Component {
 						<div className="content sl-1 pb-80">
 							<ul>
 								<li>
-									50m HAVeos will be distributed between all HAVeth holders that hold at least 1000
-									HAVeth.
+									50m SNXeos will be distributed between all SNXeth holders that hold at least 1000
+									SNXeth.
 								</li>
 								<li>
-									To determine HAVeth balances, we are taking snapshots of HAVeth holdings on
+									To determine SNXeth balances, we are taking snapshots of SNXeth holdings on
 									November 20, 2018, and December 20, 2018. Wallet balances will be recorded as the
 									average balance between those two dates, but participants must hold at least 1000
-									HAVeth on the second snapshot.
+									SNXeth on the second snapshot.
 								</li>
 								<li>Exchange wallets are currently not supported.</li>
 								<li>
 									After the second snapshot, we will advertise a dApp through which participants
-									have six months to submit an EOS wallet address to receive their HAVeos in.
+									have six months to submit an EOS wallet address to receive their SNXeos in.
 								</li>
 							</ul>
 						</div>
 						<div className="st-3 pb-50">
-							If you wish to purchase HAVeth to receive HAVeos, you can do so at the following
+							If you wish to purchase SNXeth to receive SNXeos, you can do so at the following
 							exchanges
 						</div>
 						<div className="columns exchanges pb-80">

@@ -83,15 +83,14 @@ class IndexPage extends React.Component {
 								<UiImg src={"/assets/synthetix-title.png"} alt="Synthetix" isResponsive />
 							</h1>
 							<div className="page-subtitle">
-								Synthetix, formerly Havven, is a synthetic assets platform that enables the creation
-								of on-chain, cryptocurrency-backed synthetic assets, including stablecoins,
-								metal-pegged dollars, and indices.
+								Synthetix, formerly Havven, is a cryptoasset-backed network that enables the creation
+								of on-chain synthetic assets.
 							</div>
 							<div className="has-text-centered pb-10">
-								<Link to="/announcement" className="is-button is-announcement">
+								<a href="https://blog.havven.io/havven-is-transforming-into-synthetix-2fdf727b8892" className="is-button is-announcement">
 									<span>NEW</span>
 									<span>Havven is now Synthetix. Learn more about our rebrand here!</span>
-								</Link>
+								</a>
 							</div>
 						</div>
 					</section>
@@ -110,12 +109,11 @@ class IndexPage extends React.Component {
 						</div>
 
 						<div className="section-title">
-							Synthetix provides on-chain synthetic assets (Synths), including dollars pegged to a
-							variety of currencies, metals, and more to come!
+							Synthetix enables the creation of synthetic dollars pegged to a
+							variety of assets!
 						</div>
 						<div className="section-desc">
-							Synths are currently available in sUSD, sEUR, sJPY, sAUD, sKRW, sXAU, and we’ll be
-							adding more in the near future!
+							Synths are currently available in sUSD, sEUR, sJPY, sAUD, sKRW, and sXAU.
 						</div>
 					</section>
 					<section className="section is-padded">
