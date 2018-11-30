@@ -109,12 +109,11 @@ class IndexPage extends React.Component {
 						</div>
 
 						<div className="section-title">
-							Synthetix provides on-chain synthetic assets (Synths), including dollars pegged to a
-							variety of currencies, metals, and more to come!
+							Synthetix enables the creation of synthetic dollars pegged to a
+							variety of assets!
 						</div>
 						<div className="section-desc">
-							Synths are currently available in sUSD, sEUR, sJPY, sAUD, sKRW, sXAU, and we’ll be
-							adding more in the near future!
+							Synths are currently available in sUSD, sEUR, sJPY, sAUD, sKRW, and sXAU.
 						</div>
 					</section>
 					<section className="section is-padded">
