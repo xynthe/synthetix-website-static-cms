@@ -24,7 +24,7 @@ const Footer = ({
 						<div>
 							<UiImg src="/assets/synthetix-title-sm.png" alt="Synthetix" isResponsive />
 						</div>
-						<div>A synthetic assets platform</div>
+						<div>A synthetic asset platform</div>
 					</div>
 					<div className="column is-narrow">
 						<div className="columns">

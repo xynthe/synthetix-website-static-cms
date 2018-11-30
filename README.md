@@ -1,4 +1,4 @@
-# Havven Website
+# Synthetix Website
 
 
-Mintr website built with Gatsby JS & Netlify.
+Synthetix website built with Gatsby JS & Netlify.

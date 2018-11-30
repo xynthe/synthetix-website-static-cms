@@ -8,8 +8,8 @@
   "title": "Synthetix | Website",
   "mediumUrl": "https://blog.havven.io/",
   "swapprUrl": "http://swappr.io",
-  "dashboardUrl": "http://dashboard.havven.io",
+  "dashboardUrl": "http://dashboard.synthetix.io",
   "twitterUrl": "https://twitter.com/synthetix_io",
   "description": "Synthetix, formerly Havven, is a cryptoasset-backed network that enables the creation of on-chain synthetic assets.",
-  "mintrUrl": "http://mintr.havven.io"
+  "mintrUrl": "http://mintr.synthetix.io"
 }
