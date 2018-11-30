@@ -84,11 +84,11 @@ class IndexPage extends React.Component {
 							</h1>
 							<div className="page-subtitle">
 								Synthetix, formerly Havven, is a synthetic assets platform that enables the creation
-								of on-chain, cryptocurrency-backed synthetic assets, including stablecoins,
-								metal-pegged dollars, and indices.
+								of on-chain synthetic assets, including dollars pegged to fiat currencies,
+								metals, and indices.
 							</div>
 							<div className="has-text-centered pb-10">
-								<Link to="https://blog.havven.io/havven-is-transforming-into-synthetix-2fdf727b8892" className="is-button is-announcement">
+								<a href="https://blog.havven.io/havven-is-transforming-into-synthetix-2fdf727b8892" className="is-button is-announcement">
 									<span>NEW</span>
 									<span>Havven is now Synthetix. Learn more about our rebrand here!</span>
 								</Link>
