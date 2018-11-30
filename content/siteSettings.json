@@ -10,6 +10,6 @@
   "swapprUrl": "http://swappr.io",
   "dashboardUrl": "http://dashboard.havven.io",
   "twitterUrl": "https://twitter.com/synthetix_io",
-  "description": "Synthetix enables the creation of on-chain synthetic assets, including dollars pegged to fiat currencies, precious metals, and indices. ",
+  "description": "Synthetix, formerly Havven, is a cryptoasset-backed network that enables the creation of on-chain synthetic assets.",
   "mintrUrl": "http://mintr.havven.io"
 }
