@@ -22,21 +22,18 @@
 
 h1.page-title
   font-weight: normal
-  font-size: 66px
   color: #FFFFFF
   text-align: center
-  line-height: 1.4em
+  line-height: 1.2em
   width: 900px
   margin: auto
   padding-bottom: 20px
-  +mobile
-    font-size: 32px
+  @include font-size(76)
 
 .page-subtitle
   width: 647px
   color: $blue-light
   font-size: 22px
-  letter-spacing: -0.26px
   line-height: 1.6em
   text-align: center
   margin: auto
@@ -48,9 +45,8 @@ h1.page-title
 .section-title
   width: 825px
   color: #0A0817
-  font-size: 46px
-  font-weight: normal
-  letter-spacing: -0.53px
+  font-size: 56px
+  font-weight: bold
   line-height: 1.3em
   text-align: center
   padding-bottom: 18px
@@ -65,7 +61,6 @@ h1.page-title
     font-size: 24px
     width: auto
   &.is-large
-    letter-spacing: -1.16px
     line-height: 1.3em
     @include font-size(56)
 

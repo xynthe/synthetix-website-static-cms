@@ -108,7 +108,7 @@ class IndexPage extends React.Component {
 							</div>
 						</div>
 
-						<div className="section-title">
+						<div className="section-title bold fs-56 lh-1-1">
 							Synthetix enables the creation of synthetic dollars pegged to a
 							variety of assets!
 						</div>
@@ -117,7 +117,7 @@ class IndexPage extends React.Component {
 						</div>
 					</section>
 					<section className="section is-padded">
-						<div className="section-title is-white is-narrow pb-50">
+						<div className="section-title is-white is-narrow pb-50 bold fs-56">
 							Synthetix is built for engineers
 						</div>
 						<CodeBox />
@@ -133,7 +133,7 @@ class IndexPage extends React.Component {
 						</div>
 					</section>
 					<section className="section is-white is-padded pb-110">
-						<div className="section-title is-large w-auto">
+						<div className="section-title is-large w-auto fs-56 bold">
 							Get rewarded for maintaining stability
 						</div>
 						<div className="section-desc pb-70">
@@ -176,7 +176,7 @@ class IndexPage extends React.Component {
 						</div>
 					</section>
 					<section className="section">
-						<div className="section-title is-white pt-60">Our network is decentralised</div>
+						<div className="section-title is-white pt-60 fs-56 bold">Our network is decentralised</div>
 						<div className="section-desc mb-80">
 							The Synthetix Network is designed to be decentralised and trustless.
 						</div>

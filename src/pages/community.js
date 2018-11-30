@@ -108,7 +108,7 @@ class CommunityPage extends React.Component {
 						<div className="container">
 							{!showThanks ? (
 								<Fragment>
-									<div className="section-title white fs-22 pb-40">
+									<div className="section-title white fs-36 pb-40">
 										Subscribe to the Synthetix Mailing List
 									</div>
 									<form
@@ -119,7 +119,7 @@ class CommunityPage extends React.Component {
 										onSubmit={this.submitEmail}
 									>
 										<div className="columns sub-inputs">
-											<div className="column is-narrow">
+											<div className="column is-narrow lh-1">
 												<input type="hidden" name="bot-field" />
 												<input
 													name="emailAddress"
@@ -130,7 +130,7 @@ class CommunityPage extends React.Component {
 													onChange={this.handleChange}
 												/>
 											</div>
-											<div className="column is-narrow">
+											<div className="column is-narrow lh-1">
 												<button className="is-button ">Subscribe</button>
 											</div>
 										</div>

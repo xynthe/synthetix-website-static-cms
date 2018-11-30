@@ -17,11 +17,8 @@
 
 	let branch = "staging";
 	let hostname = window.location.hostname.toLowerCase();
-	if(hostname === "www.havven.io" || hostname === "havven.io") {
+	if(hostname === "www.synthetix.io" || hostname === "synthetix.io") {
 		branch = "master";
-    }
-	if(hostname.indexOf("synthetix") > -1) {
-		branch = "synthetix";
     }
 
 	init({
