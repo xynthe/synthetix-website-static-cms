@@ -109,8 +109,7 @@ class IndexPage extends React.Component {
 						</div>
 
 						<div className="section-title">
-							Synthetix enables the creation of synthetic dollars pegged to a
-							variety of assets!
+							Synths are issued against a collateral pool of SNX tokens.
 						</div>
 						<div className="section-desc">
 							Synths are currently available in sUSD, sEUR, sJPY, sAUD, sKRW, and sXAU.
