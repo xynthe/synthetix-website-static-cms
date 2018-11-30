@@ -91,7 +91,7 @@ class IndexPage extends React.Component {
 								<a href="https://blog.havven.io/havven-is-transforming-into-synthetix-2fdf727b8892" className="is-button is-announcement">
 									<span>NEW</span>
 									<span>Havven is now Synthetix. Learn more about our rebrand here!</span>
-								</Link>
+								</a>
 							</div>
 						</div>
 					</section>
