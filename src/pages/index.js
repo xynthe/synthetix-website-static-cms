@@ -83,9 +83,8 @@ class IndexPage extends React.Component {
 								<UiImg src={"/assets/synthetix-title.png"} alt="Synthetix" isResponsive />
 							</h1>
 							<div className="page-subtitle">
-								Synthetix, formerly Havven, is a synthetic assets platform that enables the creation
-								of on-chain synthetic assets, including dollars pegged to fiat currencies,
-								metals, and indices.
+								Synthetix, formerly Havven, is a cryptoasset-backed network that enables the creation
+								of on-chain synthetic assets.
 							</div>
 							<div className="has-text-centered pb-10">
 								<a href="https://blog.havven.io/havven-is-transforming-into-synthetix-2fdf727b8892" className="is-button is-announcement">
