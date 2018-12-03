@@ -15,7 +15,7 @@ const TeamPage = ({ data }) => {
 					<div className="container">
 						<h1 className="page-title">Meet the Team</h1>
 						<div className="page-subtitle">
-							A multi disciplinary team with proven ability to deliver complex solutions
+							A multidisciplinary team with proven ability to deliver complex solutions
 						</div>
 					</div>
 				</section>
