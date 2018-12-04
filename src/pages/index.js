@@ -12,6 +12,7 @@ import icoEye from "../resources/ico-eye.svg";
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
 import UiImg from "../components/UiImg";
+import { Helmet } from "react-helmet";
 
 const bottomLabelTx = "Q4 2018";
 const currencies = [
@@ -73,9 +74,13 @@ class IndexPage extends React.Component {
 	render() {
 		let { isOpen, showThanks, emailAddress } = this.state;
 		const { swapprUrl, mintrUrl, dashboardUrl } = this.props.data.site.siteMetadata;
+		const { metaTitle, metaDescription, heading } = this.props.data.allFile.edges.node.childPagesJson;
 
 		return (
 			<Layout>
+				<Helmet title={metaTitle} >
+					<meta name="description" content={metaDescription} />
+				</Helmet>
 				<div className="home-page">
 					<section className="section pb-30">
 						<div className="container">
@@ -310,5 +315,16 @@ export const query = graphql`
 				mintrUrl
 			}
 		}
+		allFile(filter: { name: { eq: "index" }, sourceInstanceName: { eq: "pages" } }) {
+			edges {
+				node {
+					childPagesJson {
+						metaTitle						
+						metaDescription
+						heading
+					}
+				}
+			}
+		}		
 	}
 `;

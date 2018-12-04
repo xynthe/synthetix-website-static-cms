@@ -56,8 +56,9 @@ collections:
     description: "Content for the Home Page"
     file: "content/pages/index.json"
     fields:
-    - {label: "Page Title", name: "pageTitle", widget: "string"}
-    - {label: "Page Description", name: "pageDescription", widget: "string"}
+    - {label: "Meta - Title", name: "metaTitle", widget: "string"}
+    - {label: "Meta - Description", name: "metaDescription", widget: "string"}
+    - {label: "Heading", name: "heading", widget: "string"}
 
   # -------- Team --------
   - name: "team"
