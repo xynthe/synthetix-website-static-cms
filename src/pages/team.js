@@ -47,7 +47,7 @@ const TeamPage = ({ data }) => {
 							openPositions.length > 0 && (
 								<Fragment>
 									<div className="section-title is-subtle white pb-40">Open Positions</div>
-									<div className="columns open-positions pb-40">
+									<a className="columns open-positions pb-40" href="mailto:careers@synthetix.io">
 										{openPositions &&
 											openPositions.length > 0 &&
 											openPositions.map((el, idx) => (
@@ -55,7 +55,7 @@ const TeamPage = ({ data }) => {
 													<div>{el.title}</div>
 												</div>
 											))}
-									</div>
+									</a>
 								</Fragment>
 							)}
 						<div className="section-desc join-team-desc">
