@@ -74,7 +74,7 @@ class IndexPage extends React.Component {
 	render() {
 		let { isOpen, showThanks, emailAddress } = this.state;
 		const { swapprUrl, mintrUrl, dashboardUrl } = this.props.data.site.siteMetadata;
-		const { metaTitle, metaDescription, heading } = this.props.data.allFile.edges.node.childPagesJson;
+		const { metaTitle, metaDescription, heading } = this.props.data.allFile.edges[0].node.childPagesJson;
 
 		return (
 			<Layout>
