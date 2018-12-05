@@ -4,8 +4,11 @@ node_modules
 yarn-error.log
 
 # Build directory
-/public
+/public/*
 .DS_Store
 
 # Webstorm directory
 .idea
+
+!/public/_redirects
+
