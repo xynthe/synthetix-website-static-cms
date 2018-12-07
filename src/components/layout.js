@@ -38,7 +38,7 @@ const Layout = ({ children, ...rest }) => (
 						<html lang="en" />
 						<meta name="description" content={description} />
 						<meta name="keywords" content={keywords} />
-						<meta name="og:title" content={title}
+						<meta name="og:title" content={title} />
 						<meta property="og:type" content="website" />
 						<meta property="og:image" content={siteUrl + withPrefix(ogImage)} />
 						<meta property="og:description" content={description} />
