@@ -214,11 +214,13 @@ class IndexPage extends React.Component {
 							</div>
 						</div>
 					</section>
-					<section className="section is-blue subscribe-section pt-110 pb-130 is-hidden">
+					<section className="section subscribe-section is-padded">
 						<div className="container">
 							{!showThanks ? (
 								<Fragment>
-									<div className="sub-title pb-30">Subscribe to the Synthetix Mailing List</div>
+									<div className="section-title fs-36 pb-40">
+										Subscribe to the Synthetix Mailing List
+									</div>
 									<form
 										name="mailing-list"
 										method="post"
@@ -227,7 +229,7 @@ class IndexPage extends React.Component {
 										onSubmit={this.submitEmail}
 									>
 										<div className="columns sub-inputs">
-											<div className="column is-narrow">
+											<div className="column is-narrow lh-1">
 												<input type="hidden" name="bot-field" />
 												<input
 													name="emailAddress"
@@ -238,8 +240,8 @@ class IndexPage extends React.Component {
 													onChange={this.handleChange}
 												/>
 											</div>
-											<div className="column is-narrow">
-												<button className="is-button is-blue">Subscribe</button>
+											<div className="column is-narrow lh-1">
+												<button className="is-button ">Subscribe</button>
 											</div>
 										</div>
 									</form>
