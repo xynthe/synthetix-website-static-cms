@@ -1,8 +1,8 @@
 {
   "title": "Mintr",
   "key": "mintr",
-  "link": "https://mintr.synthetix.io/",
-  "isExt": true,
-  "order": 2,
+  "link": "/products/mintr",
+  "isExt": false,
+  "order": 1,
   "parentMenu": "products"
 }
