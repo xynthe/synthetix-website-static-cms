@@ -7,9 +7,10 @@
   "redditUrl": "https://reddit.com/r/synthetix_io",
   "title": "Synthetix | A crypto-backed synthetic asset platform",
   "mediumUrl": "https://blog.havven.io/",
-  "swapprUrl": "http://swappr.io",
-  "dashboardUrl": "http://dashboard.synthetix.io",
+  "swapprUrl": "https://swappr.io/",
+  "dashboardUrl": "https://dashboard.synthetix.io/",
   "twitterUrl": "https://twitter.com/synthetix_io",
   "description": "Synthetix, formerly Havven, is a cryptoasset-backed network that enables the creation of on-chain synthetic assets.",
-  "mintrUrl": "http://mintr.synthetix.io"
+  "mintrUrl": "https://mintr.synthetix.io/",
+  "synthetixExchangeUrl": "https://synthetix.exchange/" 
 }

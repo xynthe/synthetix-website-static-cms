@@ -9,10 +9,19 @@ import icoMedium from "../resources/logo-medium-dark.svg";
 import icoTelegram from "../resources/logo-telegram-dark.svg";
 
 class CommunityPage extends React.Component {
+	constructor(props) {
+		super(props);
+		this.emailRef = React.createRef();
+	}
+
 	state = {
 		showThanks: false,
 		emailAddress: ""
 	};
+
+	componentDidMount() {
+		this.emailRef.current.setCustomValidity('That does not appear to be a valid email address. Please try again.');
+	}
 
 	handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
@@ -123,7 +132,8 @@ class CommunityPage extends React.Component {
 												<input type="hidden" name="bot-field" />
 												<input
 													name="emailAddress"
-													type="text"
+													type="email"
+													ref={this.emailRef}
 													className="input"
 													placeholder="Enter your Email Address"
 													value={emailAddress}
