@@ -1,7 +1,6 @@
 import React from "react";
 import "./how-it-works.sass";
 import Layout from "../components/layout";
-import "./how-it-works.sass";
 import icoPlay from "../resources/ico-play.svg";
 import icoPlayDark from "../resources/ico-play-dark.svg";
 import icoLock from "../resources/ico-lock.svg";
