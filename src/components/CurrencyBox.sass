@@ -1,60 +1,66 @@
 @import "../styles/bulma/utilities/_all"
 
 .currency-box
-  width: 280px
-  border: 1px solid #D1D1E8
+  width: 322px
+  height: 207px
   border-radius: 4px
-  background-color: #FFFFFF
+  position: relative
+
+  border: 1px solid #D1D1E8
   box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
+
+  background-color: white
   margin: 10px
-  padding: 29px 29px 26px 29px
+  padding: 32px 28px 28px 32px
   +mobile
     margin-bottom: 20px
 
-  .currency-dot
-    margin-bottom: 25px
-    +mobile
-      float: right
-
   .currency-label-1
-    color: #25244B
-    font-family: Guillon
     font-size: 30px
+    color: #25244B
+    letter-spacing: -0.62px
+    font-family: Guillon
     font-weight: 500
-    letter-spacing: -0.63px
-    line-height: 32px
-    padding-bottom: 11px
 
   .currency-label-2
-    font-family: Guillon
     font-size: 22px
     letter-spacing: -0.46px
     line-height: 25px
+    color: #25244B
+    margin-top: -3px
+
     span
       &:first-child
-        color: #25244B
         padding-right: 5px
       &:last-child
         color: #8180B9
 
-  .currency-line
-    padding-top: 30px
-    width: 100%
+  .currency-logo
+    position: absolute
+    top: 32px
+    right: 28px
 
-  .bottom-label-tx
-    margin-top: 16px
-    //align-self: flex-end
-    text-align: left
-    font-family: Guillon
-    font-size: 16px
+  .currency-text
+    font-size: 22px
+    color: #25244B
     letter-spacing: -0.46px
-    line-height: 25px
+    white-space: pre-wrap
+    line-height: 26px
+
+
+  .buttons
     display: flex
-    span
-      padding: 4px 12px
-      border-radius: 20px
-      background: #F1F1F7
-      color: #8180B9
+    justify-content: flex-start
+    margin-top: 40px
+    
+    .currency-button
+      width: 125px
+      height: 39px
+      margin-right: 10px
+      display: block
+
+      &:last-child 
+        margin: 0
 
 +desktop
   .currency-box

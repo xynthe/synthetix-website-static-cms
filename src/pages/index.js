@@ -6,6 +6,7 @@ import CurrencyBox from "../components/CurrencyBox";
 import icoUser1 from "../resources/ico-user-level-1.svg";
 import icoUser2 from "../resources/ico-user-level-2.svg";
 import icoUser3 from "../resources/ico-user-level-3.svg";
+import icoUser4 from "../resources/ico-user-level-4.svg";
 import icoTriangle from "../resources/ico-triangle.svg";
 import icoShield from "../resources/ico-shield.svg";
 import icoEye from "../resources/ico-eye.svg";
@@ -16,15 +17,44 @@ import { Helmet } from "react-helmet";
 
 const bottomLabelTx = "Q4 2018";
 const currencies = [
-	{ nCurrency: "sUSD", currency: "USD", currencyNumber: "$1.00" },
-	{ nCurrency: "sEUR", currency: "EURO", currencyNumber: "€1.00", bottomLabel: bottomLabelTx },
-	{ nCurrency: "sJPY", currency: "YEN", currencyNumber: "¥1.00", bottomLabel: bottomLabelTx },
-	{ nCurrency: "sAUD", currency: "AUD", currencyNumber: "$1.00", bottomLabel: bottomLabelTx },
-	{ nCurrency: "sKRW", currency: "WON", currencyNumber: "₩1.00", bottomLabel: bottomLabelTx },
-	{ nCurrency: "sXAU", currency: "ounce/gold", currencyNumber: "1.00", bottomLabel: bottomLabelTx }
+	{ nCurrency: "sUSD", currency: "USD", currencyNumber: "$1.00", buttons: [
+		{ 
+			link: "https://coinmarketcap.com/currencies/susd/", platform: 'coinmarketcap' 
+		}, 
+		{ 
+			link: "https://etherscan.io/address/0x57Ab1E02fEE23774580C119740129eAC7081e9D3", platform: 'etherscan' 
+		}
+	]},
+	{ nCurrency: "sEUR", currency: "EURO", currencyNumber: "€1.00", bottomLabel: bottomLabelTx, buttons: [
+		{ 
+			link: "https://etherscan.io/address/0x3EB064766109D150e4362222df80638BcE00e037", platform: 'etherscan' 
+		}
+	]},
+	{ nCurrency: "sJPY", currency: "YEN", currencyNumber: "¥1.00", bottomLabel: bottomLabelTx, buttons: [
+		{ 
+			link: "https://etherscan.io/address/0x559E848A1b6a7AfC69Ee27F8d20280A42628b2cf", platform: 'etherscan' 
+		}
+	]},
+	{ nCurrency: "sAUD", currency: "AUD", currencyNumber: "$1.00", bottomLabel: bottomLabelTx, buttons: [
+		{ 
+			link: "https://etherscan.io/address/0xED4699f180a14B5974c26f494483F9c327Fd381a", platform: 'etherscan' 
+		}
+	]},
+	{ nCurrency: "sXAU", currency: "ounce/gold", currencyNumber: "1.00", bottomLabel: bottomLabelTx, buttons: [
+		{ 
+			link: "https://etherscan.io/address/0xe05d803fa0c5832fa2262465290abb25d6c2bfa3", platform: 'etherscan' 
+		}
+	]},
+	{ currency: 'none', texts: [' sKRW, sCHF, and sGBP are now also live.\n\n', 'Stocks, commodities, and indices are coming soon!']},
 ];
 
+
 class IndexPage extends React.Component {
+	constructor(props) {
+		super(props);
+		this.emailRef = React.createRef();
+	}
+
 	state = {
 		isOpen: false,
 		showThanks: false,
@@ -32,6 +62,10 @@ class IndexPage extends React.Component {
 	};
 
 	player = null;
+
+	componentDidMount() {
+		this.emailRef.current.setCustomValidity('That does not appear to be a valid email address. Please try again.');
+	}
 
 	startVideo() {
 		this.player = new Player("video-how-it-works", {
@@ -73,7 +107,7 @@ class IndexPage extends React.Component {
 
 	render() {
 		let { isOpen, showThanks, emailAddress } = this.state;
-		const { swapprUrl, mintrUrl, dashboardUrl } = this.props.data.site.siteMetadata;
+		const { swapprUrl, mintrUrl, dashboardUrl, synthetixExchangeUrl } = this.props.data.site.siteMetadata;
 		const { metaTitle, metaDescription, heading } = this.props.data.allFile.edges[0].node.childPagesJson;
 
 		return (
@@ -148,33 +182,37 @@ class IndexPage extends React.Component {
 							<a className="column" href={dashboardUrl} target="_blank" rel="noopener noreferrer">
 								<div className="c-top">
 									<img src={icoUser2} alt="For new and experienced users" />
-									<div className="p1 red">
-										For New and <br /> Experienced Users
-									</div>
 								</div>
 								<div className="c-bottom">
-									<div className="p2 red">Dashboard</div>
+									<div className="p2">Dashboard</div>
 									<div className="p3">An overview of the Synthetix network</div>
 								</div>
 							</a>
 							<a className="column" href={swapprUrl} target="_blank" rel="noopener noreferrer">
 								<div className="c-top">
 									<img src={icoUser1} alt="For new users" />
-									<div className="p1 blue">For New Users</div>
 								</div>
 								<div className="c-bottom">
-									<div className="p2 blue">Swappr</div>
-									<div className="p3">Easily swap ETH for SNX and sUSD</div>
+									<div className="p2">Swappr</div>
+									<div className="p3">Easily swap between ETH, SNX, and sUSD</div>
 								</div>
 							</a>
 							<a className="column" href={mintrUrl} target="_blank" rel="noopener noreferrer">
 								<div className="c-top">
 									<img src={icoUser3} alt="For experienced users" />
-									<div className="p1 green">For Experienced Users</div>
 								</div>
 								<div className="c-bottom">
-									<div className="p2 green">Mintr</div>
+									<div className="p2">Mintr</div>
 									<div className="p3">Use your SNX to mint Synths and collect fees</div>
+								</div>
+							</a>
+							<a className="column" href={synthetixExchangeUrl} target="_blank" rel="noopener noreferrer">
+								<div className="c-top">
+									<img src={icoUser4} alt="Synthetix.Exchange" />
+								</div>
+								<div className="c-bottom">
+									<div className="p2">Synthetix.Exchange</div>
+									<div className="p3">Convert between Synths without a counterparty</div>
 								</div>
 							</a>
 						</div>
@@ -233,7 +271,8 @@ class IndexPage extends React.Component {
 												<input type="hidden" name="bot-field" />
 												<input
 													name="emailAddress"
-													type="text"
+													type="email"
+													ref={this.emailRef}
 													className="input"
 													placeholder="Enter your Email Address"
 													value={emailAddress}
@@ -315,6 +354,7 @@ export const query = graphql`
 				dashboardUrl
 				swapprUrl
 				mintrUrl
+				synthetixExchangeUrl
 			}
 		}
 		allFile(filter: { name: { eq: "index" }, sourceInstanceName: { eq: "pages" } }) {

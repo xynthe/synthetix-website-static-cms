@@ -1,0 +1,8 @@
+{
+  "title": "Github",
+  "key": "github",
+  "link": "https://github.com/Synthetixio",
+  "isExt": true,
+  "order": 4,
+  "parentMenu": "developers"
+}
