@@ -12,6 +12,10 @@
   background-color: white
   margin: 10px
   padding: 32px 28px 28px 32px
+  
+  +until-widescreen
+    padding: 32px 14px 28px 16px
+  
   +mobile
     margin-bottom: 20px
 
@@ -41,11 +45,13 @@
     right: 28px
 
   .currency-text
-    font-size: 22px
+    font-size: 14px
     color: #25244B
     letter-spacing: -0.46px
     white-space: pre-wrap
     line-height: 26px
+    +widescreen
+      font-size: 22px
 
 
   .buttons
@@ -58,6 +64,13 @@
       height: 39px
       margin-right: 10px
       display: block
+
+      +until-widescreen
+        width: 95px
+        margin-right: 5px
+
+      +mobile 
+        width: 125px
 
       &:last-child 
         margin: 0

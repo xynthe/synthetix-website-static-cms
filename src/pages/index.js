@@ -19,11 +19,11 @@ const bottomLabelTx = "Q4 2018";
 const currencies = [
 	{ nCurrency: "sUSD", currency: "USD", currencyNumber: "$1.00", buttons: [
 		{ 
+			link: "https://etherscan.io/address/0x57Ab1E02fEE23774580C119740129eAC7081e9D3", platform: 'etherscan' 
+		},
+		{ 
 			link: "https://coinmarketcap.com/currencies/susd/", platform: 'coinmarketcap' 
 		}, 
-		{ 
-			link: "https://etherscan.io/address/0x57Ab1E02fEE23774580C119740129eAC7081e9D3", platform: 'etherscan' 
-		}
 	]},
 	{ nCurrency: "sEUR", currency: "EURO", currencyNumber: "€1.00", bottomLabel: bottomLabelTx, buttons: [
 		{ 
@@ -212,6 +212,7 @@ class IndexPage extends React.Component {
 								</div>
 								<div className="c-bottom">
 									<div className="p2">Synthetix.Exchange</div>
+									<div className="beta-badge">[beta]</div>
 									<div className="p3">Convert between Synths without a counterparty</div>
 								</div>
 							</a>
