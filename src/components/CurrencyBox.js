@@ -2,23 +2,33 @@ import React from "react";
 import { withPrefix } from "gatsby";
 import "./CurrencyBox.sass";
 
-const CurrencyBox = ({ nCurrency, currency, currencyNumber, bottomLabel }) => {
-	let dotSrc = withPrefix(`/img/${nCurrency.toLowerCase()}-dot.svg`);
-	let lineSrc = withPrefix(`/img/${nCurrency.toLowerCase()}-line.svg`);
+const CurrencyBox = ({ nCurrency = '', currency, currencyNumber, bottomLabel, texts, buttons }) => {
+	let logoSrc = withPrefix(`/img/${nCurrency.toLowerCase()}_blue.svg`);
+
 	return (
 		<div className="column currency-box">
-			<img src={dotSrc} className="currency-dot" alt={nCurrency} />
-			<div className="currency-label-1">{nCurrency}</div>
-			<div className="currency-label-2">
-				<span>{currencyNumber}</span>
-				<span>{currency}</span>
-			</div>
-			{bottomLabel ? (
-				<div className="bottom-label-tx">
-					<span>{bottomLabel}</span>
-				</div>
+			{currency === 'none' ? (
+				<React.Fragment>
+					{ texts && texts.map(t => <p class="currency-text">{t}</p>) }
+				</React.Fragment>
 			) : (
-				<img src={lineSrc} className="currency-line" alt={nCurrency} />
+				<React.Fragment>
+					<div className="currency-label-1">{nCurrency}</div>
+					<div className="currency-label-2">
+						<span>{currencyNumber}</span>
+						<span class="currency-sign">{currency}</span>
+					</div>
+					<div className="currency-logo">
+						<img src={logoSrc} />
+					</div>
+					<div className="buttons">
+						{buttons.map(b => (
+							<a href={b.link} target="_blank" class="currency-button">
+								<img src={withPrefix(`/img/${b.platform}.svg`)} />
+							</a>
+						))}
+					</div>
+				</React.Fragment>
 			)}
 		</div>
 	);
