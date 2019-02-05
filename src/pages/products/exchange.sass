@@ -1,0 +1,96 @@
+@import "../../styles/bulma/utilities/_all"
+@import "../../styles/partials"
+@import "../../styles/functions"
+
+.exchange-page
+  .header-image
+    text-align: center
+    width: 524
+    height: 182
+    margin-bottom: 38px
+
+  .page-subtitle
+    max-width: 523px
+
+  .section-desc
+    width: auto
+
+  .section.exchange-about
+    .section-desc
+      max-width: 720px
+
+      +mobile
+        padding: 0 20px
+
+    .exchange-button
+
+      margin: 16px 0 20px 0
+
+      a 
+        @extend %light-bg-hover
+        box-shadow: 0 10px 20px 3px rgba(64,43,220,0.11)
+        max-width: 380px
+        display: block
+
+        img
+          display: block
+          width: 100%
+
+      display: flex
+      justify-content: center
+
+  .section
+    .columns
+      .column
+        .section-title
+          width: auto
+
+        .section-desc
+
+          color: #5E597F
+          letter-spacing: 0
+          text-align: center
+          line-height: 32px
+
+        .exchange-screenshot
+          display: flex
+          height: 100%
+          align-items: center
+
+
+  .section.minting-synths
+
+    .section-title
+      width: auto
+
+
+  .sp2
+    color: #0A0817
+    line-height: 1.25em
+    text-align: center
+    @include font-size(56)
+    +tablet
+      width: 850px
+
+  .sp3
+    color: #6F6DA0
+    line-height: 1.45em
+    text-align: center
+    @include font-size(22)
+    +tablet
+      width: 580px
+
+  .sp4
+    color: #6F6DA0
+    line-height: 1.45em
+    text-align: center
+    @include font-size(22)
+    +tablet
+      width: 600px
+
+  .sp7
+    color: #1E1A31
+    line-height: 1.4em
+    text-align: center
+    @include font-size(56)
+
