@@ -161,7 +161,7 @@ class IndexPage extends React.Component {
 						<CodeBox />
 						<div className="has-text-centered">
 							<a
-								href="https://developer.havven.io/"
+								href="https://developer.synthetix.io/"
 								target="_blank"
 								className="is-button is-blue w-270"
 								rel="noopener noreferrer"
@@ -312,19 +312,19 @@ export default IndexPage;
 const CodeBox = () => (
 	<div className="ui-box is-code code-regular mb-50">
 		<span className="code-comment">
-			{"//"} Initialize havven-js library with any signer (Metamask, Trezor, Ledger, PrivateKey
+			{"//"} Initialize synthetix-js library with any signer (Metamask, Trezor, Ledger, PrivateKey
 			supported)
 		</span>
 		<br />
 		<span className="code-green">const </span>
-		{"{"} HavvenJs {"}"} = <span className="code-green">require</span>(
-		<span className="code-white">'havven-js'</span>
+		{"{"} SynthetixJs {"}"} = <span className="code-green">require</span>(
+		<span className="code-white">'synthetix-js'</span>
 		);
 		<br />
 		<span className="code-green">const </span> metaMaskSigner ={" "}
-		<span className="code-green">new</span> HavvenJs.signers.Metamask();
+		<span className="code-green">new</span> SynthetixJs.signers.Metamask();
 		<br />
-		<span className="code-green">const </span> havjs = new HavvenJs(
+		<span className="code-green">const </span> snxjs = new SynthetixJs(
 		{"{"}
 		signer: metaMaskSigner
 		{"}"}
@@ -336,13 +336,13 @@ const CodeBox = () => (
 		</span>
 		<br />
 		<span className="code-green">const </span>
-		txObj = <span className="code-green">await</span> havjs
+		txObj = <span className="code-green">await</span> snxjs
 		<br />
 		&nbsp;&nbsp;&nbsp;.StablePayments
 		<br />
 		&nbsp;&nbsp;&nbsp;.transfer(
 		<span className="code-white">'0x5C545CA7f9D34857664FDCe6aDC22edcF1D5061f'</span>,<br />
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;havjs.util.parseEther(
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;snxjs.util.parseEther(
 		<span className="code-white">'100'</span>
 		));
 	</div>
