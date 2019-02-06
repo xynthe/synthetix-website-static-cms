@@ -19,7 +19,7 @@ const bottomLabelTx = "Q4 2018";
 const currencies = [
 	{ nCurrency: "sUSD", currency: "USD", currencyNumber: "$1.00", buttons: [
 		{ 
-			link: "https://etherscan.io/address/0x57Ab1E02fEE23774580C119740129eAC7081e9D3", platform: 'etherscan' 
+			link: "https://etherscan.io/token/0x57Ab1E02fEE23774580C119740129eAC7081e9D3", platform: 'etherscan' 
 		},
 		{ 
 			link: "https://coinmarketcap.com/currencies/susd/", platform: 'coinmarketcap' 
@@ -27,22 +27,22 @@ const currencies = [
 	]},
 	{ nCurrency: "sEUR", currency: "EURO", currencyNumber: "€1.00", bottomLabel: bottomLabelTx, buttons: [
 		{ 
-			link: "https://etherscan.io/address/0x3EB064766109D150e4362222df80638BcE00e037", platform: 'etherscan' 
+			link: "https://etherscan.io/token/0x3EB064766109D150e4362222df80638BcE00e037", platform: 'etherscan' 
 		}
 	]},
 	{ nCurrency: "sJPY", currency: "YEN", currencyNumber: "¥1.00", bottomLabel: bottomLabelTx, buttons: [
 		{ 
-			link: "https://etherscan.io/address/0x559E848A1b6a7AfC69Ee27F8d20280A42628b2cf", platform: 'etherscan' 
+			link: "https://etherscan.io/token/0x559E848A1b6a7AfC69Ee27F8d20280A42628b2cf", platform: 'etherscan' 
 		}
 	]},
 	{ nCurrency: "sAUD", currency: "AUD", currencyNumber: "$1.00", bottomLabel: bottomLabelTx, buttons: [
 		{ 
-			link: "https://etherscan.io/address/0xED4699f180a14B5974c26f494483F9c327Fd381a", platform: 'etherscan' 
+			link: "https://etherscan.io/token/0xED4699f180a14B5974c26f494483F9c327Fd381a", platform: 'etherscan' 
 		}
 	]},
 	{ nCurrency: "sXAU", currency: "ounce/gold", currencyNumber: "1.00", bottomLabel: bottomLabelTx, buttons: [
 		{ 
-			link: "https://etherscan.io/address/0xe05d803fa0c5832fa2262465290abb25d6c2bfa3", platform: 'etherscan' 
+			link: "https://etherscan.io/token/0xe05d803fa0c5832fa2262465290abb25d6c2bfa3", platform: 'etherscan' 
 		}
 	]},
 	{ currency: 'none', texts: [' sKRW, sCHF, and sGBP are now also live.\n\n', 'Stocks, commodities, and indices are coming soon!']},
