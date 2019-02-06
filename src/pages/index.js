@@ -151,7 +151,7 @@ class IndexPage extends React.Component {
 							Synths are issued against a collateral pool of SNX tokens.
 						</div>
 						<div className="section-desc">
-							Synths are currently available in sUSD, sEUR, sJPY, sAUD, sKRW, and sXAU.
+							Synths are currently available in sUSD, sEUR, sJPY, sAUD, sKRW, sXAU, sCHF, and sGBP.
 						</div>
 					</section>
 					<section className="section is-padded">
