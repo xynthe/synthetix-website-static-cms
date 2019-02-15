@@ -1,7 +1,7 @@
 {
   "title": "Blog",
   "key": "blog",
-  "link": "https://blog.havven.io/",
+  "link": "https://blog.synthetix.io/",
   "isExt": true,
   "order": 2,
   "parentMenu": "learn"

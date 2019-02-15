@@ -19,7 +19,7 @@ const bottomLabelTx = "Q4 2018";
 const currencies = [
 	{ nCurrency: "sUSD", currency: "USD", currencyNumber: "$1.00", buttons: [
 		{ 
-			link: "https://etherscan.io/address/0x57Ab1E02fEE23774580C119740129eAC7081e9D3", platform: 'etherscan' 
+			link: "https://etherscan.io/token/0x57Ab1E02fEE23774580C119740129eAC7081e9D3", platform: 'etherscan' 
 		},
 		{ 
 			link: "https://coinmarketcap.com/currencies/susd/", platform: 'coinmarketcap' 
@@ -27,22 +27,22 @@ const currencies = [
 	]},
 	{ nCurrency: "sEUR", currency: "EURO", currencyNumber: "€1.00", bottomLabel: bottomLabelTx, buttons: [
 		{ 
-			link: "https://etherscan.io/address/0x3EB064766109D150e4362222df80638BcE00e037", platform: 'etherscan' 
+			link: "https://etherscan.io/token/0x3EB064766109D150e4362222df80638BcE00e037", platform: 'etherscan' 
 		}
 	]},
 	{ nCurrency: "sJPY", currency: "YEN", currencyNumber: "¥1.00", bottomLabel: bottomLabelTx, buttons: [
 		{ 
-			link: "https://etherscan.io/address/0x559E848A1b6a7AfC69Ee27F8d20280A42628b2cf", platform: 'etherscan' 
+			link: "https://etherscan.io/token/0x559E848A1b6a7AfC69Ee27F8d20280A42628b2cf", platform: 'etherscan' 
 		}
 	]},
 	{ nCurrency: "sAUD", currency: "AUD", currencyNumber: "$1.00", bottomLabel: bottomLabelTx, buttons: [
 		{ 
-			link: "https://etherscan.io/address/0xED4699f180a14B5974c26f494483F9c327Fd381a", platform: 'etherscan' 
+			link: "https://etherscan.io/token/0xED4699f180a14B5974c26f494483F9c327Fd381a", platform: 'etherscan' 
 		}
 	]},
 	{ nCurrency: "sXAU", currency: "ounce/gold", currencyNumber: "1.00", bottomLabel: bottomLabelTx, buttons: [
 		{ 
-			link: "https://etherscan.io/address/0xe05d803fa0c5832fa2262465290abb25d6c2bfa3", platform: 'etherscan' 
+			link: "https://etherscan.io/token/0xe05d803fa0c5832fa2262465290abb25d6c2bfa3", platform: 'etherscan' 
 		}
 	]},
 	{ currency: 'none', texts: [' sKRW, sCHF, and sGBP are now also live.\n\n', 'Stocks, commodities, and indices are coming soon!']},
@@ -122,13 +122,13 @@ class IndexPage extends React.Component {
 								<UiImg src={"/assets/synthetix-title.png"} alt="Synthetix" isResponsive />
 							</h1>
 							<div className="page-subtitle">
-								Synthetix, formerly Havven, is a cryptoasset-backed network that enables the creation
+								Synthetix is a cryptoasset-backed network that enables the creation
 								of on-chain synthetic assets.
 							</div>
 							<div className="has-text-centered pb-10">
-								<a href="https://blog.havven.io/havven-is-transforming-into-synthetix-2fdf727b8892" className="is-button is-announcement">
+								<a href="https://synthetix.exchange" className="is-button is-announcement">
 									<span>NEW</span>
-									<span>Havven is now Synthetix. Learn more about our rebrand here!</span>
+									<span>Convert between different Synths on Synthetix.Exchange!</span>
 								</a>
 							</div>
 						</div>
@@ -151,7 +151,7 @@ class IndexPage extends React.Component {
 							Synths are issued against a collateral pool of SNX tokens.
 						</div>
 						<div className="section-desc">
-							Synths are currently available in sUSD, sEUR, sJPY, sAUD, sKRW, and sXAU.
+							Synths are currently available in sUSD, sEUR, sJPY, sAUD, sKRW, sXAU, sCHF, and sGBP.
 						</div>
 					</section>
 					<section className="section is-padded">
@@ -161,7 +161,7 @@ class IndexPage extends React.Component {
 						<CodeBox />
 						<div className="has-text-centered">
 							<a
-								href="https://developer.havven.io/"
+								href="https://developer.synthetix.io/"
 								target="_blank"
 								className="is-button is-blue w-270"
 								rel="noopener noreferrer"
@@ -312,19 +312,19 @@ export default IndexPage;
 const CodeBox = () => (
 	<div className="ui-box is-code code-regular mb-50">
 		<span className="code-comment">
-			{"//"} Initialize havven-js library with any signer (Metamask, Trezor, Ledger, PrivateKey
+			{"//"} Initialize synthetix-js library with any signer (Metamask, Trezor, Ledger, PrivateKey
 			supported)
 		</span>
 		<br />
 		<span className="code-green">const </span>
-		{"{"} HavvenJs {"}"} = <span className="code-green">require</span>(
-		<span className="code-white">'havven-js'</span>
+		{"{"} SynthetixJs {"}"} = <span className="code-green">require</span>(
+		<span className="code-white">'synthetix-js'</span>
 		);
 		<br />
 		<span className="code-green">const </span> metaMaskSigner ={" "}
-		<span className="code-green">new</span> HavvenJs.signers.Metamask();
+		<span className="code-green">new</span> SynthetixJs.signers.Metamask();
 		<br />
-		<span className="code-green">const </span> havjs = new HavvenJs(
+		<span className="code-green">const </span> snxjs = new SynthetixJs(
 		{"{"}
 		signer: metaMaskSigner
 		{"}"}
@@ -336,13 +336,13 @@ const CodeBox = () => (
 		</span>
 		<br />
 		<span className="code-green">const </span>
-		txObj = <span className="code-green">await</span> havjs
+		txObj = <span className="code-green">await</span> snxjs
 		<br />
 		&nbsp;&nbsp;&nbsp;.StablePayments
 		<br />
 		&nbsp;&nbsp;&nbsp;.transfer(
 		<span className="code-white">'0x5C545CA7f9D34857664FDCe6aDC22edcF1D5061f'</span>,<br />
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;havjs.util.parseEther(
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;snxjs.util.parseEther(
 		<span className="code-white">'100'</span>
 		));
 	</div>
