@@ -9,21 +9,21 @@ const CurrencyBox = ({ nCurrency = '', currency, currencyNumber, bottomLabel, te
 		<div className="column currency-box">
 			{currency === 'none' ? (
 				<React.Fragment>
-					{ texts && texts.map(t => <p class="currency-text">{t}</p>) }
+					{ texts && texts.map((t,i) => <p key={i} className="currency-text">{t}</p>) }
 				</React.Fragment>
 			) : (
 				<React.Fragment>
 					<div className="currency-label-1">{nCurrency}</div>
 					<div className="currency-label-2">
 						<span>{currencyNumber}</span>
-						<span class="currency-sign">{currency}</span>
+						<span className="currency-sign">{currency}</span>
 					</div>
 					<div className="currency-logo">
 						<img src={logoSrc} />
 					</div>
 					<div className="buttons">
 						{buttons.map(b => (
-							<a href={b.link} target="_blank" class="currency-button">
+							<a href={b.link} key={b.platform} target="_blank" className="currency-button">
 								<img src={withPrefix(`/img/${b.platform}.svg`)} />
 							</a>
 						))}
