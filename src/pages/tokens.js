@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import "./tokens.sass";
 import TokenBox from "../components/TokenBox"
 
-let testTokens = [
+let localTokens = [
     {
       "symbol": "SNX",
       "address": "0xc011a72400e58ecd99ee497cf89e3775d4bd732f",
@@ -54,12 +54,11 @@ let testTokens = [
  ]
 
 const TokensPage = ({ data }) => {
+	// TODO: fix data
 	let tokens = data && data.allFile.edges[0].node.childPagesJson.tokens;
-	console.log(tokens)
 
-	let mainToken = testTokens[0]
-	let otherTokens = testTokens.slice(1, testTokens.length)
-
+	let otherTokens = localTokens.slice(1, localTokens.length)
+	console.log(otherTokens)
 
 	return (
 		<Layout>
@@ -74,8 +73,8 @@ const TokensPage = ({ data }) => {
 				</section>
 				<section className="section is-white minting-synths">
 					<div className="container">
-						<TokenBox title={mainToken.symbol} {...mainToken}></TokenBox>
-						{ otherTokens.map(t => <TokenBox title={t.symbol} {...t} /> ) }
+						<TokenBox title={localTokens[0].symbol} tokens={[localTokens[0]]}></TokenBox>
+						<TokenBox title="Synth" tokens={otherTokens} /> 
 					</div>
 				</section>		
 			</div>
