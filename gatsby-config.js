@@ -5,6 +5,14 @@ let siteMeta = require("./content/siteSettings");
 module.exports = {
 	siteMetadata: siteMeta,
 	plugins: [
+		// Products Pages
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: path.join(__dirname, "content", "pages", "products"),
+				name: "products"
+			}
+		},
 		// Top Nav
 		{
 			resolve: `gatsby-source-filesystem`,

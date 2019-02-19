@@ -84,22 +84,39 @@
 				width: auto
 
 	
-	.token-select
-		font-size: 24px
-		letter-spacing: -0.5px
-		text-align: center
-		line-height: 28px
-		text-align-last: center
-		background: #FFFFFF
-		border: 1px solid #A7A7A7
-		border-radius: 3px
+	.token-symbol
 
-		min-width: 174px
-		min-height: 28px
+		position: relative
 
-		+touch
-			min-width: auto
-			font-size: 16px
+		.token-select
+			font-size: 24px
+			letter-spacing: -0.5px
+			line-height: 28px
+			text-align-last: center
+			background: #FFFFFF
+			border: 1px solid #A7A7A7
+			border-radius: 3px
+			position: absolute
 
-		+until(500px)
-			font-size: 12px
+			min-width: 174px
+			min-height: 28px
+
+			top: -31px
+			transform: translateX(-87px)
+
+			+until(1280px)
+				min-width: auto
+				transform: translateX(-47px)
+
+			+touch
+				transform: translateX(-35px)
+				top: -22px
+				font-size: 16px
+
+			+mobile
+				position: static
+				transform: translateX(0)
+
+			+until(500px)
+				font-size: 12px
+
