@@ -6,8 +6,8 @@ import "./tokens.sass";
 import TokenBox from "../components/TokenBox"
 
 const TokensPage = ({ data }) => {
-	let tokens = data && data.allFile.edges[0].node.childPagesJson.tokens;
-	let otherTokens = tokens.slice(1, tokens.length)
+	let tokens = data && data.allFile && data.allFile.edges[0].node.childPagesJson.tokens;
+	let otherTokens = tokens && tokens.slice(1, tokens.length)
 
 	return (
 		<Layout>
@@ -21,10 +21,12 @@ const TokensPage = ({ data }) => {
 					</div>
 				</section>
 				<section className="section is-white minting-synths">
-					<div className="container">
-						<TokenBox title={tokens[0].symbol} tokens={[tokens[0]]}></TokenBox>
-						<TokenBox title="Synth" tokens={otherTokens} /> 
-					</div>
+					{ tokens ? (
+						<div className="container">
+							<TokenBox title={tokens[0].symbol} tokens={[tokens[0]]}></TokenBox>
+							<TokenBox title="Synth" tokens={otherTokens} /> 
+						</div>
+					) : null }
 				</section>		
 			</div>
 		</Layout>
