@@ -80,6 +80,7 @@ collections:
     - label: "Open positions"
       name: "openPositions"
       widget: "list"
+      required: false
       fields:
         - {label: "Title", name: "title", widget: "string"}
 
@@ -91,6 +92,22 @@ collections:
     fields:
     - {label: "Page Title", name: "pageTitle", widget: "string"}
     - {label: "Page Description", name: "pageDescription", widget: "string"}
+
+  # -------- tokens --------
+  - name: "tokens"
+    label: "Tokens page"
+    description: "Content for Tokens page"
+    file: "content/pages/tokens.json"
+    fields:
+    - {label: "Page Title", name: "pageTitle", widget: "string"}
+    - {label: "Page Description", name: "pageDescription", widget: "string"}
+    - label: "Tokens"
+      name: "tokens"
+      widget: "list"
+      fields:
+      - {label: "Symbol", name: "symbol", widget: "string"}
+      - {label: "Address", name: "address", widget: "string"}
+      - {label: "Decimals", name: "decimals", widget: "number"}
 
 # -------- How it works --------
 - label: "Top Navigation"

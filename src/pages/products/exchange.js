@@ -22,7 +22,7 @@ const ExchangePage = (props) => {
 				</section>
 				<section className="section is-white exchange-about">
 					<div className="container">
-						<div className="section-title sp7 pt-50">Synthetix.Exchange</div>
+						<div className="section-title sp7 pt-10">Synthetix.Exchange</div>
 						<div className="section-desc sp1">
 							Synthetix.Exchange provides an intuitive interface for conversions between the full range of Synths available (including sUSD, sEUR, sAUD, sJPY, sKRW, and sXAU). It provides access to a variety of synthetic forms of fiat currencies and gold, as well opening up forex trading possibilities. 						</div>
 						<div className="exchange-button"><a href={synthetixExchangeUrl} target="_blank"><img src={exchangeButton} /></a></div>
