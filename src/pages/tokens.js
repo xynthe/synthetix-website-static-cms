@@ -34,7 +34,7 @@ const TokensPage = ({ data }) => {
 
 export const query = graphql`
 	query TokensPageQuery {
-		allFile(filter: { name: {eq: "tokens" }, sourceInstanceName: { eq: "content" } }) {
+		allFile(filter: { name: {eq: "tokens" }, sourceInstanceName: { eq: "pages" } }) {
 			edges {
 				node {
 					childPagesJson {
