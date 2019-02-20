@@ -122,13 +122,12 @@ class IndexPage extends React.Component {
 								<UiImg src={"/assets/synthetix-title.png"} alt="Synthetix" isResponsive />
 							</h1>
 							<div className="page-subtitle">
-								Synthetix is a cryptoasset-backed network that enables the creation
-								of on-chain synthetic assets.
+								Decentralised synthetic assets
 							</div>
 							<div className="has-text-centered pb-10">
 								<a href="https://synthetix.exchange" className="is-button is-announcement">
 									<span>NEW</span>
-									<span>Convert between different Synths on Synthetix.Exchange!</span>
+									<span>Trade forex, commodities, and crypto on Synthetix.Exchange!</span>
 								</a>
 							</div>
 						</div>
@@ -148,10 +147,11 @@ class IndexPage extends React.Component {
 						</div>
 
 						<div className="section-title">
-							Synths are issued against a collateral pool of SNX tokens.
+							Introducing Synths
 						</div>
 						<div className="section-desc">
-							Synths are currently available in sUSD, sEUR, sJPY, sAUD, sKRW, sXAU, sCHF, and sGBP.
+							Synths are crypto-backed synthetic assets that track the value of underlying assets and allow exposure to an asset without the requirement of actually holding it. 
+
 						</div>
 					</section>
 					<section className="section is-padded">
