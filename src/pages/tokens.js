@@ -16,7 +16,7 @@ const TokensPage = ({ data }) => {
 					<div className="container">
 						<h1 className="page-title">Tokens</h1>
 						<div className="page-subtitle">
-							Here you can access contract information about the various tokens in the Synthetix Network.
+							Contract information about the tokens in the Synthetix Network.
 						</div>
 					</div>
 				</section>

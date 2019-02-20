@@ -63,6 +63,38 @@
     .section-title
       width: auto
 
+  .section.exchange-faq
+
+    p
+      font-size: 22px
+      color: #5E597F
+      letter-spacing: 0
+      text-align: center
+      line-height: 32px
+
+      +desktop
+        max-width: 528px
+
+      .subtitle 
+
+        font-weight: 700
+        font-style: italic
+
+    .discord-button
+      @extend %light-bg-hover
+      box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
+      max-width: 525px
+      max-height: auto
+
+      margin-top: 27px
+      display: block
+
+      +mobile
+        margin: auto
+
+      img
+        display: block
+        max-width: auto
 
   .sp2
     color: #0A0817
