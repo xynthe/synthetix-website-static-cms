@@ -53,7 +53,7 @@ class TokenBox extends React.Component {
 					</div>
 					<div className="token-address">
 						<span>{token.address}</span>
-						<span className="token-label">Contact Address</span>
+						<span className="token-label">Contract Address</span>
 					</div>
 					<div className="token-decimals">
 						<span>{token.decimals}</span>
