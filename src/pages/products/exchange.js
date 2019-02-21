@@ -87,7 +87,7 @@ const ExchangePage = (props) => {
 								<br/>
 								<p> 
 									<p class="subtitle">When I trade from one Synth into another, where are these tokens coming from?</p>
-									There is no counterparty in Synthetix.Exchange, which means that you essentially converts one Synth into another one, with the values of each Synth in a trade being taken from exchange rates at the time of the transaction.
+									There is no counterparty in Synthetix.Exchange, which means that you essentially convert one Synth into another, with the values of each Synth in a trade being taken from exchange rates at the time of the transaction.
 								</p>
 								<br/>
 								<p> 
@@ -96,7 +96,7 @@ const ExchangePage = (props) => {
 								</p>
 								<br/>
 								<p> 
-									<p class="subtitle">How often do you update the prices?</p>
+									<p class="subtitle">How often are prices updated?</p>
 									The oracle updates prices every 3 minutes. 
 								</p>										
 								<br/>
