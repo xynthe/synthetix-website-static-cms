@@ -29,11 +29,14 @@ class TokenBox extends React.Component {
 
 	renderSelect(tokens) {
 		return (
-			<select className="token-select" value={this.state.token.symbol} onChange={this.onTokenChange}>
-				{tokens.map(t => 
-					<option key={t.symbol} value={t.symbol}>{t.symbol}</option>
-				)}
-			</select>
+			<React.Fragment>
+				<span>&nbsp;</span>
+				<select className="token-select" value={this.state.token.symbol} onChange={this.onTokenChange}>
+					{tokens.map(t => 
+						<option key={t.symbol} value={t.symbol}>{t.symbol}</option>
+					)}
+				</select>
+			</React.Fragment>
 		)
 	}
 
