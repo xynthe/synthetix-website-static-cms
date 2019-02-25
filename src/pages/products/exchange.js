@@ -17,7 +17,7 @@ const ExchangePage = (props) => {
 					<div className="container">
 						<div className="header-image"><img src={exchangeLogo}/></div>
 						<div className="page-subtitle">
-							Synthetix.Exchange is a platform for converting between synthetic assets (Synths).
+							Synthetix.Exchange is a platform for trading between synthetic assets (Synths).
 						</div>
 					</div>
 				</section>
