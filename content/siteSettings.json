@@ -11,5 +11,6 @@
   "dashboardUrl": "https://dashboard.synthetix.io/",
   "twitterUrl": "https://twitter.com/synthetix_io",
   "description": "Synthetix | Decentralised synthetic assets",
-  "mintrUrl": "https://mintr.synthetix.io/"
+  "mintrUrl": "https://mintr.synthetix.io/",
+  "synthetixExchangeUrl": "https://synthetix.exchange/" 
 }
