@@ -212,8 +212,8 @@ class IndexPage extends React.Component {
 								</div>
 								<div className="c-bottom">
 									<div className="p2">Synthetix.Exchange</div>
-									<div className="beta-badge">[beta]</div>
-									<div className="p3">Convert between Synths without a counterparty</div>
+									<div className="beta-badge"></div>
+									<div className="p3">Trade between Synths without a counterparty</div>
 								</div>
 							</a>
 						</div>
