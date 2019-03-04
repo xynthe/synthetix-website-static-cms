@@ -7,7 +7,9 @@ import TeamMember from "../components/TeamMember";
 
 const TeamPage = ({ data }) => {
 	let teamMembers = data.allFile.edges[0].node.childPagesJson.teamMembers;
-	let openPositions = data.allFile.edges[0].node.childPagesJson.openPositions;
+	// let openPositions = data.allFile.edges[0].node.childPagesJson.openPositions;
+	const openPositions = []
+	
 	return (
 		<Layout>
 			<div className="team-page">
@@ -84,9 +86,6 @@ export const query = graphql`
 							bio
 							linkedInUrl
 							image
-						}
-						openPositions {
-							title
 						}
 					}
 				}
