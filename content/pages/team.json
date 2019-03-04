@@ -94,5 +94,9 @@
       "image": "/img/martin_torok.png"
     }
   ],
-  "openPositions": []
+  "openPositions": [
+    {
+      "title": " "
+    }
+  ]
 }

@@ -8,6 +8,8 @@ import TeamMember from "../components/TeamMember";
 const TeamPage = ({ data }) => {
 	let teamMembers = data.allFile.edges[0].node.childPagesJson.teamMembers;
 	let openPositions = data.allFile.edges[0].node.childPagesJson.openPositions;
+
+	openPositions = openPositions.filter(p => p.title.trim().length > 0);
 	return (
 		<Layout>
 			<div className="team-page">
