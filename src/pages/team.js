@@ -61,8 +61,7 @@ const TeamPage = ({ data }) => {
 								</Fragment>
 							)}
 						<div className="section-desc join-team-desc">
-							Looking to join the team but don’t see a position suited to you? We’re always
-							interested in hearing from people who are interested in joining our mission. Say hello
+							You can say hello
 							at <a href="mailto:careers@synthetix.io">careers@synthetix.io</a>
 						</div>
 					</div>
