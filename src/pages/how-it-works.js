@@ -41,7 +41,7 @@ export default class HowItWorksPage extends React.Component {
 							<h1 className="page-title">How Synthetix Works</h1>
 							<div className="page-subtitle">
 								There are two kinds of tokens in the Synthetix Network: SNX, the Synthetix network
-								token; and Synths such as sUSD, the synthetic assets.
+								token; and synthetic assets, known as Synths.
 							</div>
 						</div>
 						<div className="columns is-centered is-hidden">
@@ -84,7 +84,7 @@ export default class HowItWorksPage extends React.Component {
 								<div className="step-number-title pb-40">STEP ONE</div>
 								<div className="step-title pb-40">Lock SNX as collateral</div>
 								<div className="step-desc pb-50">
-									SNX holders lock their SNX as collateral to back Synths.
+									SNX holders lock their SNX as collateral to stake the system.
 								</div>
 								<img src={icoLock} alt="Step One" />
 							</div>
@@ -94,7 +94,7 @@ export default class HowItWorksPage extends React.Component {
 								<div className="step-number-title pb-40">STEP TWO</div>
 								<div className="step-title pb-40">Mint Synths</div>
 								<div className="step-desc pb-50">
-									Synths are minted into the market, where they can be used for a variety of
+									Synths are minted into the market against the value of the locked SNX, where they can be used for a variety of
 									purposes including trading and remittance.
 								</div>
 								<img src={icoCoins} alt="Step Two" />
@@ -105,8 +105,8 @@ export default class HowItWorksPage extends React.Component {
 								<div className="step-number-title pb-40">STEP THREE</div>
 								<div className="step-title pb-40">Receive rewards as SNX holder</div>
 								<div className="step-desc pb-50">
-									Circulating Synths generate transaction fees that are distributed to SNX holders,
-									rewarding them for providing on-chain synthetic assets.
+									All Synth trades on Synthetix.Exchange generate fees that are distributed to SNX holders,
+									rewarding them for staking the system.
 								</div>
 								<img src={icoHandout} alt="Step Three" />
 							</div>
