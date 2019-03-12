@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: havven/synthetix-website-static-cms
+  repo: synthetixio/synthetix-website-static-cms
 
 media_folder: static/img
 public_folder: /img

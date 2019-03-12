@@ -66,7 +66,7 @@ const Footer = ({
 									</li>
 									<li>
 										<a
-											href="https://developer.havven.io/"
+											href="https://developer.synthetix.io/"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
