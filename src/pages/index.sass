@@ -12,6 +12,75 @@
     background-position: 0 -640px
     background-repeat: repeat-x
 
+    .container
+      display: flex
+      justify-content: center
+      height: 282px
+
+      margin-bottom: 83px
+
+      .currency-box
+        background: #FFFFFF
+        border: 1px solid #D1D1E8
+        box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
+        border-radius: 4px
+        width: 320px
+        height: 207px
+        margin-right: 20px
+        padding: 18px 25px
+        overflow: hidden
+        text-align: center
+        position: relative
+
+        transition: height 0.4s ease
+
+        &.clickable 
+          cursor: pointer
+
+        &.centered
+          display: flex
+          justify-content: center
+          align-items: center
+
+        &:last-child 
+          margin-right: 0
+
+        &.expanded 
+          height: 528px
+
+          .assets-container
+            overflow: auto
+            max-height: 1000px
+
+        .currency-title
+          font-family: Guillon
+          font-weight: 600
+          font-size: 30px
+          color: #25244B
+          letter-spacing: -0.62px
+          text-align: center
+          line-height: 32px
+
+        .assets-container
+          margin-top: 8px
+          display: grid
+          grid-template-columns: 60px 60px 60px
+          grid-gap: 21px 43px
+          justify-content: space-between
+          max-height: 80px
+          overflow: hidden
+
+          transition: max-height 0.4s ease
+
+        .arrow 
+          position: absolute
+          left: 150px
+          bottom: 17px
+          transition: transform 0.4s ease
+
+          &.expanded
+            transform: rotate(180deg)
+
   .get-rewarded-boxes
     .column
       cursor: pointer

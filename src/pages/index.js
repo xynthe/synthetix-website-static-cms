@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import { graphql, Link } from "gatsby";
+import { graphql, Link, withPrefix } from "gatsby";
 import "./index.sass";
 import Layout from "../components/layout";
-import CurrencyBox from "../components/CurrencyBox";
+
 import icoUser1 from "../resources/ico-user-level-1.svg";
 import icoUser2 from "../resources/ico-user-level-2.svg";
 import icoUser3 from "../resources/ico-user-level-3.svg";
@@ -16,38 +16,9 @@ import UiImg from "../components/UiImg";
 import { Helmet } from "react-helmet";
 
 const bottomLabelTx = "Q4 2018";
-const currencies = [
-	{ nCurrency: "sUSD", currency: "USD", currencyNumber: "$1.00", buttons: [
-		{ 
-			link: "https://etherscan.io/token/0x57Ab1E02fEE23774580C119740129eAC7081e9D3", platform: 'etherscan' 
-		},
-		{ 
-			link: "https://coinmarketcap.com/currencies/susd/", platform: 'coinmarketcap' 
-		}, 
-	]},
-	{ nCurrency: "sEUR", currency: "EURO", currencyNumber: "€1.00", bottomLabel: bottomLabelTx, buttons: [
-		{ 
-			link: "https://etherscan.io/token/0x3EB064766109D150e4362222df80638BcE00e037", platform: 'etherscan' 
-		}
-	]},
-	{ nCurrency: "sJPY", currency: "YEN", currencyNumber: "¥1.00", bottomLabel: bottomLabelTx, buttons: [
-		{ 
-			link: "https://etherscan.io/token/0x559E848A1b6a7AfC69Ee27F8d20280A42628b2cf", platform: 'etherscan' 
-		}
-	]},
-	{ nCurrency: "sAUD", currency: "AUD", currencyNumber: "$1.00", bottomLabel: bottomLabelTx, buttons: [
-		{ 
-			link: "https://etherscan.io/token/0xED4699f180a14B5974c26f494483F9c327Fd381a", platform: 'etherscan' 
-		}
-	]},
-	{ nCurrency: "sXAU", currency: "ounce/gold", currencyNumber: "1.00", bottomLabel: bottomLabelTx, buttons: [
-		{ 
-			link: "https://etherscan.io/token/0xe05d803fa0c5832fa2262465290abb25d6c2bfa3", platform: 'etherscan' 
-		}
-	]},
-	{ currency: 'none', texts: [' sKRW, sCHF, and sGBP are now also live.\n\n', 'Stocks, commodities, and indices are coming soon!']},
-];
-
+const fiatCurrencies = ['susd', 'seur', 'sjpy', 'saud', 'skrw', 'sgbp', 'scny', 'schf', 'srub', 'ssgd', 'sinr', 'scad', 'sbrl', 'spln', 'snzd']
+const commoditiesAndCrypto = ['sxau', 'sxag', 'sbtc'];
+const arrow = withPrefix('/img/arrow.svg')
 
 class IndexPage extends React.Component {
 	constructor(props) {
@@ -58,7 +29,8 @@ class IndexPage extends React.Component {
 	state = {
 		isOpen: false,
 		showThanks: false,
-		emailAddress: ""
+		emailAddress: "",
+		currenciesExpanded: false,
 	};
 
 	player = null;
@@ -105,8 +77,15 @@ class IndexPage extends React.Component {
 			.join("&");
 	};
 
+	toggleCurrencies = () => {
+		console.log("HERE", this.state.currenciesExpanded)
+		this.setState({
+			currenciesExpanded: !this.state.currenciesExpanded
+		})
+	}
+
 	render() {
-		let { isOpen, showThanks, emailAddress } = this.state;
+		let { isOpen, showThanks, emailAddress, currenciesExpanded } = this.state;
 		const { swapprUrl, mintrUrl, dashboardUrl, synthetixExchangeUrl } = this.props.data.site.siteMetadata;
 		const { metaTitle, metaDescription, heading } = this.props.data.allFile.edges[0].node.childPagesJson;
 
@@ -134,15 +113,24 @@ class IndexPage extends React.Component {
 					</section>
 					<section className="section currency-section pb-110 pt-30">
 						<div className="container">
-							<div className="columns is-centered currency-row">
-								{currencies.slice(0, 3).map(el => (
-									<CurrencyBox {...el} key={el.currency} />
-								))}
+							<div className={`currency-box clickable ${currenciesExpanded ? 'expanded' : ''}`} onClick={this.toggleCurrencies}>
+								<div className="currency-title">Fiat currency stablecoins</div>
+
+								<div className="assets-container">
+									{fiatCurrencies.map(c => <img src={withPrefix(`/img/${c}_blue.svg`)} /> )}
+								</div>
+								<img src={arrow} className={`arrow ${currenciesExpanded ? 'expanded' : ''}`} />
 							</div>
-							<div className="columns is-centered currency-row pb-110">
-								{currencies.slice(3).map(el => (
-									<CurrencyBox {...el} key={el.currency} />
-								))}
+							<div className="currency-box">
+								<div className="currency-title">Commodities and cryptocurrencies</div>
+
+								<div className="assets-container">
+									{commoditiesAndCrypto.map(c => <img src={withPrefix(`/img/${c}_blue.svg`)} /> )}
+								</div>
+							</div>
+							<div className="currency-box centered">
+								<div className="currency-title">Stocks, indices, and derivatives trading coming soon!</div>
+								
 							</div>
 						</div>
 
@@ -150,8 +138,7 @@ class IndexPage extends React.Component {
 							Introducing Synths
 						</div>
 						<div className="section-desc">
-							Synths are crypto-backed synthetic assets that track the value of underlying assets and allow exposure to an asset without the requirement of actually holding it. 
-
+							Synths are tokens that provide exposure to assets such as gold, Bitcoin, U.S. Dollars, TESLA, and AAPL within the Ethereum blockchain.
 						</div>
 					</section>
 					<section className="section is-padded">
