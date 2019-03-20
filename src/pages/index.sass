@@ -18,7 +18,12 @@
       justify-content: center
       height: 282px
 
-      margin-bottom: 83px
+      margin-bottom: 108px
+
+      +touch
+        flex-direction: column
+        height: auto
+        align-items: center
 
       .currency-box
         background: #FFFFFF
@@ -34,6 +39,10 @@
         position: relative
 
         transition: height 0.4s ease
+
+        +touch
+          margin-right: 0
+          margin-top: 50px
 
         &.clickable 
           cursor: pointer
@@ -94,6 +103,9 @@
     .column
       width: 380px
       text-align: center
+
+      +mobile
+        width: auto
     .c-img
       img
         min-height: 161px
