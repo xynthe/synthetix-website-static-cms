@@ -1,5 +1,6 @@
 @import "../styles/bulma/utilities/_all"
 @import "../styles/shortcuts"
+@import "../styles/_buttons"
 
 .home-page
   .currency-row
@@ -11,6 +12,115 @@
     background-image: url(../resources/bg-blue-line.png)
     background-position: 0 -640px
     background-repeat: repeat-x
+
+    .container
+      display: flex
+      justify-content: center
+      height: 282px
+
+      margin-bottom: 108px
+
+      +touch
+        flex-direction: column
+        height: auto
+        align-items: center
+
+      .currency-box
+        background: #FFFFFF
+        border: 1px solid #D1D1E8
+        box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
+        border-radius: 4px
+        width: 320px
+        height: 207px
+        margin-right: 20px
+        padding: 18px 25px
+        overflow: hidden
+        text-align: center
+        position: relative
+
+        transition: height 0.4s ease
+
+        +touch
+          margin-right: 0
+          margin-top: 50px
+
+        &.clickable 
+          cursor: pointer
+
+        &.centered
+          display: flex
+          justify-content: center
+          align-items: center
+
+        &:last-child 
+          margin-right: 0
+
+        &.expanded 
+          height: 528px
+
+          .assets-container
+            overflow: auto
+            max-height: 1000px
+
+        .currency-title
+          font-family: Guillon
+          font-weight: 600
+          font-size: 30px
+          color: #25244B
+          letter-spacing: -0.62px
+          text-align: center
+          line-height: 32px
+
+        .assets-container
+          margin-top: 8px
+          display: grid
+          grid-template-columns: 60px 60px 60px
+          grid-gap: 21px 43px
+          justify-content: space-between
+          max-height: 80px
+          overflow: hidden
+
+          transition: max-height 0.4s ease
+
+        .arrow 
+          position: absolute
+          left: 150px
+          bottom: 17px
+          transition: transform 0.4s ease
+
+          &.expanded
+            transform: rotate(180deg)
+
+    .view-synths-button 
+      margin: 38px auto 0 auto
+      @extend .purple-button
+
+  .get-rewarded-columns
+    max-width: 720px
+    margin: auto
+
+
+    .column
+      width: 380px
+      text-align: center
+
+      +mobile
+        width: auto
+    .c-img
+      img
+        min-height: 161px
+    .p1
+      font-size: 18px
+      color: #1E1A31
+      letter-spacing: 0
+      text-align: center
+      line-height: 26px
+      max-width: 200px
+      margin: 23px auto 0 auto
+
+    .button 
+      margin: 46px auto 0 auto
+      @extend .purple-button
 
   .get-rewarded-boxes
     .column
@@ -105,7 +215,7 @@
     .p2
       font-size: 18px
       line-height: 30px
-      width: 310px
+      width: 320px
       margin: auto
 
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="153px" viewBox="0 0 164 153" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>handout</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page" transform="translate(-863.000000, -2096.000000)" stroke="#5641F2" stroke-width="2">
+            <g id="Get-Rewarded-section" transform="translate(127.000000, 1930.000000)">
+                <g id="handout" transform="translate(737.000000, 167.000000)">
+                    <path d="M23,78 L28.5333333,78 C41.0801667,78 55.2399667,84.7721429 61.7333333,94.2857143 L83.8666667,94.2857143 C94.9720667,94.2857143 106,105.104857 106,116 L56.2,116" id="Shape"></path>
+                    <path d="M101.84716,106 L138.76,106 C158.915,106 161,117.079167 161,117.079167 L81.3808,149.297383 C75.04518,151.823433 67.92838,151.527066 61.82628,148.485834 L22,128.33283" id="Shape"></path>
+                    <circle id="Oval" stroke-linecap="square" cx="128" cy="56" r="22"></circle>
+                    <rect id="Rectangle-path" stroke-linecap="square" x="0" y="67" width="22" height="72"></rect>
+                    <circle id="Oval" stroke-linecap="square" cx="61" cy="22" r="22"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

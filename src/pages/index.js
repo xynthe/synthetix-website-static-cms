@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import { graphql, Link } from "gatsby";
+import { graphql, Link, withPrefix } from "gatsby";
 import "./index.sass";
 import Layout from "../components/layout";
-import CurrencyBox from "../components/CurrencyBox";
+
 import icoUser1 from "../resources/ico-user-level-1.svg";
 import icoUser2 from "../resources/ico-user-level-2.svg";
 import icoUser3 from "../resources/ico-user-level-3.svg";
@@ -10,62 +10,32 @@ import icoUser4 from "../resources/ico-user-level-4.svg";
 import icoTriangle from "../resources/ico-triangle.svg";
 import icoShield from "../resources/ico-shield.svg";
 import icoEye from "../resources/ico-eye.svg";
+import icoHandout from '../resources/homepage-handout.svg'
+import icoLock from '../resources/homepage-lock.svg'
+
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
 import UiImg from "../components/UiImg";
 import { Helmet } from "react-helmet";
 
 const bottomLabelTx = "Q4 2018";
-const currencies = [
-	{ nCurrency: "sUSD", currency: "USD", currencyNumber: "$1.00", buttons: [
-		{ 
-			link: "https://etherscan.io/token/0x57Ab1E02fEE23774580C119740129eAC7081e9D3", platform: 'etherscan' 
-		},
-		{ 
-			link: "https://coinmarketcap.com/currencies/susd/", platform: 'coinmarketcap' 
-		}, 
-	]},
-	{ nCurrency: "sEUR", currency: "EURO", currencyNumber: "€1.00", bottomLabel: bottomLabelTx, buttons: [
-		{ 
-			link: "https://etherscan.io/token/0x3EB064766109D150e4362222df80638BcE00e037", platform: 'etherscan' 
-		}
-	]},
-	{ nCurrency: "sJPY", currency: "YEN", currencyNumber: "¥1.00", bottomLabel: bottomLabelTx, buttons: [
-		{ 
-			link: "https://etherscan.io/token/0x559E848A1b6a7AfC69Ee27F8d20280A42628b2cf", platform: 'etherscan' 
-		}
-	]},
-	{ nCurrency: "sAUD", currency: "AUD", currencyNumber: "$1.00", bottomLabel: bottomLabelTx, buttons: [
-		{ 
-			link: "https://etherscan.io/token/0xED4699f180a14B5974c26f494483F9c327Fd381a", platform: 'etherscan' 
-		}
-	]},
-	{ nCurrency: "sXAU", currency: "ounce/gold", currencyNumber: "1.00", bottomLabel: bottomLabelTx, buttons: [
-		{ 
-			link: "https://etherscan.io/token/0xe05d803fa0c5832fa2262465290abb25d6c2bfa3", platform: 'etherscan' 
-		}
-	]},
-	{ currency: 'none', texts: [' sKRW, sCHF, and sGBP are now also live.\n\n', 'Stocks, commodities, and indices are coming soon!']},
-];
-
+const fiatCurrencies = ['susd', 'seur', 'sjpy', 'saud', 'skrw', 'sgbp', 'scny', 'schf', 'srub', 'ssgd', 'sinr', 'scad', 'sbrl', 'spln', 'snzd']
+const commoditiesAndCrypto = ['sxau', 'sxag', 'sbtc'];
+const arrow = withPrefix('/img/arrow.svg')
 
 class IndexPage extends React.Component {
 	constructor(props) {
 		super(props);
-		this.emailRef = React.createRef();
 	}
 
 	state = {
 		isOpen: false,
 		showThanks: false,
-		emailAddress: ""
+		emailAddress: "",
+		currenciesExpanded: false,
 	};
 
 	player = null;
-
-	componentDidMount() {
-		this.emailRef.current.setCustomValidity('That does not appear to be a valid email address. Please try again.');
-	}
 
 	startVideo() {
 		this.player = new Player("video-how-it-works", {
@@ -80,7 +50,10 @@ class IndexPage extends React.Component {
 		if (this.player) this.player.pause();
 	}
 
-	handleChange = e => this.setState({ [e.target.name]: e.target.value });
+	handleChange = e => {
+		this.setState({ [e.target.name]: e.target.value });
+		e.target.setCustomValidity('')
+	}
 
 	submitEmail = e => {
 		e.preventDefault();
@@ -99,14 +72,27 @@ class IndexPage extends React.Component {
 		this.setState({ showThanks: true });
 	};
 
+	onInvalid = (e) => {
+		if (!e.target.validity.valid)
+			e.target.setCustomValidity('That does not appear to be a valid email address. Please try again.');
+		else 
+			e.target.setCustomValidity('')
+	}
+
 	encode = data => {
 		return Object.keys(data)
 			.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
 			.join("&");
 	};
 
+	toggleCurrencies = () => {
+		this.setState({
+			currenciesExpanded: !this.state.currenciesExpanded
+		})
+	}
+
 	render() {
-		let { isOpen, showThanks, emailAddress } = this.state;
+		let { isOpen, showThanks, emailAddress, currenciesExpanded } = this.state;
 		const { swapprUrl, mintrUrl, dashboardUrl, synthetixExchangeUrl } = this.props.data.site.siteMetadata;
 		const { metaTitle, metaDescription, heading } = this.props.data.allFile.edges[0].node.childPagesJson;
 
@@ -125,24 +111,33 @@ class IndexPage extends React.Component {
 								Decentralised synthetic assets
 							</div>
 							<div className="has-text-centered pb-10">
-								<a href="https://synthetix.exchange" className="is-button is-announcement">
+								<Link to="/products/exchange" className="is-button is-announcement">
 									<span>NEW</span>
 									<span>Trade forex, commodities, and crypto on Synthetix.Exchange!</span>
-								</a>
+								</Link>
 							</div>
 						</div>
 					</section>
-					<section className="section currency-section pb-110 pt-30">
+					<section className="section currency-section pb-60 pt-30">
 						<div className="container">
-							<div className="columns is-centered currency-row">
-								{currencies.slice(0, 3).map(el => (
-									<CurrencyBox {...el} key={el.currency} />
-								))}
+							<div className={`currency-box clickable ${currenciesExpanded ? 'expanded' : ''}`} onClick={this.toggleCurrencies}>
+								<div className="currency-title">Fiat currency stablecoins</div>
+
+								<div className="assets-container">
+									{fiatCurrencies.map(c => <img src={withPrefix(`/img/${c}_blue.svg`)} /> )}
+								</div>
+								<img src={arrow} className={`arrow ${currenciesExpanded ? 'expanded' : ''}`} />
 							</div>
-							<div className="columns is-centered currency-row pb-110">
-								{currencies.slice(3).map(el => (
-									<CurrencyBox {...el} key={el.currency} />
-								))}
+							<div className="currency-box">
+								<div className="currency-title">Commodities and cryptocurrencies</div>
+
+								<div className="assets-container">
+									{commoditiesAndCrypto.map(c => <img src={withPrefix(`/img/${c}_blue.svg`)} /> )}
+								</div>
+							</div>
+							<div className="currency-box centered">
+								<div className="currency-title">Stocks, indices, and derivatives trading coming soon!</div>
+								
 							</div>
 						</div>
 
@@ -150,78 +145,14 @@ class IndexPage extends React.Component {
 							Introducing Synths
 						</div>
 						<div className="section-desc">
-							Synths are crypto-backed synthetic assets that track the value of underlying assets and allow exposure to an asset without the requirement of actually holding it. 
-
+							Synths are tokens that provide exposure to assets such as gold, Bitcoin, U.S. Dollars, TESLA, and AAPL within the Ethereum blockchain.
 						</div>
-					</section>
-					<section className="section is-padded">
-						<div className="section-title is-white is-narrow pb-50 bold fs-56">
-							Synthetix is built for engineers
-						</div>
-						<CodeBox />
-						<div className="has-text-centered">
-							<a
-								href="https://developer.synthetix.io/"
-								target="_blank"
-								className="is-button is-blue w-270"
-								rel="noopener noreferrer"
-							>
-								View our Developer Portal
-							</a>
-						</div>
-					</section>
-					<section className="section is-white is-padded pb-110">
-						<div className="section-title is-large w-auto fs-56 bold">
-							Get rewarded for maintaining stability
-						</div>
-						<div className="section-desc pb-70">
-							SNX holders who mint Synths are entitled to receive fees generated by all Synth
-							transactions.
-						</div>
-						<div className="columns is-centered get-rewarded-boxes">
-							<a className="column" href={dashboardUrl} target="_blank" rel="noopener noreferrer">
-								<div className="c-top">
-									<img src={icoUser2} alt="For new and experienced users" />
-								</div>
-								<div className="c-bottom">
-									<div className="p2">Dashboard</div>
-									<div className="p3">An overview of the Synthetix network</div>
-								</div>
-							</a>
-							<a className="column" href={swapprUrl} target="_blank" rel="noopener noreferrer">
-								<div className="c-top">
-									<img src={icoUser1} alt="For new users" />
-								</div>
-								<div className="c-bottom">
-									<div className="p2">Swappr</div>
-									<div className="p3">Easily swap between ETH, SNX, and sUSD</div>
-								</div>
-							</a>
-							<a className="column" href={mintrUrl} target="_blank" rel="noopener noreferrer">
-								<div className="c-top">
-									<img src={icoUser3} alt="For experienced users" />
-								</div>
-								<div className="c-bottom">
-									<div className="p2">Mintr</div>
-									<div className="p3">Use your SNX to mint Synths and collect fees</div>
-								</div>
-							</a>
-							<a className="column" href={synthetixExchangeUrl} target="_blank" rel="noopener noreferrer">
-								<div className="c-top">
-									<img src={icoUser4} alt="Synthetix.Exchange" />
-								</div>
-								<div className="c-bottom">
-									<div className="p2">Synthetix.Exchange</div>
-									<div className="beta-badge"></div>
-									<div className="p3">Trade between Synths without a counterparty</div>
-								</div>
-							</a>
-						</div>
+						<Link to="/tokens" className="view-synths-button">View Synths</Link>
 					</section>
 					<section className="section">
 						<div className="section-title is-white pt-60 fs-56 bold">Our network is decentralised</div>
 						<div className="section-desc mb-80">
-							The Synthetix Network is designed to be decentralised and trustless.
+							Synthetix is designed to be decentralised and trustless.
 						</div>
 						<div className="columns is-centered feature-boxes">
 							<div className="column pb-40">
@@ -248,9 +179,80 @@ class IndexPage extends React.Component {
 								</div>
 								<div className="p1">Transparent</div>
 								<div className="p2">
-									Our collateral is on-chain, so doesn’t require pesky third party audits.
+									Our collateral is held on-chain, so doesn’t require pesky third party audits
 								</div>
 							</div>
+						</div>
+					</section>
+					<section className="section is-white is-padded pb-110">
+						<div className="section-title is-large w-auto fs-56 bold">
+							Get rewarded for contributing to the system
+						</div>
+						<div className="section-desc pb-70">
+							Become a part of the Synthetix Network today.
+						</div>
+						<div className="columns is-centered get-rewarded-columns">
+							<div className="column">
+								<div className="c-img">
+									<img src={icoLock} alt="Stable" />
+								</div>
+								<div className="p1">Receive SNX in exchange for staking</div>
+								<a className="button" href="https://blog.synthetix.io/synthetix-monetary-policy-changes/" target="_blank">Learn More</a>
+							</div>
+							<div className="column">
+								<div className="c-img">
+									<img src={icoHandout} alt="Stable" />
+								</div>
+								<div className="p1">Receive exchange fees for staking</div>
+								<Link className="button" to="/how-it-works">Learn More</Link>
+							</div>
+						</div>
+					</section>
+					<section className="section is-padded pb-110">
+						<div className="section-title is-white is-large w-auto fs-56 bold">
+							Meet our products
+						</div>
+						<div className="section-desc pb-70">
+							Here are the dApps and tools for SNX holders and Synth users
+						</div>
+						<div className="columns is-centered get-rewarded-boxes">
+							<a className="column" href={synthetixExchangeUrl} target="_blank" rel="noopener noreferrer">
+								<div className="c-top">
+									<img src={icoUser4} alt="Synthetix.Exchange" />
+								</div>
+								<div className="c-bottom">
+									<div className="p2">Synthetix.Exchange</div>
+									<div className="beta-badge"></div>
+									<div className="p3">Exchange Synths without a counterparty</div>
+								</div>
+							</a>
+							<a className="column" href={mintrUrl} target="_blank" rel="noopener noreferrer">
+								<div className="c-top">
+									<img src={icoUser3} alt="For experienced users" />
+								</div>
+								<div className="c-bottom">
+									<div className="p2">Mintr</div>
+									<div className="p3">Lock SNX to mint Synths and collect fees</div>
+								</div>
+							</a>
+							<a className="column" href={swapprUrl} target="_blank" rel="noopener noreferrer">
+								<div className="c-top">
+									<img src={icoUser1} alt="For new users" />
+								</div>
+								<div className="c-bottom">
+									<div className="p2">Swappr</div>
+									<div className="p3">Easily swap between ETH, SNX, and sUSD</div>
+								</div>
+							</a>
+							<a className="column" href={dashboardUrl} target="_blank" rel="noopener noreferrer">
+								<div className="c-top">
+									<img src={icoUser2} alt="For new and experienced users" />
+								</div>
+								<div className="c-bottom">
+									<div className="p2">Dashboard</div>
+									<div className="p3">An overview of the Synthetix network</div>
+								</div>
+							</a>
 						</div>
 					</section>
 					<section className="section subscribe-section is-padded">
@@ -273,11 +275,11 @@ class IndexPage extends React.Component {
 												<input
 													name="emailAddress"
 													type="email"
-													ref={this.emailRef}
 													className="input"
 													placeholder="Enter your Email Address"
 													value={emailAddress}
 													onChange={this.handleChange}
+													onInvalid={this.onInvalid}
 												/>
 											</div>
 											<div className="column is-narrow lh-1">

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="152px" viewBox="0 0 111 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>lock</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page" transform="translate(-434.000000, -2097.000000)" stroke="#5641F2" stroke-width="2">
+            <g id="Get-Rewarded-section" transform="translate(128.000000, 1930.000000)">
+                <g id="lock" transform="translate(307.000000, 167.000000)">
+                    <path d="M84.2272727,48.5218994 L84.2272727,31.1940305 C84.2272727,14.7894895 70.9168864,1.48911249 54.5,1.48911249 C38.0831136,1.48911249 24.7727273,14.7894895 24.7727273,31.1940305 L24.7727273,48.5218994" id="Shape"></path>
+                    <path d="M99.0909091,150.013703 L9.90909091,150.013703 C4.43679545,150.013703 0,145.580244 0,140.112063 L0,70.8005879 C0,65.3324076 4.43679545,60.8989486 9.90909091,60.8989486 L99.0909091,60.8989486 C104.563205,60.8989486 109,65.3324076 109,70.8005879 L109,140.112063 C109,145.580244 104.563205,150.013703 99.0909091,150.013703 Z" id="Shape"></path>
+                    <path d="M54.5,112.882555 L54.5,127.735014" id="Shape"></path>
+                    <ellipse id="Oval" cx="54.5" cy="98.0300961" rx="14.8636364" ry="14.852459"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
