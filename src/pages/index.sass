@@ -1,5 +1,6 @@
 @import "../styles/bulma/utilities/_all"
 @import "../styles/shortcuts"
+@import "../styles/_buttons"
 
 .home-page
   .currency-row
@@ -80,6 +81,34 @@
 
           &.expanded
             transform: rotate(180deg)
+
+    .view-synths-button 
+      margin: 38px auto 0 auto
+      @extend .purple-button
+
+  .get-rewarded-columns
+    max-width: 720px
+    margin: auto
+
+
+    .column
+      width: 380px
+      text-align: center
+    .c-img
+      img
+        min-height: 161px
+    .p1
+      font-size: 18px
+      color: #1E1A31
+      letter-spacing: 0
+      text-align: center
+      line-height: 26px
+      max-width: 200px
+      margin: 23px auto 0 auto
+
+    .button 
+      margin: 46px auto 0 auto
+      @extend .purple-button
 
   .get-rewarded-boxes
     .column
@@ -174,7 +203,7 @@
     .p2
       font-size: 18px
       line-height: 30px
-      width: 310px
+      width: 320px
       margin: auto
 
 
