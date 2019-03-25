@@ -55,7 +55,7 @@ class TokenBox extends React.Component {
 						<span className="token-label">Symbol</span>
 					</div>
 					<div className="token-address">
-						<a target="_blank" href="https://etherscan.io/address/"{token.address}>{token.address}</a>
+						<a target="_blank" href="https://etherscan.io/address/${token.address}">{token.address}</a>
 						<span className="token-label">Contract Address</span>
 					</div>
 					<div className="token-decimals">
