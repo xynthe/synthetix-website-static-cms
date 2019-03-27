@@ -241,7 +241,7 @@ class IndexPage extends React.Component {
 								</div>
 								<div className="c-bottom">
 									<div className="p2">Swappr</div>
-									<div className="p3">Easily swap between ETH, SNX, and sUSD</div>
+									<div className="p3">Easily swap between ETH and sUSD</div>
 								</div>
 							</a>
 							<a className="column" href={dashboardUrl} target="_blank" rel="noopener noreferrer">
