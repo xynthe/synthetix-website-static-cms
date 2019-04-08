@@ -61,7 +61,7 @@ const ExchangePage = (props) => {
 								<br/>
 								<p> 
 									<p class="subtitle">Does it cost anything to make a trade?</p>
-									Apart from ETH as gas, there is a fee for all Synth exchanges. It is currently 0.15%, but may be adjusted in the future according to demand. These exchange fees are distributed to SNX holders, who are providing collateral as backing for all Synths.
+									Apart from ETH as gas, there is a fee for all Synth exchanges. It is currently 0.30%. These exchange fees are distributed to SNX holders, who are providing collateral as backing for all Synths.
 								</p>
 								<br/>
 								<p> 
