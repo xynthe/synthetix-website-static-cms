@@ -12,6 +12,10 @@ import icoShield from "../resources/ico-shield.svg";
 import icoEye from "../resources/ico-eye.svg";
 import icoHandout from '../resources/homepage-handout.svg'
 import icoLock from '../resources/homepage-lock.svg'
+import icoContract from '../resources/contract.svg'
+import icoLiquidity from '../resources/liquidity.svg'
+import icoCollateral from '../resources/collateral.svg'
+import exchangeLogo from '../resources/exchange-logo.svg'
 
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
@@ -20,7 +24,10 @@ import { Helmet } from "react-helmet";
 
 const bottomLabelTx = "Q4 2018";
 const fiatCurrencies = ['susd', 'seur', 'sjpy', 'saud', 'skrw', 'sgbp', 'scny', 'schf', 'srub', 'ssgd', 'sinr', 'scad', 'sbrl', 'spln', 'snzd']
-const commoditiesAndCrypto = ['sxau', 'sxag', 'sbtc'];
+const cryptoCurrencies = ['sbtc', 'seth', 'sbnb'];
+const inverseCryptoCurrencies = ['ibtc', 'ieth', 'ibnb'];
+const commodities = ['sxau', 'sxag'];
+const comingSoon = ['sappl', '10x'];
 const arrow = withPrefix('/img/arrow.svg')
 
 class IndexPage extends React.Component {
@@ -32,7 +39,6 @@ class IndexPage extends React.Component {
 		isOpen: false,
 		showThanks: false,
 		emailAddress: "",
-		currenciesExpanded: false,
 	};
 
 	player = null;
@@ -85,14 +91,8 @@ class IndexPage extends React.Component {
 			.join("&");
 	};
 
-	toggleCurrencies = () => {
-		this.setState({
-			currenciesExpanded: !this.state.currenciesExpanded
-		})
-	}
-
 	render() {
-		let { isOpen, showThanks, emailAddress, currenciesExpanded } = this.state;
+		let { isOpen, showThanks, emailAddress } = this.state;
 		const { swapprUrl, mintrUrl, dashboardUrl, synthetixExchangeUrl } = this.props.data.site.siteMetadata;
 		const { metaTitle, metaDescription, heading } = this.props.data.allFile.edges[0].node.childPagesJson;
 
@@ -119,25 +119,36 @@ class IndexPage extends React.Component {
 						</div>
 					</section>
 					<section className="section currency-section pb-60 pt-30">
-						<div className="container">
-							<div className={`currency-box clickable ${currenciesExpanded ? 'expanded' : ''}`} onClick={this.toggleCurrencies}>
+						<div className="container wide">
+							<div className={`currency-box`}>
 								<div className="currency-title">Fiat currency stablecoins</div>
 
-								<div className="assets-container">
-									{fiatCurrencies.map(c => <img src={withPrefix(`/img/${c}_blue.svg`)} /> )}
+								<div className="scroll-container">
+									<div className="assets-container">
+										{fiatCurrencies.map(c => <img src={withPrefix(`/img/${c}_blue.svg`)} /> )}
+									</div>
 								</div>
-								<img src={arrow} className={`arrow ${currenciesExpanded ? 'expanded' : ''}`} />
+								<img src={arrow} className={`arrow`} />
 							</div>
 							<div className="currency-box">
-								<div className="currency-title">Commodities and cryptocurrencies</div>
+								<div className="currency-title">Cryptocurrencies (long & short)</div>
 
-								<div className="assets-container">
-									{commoditiesAndCrypto.map(c => <img src={withPrefix(`/img/${c}_blue.svg`)} /> )}
+								<div className="scroll-container">
+									<div className="assets-container">
+										{cryptoCurrencies.map(c => <img src={withPrefix(`/img/${c}.svg`)} /> )}
+										{inverseCryptoCurrencies.map(c => <img src={withPrefix(`/img/${c}.svg`)} /> )}
+									</div>
 								</div>
 							</div>
-							<div className="currency-box centered">
-								<div className="currency-title">Stocks, indices, and derivatives trading coming soon!</div>
-								
+							<div className="currency-box">
+								<div className="currency-title">Commodities</div>
+								<div className="small-assets-container">
+									{commodities.map(c => <img src={withPrefix(`/img/${c}.svg`)} /> )}
+								</div>
+								<div className="currency-title">And coming soon:</div>
+								<div className="small-assets-container">
+									{comingSoon.map(c => <img src={withPrefix(`/img/${c}.svg`)} /> )}
+								</div>
 							</div>
 						</div>
 
@@ -149,40 +160,38 @@ class IndexPage extends React.Component {
 						</div>
 						<Link to="/tokens" className="view-synths-button">View Synths</Link>
 					</section>
-					<section className="section">
-						<div className="section-title is-white pt-60 fs-56 bold">Our network is decentralised</div>
-						<div className="section-desc mb-80">
-							Synthetix is designed to be decentralised and trustless.
+					<section className="section exchange-section">
+						<div className="section-title">
+							<img className="exchange-logo" src={exchangeLogo} />
 						</div>
-						<div className="columns is-centered feature-boxes">
-							<div className="column pb-40">
+						<div className="section-desc pb-70">
+							A decentralised trading platform dApp
+						</div>
+						<div className="columns is-centered exchange-columns">
+							<div className="column">
 								<div className="c-img">
-									<img src={icoTriangle} alt="Trustless" />
+									<img src={icoLiquidity} alt="Stable" />
 								</div>
-								<div className="p1">Trustless</div>
-								<div className="p2">
-									A distributed pool of token holders are responsible for maintaining stability.
-								</div>
+								<div className="p1">Infinite Liquidity</div>
+								<div className="p2">Over 20 different Synths are available without liquidity limitations.</div>
+
 							</div>
-							<div className="column pb-40">
+							<div className="column">
 								<div className="c-img">
-									<img src={icoShield} alt="Censorship resistant" />
+									<img src={icoContract} alt="Stable" />
 								</div>
-								<div className="p1">Censorship Resistant</div>
-								<div className="p2">
-									Collateral is provided by individual SNX holders, which means it can’t be seized.
-								</div>
+								<div className="p1">P2C (peer-to-contract) trading</div>
+								<div className="p2">Trades are executed quickly and easily, all without an orderbook.</div>
 							</div>
-							<div className="column pb-40">
+							<div className="column">
 								<div className="c-img">
-									<img src={icoEye} alt="Transparent" />
+									<img src={icoCollateral} alt="Stable" />
 								</div>
-								<div className="p1">Transparent</div>
-								<div className="p2">
-									Our collateral is held on-chain, so doesn’t require pesky third party audits
-								</div>
+								<div className="p1">Distributed Collateral Pool</div>
+								<div className="p2">A distributed pool of token holders are responsible for providing collateral and maintaining stability.</div>
 							</div>
 						</div>
+						<a className="purple-button centered" href="https://synthetix.exchange" target="_blank">Take me there</a>
 					</section>
 					<section className="section is-white is-padded pb-110">
 						<div className="section-title is-large w-auto fs-56 bold">

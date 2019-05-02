@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="112px" viewBox="0 0 84 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>contract</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M67.267375,0 L0,0 L0,112 L83.99825,112 L83.99825,16.734375 L67.267375,0 Z M67.66725,7 L76.99825,16.33275 L67.66725,16.33275 L67.66725,7 Z M4.66725,107.331 L4.66725,4.66725 L62.99825,4.66725 L62.99825,21 L79.33625,21 L79.33625,107.331 L4.66725,107.331 Z" id="path-1"></path>
+        <path d="M16.644,0.0781818182 L2.50446512,0.0781818182 C1.20296512,0.0781818182 0.148465116,1.16159091 0.148465116,2.5 C0.148465116,3.83840909 1.20296512,4.92181818 2.50446512,4.92181818 L16.644,4.92181818 C17.9455,4.92181818 18.9982326,3.83840909 18.9982326,2.5 C18.9982326,1.16159091 17.9455,0.0781818182 16.644,0.0781818182" id="path-3"></path>
+        <path d="M53.66725,0 L2.3345,0 C1.0443125,0 0,1.08477273 0,2.42363636 C0,3.7625 1.04409375,4.84909091 2.3345,4.84909091 L53.66725,4.84909091 C54.9559063,4.84909091 55.99825,3.7625 55.99825,2.42363636 C55.99825,1.08477273 54.9559063,0 53.66725,0" id="path-5"></path>
+        <path d="M53.66725,0 L2.3345,0 C1.0443125,0 0,1.08477273 0,2.42363636 C0,3.76386364 1.04409375,4.85090909 2.3345,4.85090909 L53.66725,4.85090909 C54.9559063,4.85090909 55.99825,3.76454545 55.99825,2.42363636 C55.99825,1.08477273 54.9559063,0 53.66725,0" id="path-7"></path>
+        <path d="M2.38008633,4.84909091 L28.5467626,4.84909091 C29.8605827,4.84909091 30.9268489,3.7625 30.9268489,2.42363636 C30.9268489,1.08477273 29.8605827,0 28.5467626,0 L2.38008633,0 C1.06470504,0 0,1.08477273 0,2.42363636 C0,3.7625 1.06470504,4.84909091 2.38008633,4.84909091" id="path-9"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page" transform="translate(-672.000000, -1597.000000)">
+            <g id="Synthetix.Exchange-section" transform="translate(154.000000, 1342.000000)">
+                <g id="contract" transform="translate(518.000000, 255.000000)">
+                    <g id="Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="SVGID_1_"></g>
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)" x="-1.09375" y="-1.09375" width="86.18575" height="114.1875"></rect>
+                    </g>
+                    <g id="Clipped" transform="translate(51.000000, 81.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="SVGID_3_"></g>
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-4)" x="-0.956186047" y="-1.05818182" width="21.0590698" height="7.11659091"></rect>
+                    </g>
+                    <g id="Clipped" transform="translate(14.000000, 42.000000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="SVGID_5_"></g>
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-6)" x="-1.09375" y="-1.13636364" width="58.18575" height="7.12181818"></rect>
+                    </g>
+                    <g id="Clipped" transform="translate(14.000000, 56.000000)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="SVGID_7_"></g>
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-8)" x="-1.09375" y="-1.13636364" width="58.18575" height="7.12363636"></rect>
+                    </g>
+                    <g id="Clipped" transform="translate(13.000000, 28.000000)">
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <g id="SVGID_9_"></g>
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-10)" x="-1.11510791" y="-1.13636364" width="33.1570647" height="7.12181818"></rect>
+                    </g>
+                    <g id="eth" transform="translate(14.000000, 67.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <polygon id="Path" points="9.49152542 23.4845361 9.49152542 13.3195876 0 17.6687566"></polygon>
+                        <polygon id="Path" points="9.49152542 12.1793912 9.49152542 0 0.338983051 16.4742268"></polygon>
+                        <polygon id="Path" points="10.1694915 0.350515464 10.1694915 12.4864918 19.6610169 16.8247423"></polygon>
+                        <polygon id="Path" points="10.5084746 13.3195876 10.5084746 23.4845361 20 17.6715356"></polygon>
+                        <polygon id="Path" points="9.49152542 34 9.49152542 25.5772078 0 19.628866"></polygon>
+                        <polygon id="Path" points="10.1694915 34 19.6610169 19.628866 10.1694915 25.5772078"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
