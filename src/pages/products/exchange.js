@@ -3,7 +3,7 @@ import { graphql, withPrefix } from "gatsby";
 import "../index.sass";
 import Layout from "../../components/layout";
 import "./exchange.sass";
-import exchangeLogo from "../../resources/products/exchange.svg";
+import exchangeLogo from "../../resources/exchange-logo.svg";
 import exchangeButton from "../../resources/products/exchange-button.svg";
 import joinDiscordButton from "../../resources/products/join-discord.svg";
 
@@ -17,7 +17,7 @@ const ExchangePage = (props) => {
 					<div className="container">
 						<div className="header-image"><img src={exchangeLogo}/></div>
 						<div className="page-subtitle">
-							Synthetix.Exchange is a platform for trading between synthetic assets (Synths).
+							Synthetix.Exchange is a trading platform for  synthetic assets (Synths).
 						</div>
 					</div>
 				</section>

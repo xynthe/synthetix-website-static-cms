@@ -18,6 +18,11 @@
       justify-content: center
       height: 282px
 
+      &.wide
+        +desktop
+          min-width: 1030px
+          width: 1030px
+
       margin-bottom: 108px
 
       +touch
@@ -26,17 +31,20 @@
         align-items: center
 
       .currency-box
+        $box-padding: 32px
+
         background: #FFFFFF
         border: 1px solid #D1D1E8
         box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
         border-radius: 4px
-        width: 320px
-        height: 207px
+        width: 330px
+        height: 288px
         margin-right: 20px
-        padding: 18px 25px
-        overflow: hidden
+        padding: 18px 0
         text-align: center
         position: relative
+        overflow: hidden
+
 
         transition: height 0.4s ease
 
@@ -55,9 +63,6 @@
         &:last-child 
           margin-right: 0
 
-        &.expanded 
-          height: 528px
-
           .assets-container
             overflow: auto
             max-height: 1000px
@@ -70,30 +75,84 @@
           letter-spacing: -0.62px
           text-align: center
           line-height: 32px
+          padding: 0 $box-padding
+
+        .scroll-container 
+          margin-top: 14px
+          height: 161px
+          overflow-y: scroll
+          padding: 0 $box-padding 18px $box-padding
+
+          scrollbar-width: none
+          -ms-overflow-style: none
+
+          &::-webkit-scrollbar
+            width: 0px  /* Remove scrollbar space */
+            background: transparent  /* Optional: just make scrollbar invisible */
+
+
 
         .assets-container
-          margin-top: 8px
           display: grid
           grid-template-columns: 60px 60px 60px
           grid-gap: 21px 43px
           justify-content: space-between
-          max-height: 80px
-          overflow: hidden
-
           transition: max-height 0.4s ease
 
-        .arrow 
-          position: absolute
-          left: 150px
-          bottom: 17px
-          transition: transform 0.4s ease
+        .small-assets-container
+          margin-top: 9px
+          margin-bottom: 11px
 
-          &.expanded
-            transform: rotate(180deg)
+          img
+            margin: 0 20px
+
+        .arrow
+          position: absolute
+          top: 150.5px
+          right: 18px
+
 
     .view-synths-button 
       margin: 38px auto 0 auto
       @extend .purple-button
+
+  .exchange-section
+
+    .exchange-logo
+      margin-top: 4px
+
+    .exchange-columns
+      max-width: 1130px
+      margin: 0 auto
+
+      .column
+        width: 320px
+        text-align: center
+
+        +mobile
+          width: auto
+
+      .p1
+        color: white
+        max-width: 300px
+        text-align: center
+        margin: 20px auto 0 auto
+
+      .p2 
+        color: #6F6DA0
+        margin: 13px auto 0 auto
+        max-width: 300px
+        text-align: center
+
+    .centered
+      margin: 0 auto
+
+    .purple-button
+      width: 239px
+      height: 62px
+
+      margin-top: 50px
+      margin-bottom: 30px
 
   .get-rewarded-columns
     max-width: 720px
@@ -200,24 +259,6 @@
     @include font-size(26)
     +tablet
       width: 850px
-
-  .feature-boxes
-    .column
-      width: 380px
-      text-align: center
-    .c-img
-      min-height: 68px
-      @extend .pb-50
-    .p1
-      color: #fff
-      font-size: 18px
-      padding-bottom: 13px
-    .p2
-      font-size: 18px
-      line-height: 30px
-      width: 320px
-      margin: auto
-
 
   .main-buttons
     .main-button
