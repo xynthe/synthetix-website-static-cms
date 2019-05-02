@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="21px" height="13px" viewBox="0 0 21 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>play-button-arrow-svgrepo-com</title>
+<svg width="9px" height="30px" viewBox="0 0 9 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Line</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home-Page" transform="translate(-369.000000, -812.000000)" fill="#0A0817" fill-rule="nonzero">
-            <g id="play-button-arrow-svgrepo-com" transform="translate(379.500000, 818.500000) rotate(90.000000) translate(-379.500000, -818.500000) translate(373.000000, 808.000000)">
-                <path d="M0,20.3502099 L0,0.648748823 C0,0.394532864 0.141161295,0.164029022 0.360512304,0.0587031044 C0.580388076,-0.0466228136 0.838571561,-0.00802169181 1.02171391,0.156860243 L12.7848053,9.84463891 C12.9201942,9.96761106 12.9978592,10.1451762 12.9999582,10.3326674 C13.0020573,10.5124383 12.9249171,10.6982751 12.792152,10.8229016 L1.02906059,20.8354812 C0.846967771,21.006429 0.587209998,21.0477873 0.365235173,20.9424614 C0.142735585,20.8371355 0,20.6060802 0,20.3502099 Z M1.23581729,2.0643071 L1.23581729,18.9026679 L11.4419364,10.3442477 L1.23581729,2.0643071 Z" id="Shape"></path>
+        <g id="Home-Page" transform="translate(-518.000000, -752.000000)" fill="#0A0817" fill-rule="nonzero">
+            <g id="Tiles" transform="translate(217.000000, 592.000000)">
+                <g id="Fiat-Currency-Stablecoins" transform="translate(-0.000000, 0.000000)">
+                    <path id="Line" d="M306,169 L306,180.90906 L310,180.90906 L305.5,189.90906 L301,180.90906 L305,180.90906 L305,169 L301,169 L305.5,160 L310,169 L306,169 Z"></path>
+                </g>
             </g>
         </g>
     </g>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="132px" height="114px" viewBox="0 0 132 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>collateral</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page" transform="translate(-1058.000000, -1596.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="Synthetix.Exchange-section" transform="translate(154.000000, 1342.000000)">
+                <g id="collateral" transform="translate(905.000000, 255.000000)">
+                    <path d="M18.7868421,88.0633224 L57.5347039,23.4835526" id="Shape"></path>
+                    <path d="M105.675987,99.8050987 L23.4835526,99.8050987" id="Shape"></path>
+                    <path d="M71.6248355,23.4806172 L110.375633,88.0662578" id="Shape"></path>
+                    <rect id="Rectangle-path" stroke-linecap="square" x="52.8379934" y="0" width="23.4835526" height="23.4835526"></rect>
+                    <polygon id="Rectangle-path" stroke-linecap="square" points="105.675987 88.0633224 129.159539 88.0633224 129.159539 111.546875 105.675987 111.546875"></polygon>
+                    <polygon id="Rectangle-path" stroke-linecap="square" points="0 88.0633224 23.4835526 88.0633224 23.4835526 111.546875 0 111.546875"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
