@@ -113,7 +113,7 @@ class IndexPage extends React.Component {
 							<div className="has-text-centered pb-10">
 								<Link to="/products/exchange" className="is-button is-announcement">
 									<span>NEW</span>
-									<span>Trade forex, commodities, and crypto on Synthetix.Exchange!</span>
+									<span>Trade crypto, commodities, and forex on Synthetix.Exchange!</span>
 								</Link>
 							</div>
 						</div>
