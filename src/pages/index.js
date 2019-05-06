@@ -28,7 +28,7 @@ const cryptoCurrencies = ['sbtc', 'seth', 'sbnb'];
 const inverseCryptoCurrencies = ['ibtc', 'ieth', 'ibnb'];
 const commodities = ['sxau', 'sxag'];
 const comingSoon = ['sappl', '10x'];
-const arrow = withPrefix('/img/arrow.svg')
+const arrow = withPrefix('/img/arrow-vertical.svg')
 
 class IndexPage extends React.Component {
 	constructor(props) {
@@ -81,7 +81,7 @@ class IndexPage extends React.Component {
 	onInvalid = (e) => {
 		if (!e.target.validity.valid)
 			e.target.setCustomValidity('That does not appear to be a valid email address. Please try again.');
-		else 
+		else
 			e.target.setCustomValidity('')
 	}
 
@@ -373,12 +373,12 @@ export const query = graphql`
 			edges {
 				node {
 					childPagesJson {
-						metaTitle						
+						metaTitle
 						metaDescription
 						heading
 					}
 				}
 			}
-		}		
+		}
 	}
 `;
