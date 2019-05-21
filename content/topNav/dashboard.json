@@ -3,6 +3,6 @@
   "key": "dashboard",
   "link": "https://dashboard.synthetix.io/",
   "isExt": true,
-  "order": 1,
+  "order": 3,
   "parentMenu": "products"
 }
