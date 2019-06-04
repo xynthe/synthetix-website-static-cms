@@ -108,6 +108,7 @@ collections:
       - {label: "Symbol", name: "symbol", widget: "string"}
       - {label: "Address", name: "address", widget: "string"}
       - {label: "Decimals", name: "decimals", widget: "number"}
+      - {label: "Description", name: "description", widget: "string"}
 
 # -------- How it works --------
 - label: "Top Navigation"

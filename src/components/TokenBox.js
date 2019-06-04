@@ -32,7 +32,7 @@ class TokenBox extends React.Component {
 			<React.Fragment>
 				<span>&nbsp;</span>
 				<select className="token-select" value={this.state.token.symbol} onChange={this.onTokenChange}>
-					{tokens.map(t => 
+					{tokens.map(t =>
 						<option key={t.symbol} value={t.symbol}>{t.symbol}</option>
 					)}
 				</select>
@@ -42,7 +42,7 @@ class TokenBox extends React.Component {
 
 	render() {
 		let { token, hasSelect } = this.state
-		let { title, tokens } = this.props
+		let { title, tokens, description } = this.props
 
 		if (!token) return null
 
@@ -62,6 +62,9 @@ class TokenBox extends React.Component {
 						<span>{token.decimals}</span>
 						<span className="token-label">Decimals</span>
 					</div>
+				</div>
+				<div className="token-description">
+					<span>{token.description || description}</span>
 				</div>
 			</div>
 		);
