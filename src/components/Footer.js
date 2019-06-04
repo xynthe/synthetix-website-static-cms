@@ -21,10 +21,8 @@ const Footer = ({
 			<div className="container">
 				<div className="columns justify-content--space-between footer-columns">
 					<div className="column is-narrow has-text-centered-mobile logo-box">
-						<div>
-							<UiImg src="/assets/synthetix-title-sm.png" alt="Synthetix" isResponsive />
-						</div>
-						<div>A synthetic asset platform</div>
+						<UiImg src="/img/ethereum.svg" alt="Ethereum" />
+						<UiImg className="defi-img" src="/img/defi.svg" alt="Defi" />
 					</div>
 					<div className="column is-narrow">
 						<div className="columns">

@@ -1,122 +1,140 @@
 @import "../styles/bulma/utilities/_all"
 
 .token-box
-	background: #FFFFFF
-	border: 2px solid #D1D1E8
-	box-shadow: 0 10px 20px 3px rgba(64,43,220,0.11)
-	max-width: 1163px
+  background: #FFFFFF
+  border: 2px solid #D1D1E8
+  box-shadow: 0 10px 20px 3px rgba(64,43,220,0.11)
+  max-width: 1163px
 
-	width: 100%
-	height: 285px
-	margin: 26px auto 100px auto
-	padding: 54px 15px
-	display: flex
-	justify-content: space-between
-	align-items: center
-	flex-direction: column
-	color: #0D0A31
-	letter-spacing: -0.5px
-	line-height: 28px
+  width: 100%
+  min-height: 418px
+  height: auto
+  margin: 26px auto 100px auto
+  padding: 54px 15px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: column
+  color: #0D0A31
+  letter-spacing: -0.5px
+  line-height: 28px
 
-	+touch
-		line-height: 14px
-		height: 205px
-		margin-bottom: 50px
-		width: 90%
+  +touch
+    line-height: 14px
+    margin-bottom: 50px
+    width: 90%
 
-	+mobile
-		height: 285px
-		padding: 34px 15px
+  +mobile
+    padding: 34px 15px
 
 
-	.token-box-title
-		font-weight: 700
-		font-size: 36px
+  .token-box-title
+    font-weight: 700
+    font-size: 36px
+    text-align: center
+    height: 80px
 
-		
-		
-		text-align: center
-		
-		+touch
-			font-size: 24px
+    +touch
+      font-size: 24px
+      height: auto
 
-		+mobile
-			margin-bottom: 20px
+    +mobile
+      margin-bottom: 20px
 
-	.token-details
-		display: flex
-		justify-content: space-around
-		font-size: 24px
-		text-align: center
-		width: 100%
+  .token-details
+    display: flex
+    justify-content: space-around
+    font-size: 24px
+    text-align: center
+    width: 100%
+    height: 80px
 
-		+touch
-			font-size: 16px
+    +touch
+      font-size: 16px
+      height: auto
 
-		+mobile
-			flex-direction: column
-			height: 100%
+    +mobile
+      flex-direction: column
+      height: 100%
 
-		+until(500px)
-			font-size: 12px
+    +until(500px)
+      font-size: 12px
 
-		.token-label
-			margin-top: 13px
-			font-size: 22px
-			color: #6F6E98
-			letter-spacing: 0
-			text-align: center
-			line-height: 32px
-			display: block
-			
-			+touch
-				font-size: 14px
-				line-height: 16px
-				margin-top: 6px
+    .token-label
+      margin-top: 13px
+      font-size: 22px
+      color: #6F6E98
+      letter-spacing: 0
+      text-align: center
+      line-height: 32px
+      display: block
 
-			+mobile
-				margin-bottom: 12px
+      +touch
+        font-size: 14px
+        line-height: 16px
+        margin-top: 6px
 
-		.token-address
-			width: 570px
+      +mobile
+        margin-bottom: 12px
 
-			+touch
-				width: auto
+    .token-address
+      width: 570px
 
-	
-	.token-symbol
+      a
+        color: #0D0A31
 
-		position: relative
+      &:visited
+        color: #0D0A31
 
-		.token-select
-			font-size: 24px
-			letter-spacing: -0.5px
-			line-height: 28px
-			text-align-last: center
-			background: #FFFFFF
-			border: 1px solid #A7A7A7
-			border-radius: 3px
-			position: absolute
+      +touch
+        width: auto
 
-			min-width: 174px
-			min-height: 28px
 
-			top: -3px
-			transform: translateX(-87px)
+  .token-symbol
 
-			+until(1280px)
-				min-width: auto
-				transform: translateX(-47px)
+    position: relative
 
-			+touch
-				transform: translateX(-35px)
-				top: -6px
-				font-size: 16px
+    .token-select
+      font-size: 24px
+      letter-spacing: -0.5px
+      line-height: 28px
+      text-align-last: center
+      background: #FFFFFF
+      border: 1px solid #A7A7A7
+      border-radius: 3px
+      position: absolute
 
-			+mobile
-				position: static
-				transform: translateX(0)
+      min-width: 174px
+      min-height: 28px
 
-			+until(500px)
-				font-size: 12px
+      top: -3px
+      transform: translateX(-87px)
+
+      +until(1280px)
+        min-width: auto
+        transform: translateX(-47px)
+
+      +touch
+        transform: translateX(-35px)
+        top: -6px
+        font-size: 16px
+
+      +mobile
+        position: static
+        transform: translateX(0)
+
+      +until(500px)
+        font-size: 12px
+
+  .token-description
+    font-size: 24px
+    color: #0D0A31
+    letter-spacing: -0.5px
+    text-align: center
+    line-height: 28px
+    max-width: 1010px
+
+    +touch
+      font-size: 16px
+
 
