@@ -34,7 +34,7 @@ const TokensPage = ({ data }) => {
 
 export const query = graphql`
 	query TokensPageQuery {
-		allFile(filter: { name: {eq: "tokens" }, sourceInstanceName: { eq: "pages" } }) {
+		allFile(filter: { absolutePath:{regex:"/(pages)\/tokens.json$/"}}) {
 			edges {
 				node {
 					childPagesJson {

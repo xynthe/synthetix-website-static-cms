@@ -7,7 +7,8 @@
   max-width: 1163px
 
   width: 100%
-  height: 418px
+  min-height: 418px
+  height: auto
   margin: 26px auto 100px auto
   padding: 54px 15px
   display: flex
@@ -20,12 +21,10 @@
 
   +touch
     line-height: 14px
-    height: 205px
     margin-bottom: 50px
     width: 90%
 
   +mobile
-    height: 285px
     padding: 34px 15px
 
 
@@ -33,9 +32,11 @@
     font-weight: 700
     font-size: 36px
     text-align: center
+    height: 80px
 
     +touch
       font-size: 24px
+      height: auto
 
     +mobile
       margin-bottom: 20px
@@ -46,9 +47,11 @@
     font-size: 24px
     text-align: center
     width: 100%
+    height: 80px
 
     +touch
       font-size: 16px
+      height: auto
 
     +mobile
       flex-direction: column
@@ -124,11 +127,14 @@
         font-size: 12px
 
   .token-description
-    margin-bottom: 17px
-
     font-size: 24px
     color: #0D0A31
     letter-spacing: -0.5px
     text-align: center
     line-height: 28px
     max-width: 1010px
+
+    +touch
+      font-size: 16px
+
+
