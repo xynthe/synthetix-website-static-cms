@@ -206,7 +206,7 @@ class IndexPage extends React.Component {
 									<img src={icoLock} alt="Stable" />
 								</div>
 								<div className="p1">Receive SNX in exchange for staking</div>
-								<a className="button" href="https://blog.synthetix.io/synthetix-monetary-policy-changes/" target="_blank">Learn More</a>
+								<a className="button" href="https://www.synthetix.io/stakingrewards" target="_blank">Learn More</a>
 							</div>
 							<div className="column">
 								<div className="c-img">
