@@ -93,7 +93,7 @@ class IndexPage extends React.Component {
 
 	render() {
 		let { isOpen, showThanks, emailAddress } = this.state;
-		const { swapprUrl, mintrUrl, dashboardUrl, synthetixExchangeUrl } = this.props.data.site.siteMetadata;
+		const { mintrUrl, dashboardUrl, synthetixExchangeUrl } = this.props.data.site.siteMetadata;
 		const { metaTitle, metaDescription, heading } = this.props.data.allFile.edges[0].node.childPagesJson;
 
 		return (
@@ -244,15 +244,6 @@ class IndexPage extends React.Component {
 									<div className="p3">Lock SNX to mint Synths and collect fees</div>
 								</div>
 							</a>
-							<a className="column" href={swapprUrl} target="_blank" rel="noopener noreferrer">
-								<div className="c-top">
-									<img src={icoUser1} alt="For new users" />
-								</div>
-								<div className="c-bottom">
-									<div className="p2">Swappr</div>
-									<div className="p3">Easily swap between ETH and sUSD</div>
-								</div>
-							</a>
 							<a className="column" href={dashboardUrl} target="_blank" rel="noopener noreferrer">
 								<div className="c-top">
 									<img src={icoUser2} alt="For new and experienced users" />
@@ -364,7 +355,6 @@ export const query = graphql`
 		site {
 			siteMetadata {
 				dashboardUrl
-				swapprUrl
 				mintrUrl
 				synthetixExchangeUrl
 			}
