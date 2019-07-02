@@ -23,7 +23,6 @@ const Layout = ({ children, ...rest }) => (
 						discordUrl
 						redditUrl
 						ogImage
-						swapprUrl
 						dashboardUrl
 						mintrUrl
 					}

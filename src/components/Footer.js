@@ -12,7 +12,6 @@ const Footer = ({
 	mediumUrl,
 	redditUrl,
 	discordUrl,
-	swapprUrl,
 	dashboardUrl,
 	mintrUrl
 }) => (
@@ -21,18 +20,13 @@ const Footer = ({
 			<div className="container">
 				<div className="columns justify-content--space-between footer-columns">
 					<div className="column is-narrow has-text-centered-mobile logo-box">
-						<UiImg src="/img/ethereum.svg" alt="Ethereum" />
+						<UiImg className="eth-img" src="/img/ethereum.svg" alt="Ethereum" />
 						<UiImg className="defi-img" src="/img/defi.svg" alt="Defi" />
 					</div>
 					<div className="column is-narrow">
 						<div className="columns">
 							<div className="column has-text-centered-mobile">
 								<ul className="links">
-									<li>
-										<a href={swapprUrl} target="_blank" rel="noopener noreferrer">
-											Swappr
-										</a>
-									</li>
 									<li>
 										<a href={mintrUrl} target="_blank" rel="noopener noreferrer">
 											Mintr
