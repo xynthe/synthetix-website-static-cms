@@ -22,6 +22,7 @@ const Footer = ({
 					<div className="column is-narrow has-text-centered-mobile logo-box">
 						<UiImg className="eth-img" src="/img/ethereum.svg" alt="Ethereum" />
 						<UiImg className="defi-img" src="/img/defi.svg" alt="Defi" />
+						<UiImg className="messari-img" src="/img/messari.png" alt="Messari" />
 					</div>
 					<div className="column is-narrow">
 						<div className="columns">
