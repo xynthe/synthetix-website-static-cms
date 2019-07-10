@@ -20,9 +20,13 @@ const Footer = ({
 			<div className="container">
 				<div className="columns justify-content--space-between footer-columns">
 					<div className="column is-narrow has-text-centered-mobile logo-box">
-						<UiImg className="eth-img" src="/img/ethereum.svg" alt="Ethereum" />
-						<UiImg className="defi-img" src="/img/defi.svg" alt="Defi" />
-						<UiImg className="messari-img" src="/img/messari.png" alt="Messari" />
+						<div className="row">
+							<UiImg className="defi-img" src="/img/defi.svg" alt="Defi" />
+							<UiImg className="messari-img" src="/img/messari.png" alt="Messari" />
+						</div>
+						<div className="row">
+							<UiImg className="eth-img" src="/img/ethereum.svg" alt="Ethereum" />
+						</div>
 					</div>
 					<div className="column is-narrow">
 						<div className="columns">
