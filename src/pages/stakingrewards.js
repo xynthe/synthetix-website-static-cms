@@ -49,17 +49,17 @@ const StakingRewardsPage = () => {
 						</div>
 						<div className="subtitle">How it works</div>
 						<div className="section-desc sp1 mb-20">
-							Each week, each SNX staker will be able to claim their proportion of the weekly SNX staking rewards. Their rewards are calculated by measuring what proportion of the total Synth supply they have minted against their SNX. For example, if Alice has minted 1000 sUSD, and there is a total of 1,000,000 sUSD minted, then she receives 1% of the staking rewards.
+							Each week, each SNX staker will be able to claim their proportion of the weekly SNX staking rewards. Their rewards are calculated by measuring what proportion of the total Synth supply they have minted against their SNX. For example, if Alice has minted 1000 sUSD, and there is a total of 1,000,000 sUSD minted, then she receives 0.1% of the staking rewards.
 							<br/>
 							<br/>
 							For the first 52 weeks, 1.44m SNX will be added to the supply each week (see below for full schedule). The snapshot for the first week (March 12-18) was taken on Wednesday March 19 at 12:00 (midnight) UTC. The snapshot for each subsequent week is taken at the equivalent time (Wednesday morning at midnight UTC).
 							<br/>
 							<br/>
-							SNX rewards can be claimed for up to six weeks in arrears (this period may be changed in the future). Any unclaimed rewards (beyond the given six weeks) are simply added back into the entire pool of SNX rewards to be distributed in the next reward period.
+							SNX rewards can be claimed for up to two weeks in arrears (this period may be changed in the future). Any unclaimed rewards (beyond the given two weeks) are simply added back into the entire pool of SNX rewards to be distributed in the next reward period.
 						</div>
 						<div className="subtitle">How to claim</div>
 						<div className="section-desc sp1 mb-20">
-							Claiming your SNX staking rewards can be done through <a href="https://mintr.synthetix.io" target="_blank">Mintr</a>, our dApp for SNX holders. You can access it through Metamask or directly using a Trezor or Ledger hardware wallet. Once you’ve connected your wallet, head to the ‘Fees’ tab, where you can withdraw your rewards.						</div>
+							Claiming your SNX staking rewards can be done through <a href="https://mintr.synthetix.io" target="_blank">Mintr</a>, our dApp for SNX holders. You can access it through Metamask or directly using a Trezor or Ledger hardware wallet. Once you’ve connected your wallet, head to the ‘Rewards’ tab, where you can withdraw your rewards.						</div>
 					</div>
 				</section>
 				<section className="section">
@@ -67,29 +67,10 @@ const StakingRewardsPage = () => {
 						Collateralisation ratio penalties
 					</div>
 					<div className="section-desc mb-20">
-						There are penalties if your Collateralisation Ratio (i.e. the ratio between the value of your locked SNX value and the sUSD you’ve minted) is significantly below 500%. Penalties are applied in relation to your C-Ratio at the time you claim your rewards. This means that if you’re claiming your rewards for the past 6 weeks at once, you can simply adjust your C-Ratio back to the optimal 500% just before you claim, and you won’t be penalised.
-						<br/>
-						<br/>
-						Here are the penalties:
+						If your Collateralisation Ratio (i.e. the ratio between the value of your locked SNX value and the sUSD you’ve minted) is below 675%, then you’ll be unable to claim any SNX staking rewards or Synth exchange rewards until you’ve amended it to 675%, which is the 10% buffer from the optimal 750%.
 					</div>
-					<table>
-						<thead>
-							<tr>
-								<th>Collateralisation Ratio</th>
-								<th>Penalty</th>
-							</tr>
-						</thead>
-						<tbody>
-							{penalties.map(p => (
-								<tr>
-									<td className="w-50">{p.ratio}</td>
-									<td className="w-50">{p.penalty}</td>
-								</tr>
-							))}
-						</tbody>
-					</table>
 					<div className="section-desc pt-30">
-						* There is no penalty per se for being collateralised over 500%, but given that SNX staking rewards are calculated by measuring your minted proportion of the total Synths available, if you have minted less than you could have then you will receive less rewards.
+						* There is no penalty per se for being collateralised over 750%, but given that SNX staking rewards are calculated by measuring your minted proportion of the total Synths available, if you have minted less than you could have then you will receive less rewards.
 					</div>
 
 					<div className="section-title white pt-40 mb-20">
