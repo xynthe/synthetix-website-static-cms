@@ -23,9 +23,8 @@ import UiImg from "../components/UiImg";
 import { Helmet } from "react-helmet";
 
 const bottomLabelTx = "Q4 2018";
-const fiatCurrencies = ['susd', 'seur', 'sjpy', 'saud', 'skrw', 'sgbp', 'scny', 'schf', 'srub', 'ssgd', 'sinr', 'scad', 'sbrl', 'spln', 'snzd']
-const cryptoCurrencies = ['sbtc', 'seth', 'sbnb', 'smkr', 'sxtz', 'strx'];
-const inverseCryptoCurrencies = ['ibtc', 'ieth', 'ibnb', 'imkr', 'ixtz', 'itrx'];
+const fiatCurrencies = ['susd', 'seur', 'sjpy', 'saud', 'skrw', 'sgbp', 'schf', 'scad']
+const cryptoCurrencies = ['sbtc', 'seth', 'sbnb', 'ibtc', 'ieth', 'ibnb', 'smkr', 'sxtz', 'strx', 'imkr', 'ixtz', 'itrx'];
 const commodities = ['sxau', 'sxag'];
 const comingSoon = ['sappl', '10x'];
 const arrow = withPrefix('/img/arrow-vertical.svg')
@@ -136,7 +135,6 @@ class IndexPage extends React.Component {
 								<div className="scroll-container">
 									<div className="assets-container">
 										{cryptoCurrencies.map(c => <img src={withPrefix(`/img/${c}.svg`)} /> )}
-										{inverseCryptoCurrencies.map(c => <img src={withPrefix(`/img/${c}.svg`)} /> )}
 									</div>
 									<img src={arrow} className={`arrow`} />
 								</div>

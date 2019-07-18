@@ -8,7 +8,7 @@ import TokenBox from "../components/TokenBox"
 const TokensPage = ({ data }) => {
 	let tokens = data && data.allFile && data.allFile.edges[0].node.childPagesJson.tokens;
 	let otherTokens = tokens && tokens.slice(1, tokens.length)
-	console.log(data)
+
 	return (
 		<Layout>
 			<div className="tokens-page">
