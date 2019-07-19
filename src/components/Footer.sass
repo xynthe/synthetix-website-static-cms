@@ -38,12 +38,36 @@ footer
         padding: 0 10px
 
 
-  .eth-img
-    max-width: 75%
+  .row
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 334px
 
-  .defi-img
-    max-width: 50%
     margin-top: 20px
+    &:first-child
+      margin-top: 0
+
+    a
+      display: inline-block
+      height: 46px
+
+      &.defi-img
+        width: 131px
+
+      &.eth-img
+        width: 183px
+        margin-right: 20px
+
+      &.messari-img
+        width: 183px
+        height: 62px
+
+    img
+
+
+
+
 
   +tablet
     .links
