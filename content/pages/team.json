@@ -31,20 +31,6 @@
       "image": "/img/clinton.png"
     },
     {
-      "fullName": "Charlie Karaboga",
-      "title": "Head of Product",
-      "bio": "Charlie has over 10 years experience in leading product and delivery teams in Europe and Australia.. He has managed several international launches for products with millions of users.",
-      "linkedInUrl": "https://www.linkedin.com/in/ckaraboga/",
-      "image": "/img/charlie.png"
-    },
-    {
-      "fullName": "Mikael Sundelin",
-      "title": "VP Operations",
-      "bio": "Mikael has worked in director-level positions at Unibet and MyLotto24, focusing on corporate strategy and marketing/sales.",
-      "linkedInUrl": "https://www.linkedin.com/in/mikaelsundelin/",
-      "image": "/img/mikael.png"
-    },
-    {
       "fullName": "Garth Travers",
       "title": "Communications Manager",
       "bio": "Garth graduated in Communications from the University of Sydney and has experience managing a national payments network.",
@@ -66,32 +52,26 @@
       "image": "/img/jackson-chan.png"
     },
     {
-      "fullName": "Matt Vernon",
-      "title": "Designer",
-      "bio": "Matt is a freelance Product Designer, aiming to bring great UX and design to decentralised applications.",
-      "linkedInUrl": "https://www.linkedin.com/in/matthew-vernon-7394b597/",
-      "image": "/img/matt_vernon.png"
+      "fullName": "Charlie Karaboga",
+      "title": "Head of Product",
+      "bio": "Charlie has over 10 years experience in leading product and delivery teams in Europe and Australia.. He has managed several international launches for products with millions of users.",
+      "linkedInUrl": "https://www.linkedin.com/in/ckaraboga/",
+      "image": "/img/charlie.png"
     },
     {
-      "fullName": "Roman Mandryk",
-      "title": "dApp Engineer",
-      "bio": "Roman has built software products for European stock exchange Deutsche Borse and several startups in Australia, focusing on fintech, blockchain and cloud innovation.",
-      "linkedInUrl": "https://www.linkedin.com/in/roman-mandryk-b9572927/",
-      "image": "/img/roman_mandryk.jpg"
+      "fullName": "Zoe Archer",
+      "title": "UX Engineer",
+      "bio": "Zoe has considerable experience in a variety of roles at a national payments network, including management roles in design, development, and operations. ",
+      "linkedInUrl": "https://www.linkedin.com/in/zoearcher/",
+      "image": "/img/0.jpg"
     },
     {
-      "fullName": "David Kvas",
-      "title": "dApp Engineer",
-      "bio": "David is a full-stack developer with 15 years experience ranging from development for start-ups to large-scale governmental projects. He is proficient in React JS & Native, Node.JS, Redux, MobX and blockchain tech.",
-      "linkedInUrl": "https://www.linkedin.com/in/davidkvas/",
-      "image": "/img/david_kvas.png"
-    },
-    {
-      "fullName": "Martin Torok",
-      "title": "dApp Engineer",
-      "bio": "Martin is a software engineer with a strong full-stack development background. He has a high level of expertise in working with various technology stacks.",
-      "linkedInUrl": "https://www.linkedin.com/in/martin-torok-4227a234",
-      "image": "/img/martin_torok.png"
+      "fullName": "Sergey Vassilyev",
+      "title": "Full-Stack Developer",
+      "bio": "Sergey has nearly a decade's experience in software engineering in several different countries. ",
+      "linkedInUrl": "https://www.linkedin.com/in/sergey-vassilyev-91017455/",
+      "image": "/img/sergey.jpg"
     }
-  ]
+  ],
+  "openPositions": []
 }
