@@ -28,9 +28,7 @@ const desc = synth => {
 			`value reaches $${lowerLimit}) or its lower limit of $${lowerLimit} (i.e. when ${underlying}’s value ` +
 			`reaches $${upperLimit}). If it reaches either of its limits and gets frozen, it will no longer be ` +
 			`able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen ` +
-			`value. At some point after it has reached either of its limits, it will be substituted for another ${
-				synth.name
-			} with different limits.`
+			`value. At some point after it has reached either of its limits, it will be substituted for another ${synth.name} with different limits.`
 		);
 	} else if (synth.index) {
 		return (
@@ -78,5 +76,5 @@ const output = {
 
 fs.writeFileSync(
 	path.join(__dirname, "content", "pages", "tokens.json"),
-	JSON.stringify(output, null, 2)
+	JSON.stringify(output, null, "\t") + "\n"
 );
