@@ -15,7 +15,8 @@ const NotFoundPage = () => {
 							<br />
 							exists.
 							<br />
-							Try checking the URL, using the navigation bar above, or returning to our homepage.
+							Try checking the URL, using the navigation bar above, or returning to
+							our homepage.
 						</div>
 					</div>
 				</section>

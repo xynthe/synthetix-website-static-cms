@@ -74,12 +74,20 @@ export default class Header extends React.Component {
 														<span>{el.title}</span>
 													</UiLink>
 												</div>
-												<div className="dropdown-menu" id={el.key} role="menu">
+												<div
+													className="dropdown-menu"
+													id={el.key}
+													role="menu"
+												>
 													{allMenuItems
 														.filter(el2 => el2.parentMenu === el.key)
 														.sort(numCompare)
 														.map((el2, idx2) => (
-															<UiLink key={idx2} to={el2.link} isExt={el2.isExt}>
+															<UiLink
+																key={idx2}
+																to={el2.link}
+																isExt={el2.isExt}
+															>
 																{el2.title}
 															</UiLink>
 														))}

@@ -1,77 +1,77 @@
 {
-  "pageTitle": "Synthetix | Decentralised synthetic assets",
-  "pageDescription": "Synthetix is a crypto-backed synthetic asset platform that provides on-chain exposure to real-world currencies, commodities, stocks, and indices.",
-  "teamMembers": [
-    {
-      "fullName": "Kain Warwick",
-      "title": "Founder",
-      "bio": "Before launching Synthetix, Kain built the largest cryptocurrency payment platform in Australia, with tens of millions in transaction volume.",
-      "linkedInUrl": "https://au.linkedin.com/in/kainwarwick",
-      "image": "/img/kain.jpg"
-    },
-    {
-      "fullName": "Justin Moses",
-      "title": "CTO",
-      "bio": "Justin is a former Director of Engineering at MongoDB and has significant experience designing and deploying high availability systems at scale.",
-      "linkedInUrl": "https://www.linkedin.com/in/justinjmoses/",
-      "image": "/img/justin.png"
-    },
-    {
-      "fullName": "Jordan Momtazi",
-      "title": "VP Partnerships",
-      "bio": "Jordan has extensive experience in sales and business development in online payments, he structured numerous enterprise deals while at Paypal.",
-      "linkedInUrl": "https://www.linkedin.com/in/jordanmomtazi/",
-      "image": "/img/jordan.png"
-    },
-    {
-      "fullName": "Clinton Ennis",
-      "title": "Senior Architect",
-      "bio": "Clinton has 18 years experience in software engineering and is a former Architect Lead at JPMorgan Chase in trading technology.",
-      "linkedInUrl": "https://www.linkedin.com/in/clintonennis/",
-      "image": "/img/clinton.png"
-    },
-    {
-      "fullName": "Garth Travers",
-      "title": "Communications Manager",
-      "bio": "Garth graduated in Communications from the University of Sydney and has experience managing a national payments network.",
-      "linkedInUrl": "https://www.linkedin.com/in/garth-travers-266b5339/",
-      "image": "/img/garth_travers.png"
-    },
-    {
-      "fullName": "Clement Balestrat",
-      "title": "dApp Engineer",
-      "bio": "Clement completed his Masters in Maths and Computer Science before finding his passion in the start-up world. He has a strong background in full-stack engineering and crypto.",
-      "linkedInUrl": "https://www.linkedin.com/in/clementbalestrat/",
-      "image": "/img/clem.png"
-    },
-    {
-      "fullName": "Jackson Chan",
-      "title": "Blockchain Engineer",
-      "bio": "Jackson has extensive experience in Software engineering developing financial trading and banking systems at Macquarie Bank. He has a strong background in crypto and involved in building one of Australia's first crypto loyalty platforms.",
-      "linkedInUrl": "https://www.linkedin.com/in/jackson-chan/",
-      "image": "/img/jackson-chan.png"
-    },
-    {
-      "fullName": "Charlie Karaboga",
-      "title": "Head of Product",
-      "bio": "Charlie has over 10 years experience in leading product and delivery teams in Europe and Australia.. He has managed several international launches for products with millions of users.",
-      "linkedInUrl": "https://www.linkedin.com/in/ckaraboga/",
-      "image": "/img/charlie.png"
-    },
-    {
-      "fullName": "Zoe Archer",
-      "title": "UX Engineer",
-      "bio": "Zoe has considerable experience in a variety of roles at a national payments network, including management roles in design, development, and operations. ",
-      "linkedInUrl": "https://www.linkedin.com/in/zoearcher/",
-      "image": "/img/0.jpg"
-    },
-    {
-      "fullName": "Sergey Vassilyev",
-      "title": "Full-Stack Developer",
-      "bio": "Sergey has nearly a decade's experience in software engineering in several different countries. ",
-      "linkedInUrl": "https://www.linkedin.com/in/sergey-vassilyev-91017455/",
-      "image": "/img/sergey.jpg"
-    }
-  ],
-  "openPositions": []
+	"pageTitle": "Synthetix | Decentralised synthetic assets",
+	"pageDescription": "Synthetix is a crypto-backed synthetic asset platform that provides on-chain exposure to real-world currencies, commodities, stocks, and indices.",
+	"teamMembers": [
+		{
+			"fullName": "Kain Warwick",
+			"title": "Founder",
+			"bio": "Before launching Synthetix, Kain built the largest cryptocurrency payment platform in Australia, with tens of millions in transaction volume.",
+			"linkedInUrl": "https://au.linkedin.com/in/kainwarwick",
+			"image": "/img/kain.jpg"
+		},
+		{
+			"fullName": "Justin J. Moses",
+			"title": "CTO",
+			"bio": "Justin is a former Director of Engineering at MongoDB and has significant experience designing and deploying high availability systems at scale.",
+			"linkedInUrl": "https://www.linkedin.com/in/justinjmoses/",
+			"image": "/img/justin.png"
+		},
+		{
+			"fullName": "Jordan Momtazi",
+			"title": "VP Partnerships",
+			"bio": "Jordan has extensive experience in sales and business development in online payments, he structured numerous enterprise deals while at Paypal.",
+			"linkedInUrl": "https://www.linkedin.com/in/jordanmomtazi/",
+			"image": "/img/jordan.png"
+		},
+		{
+			"fullName": "Clinton Ennis",
+			"title": "Senior Architect",
+			"bio": "Clinton has 18 years experience in software engineering and is a former Architect Lead at JPMorgan Chase in trading technology.",
+			"linkedInUrl": "https://www.linkedin.com/in/clintonennis/",
+			"image": "/img/clinton.png"
+		},
+		{
+			"fullName": "Garth Travers",
+			"title": "Communications Manager",
+			"bio": "Garth graduated in Communications from the University of Sydney and has experience managing a national payments network.",
+			"linkedInUrl": "https://www.linkedin.com/in/garth-travers-266b5339/",
+			"image": "/img/garth_travers.png"
+		},
+		{
+			"fullName": "Clement Balestrat",
+			"title": "dApp Engineer",
+			"bio": "Clement completed his Masters in Maths and Computer Science before finding his passion in the start-up world. He has a strong background in full-stack engineering and crypto.",
+			"linkedInUrl": "https://www.linkedin.com/in/clementbalestrat/",
+			"image": "/img/clem.png"
+		},
+		{
+			"fullName": "Jackson Chan",
+			"title": "Blockchain Engineer",
+			"bio": "Jackson has extensive experience in Software engineering developing financial trading and banking systems at Macquarie Bank. He has a strong background in crypto and involved in building one of Australia's first crypto loyalty platforms.",
+			"linkedInUrl": "https://www.linkedin.com/in/jackson-chan/",
+			"image": "/img/jackson-chan.png"
+		},
+		{
+			"fullName": "Charlie Karaboga",
+			"title": "Head of Product",
+			"bio": "Charlie has over 10 years experience in leading product and delivery teams in Europe and Australia.. He has managed several international launches for products with millions of users.",
+			"linkedInUrl": "https://www.linkedin.com/in/ckaraboga/",
+			"image": "/img/charlie.png"
+		},
+		{
+			"fullName": "Zoe Archer",
+			"title": "UX Engineer",
+			"bio": "Zoe has considerable experience in a variety of roles at a national payments network, including management roles in design, development, and operations. ",
+			"linkedInUrl": "https://www.linkedin.com/in/zoearcher/",
+			"image": "/img/0.jpg"
+		},
+		{
+			"fullName": "Sergey Vassilyev",
+			"title": "Full-Stack Developer",
+			"bio": "Sergey has nearly a decade's experience in software engineering in several different countries. ",
+			"linkedInUrl": "https://www.linkedin.com/in/sergey-vassilyev-91017455/",
+			"image": "/img/sergey.jpg"
+		}
+	],
+	"openPositions": []
 }

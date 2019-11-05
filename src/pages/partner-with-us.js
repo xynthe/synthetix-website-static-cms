@@ -13,9 +13,10 @@ const PartnersPage = () => (
 				<div className="container">
 					<h1 className="page-title">Leave stability to the experts</h1>
 					<div className="page-subtitle">
-						A stablecoin is a cryptocurrency that is resistant to price volatility, allowing it to
-						be used as a stable store of value, medium of exchange, and unit of account. Partner
-						with Synthetix to use our cryptoasset-backed stablecoins for all your payment needs!
+						A stablecoin is a cryptocurrency that is resistant to price volatility,
+						allowing it to be used as a stable store of value, medium of exchange, and
+						unit of account. Partner with Synthetix to use our cryptoasset-backed
+						stablecoins for all your payment needs!
 					</div>
 				</div>
 			</section>
@@ -34,8 +35,9 @@ const PartnersPage = () => (
 							</div>
 							<div className="p1">Stable</div>
 							<div className="p2">
-								Holders of the network’s collateral, SNX tokens, are incentivised to keep the value
-								of Synths at $1 (relative to whichever asset they’re tracking).
+								Holders of the network’s collateral, SNX tokens, are incentivised to
+								keep the value of Synths at $1 (relative to whichever asset they’re
+								tracking).
 							</div>
 						</div>
 						<div className="column">
@@ -44,8 +46,8 @@ const PartnersPage = () => (
 							</div>
 							<div className="p1">Decentralised</div>
 							<div className="p2">
-								SNX is on the blockchain, totally transparent, and censorship resistant. Synths are
-								not collateralized by a centralised party.
+								SNX is on the blockchain, totally transparent, and censorship
+								resistant. Synths are not collateralized by a centralised party.
 							</div>
 						</div>
 						<div className="column">
@@ -54,9 +56,9 @@ const PartnersPage = () => (
 							</div>
 							<div className="p1">Scalable</div>
 							<div className="p2">
-								The value of SNX and how many Synths can be minted are primarily dependent on Synth
-								transactions, which means that use of the network encourages the expansion of the
-								network.
+								The value of SNX and how many Synths can be minted are primarily
+								dependent on Synth transactions, which means that use of the network
+								encourages the expansion of the network.
 							</div>
 						</div>
 					</div>
@@ -65,16 +67,17 @@ const PartnersPage = () => (
 			<section className="section is-padded">
 				<div className="container">
 					<div className="section-title white sp2 pb-50">
-						Adopting a stablecoin that is already available reduces friction for the user
+						Adopting a stablecoin that is already available reduces friction for the
+						user
 					</div>
 					<div className="section-desc sp3 pb-30">
-						Users shouldn’t need to go through the process of acquiring different native tokens to
-						act throughout the blockchain ecosystem.
+						Users shouldn’t need to go through the process of acquiring different native
+						tokens to act throughout the blockchain ecosystem.
 					</div>
 					<div className="section-desc sp3">
-						If your platform has a native token, its value can come from staking or other
-						reputation-based actions. We can guide you on the tokenomics of your platform and how
-						Synths can fit within it.
+						If your platform has a native token, its value can come from staking or
+						other reputation-based actions. We can guide you on the tokenomics of your
+						platform and how Synths can fit within it.
 					</div>
 				</div>
 			</section>
@@ -82,8 +85,9 @@ const PartnersPage = () => (
 				<div className="container">
 					<div className="section-title sp2 pb-40">Existing Partnerships</div>
 					<div className="section-desc sp4">
-						Our existing partnerships include a range of use-cases such as e-Commerce, Trading,
-						Payments, and operating as a medium of exchange for other protocols.
+						Our existing partnerships include a range of use-cases such as e-Commerce,
+						Trading, Payments, and operating as a medium of exchange for other
+						protocols.
 					</div>
 				</div>
 			</section>
@@ -91,10 +95,12 @@ const PartnersPage = () => (
 				<div className="container">
 					<div className="columns">
 						<div className="column is-half first-column">
-							<div className="section-title sp5 white">How to Integrate with Synthetix</div>
+							<div className="section-title sp5 white">
+								How to Integrate with Synthetix
+							</div>
 							<div className="section-desc sp6 pb-40">
-								All of our code is open source, and our Developer Portal makes it easy for
-								developers to build on top of the Synthetix Network.
+								All of our code is open source, and our Developer Portal makes it
+								easy for developers to build on top of the Synthetix Network.
 							</div>
 							<a
 								href="https://developer.havven.io/"
@@ -114,14 +120,17 @@ const PartnersPage = () => (
 						<div className="column is-half second-column">
 							<div className="p-title pb-10 purple-light">Full Support</div>
 							<div className="p-text pb-20">
-								Receive full support from the Synthetix Partnerships team, giving you everything you
-								need to integrate Synths into your project.
+								Receive full support from the Synthetix Partnerships team, giving
+								you everything you need to integrate Synths into your project.
 							</div>
-							<div className="p-title pb-10 purple-light">Easy Ethereum Integration</div>
+							<div className="p-title pb-10 purple-light">
+								Easy Ethereum Integration
+							</div>
 							<div className="p-text pb-20">
-								For all Ethereum-based integrations, there is extremely little setup required, and
-								for non-blockchain integrations, a simple setup is required using Web 3.0 extensions
-								(as seen in our eStore Proof of Concept)
+								For all Ethereum-based integrations, there is extremely little setup
+								required, and for non-blockchain integrations, a simple setup is
+								required using Web 3.0 extensions (as seen in our eStore Proof of
+								Concept)
 							</div>
 						</div>
 					</div>

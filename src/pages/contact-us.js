@@ -11,8 +11,8 @@ const ContactUsPage = ({ data }) => {
 					<div className="container">
 						<h1 className="page-title">Contact Us</h1>
 						<div className="page-subtitle">
-							If you’d like to reach out to the Synthetix team in any way, please get in touch with
-							us via the following options.
+							If you’d like to reach out to the Synthetix team in any way, please get
+							in touch with us via the following options.
 						</div>
 					</div>
 				</section>
@@ -41,7 +41,11 @@ const ContactUsPage = ({ data }) => {
 					</div>
 					<div className="container has-text-centered discord-section">
 						or say hello on{" "}
-						<a href={data.site.siteMetadata.discordUrl} target="_blank" rel="noopener noreferrer">
+						<a
+							href={data.site.siteMetadata.discordUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Discord!
 						</a>
 					</div>
