@@ -20,7 +20,9 @@ class CommunityPage extends React.Component {
 	};
 
 	componentDidMount() {
-		this.emailRef.current.setCustomValidity('That does not appear to be a valid email address. Please try again.');
+		this.emailRef.current.setCustomValidity(
+			"That does not appear to be a valid email address. Please try again."
+		);
 	}
 
 	handleChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -64,8 +66,8 @@ class CommunityPage extends React.Component {
 						<div className="container">
 							<h1 className="page-title">Join our Community</h1>
 							<div className="page-subtitle">
-								Join the conversation with the rest of the Synthetix community, and get updates on
-								recent news an activity across the Synthetix Network.
+								Join the conversation with the rest of the Synthetix community, and
+								get updates on recent news an activity across the Synthetix Network.
 							</div>
 						</div>
 					</section>
@@ -75,7 +77,8 @@ class CommunityPage extends React.Component {
 								Discord is the primary destination for all things Synthetix.
 							</div>
 							<div className="s-desc pb-50">
-								Jump in and join the conversation with the Synthetix team and community!
+								Jump in and join the conversation with the Synthetix team and
+								community!
 							</div>
 							<a
 								className="join-our-discord-box"
@@ -94,19 +97,39 @@ class CommunityPage extends React.Component {
 								or follow us on our other social channels for updates
 							</div>
 							<div className="columns channels">
-								<a className="column" href={twitterUrl} target="_blank" rel="noopener noreferrer">
+								<a
+									className="column"
+									href={twitterUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									<img src={icoTwitter} alt="Twitter" />
 									Twitter
 								</a>
-								<a className="column" href={redditUrl} target="_blank" rel="noopener noreferrer">
+								<a
+									className="column"
+									href={redditUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									<img src={icoReddit} alt="Reddit" />
 									Reddit
 								</a>
-								<a className="column" href={mediumUrl} target="_blank" rel="noopener noreferrer">
+								<a
+									className="column"
+									href={mediumUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									<img src={icoMedium} alt="Medium" />
 									Blog
 								</a>
-								<a className="column" href={telegramUrl} target="_blank" rel="noopener noreferrer">
+								<a
+									className="column"
+									href={telegramUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									<img src={icoTelegram} alt="Telegram" />
 									Telegram
 								</a>

@@ -40,8 +40,8 @@ export default class HowItWorksPage extends React.Component {
 						<div className="container">
 							<h1 className="page-title">How Synthetix Works</h1>
 							<div className="page-subtitle">
-								There are two kinds of tokens in the Synthetix Network: SNX, the Synthetix network
-								token; and synthetic assets, known as Synths.
+								There are two kinds of tokens in the Synthetix Network: SNX, the
+								Synthetix network token; and synthetic assets, known as Synths.
 							</div>
 						</div>
 						<div className="columns is-centered is-hidden">
@@ -57,7 +57,8 @@ export default class HowItWorksPage extends React.Component {
 										this.startVideo(HOW_IT_WORKS);
 									}}
 								>
-									<img src={icoPlay} className="is-icon" alt="Intro" /> <span>Intro</span>
+									<img src={icoPlay} className="is-icon" alt="Intro" />{" "}
+									<span>Intro</span>
 								</a>
 							</div>
 							<div className="column is-narrow has-text-centered">
@@ -72,7 +73,11 @@ export default class HowItWorksPage extends React.Component {
 										this.startVideo(HOW_NOMINS_ARE_MINTED);
 									}}
 								>
-									<img src={icoPlayDark} className="is-icon" alt="How nomins are minted" />
+									<img
+										src={icoPlayDark}
+										className="is-icon"
+										alt="How nomins are minted"
+									/>
 									<span>How nomins are minted</span>
 								</a>
 							</div>
@@ -94,8 +99,9 @@ export default class HowItWorksPage extends React.Component {
 								<div className="step-number-title pb-40">STEP TWO</div>
 								<div className="step-title pb-40">Mint Synths</div>
 								<div className="step-desc pb-50">
-									Synths are minted into the market against the value of the locked SNX, where they can be used for a variety of
-									purposes including trading and remittance.
+									Synths are minted into the market against the value of the
+									locked SNX, where they can be used for a variety of purposes
+									including trading and remittance.
 								</div>
 								<img src={icoCoins} alt="Step Two" />
 							</div>
@@ -103,10 +109,13 @@ export default class HowItWorksPage extends React.Component {
 						<div className="container step-3 pb-90">
 							<div className="pt-80">
 								<div className="step-number-title pb-40">STEP THREE</div>
-								<div className="step-title pb-40">Receive rewards as SNX holder</div>
+								<div className="step-title pb-40">
+									Receive rewards as SNX holder
+								</div>
 								<div className="step-desc pb-50">
-									All Synth trades on Synthetix.Exchange generate fees that are distributed to SNX holders,
-									rewarding them for staking the system.
+									All Synth trades on Synthetix.Exchange generate fees that are
+									distributed to SNX holders, rewarding them for staking the
+									system.
 								</div>
 								<img src={icoHandout} alt="Step Three" />
 							</div>

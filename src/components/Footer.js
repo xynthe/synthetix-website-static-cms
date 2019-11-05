@@ -7,25 +7,24 @@ import logoDiscord from "../resources/logo-discord.svg";
 import logoReddit from "../resources/logo-reddit.svg";
 import UiImg from "./UiImg";
 
-const Footer = ({
-	twitterUrl,
-	mediumUrl,
-	redditUrl,
-	discordUrl,
-	dashboardUrl,
-	mintrUrl
-}) => (
+const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mintrUrl }) => (
 	<footer>
 		<section className="section ph-20 pv-0">
 			<div className="container">
 				<div className="columns justify-content--space-between footer-columns">
 					<div className="column is-narrow has-text-centered-mobile logo-box">
 						<div className="row">
-							<a href="https://ethereum.org/" className="eth-img"><UiImg src="/img/ethereum.svg" alt="Ethereum" /></a>
-							<a href="https://defi.network/" className="defi-img"><UiImg  src="/img/defi.svg" alt="Defi" /></a>
+							<a href="https://ethereum.org/" className="eth-img">
+								<UiImg src="/img/ethereum.svg" alt="Ethereum" />
+							</a>
+							<a href="https://defi.network/" className="defi-img">
+								<UiImg src="/img/defi.svg" alt="Defi" />
+							</a>
 						</div>
 						<div className="row">
-							<a href="https://messari.io/asset/synthetix" className="messari-img"><UiImg src="/img/messari.svg" alt="Messari" /></a>
+							<a href="https://messari.io/asset/synthetix" className="messari-img">
+								<UiImg src="/img/messari.svg" alt="Messari" />
+							</a>
 						</div>
 					</div>
 					<div className="column is-narrow">
@@ -33,12 +32,20 @@ const Footer = ({
 							<div className="column has-text-centered-mobile">
 								<ul className="links">
 									<li>
-										<a href={mintrUrl} target="_blank" rel="noopener noreferrer">
+										<a
+											href={mintrUrl}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
 											Mintr
 										</a>
 									</li>
 									<li>
-										<a href={dashboardUrl} target="_blank" rel="noopener noreferrer">
+										<a
+											href={dashboardUrl}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
 											Dashboard
 										</a>
 									</li>
