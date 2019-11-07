@@ -129,9 +129,9 @@ const StakingRewardsPage = () => {
 					</div>
 					<div className="section-desc mb-20">
 						If your Collateralisation Ratio (i.e. the ratio between the value of your
-						locked SNX value and the sUSD you’ve minted) is below 675%, then you’ll be
+						locked SNX value and the sUSD you’ve minted) is below 750% (plus a small buffer to allow for minor price fluctuations, then you’ll be
 						unable to claim any SNX staking rewards or Synth exchange rewards until
-						you’ve amended it to 675%, which is the 10% buffer from the optimal 750%.
+						you’ve amended it to the optimal 750%.
 					</div>
 					<div className="section-desc pt-30">
 						* There is no penalty per se for being collateralised over 750%, but given
