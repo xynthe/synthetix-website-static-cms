@@ -1,7 +1,7 @@
 {
 	"name": "synthetix-website",
 	"description": "Synthetix Website",
-	"version": "2.13.0-gas-opt",
+	"version": "2.13.0-gas-opt-1",
 	"private": true,
 	"author": "Synthetix",
 	"license": "MIT",
