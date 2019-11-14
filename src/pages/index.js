@@ -123,6 +123,7 @@ class IndexPage extends React.Component {
 						<div className="container">
 							<h1 className="page-title">
 								<UiImg
+									className="title-logo"
 									src={"/assets/synthetix-title.svg"}
 									alt="Synthetix"
 								/>
