@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="392px" height="196px" viewBox="0 0 392 196" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>china flag</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="392" height="196"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Litepaper" transform="translate(-849.000000, -685.000000)">
+            <g id="White-section" transform="translate(0.000000, 491.000000)">
+                <g id="Flags" transform="translate(199.000000, 194.000000)">
+                    <g id="china-flag" transform="translate(650.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                        <g mask="url(#mask-2)" fill-rule="nonzero">
+                            <rect id="Rectangle" fill="#DE2910" x="0" y="0" width="392" height="261.333333"></rect>
+                            <g id="s-link" transform="translate(27.875556, 26.133333)" fill="#FFDE00">
+                                <polygon id="s" points="37.4577778 0 60.4989498 70.9134664 0.176343378 27.0865336 74.7392122 27.0865336 14.4166058 70.9134664"></polygon>
+                            </g>
+                            <g id="s-link" transform="translate(131.287079, 25.059462) rotate(23.036243) translate(-131.287079, -25.059462) translate(118.504470, 13.223713)" fill="#FFDE00">
+                                <polygon id="s" points="12.6318898 9.55849916e-05 20.3122804 23.6379177 0.20474497 9.02894012 25.0590346 9.02894012 4.9514991 23.6379177"></polygon>
+                            </g>
+                            <g id="s-link" transform="translate(157.777515, 51.503401) rotate(45.869898) translate(-157.777515, -51.503401) translate(144.994907, 39.667652)" fill="#FFDE00">
+                                <polygon id="s" points="12.6498164 0.00215816923 20.330207 23.6399803 0.222671568 9.0310027 25.0769612 9.0310027 4.9694257 23.6399803"></polygon>
+                            </g>
+                            <g id="s-link" transform="translate(158.003453, 91.166980) rotate(69.945396) translate(-158.003453, -91.166980) translate(145.220844, 79.331232)" fill="#FFDE00">
+                                <polygon id="s" points="12.6514413 0.00233207763 20.331832 23.6401542 0.224296493 9.03117661 25.0785861 9.03117661 4.97105063 23.6401542"></polygon>
+                            </g>
+                            <g id="s-link" transform="translate(131.230027, 116.495131) rotate(20.659808) translate(-131.230027, -116.495131) translate(118.447418, 104.659382)" fill="#FFDE00">
+                                <polygon id="s" points="12.6452959 0.001662963 20.3256865 23.6394851 0.218151074 9.0305075 25.0724407 9.0305075 4.96490521 23.6394851"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

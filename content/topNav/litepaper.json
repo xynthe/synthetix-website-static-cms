@@ -1,8 +1,8 @@
 {
   "title": "Litepaper",
   "key": "litepaper",
-  "link": "https://synthetix.io/uploads/synthetix_litepaper.pdf",
-  "isExt": true,
+  "link": "/litepaper",
+  "isExt": false,
   "order": 1,
   "parentMenu": "learn"
 }
