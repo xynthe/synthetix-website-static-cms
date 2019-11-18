@@ -123,9 +123,9 @@ class IndexPage extends React.Component {
 						<div className="container">
 							<h1 className="page-title">
 								<UiImg
-									src={"/assets/synthetix-title.png"}
+									className="title-logo"
+									src={"/assets/synthetix-title.svg"}
 									alt="Synthetix"
-									isResponsive
 								/>
 							</h1>
 							<div className="page-subtitle">Decentralised synthetic assets</div>
