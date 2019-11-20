@@ -100,9 +100,9 @@ const StakingRewardsPage = () => {
 							<br />
 							For the first 52 weeks, 1.44m SNX will be added to the supply each week
 							(see below for full schedule). The snapshot for the first week (March
-							12-18) was taken on Wednesday March 19 at 12:00 (midnight) UTC. The
-							snapshot for each subsequent week is taken at the equivalent time
-							(Wednesday morning at midnight UTC).
+							12-18) was taken on Wednesday March 19. The
+							snapshot for each subsequent week is taken each
+							Wednesday evening at about 8pm (AEDT).
 							<br />
 							<br />
 							SNX rewards can be claimed for up to two weeks in arrears (this period

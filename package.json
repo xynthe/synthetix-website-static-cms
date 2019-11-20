@@ -1,7 +1,7 @@
 {
 	"name": "synthetix-website",
 	"description": "Synthetix Website",
-	"version": "2.13.0-alpha",
+	"version": "2.13.1-alpha",
 	"private": true,
 	"author": "Synthetix",
 	"license": "MIT",
@@ -28,7 +28,7 @@
 		"react": "^16.4.2",
 		"react-dom": "^16.4.2",
 		"react-helmet": "^5.2.0",
-		"synthetix": "2.13.0-alpha"
+		"synthetix": "2.13.1-alpha"
 	},
 	"keywords": [
 		"Synthetix",
