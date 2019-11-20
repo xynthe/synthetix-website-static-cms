@@ -50,13 +50,6 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 										</a>
 									</li>
 									<li>
-										<a
-											href="https://itunes.apple.com/au/app/havven-mobile-app/id1394993748"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											iOS App
-										</a>
 									</li>
 								</ul>
 							</div>
