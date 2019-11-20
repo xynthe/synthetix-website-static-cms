@@ -8,7 +8,7 @@ import mintrButton from "../../resources/products/mintr-button.svg";
 
 const MintrPage = props => {
 	const { mintrUrl, discordUrl } = props.data.site.siteMetadata;
-	let mintrScreenshot = withPrefix(`/img/mintr-screenshot.png`);
+	let mintrScreenshot = withPrefix(`/img/mintr_v2_screenshot.png`);
 	return (
 		<Layout>
 			<div className="mintr-page">
@@ -49,8 +49,7 @@ const MintrPage = props => {
 							<div className="column is-half first-column">
 								<div className="section-title sp5 white">How it Works</div>
 								<div className="section-desc sp6 pb-40">
-									You can connect to Mintr using MetaMask or one of two kinds of
-									hardware wallets: Trezor and Ledger. To use Mintr with any of
+									You can connect to Mintr using MetaMask, Ledger, Trezor, or Coinbase Wallet. To use Mintr with any of
 									these kinds of wallets, you must sign a transaction giving
 									permission for Mintr to interact with your wallet, which you
 									will be asked to do when connecting your wallet.
