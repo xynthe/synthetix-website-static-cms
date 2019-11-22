@@ -67,7 +67,7 @@ class CommunityPage extends React.Component {
 							<h1 className="page-title">Join our Community</h1>
 							<div className="page-subtitle">
 								Join the conversation with the rest of the Synthetix community, and
-								get updates on recent news an activity across the Synthetix Network.
+								get updates on recent news and activity across the Synthetix Network.
 							</div>
 						</div>
 					</section>
