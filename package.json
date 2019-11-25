@@ -1,7 +1,7 @@
 {
 	"name": "synthetix-website",
 	"description": "Synthetix Website",
-	"version": "2.13.1",
+	"version": "2.13.1-1-fix-inverse-versioning",
 	"private": true,
 	"author": "Synthetix",
 	"license": "MIT",
