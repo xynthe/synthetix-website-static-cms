@@ -13,6 +13,14 @@ const network = "mainnet";
 const targets = snx.getTarget({ network });
 const synths = snx.getSynths({ network });
 
+const doRounding = (entry, limit) => {
+	const num = entry * 2 - limit;
+
+	const decimals = (limit.toString().split(".")[1] || "").length;
+
+	return Number(num).toFixed(decimals);
+};
+
 const desc = synth => {
 	const underlying = synth.desc.replace(/^Inverted /, "");
 	const assetSuffix = synth.name !== underlying ? ` (${synth.asset})` : "";
@@ -25,8 +33,14 @@ const desc = synth => {
 			`Inversely tracks the price of ${underlying}${assetSuffix} through price feeds supplied by an oracle. ` +
 			`The entry point is $${entryPoint} (the approximate market price at time of creation). ` +
 			`This Synth freezes when it reaches its upper limit of $${upperLimit} (i.e. when ${underlying}'s ` +
-			`value reaches $${lowerLimit}) or its lower limit of $${lowerLimit} (i.e. when ${underlying}’s value ` +
-			`reaches $${upperLimit}). If it reaches either of its limits and gets frozen, it will no longer be ` +
+			`value reaches $${doRounding(
+				entryPoint,
+				upperLimit
+			)}) or its lower limit of $${lowerLimit} (i.e. when ${underlying}’s value ` +
+			`reaches $${doRounding(
+				entryPoint,
+				lowerLimit
+			)}). If it reaches either of its limits and gets frozen, it will no longer be ` +
 			`able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen ` +
 			`value. At some point after it has reached either of its limits, it will be substituted for another ${synth.name} with different limits.`
 		);
