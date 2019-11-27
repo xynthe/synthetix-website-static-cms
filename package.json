@@ -28,7 +28,7 @@
 		"react": "^16.4.2",
 		"react-dom": "^16.4.2",
 		"react-helmet": "^5.2.0",
-		"synthetix": "2.14.0-release-candidate"
+		"synthetix": "2.14.0"
 	},
 	"keywords": [
 		"Synthetix",
