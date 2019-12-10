@@ -1,7 +1,7 @@
 {
 	"name": "synthetix-website",
 	"description": "Synthetix Website",
-	"version": "2.16.1-beta",
+	"version": "2.16.2-release-candidate",
 	"private": true,
 	"author": "Synthetix",
 	"license": "MIT",
