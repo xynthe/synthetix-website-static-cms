@@ -4,50 +4,6 @@ import "./index.sass";
 import Layout from "../components/layout";
 import "./stakingrewards.sass";
 
-const penalties = [
-	{ ratio: "> 500%", penalty: "None*" },
-	{ ratio: "454% - 500%", penalty: "None" },
-	{ ratio: "333% - 454%", penalty: "25%" },
-	{ ratio: "250% - 333%", penalty: "50%" },
-	{ ratio: "200% - 250%", penalty: "75%" },
-	{ ratio: "100% - 200%", penalty: "90%" },
-	{ ratio: "< 100%", penalty: "100%" }
-];
-
-const schedule = [
-	{ period: "Year One\n(March 2018-19)", supply: "100,000,000", increase: "0", percentage: "0%" },
-	{
-		period: "Year Two\n(March 2019-20)",
-		supply: "175,000,000",
-		increase: "75,000,000",
-		percentage: "75%"
-	},
-	{
-		period: "Year Three\n(March 2020-21)",
-		supply: "212,500,000",
-		increase: "37,500,000",
-		percentage: "21%"
-	},
-	{
-		period: "Year Four\n(March 2021-22)",
-		supply: "231,250,000",
-		increase: "18,750,000",
-		percentage: "9%"
-	},
-	{
-		period: "Year Five\n(March 2022-23)",
-		supply: "240,625,000",
-		increase: "9,375,000",
-		percentage: "4%"
-	},
-	{
-		period: "Year Six\n(March 2023-24)",
-		supply: "245,312,500",
-		increase: "4,687,500",
-		percentage: "2%"
-	}
-];
-
 const StakingRewardsPage = () => {
 	return (
 		<Layout>
@@ -65,10 +21,12 @@ const StakingRewardsPage = () => {
 						<div className="subtitle">Introduction</div>
 						<div className="section-desc sp1 mb-20">
 							In March 2019 we announced a major update to the Synthetix monetary
-							policy: the addition of SNX staking rewards. This release entails
-							increasing the SNX supply from 100m to ~245m over the next five years,
-							with the additional SNX being distributed as rewards to SNX holders for
-							locking their tokens as collateral and minting sUSD.
+							policy: the addition of SNX staking rewards. It was then updated in
+							December 2019 through community governance. These updates ensure that
+							from March 2019 to August 2023, the total SNX supply will increase from
+							100,000,000 to 260,263,816, with a weekly decay rate of 1.25% (from
+							December 2019). From September 2023, there will be an annual 2.5%
+							terminal inflation for perpetuity.
 						</div>
 						<br />
 						<div className="subtitle">Why staking rewards were implemented</div>
@@ -91,17 +49,16 @@ const StakingRewardsPage = () => {
 						</div>
 						<div className="subtitle">How it works</div>
 						<div className="section-desc sp1 mb-20">
-							Each week, each SNX staker will be able to claim their proportion of the
-							weekly SNX staking rewards. Their rewards are calculated by measuring
-							what proportion of the total Synth supply they have minted against their
-							SNX. For example, if Alice has minted 1000 sUSD, and there is a total of
+							Each week, each SNX staker can claim their proportion of the weekly SNX
+							staking rewards. Their rewards are calculated by measuring what
+							proportion of the total Synth supply they have minted against their SNX.
+							For example, if Alice has minted 1000 sUSD, and there is a total of
 							1,000,000 sUSD minted, then she receives 0.1% of the staking rewards.
 							<br />
 							<br />
-							For the first 52 weeks, 1.44m SNX will be added to the supply each week
-							(see below for full schedule). The snapshot for the first week (March
-							12-18) was taken on Wednesday March 19. The
-							snapshot for each subsequent week is taken each
+							SNX is added to the supply each week. The snapshot for the first week
+							(March 12-18) to determine who was staking their SNX was taken on
+							Wednesday March 19. The snapshot for each subsequent week is taken each
 							Wednesday evening at about 8pm (AEDT).
 							<br />
 							<br />
@@ -129,9 +86,10 @@ const StakingRewardsPage = () => {
 					</div>
 					<div className="section-desc mb-20">
 						If your Collateralisation Ratio (i.e. the ratio between the value of your
-						locked SNX value and the sUSD you’ve minted) is below 750% (plus a small buffer to allow for minor price fluctuations, then you’ll be
-						unable to claim any SNX staking rewards or Synth exchange rewards until
-						you’ve amended it to the optimal 750%.
+						locked SNX value and the sUSD you’ve minted) is below 750% (plus a small
+						buffer to allow for minor price fluctuations, then you’ll be unable to claim
+						any SNX staking rewards or Synth exchange rewards until you’ve amended it to
+						the optimal 750%.
 					</div>
 					<div className="section-desc pt-30">
 						* There is no penalty per se for being collateralised over 750%, but given
@@ -139,31 +97,6 @@ const StakingRewardsPage = () => {
 						of the total Synths available, if you have minted less than you could have
 						then you will receive less rewards.
 					</div>
-
-					<div className="section-title white pt-40 mb-20">
-						SNX staking rewards schedule
-					</div>
-
-					<table className="staking-table">
-						<thead>
-							<tr>
-								<th>Period</th>
-								<th>Total Supply</th>
-								<th>Increase{"\n"}(SNX)</th>
-								<th>Increase{"\n"}(%)</th>
-							</tr>
-						</thead>
-						<tbody>
-							{schedule.map(s => (
-								<tr>
-									<td className="w-36">{s.period}</td>
-									<td className="w-24">{s.supply}</td>
-									<td className="w-20">{s.increase}</td>
-									<td className="w-20">{s.percentage}</td>
-								</tr>
-							))}
-						</tbody>
-					</table>
 				</section>
 			</div>
 		</Layout>
