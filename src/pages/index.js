@@ -16,6 +16,7 @@ import icoContract from "../resources/contract.svg";
 import icoLiquidity from "../resources/liquidity.svg";
 import icoCollateral from "../resources/collateral.svg";
 import exchangeLogo from "../resources/exchange-logo.svg";
+import exchange from "../resources/exchange.png";
 
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
@@ -119,116 +120,68 @@ class IndexPage extends React.Component {
 					<meta name="description" content={metaDescription} />
 				</Helmet>
 				<div className="home-page">
-					<section className="section pb-30">
-						<div className="container">
-							<h1 className="page-title">
-								<UiImg
-									className="title-logo"
-									src={"/assets/synthetix-title.svg"}
-									alt="Synthetix"
-								/>
+					<section className="section hero-section">
+						<div className="title-container">
+							<h1 className="hero page-title">
+								A protocol for issuing and trading synthetic assets on Ethereum
 							</h1>
-							<div className="page-subtitle">Decentralised synthetic assets</div>
-							<div className="has-text-centered pb-10">
-								<Link to="/products/exchange" className="is-button is-announcement">
-									<span>NEW</span>
-									<span>
-										Trade crypto, commodities, and forex on Synthetix.Exchange!
-									</span>
-								</Link>
+							<div className="hero page-subtitle">
+								Gain on-chain exposure to any asset class
 							</div>
 						</div>
 					</section>
-					<section className="section currency-section pb-60 pt-30">
-						<div className="container wide">
-							<div className={`currency-box`}>
-								<div className="currency-title">Fiat currency stablecoins</div>
-
-								<div className="scroll-container">
-									<div className="assets-container">
-										{fiatCurrencies.map(c => (
-											<img src={withPrefix(`/img/${c}_blue.svg`)} />
-										))}
-									</div>
-								</div>
-								<img src={arrow} className={`arrow`} />
-							</div>
-							<div className="currency-box">
-								<div className="currency-title">
-									Cryptocurrencies (long & short)
-								</div>
-
-								<div className="scroll-container">
-									<div className="assets-container">
-										{cryptoCurrencies.map(c => (
-											<img src={withPrefix(`/img/${c}.svg`)} />
-										))}
-									</div>
-									<img src={arrow} className={`arrow`} />
-								</div>
-							</div>
-							<div className="currency-box">
-								<div className="currency-title">Commodities</div>
-								<div className="small-assets-container">
-									{commodities.map(c => (
-										<img src={withPrefix(`/img/${c}.svg`)} />
-									))}
-								</div>
-								<div className="currency-title">And coming soon:</div>
-								<div className="small-assets-container">
-									{comingSoon.map(c => (
-										<img src={withPrefix(`/img/${c}.svg`)} />
-									))}
-								</div>
-							</div>
-						</div>
-
-						<div className="section-title">Introducing Synths</div>
+					<section className="section synth-section pb-60 pt-30">
+						<div className="section-title is-white">Introducing Synths</div>
 						<div className="section-desc">
 							Synths are tokens that provide exposure to assets such as gold, Bitcoin,
 							U.S. Dollars, TESLA, and AAPL within the Ethereum blockchain.
+						</div>
+						<div className="section synth-categories">
+							<div className="synth-type">
+								<div className="synth-img"></div>
+								<div className="synth-p2">Crypto</div>
+							</div>
+							<div className="synth-type">
+								<div className="synth-img"></div>
+								<div className="synth-p2">Commodity</div>
+							</div>
+							<div className="synth-type">
+								<div className="synth-img"></div>
+								<div className="synth-p2">Forex</div>
+							</div>
+							<div className="synth-type">
+								<div className="synth-img"></div>
+								<div className="synth-p2">Index</div>
+							</div>
+							<div className="synth-type">
+								<div className="synth-img"></div>
+								<div className="synth-p2">Inverse</div>
+							</div>
 						</div>
 						<Link to="/tokens" className="view-synths-button">
 							View Synths
 						</Link>
 					</section>
 					<section className="section exchange-section">
+						<div className="section-desc">TRADE SYNTHS ON THE</div>
 						<div className="section-title">
 							<img className="exchange-logo" src={exchangeLogo} />
 						</div>
-						<div className="section-desc pb-70">
-							A decentralised trading platform dApp
+						<div className="section-image">
+							<img className="screenshot" src={exchange}></img>
 						</div>
 						<div className="columns is-centered exchange-columns">
 							<div className="column">
-								<div className="c-img">
-									<img src={icoLiquidity} alt="Stable" />
-								</div>
-								<div className="p1">Infinite Liquidity</div>
-								<div className="p2">
-									Over 20 different Synths are available without liquidity
-									limitations.
-								</div>
+								<div className="icon-img"></div>
+								<div className="p1">Infinite liquidity</div>
 							</div>
 							<div className="column">
-								<div className="c-img">
-									<img src={icoContract} alt="Stable" />
-								</div>
-								<div className="p1">P2C (peer-to-contract) trading</div>
-								<div className="p2">
-									Trades are executed quickly and easily, all without an
-									orderbook.
-								</div>
+								<div className="icon-img"></div>
+								<div className="p1">Peer-to-contract trading</div>
 							</div>
 							<div className="column">
-								<div className="c-img">
-									<img src={icoCollateral} alt="Stable" />
-								</div>
-								<div className="p1">Distributed Collateral Pool</div>
-								<div className="p2">
-									A distributed pool of token holders are responsible for
-									providing collateral and maintaining stability.
-								</div>
+								<div className="icon-img"></div>
+								<div className="p1">Distributed collateral pool</div>
 							</div>
 						</div>
 						<a
@@ -236,91 +189,88 @@ class IndexPage extends React.Component {
 							href="https://synthetix.exchange"
 							target="_blank"
 						>
-							Take me there
+							Learn more
 						</a>
 					</section>
-					<section className="section is-white is-padded pb-110">
-						<div className="section-title is-large w-auto fs-56 bold">
-							Get rewarded for contributing to the system
+					<section className="section learn-section">
+						<div className="section-title is-large w-auto fs-56">
+							Learn more about the Synthetix protocol
 						</div>
-						<div className="section-desc pb-70">
-							Become a part of the Synthetix Network today.
-						</div>
-						<div className="columns is-centered get-rewarded-columns">
+						<div className="columns is-centered learn-columns">
 							<div className="column">
 								<div className="c-img">
-									<img src={icoLock} alt="Stable" />
+									<div className="icon-img"></div>
 								</div>
-								<div className="p1">Receive SNX in exchange for staking</div>
+								<div className="p1">Litepaper</div>
 								<a
-									className="button"
+									className="purple-button centered"
 									href="https://www.synthetix.io/stakingrewards"
 									target="_blank"
 								>
-									Learn More
+									Read it now
 								</a>
 							</div>
 							<div className="column">
 								<div className="c-img">
-									<img src={icoHandout} alt="Stable" />
+									<div className="icon-img"></div>
 								</div>
-								<div className="p1">Receive exchange fees for staking</div>
-								<Link className="button" to="/how-it-works">
-									Learn More
+								<div className="p1">Community</div>
+								<Link className="purple-button centered" to="/how-it-works">
+									Visit the docs
 								</Link>
 							</div>
 						</div>
 					</section>
-					<section className="section is-padded pb-110">
-						<div className="section-title is-white is-large w-auto fs-56 bold">
-							Meet our products
+					<section className="product-section section is-padded">
+						<div className="section-title is-white is-large w-auto fs-48 pb-60">
+							State of the art dApps to interact with Synthetix
 						</div>
-						<div className="section-desc pb-70">
-							Here are the dApps and tools for SNX holders and Synth users
-						</div>
-						<div className="columns is-centered get-rewarded-boxes">
+						<div className="columns is-centered product-boxes">
 							<a
-								className="column"
+								className="product-column"
 								href={synthetixExchangeUrl}
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<div className="c-top">
+								<div className="c-top">TRADING</div>
+								<div className="c-mid">
 									<img src={icoUser4} alt="Synthetix.Exchange" />
 								</div>
 								<div className="c-bottom">
-									<div className="p2">Synthetix.Exchange</div>
+									<div className="p2">EXCHANGE</div>
 									<div className="beta-badge"></div>
 									<div className="p3">Exchange Synths without a counterparty</div>
 								</div>
 							</a>
 							<a
-								className="column"
+								className="product-column"
 								href={mintrUrl}
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<div className="c-top">
+								<div className="c-top">STAKING</div>
+								<div className="c-mid">
 									<img src={icoUser3} alt="For experienced users" />
 								</div>
 								<div className="c-bottom">
-									<div className="p2">Mintr</div>
+									<div className="p2">MINTR</div>
 									<div className="p3">
 										Lock SNX to mint Synths and collect fees
 									</div>
 								</div>
 							</a>
 							<a
-								className="column"
+								className="product-column"
 								href={dashboardUrl}
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<div className="c-top">
+								<div className="c-top">ANALYSIS</div>
+								<div className="c-mid">
 									<img src={icoUser2} alt="For new and experienced users" />
 								</div>
 								<div className="c-bottom">
-									<div className="p2">Dashboard</div>
+									<div className="p2">DASHBOARD</div>
 									<div className="p3">An overview of the Synthetix network</div>
 								</div>
 							</a>
@@ -330,7 +280,7 @@ class IndexPage extends React.Component {
 						<div className="container">
 							{!showThanks ? (
 								<Fragment>
-									<div className="section-title fs-36 pb-40">
+									<div className="section-title is-white fs-36 pb-40">
 										Subscribe to the Synthetix Mailing List
 									</div>
 									<form

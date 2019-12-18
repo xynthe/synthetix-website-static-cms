@@ -49,8 +49,7 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 											Dashboard
 										</a>
 									</li>
-									<li>
-									</li>
+									<li></li>
 								</ul>
 							</div>
 							<div className="column has-text-centered-mobile">

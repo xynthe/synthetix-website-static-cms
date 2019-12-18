@@ -3,148 +3,104 @@
 @import "../styles/_buttons"
 
 .home-page
-  .currency-row
-    margin-top: 0
-    margin-bottom: 0
 
-  .currency-section
-    background-color: #fff
-    background-image: url(../resources/bg-blue-line.png)
-    background-position: 0 -640px
-    background-repeat: repeat-x
+  // HERO
 
-    .container
+  .hero-section 
+    background: url(../resources/hero-bg.png) no-repeat
+    background-size: contain
+    background-position: center center
+    width: 100%
+    height: 80vh
+
+    .title-container
+      height: 100%
+      margin: auto
+      position: relative
+      top: 25%
+
+  // SYNTHS
+
+  .synth-section
+    margin-top: 32px
+
+    .synth-categories 
       display: flex
       justify-content: center
-      height: 282px
 
-      &.wide
-        +desktop
-          min-width: 1030px
-          width: 1030px
+    .synth-type
+      background-color: #1E1A31
+      background-image: linear-gradient(to bottom right, #1E1A31, #0F0E25)
+      box-shadow: 0 10px 20px 0 rgba(9,8,24,0.64)
+      border-radius: 5px
+      width: 180px
+      height: 240px
+      margin: 16px
+      padding: 24px
+      text-align: center
 
-      margin-bottom: 108px
+    .synth-img 
+      height: 56px
+      width: 72px
+      margin: 24px auto 56px auto
+      background-color: #5641F2
 
-      +touch
-        flex-direction: column
-        height: auto
-        align-items: center
-
-      .currency-box
-        $box-padding: 32px
-
-        background: #FFFFFF
-        border: 2px solid #D1D1E8
-        box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
-        border-radius: 4px
-        width: 330px
-        height: 288px
-        margin-right: 20px
-        padding: 18px 0
-        text-align: center
-        position: relative
-        overflow: hidden
-
-
-        transition: height 0.4s ease
-
-        +touch
-          margin-right: 0
-          margin-top: 50px
-
-        &.clickable
-          cursor: pointer
-
-        &.centered
-          display: flex
-          justify-content: center
-          align-items: center
-
-        &:last-child
-          margin-right: 0
-
-          .assets-container
-            overflow: auto
-            max-height: 1000px
-
-        .currency-title
-          font-family: Guillon
-          font-weight: 600
-          font-size: 30px
-          color: #25244B
-          letter-spacing: -0.62px
-          text-align: center
-          line-height: 32px
-          padding: 0 $box-padding
-
-        .scroll-container
-          margin-top: 14px
-          height: 161px
-          overflow-y: scroll
-          padding: 0 $box-padding 18px $box-padding
-
-          scrollbar-width: none
-          -ms-overflow-style: none
-
-          &::-webkit-scrollbar
-            width: 0px  /* Remove scrollbar space */
-            background: transparent  /* Optional: just make scrollbar invisible */
-
-
-
-        .assets-container
-          display: grid
-          grid-template-columns: 60px 60px 60px
-          grid-gap: 21px 43px
-          justify-content: space-between
-          transition: max-height 0.4s ease
-
-        .small-assets-container
-          margin-top: 9px
-          margin-bottom: 11px
-
-          img
-            margin: 0 20px
-            width: 60px
-            height: 60px
-
-        .arrow
-          position: absolute
-          top: 150.5px
-          right: 18px
-
+    .synth-p2 
+      color: #ffffff
+      font-weight: 600
+      font-size: 16px
+      text-transform: uppercase
 
     .view-synths-button
       margin: 38px auto 0 auto
       @extend .purple-button
 
+  // EXCHANGE
+
   .exchange-section
+    background: url(../resources/graph.png) no-repeat
+    background-size: cover
+    background-position: top
+    height: auto
+    width: 100%
+    padding-top: 480px
+
+    .section-desc
+      letter-spacing: 1px
 
     .exchange-logo
-      margin-top: 4px
+      margin-top: 24px
 
     .exchange-columns
       max-width: 1130px
-      margin: 0 auto
+      margin: 0 auto 100px auto
 
       .column
         width: 320px
         text-align: center
 
+        .p1
+          color: #FFFFFF
+          max-width: 300px
+          text-align: center
+          margin: 20px auto 0 auto
+          font-size: 18px
+          letter-spacing: 0.5px
+
         +mobile
           width: auto
 
-      .p1
-        color: white
-        max-width: 300px
-        text-align: center
-        margin: 20px auto 0 auto
+    .section-image 
+      width: 80%
+      max-width: 1400px
+      margin: 32px auto 64px auto
 
-      .p2
-        color: #6F6DA0
-        margin: 13px auto 0 auto
-        max-width: 300px
-        text-align: center
+    .icon-img 
+      height: 64px
+      width: 64px
+      margin: 24px auto
+      background-color: #5641F2
+
 
     .centered
       margin: 0 auto
@@ -156,14 +112,37 @@
       margin-top: 50px
       margin-bottom: 30px
 
-  .get-rewarded-columns
-    max-width: 720px
-    margin: auto
+      // LEARN MORE
 
+  .learn-section
+    display: flex
+    max-width: 1300px
+    margin: 16vh auto
+
+    .section-title
+      text-align: left
+      max-width: 320px
+      color: #FFFFFF
+
+    .learn-columns
+      margin-right: auto
 
     .column
-      width: 380px
+      background-color: #1E1A31
+      background-image: linear-gradient(to bottom right, #1E1A31, #0F0E25)
+      box-shadow: 0 10px 20px 0 rgba(9,8,24,0.64)
+      border-radius: 5px
+      width: 320px
+      height: 400px
+      margin: 24px
+      padding: 24px
       text-align: center
+
+      .icon-img
+        height: 94px
+        width: 64px
+        margin: 24px auto
+        background-color: #5641F2
 
       +mobile
         width: auto
@@ -171,72 +150,81 @@
       img
         min-height: 161px
     .p1
-      font-size: 18px
-      color: #1E1A31
+      font-size: 24px
+      color: #FFFFFF
+      text-transform: uppercase
       letter-spacing: 0
       text-align: center
       line-height: 26px
       max-width: 200px
-      margin: 23px auto 0 auto
+      margin: 23px auto 80px auto
 
-    .button
-      margin: 46px auto 0 auto
-      @extend .purple-button
+  // .product-section
+  //     background-color: #0F0E25
+  //     background-image: linear-gradient(#0F0E25, #1E1A31)
 
-  .get-rewarded-boxes
-    .column
+  // PRODUCTS
+
+  .product-section
+    margin: 16vh auto
+
+  .product-boxes
+    .product-column
       cursor: pointer
-      width: 270px
-      height: 334px
-
-      border: 1px solid #D7D6E7
+      width: 290px
+      height: auto
       position: relative
-
+      text-align: center
       border-radius: 4px
-      background-color: #FFFFFF
-      box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
-      margin: 10px
-      padding: 40px 24px 50px 24px
+      background-color: #1E1A31
+      background-image: linear-gradient(to bottom right, #1E1A31, #0F0E25)
+      box-shadow: 0 10px 20px 0 rgba(9,8,24,0.64)
+      margin: 24px
       display: flex
       flex-direction: column
       transition: 200ms all ease
 
-      +tablet
-        padding: 40px 12px 50px 24px
-
       &:hover
-        transform: translateY(4px)
-        box-shadow: 0 5px 5px 0 rgba(64,43,220,0.09)
+        transform: translateY(-4px)
+        box-shadow: 0 10px 20px 0 rgba(9,8,24,0.80)
 
-      .c-top
+      .c-top 
+        background-color: #2C2649
+        color: #D1D1E8
+        padding: 16px
+        font-size: 24px
+        box-shadow: 0 10px 20px 0 rgba(9, 8, 24, 0.24)
+
+      .c-mid
         flex-grow: 0
-        padding-bottom: 30px
+        padding: 40px 24px 60px 24px 
 
         img
-          max-width: 76px
+          max-width: 140px
 
         +tablet
           padding-bottom: 10px
+
       .c-bottom
         flex-grow: 0
+        margin-top: 24px
+        margin-bottom: 48px
       .p1
         float: right
-        font-size: 16px
-        letter-spacing: -0.33px
+        font-size: 24px
         text-align: right
         line-height: 24px
       .p2
-        font-size: 24px
+        font-size: 32px
         font-weight: 500
-        letter-spacing: -0.5px
         line-height: 26px
-        padding-bottom: 10px
-        color: #0A0817
+        padding-bottom: 16px
+        color: #FFFFFF
       .p3
         font-size: 20px
-        letter-spacing: -0.42px
-        line-height: 24px
-        color: #6F6E98
+        color: #9492C4
+        max-width: 222px
+        margin: auto
         +widescreen
           line-height: 31px
         +tablet
@@ -245,7 +233,7 @@
           font-size: 28.79px
           color: #4A4762
           text-align: left
-          font-family: 'Aeonik'
+          font-family: 'apercu'
           position: absolute
           left: 132px
           top: 56px
@@ -288,7 +276,10 @@
     font-weight: 500
     letter-spacing: -0.42px
     text-align: center
-    background-color: #ffffff
+    background-color: #1E1A31
+
+    .sub-title
+      color: #FFF
 
     .sub-inputs
       justify-content: center

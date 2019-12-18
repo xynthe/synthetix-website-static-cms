@@ -8,7 +8,7 @@
             <g id="Group-2" transform="translate(530.000000, 904.000000)">
                 <g id="Button">
                     <path d="M1,1 L1,148.699219 L378.710938,148.699219 L378.710938,1 L1,1 Z" id="Rectangle" stroke="#D1D1E8" stroke-width="2" fill="#FFFFFF"></path>
-                    <text id="Open-dApp" font-family="Aeonik-Regular, Aeonik" font-size="24" font-weight="normal" line-spacing="28" letter-spacing="-0.5" fill="#0D0A31">
+                    <text id="Open-dApp" font-family="aeonik-Regular, aeonik" font-size="24" font-weight="normal" line-spacing="28" letter-spacing="-0.5" fill="#0D0A31">
                         <tspan x="125.691406" y="124">Open dApp</tspan>
                     </text>
                 </g>

@@ -13,13 +13,12 @@ const TeamPage = ({ data }) => {
 	return (
 		<Layout>
 			<div className="team-page">
-				<section className="section header-section">
+				<section className="header-section">
 					<div className="container">
-						<h1 className="page-title">Meet the Team</h1>
-						<div className="page-subtitle">
+						<h1 className="page-title">
 							A multidisciplinary team with proven ability to deliver complex
 							solutions
-						</div>
+						</h1>
 					</div>
 				</section>
 				<section className="section team-members">

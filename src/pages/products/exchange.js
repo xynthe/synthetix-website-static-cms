@@ -6,6 +6,7 @@ import "./exchange.sass";
 import exchangeLogo from "../../resources/exchange-logo.svg";
 import exchangeButton from "../../resources/products/exchange-button.svg";
 import joinDiscordButton from "../../resources/products/join-discord.svg";
+import exchange from "../../resources/exchange.png";
 
 const ExchangePage = props => {
 	const { synthetixExchangeUrl, discordUrl } = props.data.site.siteMetadata;
@@ -14,61 +15,60 @@ const ExchangePage = props => {
 		<Layout>
 			<div className="exchange-page">
 				<section className="section header-section">
-					<div className="container">
-						<div className="header-image">
-							<img src={exchangeLogo} />
-						</div>
-						<div className="page-subtitle">
-							Synthetix.Exchange is a trading platform for  synthetic assets (Synths).
-						</div>
+					<div className="page-title">
+						<img className="exchange-logo" src={exchangeLogo} />
 					</div>
 				</section>
-				<section className="section is-white exchange-about">
-					<div className="container">
-						<div className="section-title sp7 pt-10">Synthetix.Exchange</div>
-						<div className="section-desc sp1">
-							Synthetix.Exchange provides an intuitive interface for conversions
-							between the full range of Synths available. It provides access to a
-							variety of synthetic forms of fiat currencies, cryptocurrencies, and
-							commodities.
+				<section className="section exchange-about">
+					<div className="columns is-centered exchange-columns">
+						<div className="column">
+							<div className="icon-img"></div>
+							<div className="p1">Infinite liquidity</div>
 						</div>
-						<div className="exchange-button">
-							<a href={synthetixExchangeUrl} target="_blank">
-								<img src={exchangeButton} />
-							</a>
+						<div className="column">
+							<div className="icon-img"></div>
+							<div className="p1">Peer-to-contract trading</div>
+						</div>
+						<div className="column">
+							<div className="icon-img"></div>
+							<div className="p1">Distributed collateral pool</div>
 						</div>
 					</div>
+					<div className="product-desc">
+						Synthetix.Exchange provides an intuitive interface for conversions between
+						the full range of Synths available. It provides access to a variety of
+						synthetic forms of fiat currencies, cryptocurrencies, and commodities.
+					</div>
+					<div className="section-image">
+						<img src={exchange}></img>
+					</div>
 				</section>
+				<a
+					className="purple-button centered"
+					href="https://synthetix.exchange"
+					target="_blank"
+				>
+					Visit the dApp
+				</a>
 				<section className="section how-it-works">
-					<div className="container">
-						<div className="columns">
-							<div className="column is-half first-column">
-								<div className="section-title sp5 white">How it Works</div>
-								<div className="section-desc sp6 pb-40">
-									You can use Synthetix.Exchange with MetaMask, Trezor, or Ledger
-									wallets. Simply connect a wallet that holds at least one Synth,
-									and your balance will be displayed, along with the conversion
-									rates.
-									<br />
-									<br />
-									Converting is as simple as choosing a Synth to convert from and
-									to convert to, and confirming the transaction. Once it has been
-									processed on the blockchain, you’re all done! All conversions
-									are carried out on-chain.
-									<br />
-									<br />
-									If you have any more questions, please come join our community
-									on{" "}
-									<a href={discordUrl} target="_blank">
-										Discord
-									</a>
-									.
-								</div>
+					<div className="section-title is-white sp5">How it works</div>
+					<div className="steps is-centered how-steps">
+						<div className="column">
+							<div className="number-img"></div>
+							<div className="p1">
+								Connect your wallet (MetaMask, Trezor, Ledger, Coinbase, etc)
 							</div>
-							<div className="column is-half second-column">
-								<div className="exchange-screenshot">
-									<img src={exchangeScreenshot} />
-								</div>
+						</div>
+						<div className="column">
+							<div className="number-img"></div>
+							<div className="p1">
+								Choose a Synth to convert from and to convert to, and confirm
+							</div>
+						</div>
+						<div className="column">
+							<div className="number-img"></div>
+							<div className="p1">
+								Once processed on the blockchain, the exchange is complete
 							</div>
 						</div>
 					</div>

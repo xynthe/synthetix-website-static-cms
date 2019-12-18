@@ -2,13 +2,15 @@
 @import "bulma/components/navbar"
 
 .navbar
-  background-color:  #0A0817
+  background-color: transparent
   +desktop
     margin-bottom: 20px
 
   a
     color: #6F6DA0
+    text-transform: uppercase
     transition: all 250ms ease
+    font-weight: 500
     &:hover
       color: #fff
   .dropdown.navbar-item
@@ -17,7 +19,7 @@
   .dropdown-menu
     left: 50%
     transform: translateX(-50%)
-    margin-top: -15px
+    margin-top: 0px
     background-color: rgba(#0A0817,0.9)
     min-width: unset
     padding: 5px 20px
@@ -37,7 +39,7 @@
 
 
   .navbar-item.site-title img
-    width: 32px
+    width: 140px
     min-width: 32px
     +touch
       padding: 10px

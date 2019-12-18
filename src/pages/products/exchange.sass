@@ -3,41 +3,90 @@
 @import "../../styles/functions"
 
 .exchange-page
-  .header-image
+  .header-section
+    background: url(../../resources/hero-exchange.png) no-repeat
+    background-size: cover
+    background-position: center center
+    width: 100%
+    height: 80vh
+
+  .page-title
+    margin: auto
     text-align: center
-    width: 524
-    height: 182
-    margin-bottom: 38px
+    display: flex
+    justify-content: center
+    position: relative
+    height: 80%
 
-  .page-subtitle
-    max-width: 523px
-
-  .section-desc
-    width: auto
+  .page-title img
+    width: 60vw
+    max-width: 1300px
 
   .section.exchange-about
-    .section-desc
-      max-width: 720px
+    .exchange-columns
+      max-width: 1130px
+      margin: 64px auto
+
+      .column
+        width: 320px
+        text-align: center
+
+        .p1
+          color: #FFFFFF
+          max-width: 300px
+          text-align: center
+          margin: 20px auto 0 auto
+          font-size: 18px
+          letter-spacing: 0.5px
+
+        .icon-img 
+          height: 64px
+          width: 64px
+          margin: 24px auto
+          background-color: #5641F2
+
+    .section-image 
+      width: 60vw
+      max-width: 1200px
+      margin: 0 auto 32px auto
+
+    .product-desc
+      color: #FFF
+      font-size: 32px
+      width: 60vw
+      max-width: 1100px
+      margin: 32px auto 64px auto
+      text-align: center
 
       +mobile
         padding: 0 20px
 
-    .exchange-button
+  .section.how-it-works
+    height: auto
+    margin-top: 64px
 
-      margin: 31px 0 0px 0
-
-      a 
-        @extend %light-bg-hover
-        box-shadow: 0 10px 20px 3px rgba(64,43,220,0.11)
-        max-width: 380px
-        display: block
-
-        img
-          display: block
-          width: 100%
-
+    .steps
+      max-width: 1300px
+      margin: 32px auto 64px auto
       display: flex
-      justify-content: center
+
+      .column
+        width: 310px
+        text-align: center
+
+        .p1
+          color: #FFFFFF
+          max-width: 310px
+          text-align: center
+          margin: 20px auto 0 auto
+          font-size: 18px
+          letter-spacing: 0.5px
+
+        .number-img 
+          height: 64px
+          width: 64px
+          margin: 24px auto
+          background-color: #5641F2
 
   .section
     .columns
@@ -79,7 +128,7 @@
       .subtitle 
 
         font-weight: 700
-        font-style: italic
+        margin: 24px auto 4px auto
 
     .discord-button
       @extend %light-bg-hover

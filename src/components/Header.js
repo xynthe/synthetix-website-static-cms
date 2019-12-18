@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, Link, StaticQuery } from "gatsby";
-import Logo from "../resources/logo.svg";
+import Logo from "../resources/logo-synthetix.svg";
 import cx from "classnames";
 
 export default class Header extends React.Component {
