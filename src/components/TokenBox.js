@@ -55,20 +55,21 @@ class TokenBox extends React.Component {
 				<div className="token-box-title">{title} Details</div>
 				<div className="token-details">
 					<div className="token-symbol">
-						{hasSelect ? this.renderSelect(tokens) : <span>{token.symbol}</span>}
 						<span className="token-label">Symbol</span>
+						{hasSelect ? this.renderSelect(tokens) : <span>{token.symbol}</span>}
 					</div>
 					<div className="token-address">
+					<span className="token-label">Contract Address</span>
 						<a target="_blank" href={"https://etherscan.io/token/" + token.address}>
 							{token.address}
 						</a>
-						<span className="token-label">Contract Address</span>
 					</div>
 					<div className="token-decimals">
-						<span>{token.decimals}</span>
 						<span className="token-label">Decimals</span>
+						<span>{token.decimals}</span>
 					</div>
 				</div>
+				<span className="token-label">Description</span>
 				<div className="token-description">
 					<span>{token.description || description}</span>
 				</div>

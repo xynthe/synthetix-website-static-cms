@@ -3,6 +3,7 @@
 @import "../../styles/functions"
 
 .mintr-page
+
   .header-section
     background: url(../../resources/hero-mintr.png) no-repeat
     background-size: contain
@@ -33,13 +34,15 @@
           font-size: 18px
           letter-spacing: 0.5px
 
+        .p2 
+          color: #CACAF1
+
         .icon-img 
           margin: 24px auto
 
     .product-desc
       color: #FFF
       font-size: 32px
-      width: 60vw
       max-width: 1100px
       margin: 32px auto 64px auto
       text-align: center
@@ -49,7 +52,11 @@
 
   .section.how-it-works
     height: auto
-    margin-top: 64px
+    margin-top: 80px
+    margin-bottom: 64px
+
+    .section-title
+      font-size: 64px
 
     .steps
       max-width: 1300px
@@ -101,21 +108,16 @@
           text-align: center
           line-height: 32px
 
-        .mintr-screenshot
-          display: flex
-          height: 100%
-          align-items: center
-
-
   .section.collat-ratio
 
     .section-title
       width: auto
+      font-size: 48px
     
     .section-image 
       width: 60%
       max-width: 1400px
-      margin: 0 auto 64px auto
+      margin: 24px auto 64px auto
 
   .sp2
     color: #0A0817
@@ -134,7 +136,6 @@
       width: 580px
 
   .sp4
-    color: #6F6DA0
     line-height: 1.45em
     text-align: center
     @include font-size(22)
@@ -150,4 +151,21 @@
     line-height: 1.4em
     text-align: center
     @include font-size(56)
+
+  .discord-button
+      @extend %light-bg-hover
+      box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
+      max-width: 525px
+      max-height: auto
+
+      margin: 27px auto 0 auto
+      display: block
+
+      +mobile
+        margin: auto
+
+      img
+        display: block
+        max-width: auto
+
 

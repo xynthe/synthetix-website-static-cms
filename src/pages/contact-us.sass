@@ -2,12 +2,25 @@
 @import "../styles/partials"
 
 .contact-us-page
-  .page-subtitle
-    +tablet
-      width: 550px
+  .header-section
+    height: 400px
+
+    h1
+      margin: auto
+      transform: translateY(50%)
 
   .contacts-section
     justify-content: center
+
+  .body-section
+    color: #6F6DA0
+    font-size: 18px
+    letter-spacing: -0.21px
+    line-height: 30px
+    text-align: center
+    margin: auto
+    padding-top: 80px
+    
     .column
       @extend %box
       cursor: pointer

@@ -5,6 +5,7 @@ import Layout from "../../components/layout";
 import "./mintr.sass";
 import mintrLogo from "../../resources/products/mintr.svg";
 import mintrButton from "../../resources/products/mintr-button.svg";
+import joinDiscordButton from "../../resources/products/join-discord.svg";
 import collatRatio from "../../resources/collat-ratio.svg";
 import stepOne from "../../resources/1.svg";
 import stepTwo from "../../resources/2.svg";
@@ -96,7 +97,7 @@ const MintrPage = props => {
 						<div className="section-image">
 							<img src={collatRatio}></img>
 						</div>
-						<div className="section-desc sp4">
+						<div className="section-desc is-white sp4">
 							Synthetix allows synthetic assets (Synths) to be minted against the
 							value of SNX tokens. This is done by locking SNX into a smart contract
 							as collateral at a ratio of 750% to the Synths minted. For example, this
@@ -115,16 +116,9 @@ const MintrPage = props => {
 					</div>
 				</section>
 				<section className="section discord">
-					<div className="container">
-						<div className="section-title is-white sp5 pb-40">Got more questions?</div>
-						<a
-							className="purple-button centered"
-							href="https://mintr.io"
-							target="_blank"
-						>
-							Come ask us in Discord
+				<a class="discord-button" href={discordUrl} target="_blank">
+							<img src={joinDiscordButton} />
 						</a>
-					</div>
 				</section>
 			</div>
 		</Layout>

@@ -65,6 +65,9 @@
     height: auto
     margin-top: 64px
 
+    .section-title
+      font-size: 64px
+
     .steps
       max-width: 1300px
       margin: 32px auto 64px auto
@@ -104,21 +107,29 @@
           align-items: center
 
   .section.exchange-faq
-    margin: auto
+    margin: 20px
+
+    .section-title
+      font-size: 64px
+      margin-bottom: 64px
 
     .faq 
      background-color: #1e1a31
+     padding: 40px
+     border-radius: 5px
+     margin: 4px auto
+     box-shadow: 0 10px 20px 3px rgba(0,0,0,0.24)
 
     p
       font-size: 22px
-      color: #5E597F
+      color: #CACAF1
       letter-spacing: 0
       line-height: 32px
 
-      .subtitle p
-        color: #fff
-        font-weight: 500
-        font-size: 22px
+    p.subtitle
+      color: #fff
+      font-weight: 500
+      font-size: 22px
 
     .discord-button
       @extend %light-bg-hover

@@ -17,6 +17,12 @@ import icoLiquidity from "../resources/liquidity.svg";
 import icoCollateral from "../resources/collateral.svg";
 import exchangeLogo from "../resources/exchange-logo.svg";
 import exchange from "../resources/exchange.png";
+import synthCrypto from "../resources/synth-crypto.svg";
+import synthCommodity from "../resources/synth-commodity.svg";
+import synthFiat from "../resources/synth-fiat.svg";
+import synthIndex from "../resources/synth-index.svg";
+import synthInverse from "../resources/synth-inverse.svg";
+
 
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
@@ -138,23 +144,23 @@ class IndexPage extends React.Component {
 						</div>
 						<div className="section synth-categories">
 							<div className="synth-type">
-								<div className="synth-img"></div>
+								<div className="synth-img"><img src={synthCrypto}></img></div>
 								<div className="synth-p2">Crypto</div>
 							</div>
 							<div className="synth-type">
-								<div className="synth-img"></div>
+								<div className="synth-img"><img src={synthCommodity}></img></div>
 								<div className="synth-p2">Commodity</div>
 							</div>
 							<div className="synth-type">
-								<div className="synth-img"></div>
+								<div className="synth-img"><img src={synthFiat}></img></div>
 								<div className="synth-p2">Forex</div>
 							</div>
 							<div className="synth-type">
-								<div className="synth-img"></div>
+								<div className="synth-img"><img src={synthIndex}></img></div>
 								<div className="synth-p2">Index</div>
 							</div>
 							<div className="synth-type">
-								<div className="synth-img"></div>
+								<div className="synth-img"><img src={synthInverse}></img></div>
 								<div className="synth-p2">Inverse</div>
 							</div>
 						</div>
