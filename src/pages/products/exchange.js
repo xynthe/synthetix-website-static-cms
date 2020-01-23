@@ -10,6 +10,9 @@ import exchange from "../../resources/exchange.png";
 import stepOne from "../../resources/1.svg";
 import stepTwo from "../../resources/2.svg";
 import stepThree from "../../resources/3.svg";
+import sxLiquidity from "../../resources/sx-liquidity.svg";
+import sxContract from "../../resources/sx-contract.svg";
+import sxDistributed from "../../resources/sx-distributed.svg";
 
 const ExchangePage = props => {
 	const { synthetixExchangeUrl, discordUrl } = props.data.site.siteMetadata;
@@ -19,21 +22,27 @@ const ExchangePage = props => {
 			<div className="exchange-page">
 				<section className="section header-section">
 					<div className="page-title">
-						<img className="exchange-logo" src={exchangeLogo} />
+						<img className="product-logo" src={exchangeLogo} />
 					</div>
 				</section>
 				<section className="section exchange-about">
 					<div className="columns is-centered exchange-columns">
 						<div className="column">
-							<div className="icon-img"></div>
+							<div className="icon-img">
+								<img src={sxLiquidity}></img>
+							</div>
 							<div className="p1">Infinite liquidity</div>
 						</div>
 						<div className="column">
-							<div className="icon-img"></div>
+							<div className="icon-img">
+								<img src={sxContract}></img>
+							</div>
 							<div className="p1">Peer-to-contract trading</div>
 						</div>
 						<div className="column">
-							<div className="icon-img"></div>
+							<div className="icon-img">
+								<img src={sxDistributed}></img>
+							</div>
 							<div className="p1">Distributed collateral pool</div>
 						</div>
 					</div>

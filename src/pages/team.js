@@ -22,7 +22,7 @@ const TeamPage = ({ data }) => {
 					</div>
 				</section>
 				<section className="section team-members">
-					<div className="container">
+					<div className="container team-container">
 						<div className="columns is-multiline">
 							{teamMembers.map(el => (
 								<TeamMember
@@ -33,6 +33,18 @@ const TeamPage = ({ data }) => {
 									linkedInUrl={el.linkedInUrl}
 								/>
 							))}
+						</div>
+					</div>
+				</section>
+				<section className="section gallery-section pt-100 pb-100">
+					<div className="container">
+						<div className="photos">
+							<div className="photo one"></div>
+							<div className="photo two"></div>
+							<div className="photo three"></div>
+							<div className="photo four"></div>
+							<div className="photo five"></div>
+							<div className="photo six"></div>
 						</div>
 					</div>
 				</section>

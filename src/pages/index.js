@@ -17,12 +17,17 @@ import icoLiquidity from "../resources/liquidity.svg";
 import icoCollateral from "../resources/collateral.svg";
 import exchangeLogo from "../resources/exchange-logo.svg";
 import exchange from "../resources/exchange.png";
+
 import synthCrypto from "../resources/synth-crypto.svg";
 import synthCommodity from "../resources/synth-commodity.svg";
 import synthFiat from "../resources/synth-fiat.svg";
 import synthIndex from "../resources/synth-index.svg";
 import synthInverse from "../resources/synth-inverse.svg";
-
+import sxLiquidity from "../resources/sx-liquidity.svg";
+import sxContract from "../resources/sx-contract.svg";
+import sxDistributed from "../resources/sx-distributed.svg";
+import community from "../resources/community.svg";
+import litepaper from "../resources/litepaper.svg";
 
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
@@ -144,23 +149,33 @@ class IndexPage extends React.Component {
 						</div>
 						<div className="section synth-categories">
 							<div className="synth-type">
-								<div className="synth-img"><img src={synthCrypto}></img></div>
+								<div className="synth-img">
+									<img src={synthCrypto}></img>
+								</div>
 								<div className="synth-p2">Crypto</div>
 							</div>
 							<div className="synth-type">
-								<div className="synth-img"><img src={synthCommodity}></img></div>
+								<div className="synth-img">
+									<img src={synthCommodity}></img>
+								</div>
 								<div className="synth-p2">Commodity</div>
 							</div>
 							<div className="synth-type">
-								<div className="synth-img"><img src={synthFiat}></img></div>
+								<div className="synth-img">
+									<img src={synthFiat}></img>
+								</div>
 								<div className="synth-p2">Forex</div>
 							</div>
 							<div className="synth-type">
-								<div className="synth-img"><img src={synthIndex}></img></div>
+								<div className="synth-img">
+									<img src={synthIndex}></img>
+								</div>
 								<div className="synth-p2">Index</div>
 							</div>
 							<div className="synth-type">
-								<div className="synth-img"><img src={synthInverse}></img></div>
+								<div className="synth-img">
+									<img src={synthInverse}></img>
+								</div>
 								<div className="synth-p2">Inverse</div>
 							</div>
 						</div>
@@ -178,15 +193,21 @@ class IndexPage extends React.Component {
 						</div>
 						<div className="columns is-centered exchange-columns">
 							<div className="column">
-								<div className="icon-img"></div>
+								<div className="icon-img">
+									<img src={sxLiquidity}></img>
+								</div>
 								<div className="p1">Infinite liquidity</div>
 							</div>
 							<div className="column">
-								<div className="icon-img"></div>
+								<div className="icon-img">
+									<img src={sxContract}></img>
+								</div>
 								<div className="p1">Peer-to-contract trading</div>
 							</div>
 							<div className="column">
-								<div className="icon-img"></div>
+								<div className="icon-img">
+									<img src={sxDistributed}></img>
+								</div>
 								<div className="p1">Distributed collateral pool</div>
 							</div>
 						</div>
@@ -205,7 +226,9 @@ class IndexPage extends React.Component {
 						<div className="columns is-centered learn-columns">
 							<div className="column">
 								<div className="c-img">
-									<div className="icon-img"></div>
+									<div className="icon-img">
+										<img src={litepaper}></img>
+									</div>
 								</div>
 								<div className="p1">Litepaper</div>
 								<a
@@ -218,7 +241,9 @@ class IndexPage extends React.Component {
 							</div>
 							<div className="column">
 								<div className="c-img">
-									<div className="icon-img"></div>
+									<div className="icon-img">
+										<img src={community}></img>
+									</div>
 								</div>
 								<div className="p1">Community</div>
 								<Link className="purple-button centered" to="/how-it-works">
@@ -310,7 +335,9 @@ class IndexPage extends React.Component {
 												/>
 											</div>
 											<div className="column is-narrow lh-1">
-												<button className="is-button ">Subscribe</button>
+												<button className="purple-button ">
+													Subscribe
+												</button>
 											</div>
 										</div>
 									</form>

@@ -30,7 +30,6 @@
 
     .synth-type
       background-color: #1E1A31
-      background-image: linear-gradient(to bottom right, #1E1A31, #0F0E25)
       box-shadow: 0 10px 20px 0 rgba(9,8,24,0.64)
       border-radius: 5px
       width: 180px
@@ -38,6 +37,11 @@
       margin: 16px
       padding: 24px
       text-align: center
+      transition: 300ms all ease
+
+      &:hover
+        transform: translateY(-4px)
+        box-shadow: 0 5px 5px 0 rgba(64,43,220,0.09)
 
     .synth-img 
       height: 80px
@@ -46,9 +50,10 @@
 
     .synth-p2 
       color: #ffffff
-      font-weight: 600
+      font-weight: 500
       font-size: 16px
       text-transform: uppercase
+      letter-spacing: 0.5px
 
     .view-synths-button
       margin: 38px auto 0 auto
@@ -97,10 +102,8 @@
       margin: 32px auto 64px auto
 
     .icon-img 
-      height: 64px
-      width: 64px
-      margin: 24px auto
-      background-color: #5641F2
+      height: 80px
+      margin: 40px auto
 
 
     .centered
@@ -140,25 +143,20 @@
       text-align: center
 
       .icon-img
-        height: 94px
-        width: 64px
-        margin: 24px auto
-        background-color: #5641F2
+        margin: 40px auto
 
-      +mobile
-        width: auto
-    .c-img
-      img
-        min-height: 161px
-    .p1
-      font-size: 24px
-      color: #FFFFFF
-      text-transform: uppercase
-      letter-spacing: 0
-      text-align: center
-      line-height: 26px
-      max-width: 200px
-      margin: 23px auto 80px auto
+      .p1
+        font-size: 24px
+        color: #FFFFFF
+        text-transform: uppercase
+        letter-spacing: 0
+        text-align: center
+        line-height: 26px
+        max-width: 200px
+        margin: 30px auto 40px auto
+
+      .purple-button 
+        width: 80%
 
   // .product-section
   //     background-color: #0F0E25
@@ -178,7 +176,6 @@
       text-align: center
       border-radius: 4px
       background-color: #1E1A31
-      background-image: linear-gradient(to bottom right, #1E1A31, #0F0E25)
       box-shadow: 0 10px 20px 0 rgba(9,8,24,0.64)
       margin: 24px
       display: flex
