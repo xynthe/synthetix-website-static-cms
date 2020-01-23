@@ -10,8 +10,8 @@
   width: 100%
   min-height: 418px
   height: auto
-  margin: 26px auto 100px auto
-  padding: 54px 15px
+  margin: 64px auto
+  padding: 80px 16px
   display: flex
   justify-content: space-between
   align-items: center
@@ -42,6 +42,17 @@
     +mobile
       margin-bottom: 20px
 
+  .token-label
+    margin: 16px auto 8px auto
+    font-size: 20px
+    font-weight: 500
+    color: #5641F2
+    text-transform: uppercase
+    letter-spacing: 0.5px
+    text-align: center
+    line-height: 32px
+    display: block
+
   .token-details
     display: flex
     justify-content: space-around
@@ -60,17 +71,6 @@
 
     +until(500px)
       font-size: 12px
-
-    .token-label
-      margin-top: 13px
-      font-size: 20px
-      font-weight: 500
-      color: #5641F2
-      text-transform: uppercase
-      letter-spacing: 0.5px
-      text-align: center
-      line-height: 32px
-      display: block
 
       +touch
         font-size: 14px
@@ -127,9 +127,12 @@
       +until(500px)
         font-size: 12px
 
+  .description-section
+    margin-top: 48px
+
   .token-description
     font-size: 24px
-    color: #0D0A31
+    color: #6F6E98
     letter-spacing: -0.5px
     text-align: center
     line-height: 28px

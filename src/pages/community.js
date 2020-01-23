@@ -65,7 +65,6 @@ class CommunityPage extends React.Component {
 					<section className="section header-section">
 						<div className="container">
 							<h1 className="page-title">Join our Community</h1>
-
 						</div>
 					</section>
 					<section className="section is-white is-padded">
@@ -91,7 +90,7 @@ class CommunityPage extends React.Component {
 								</div>
 							</a>
 							<div className="has-text-centered pv-50">
-								or follow us on our other social channels for updates
+								or follow us on our other social channels for updates:
 							</div>
 							<div className="columns channels">
 								<a
