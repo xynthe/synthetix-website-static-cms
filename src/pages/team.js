@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import "./team.sass";
 import TeamMember from "../components/TeamMember";
 
+import teamAll from "../resources/team-all.png";
+
 const TeamPage = ({ data }) => {
 	let teamMembers = data.allFile.edges[0].node.childPagesJson.teamMembers;
 	// let openPositions = data.allFile.edges[0].node.childPagesJson.openPositions;
@@ -36,17 +38,18 @@ const TeamPage = ({ data }) => {
 						</div>
 					</div>
 				</section>
-				<section className="section gallery-section pt-100 pb-100">
-					<div className="container">
-						<div className="photos">
+				<section className="section gallery-section">
+					<div className="team-photo">
+						<img src={teamAll}></img>
+					</div>
+					{/* <div className="photos">
 							<div className="photo one"></div>
 							<div className="photo two"></div>
 							<div className="photo three"></div>
 							<div className="photo four"></div>
 							<div className="photo five"></div>
 							<div className="photo six"></div>
-						</div>
-					</div>
+						</div> */}
 				</section>
 				<section className="section join-team-section pt-100 pb-100">
 					<div className="container">
