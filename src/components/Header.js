@@ -62,7 +62,7 @@ export default class Header extends React.Component {
 										"is-active": isOpen
 									})}
 								>
-									<div className="navbar-end">
+									<div className="navbar-pages">
 										{topMenuItems.map((el, idx) => (
 											<div className="dropdown is-hoverable" key={idx}>
 												<div className="dropdown-trigger">
@@ -95,6 +95,15 @@ export default class Header extends React.Component {
 											</div>
 										))}
 									</div>
+								</div>
+								<div className="navbar-trade">
+									<a
+										className="trade-button"
+										href="alpha.synthetix.exchange"
+										target="_blank"
+									>
+										Trade now
+									</a>
 								</div>
 							</div>
 						</nav>

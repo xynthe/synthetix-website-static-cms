@@ -80,7 +80,7 @@ $navbar-breakpoint: $tablet !default
         color: $color-invert
       +from($navbar-breakpoint)
         .navbar-start,
-        .navbar-end
+        .navbar-pages
           & > .navbar-item,
           .navbar-link
             color: $color-invert
@@ -270,7 +270,7 @@ a.navbar-item,
   .navbar,
   .navbar-menu,
   .navbar-start,
-  .navbar-end
+  .navbar-pages
     align-items: stretch
     display: flex
   .navbar
@@ -278,7 +278,7 @@ a.navbar-item,
     &.is-spaced
       padding: $navbar-padding-vertical $navbar-padding-horizontal
       .navbar-start,
-      .navbar-end
+      .navbar-pages
         align-items: center
       a.navbar-item,
       .navbar-link
@@ -337,9 +337,9 @@ a.navbar-item,
   .navbar-start
     justify-content: flex-start
     margin-right: auto
-  .navbar-end
-    justify-content: flex-end
-    margin-left: auto
+  .navbar-pages
+    justify-content: center
+    margin: auto
   .navbar-dropdown
     background-color: $navbar-dropdown-background-color
     border-bottom-left-radius: $navbar-dropdown-radius
