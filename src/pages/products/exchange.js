@@ -14,6 +14,8 @@ import sxLiquidity from "../../resources/sx-liquidity.svg";
 import sxContract from "../../resources/sx-contract.svg";
 import sxDistributed from "../../resources/sx-distributed.svg";
 
+import Accordion from "../../components/Accordion";
+
 const ExchangePage = props => {
 	const { synthetixExchangeUrl, discordUrl } = props.data.site.siteMetadata;
 	let exchangeScreenshot = withPrefix(`/img/exchange-screenshot.png`);
@@ -94,6 +96,18 @@ const ExchangePage = props => {
 				<section className="section exchange-faq">
 					<div className="container">
 						<div className="section-title is-white sp5">Frequently asked questions</div>
+						<Accordion
+							title="Hello is this thing on?"
+							content="Hell yeah it's working great!"
+						/>
+						<Accordion
+							title="Ok so do I need to pay?"
+							content="Apart from ETH as gas, there is a fee for all Synth exchanges."
+						/>
+						<Accordion
+							title="Hello is this thing on?"
+							content="Hell yeah it's working great!"
+						/>
 						<div className="faq">
 							<p class="subtitle">What is a synthetic asset?</p>
 							<p>
