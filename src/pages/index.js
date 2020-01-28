@@ -30,6 +30,10 @@ import sxDistributed from "../resources/sx-distributed.svg";
 import community from "../resources/community.svg";
 import litepaper from "../resources/litepaper.svg";
 
+import menuBlog from "../resources/menu-blog.svg";
+import menuLitepaper from "../resources/menu-litepaper.svg";
+import menuTokens from "../resources/menu-tokens.svg";
+
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
 import UiImg from "../components/UiImg";
@@ -91,12 +95,21 @@ class Submenu extends React.Component {
 		return (
 			<ul className="nav__submenu">
 				<li className="nav__submenu-item ">
+					<div className="menu-img">
+						<img src={menuLitepaper}></img>
+					</div>
 					<a>Litepaper</a>
 				</li>
 				<li className="nav__submenu-item ">
+					<div className="menu-img">
+						<img src={menuTokens}></img>
+					</div>
 					<a>Tokens</a>
 				</li>
 				<li className="nav__submenu-item ">
+					<div className="menu-img">
+						<img src={menuBlog}></img>
+					</div>
 					<a>Blog</a>
 				</li>
 			</ul>
