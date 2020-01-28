@@ -2,6 +2,22 @@
 @import "../styles/shortcuts"
 @import "../styles/_buttons"
 
+.news-banner
+  background-color: #4525D0
+  color: #ffffff
+  font-size: 18px
+  letter-spacing: 0.5px
+  font-weight: 500
+  width: 100vw
+  height: 64px
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  transition: 0.2s ease all
+  &:hover 
+    background-color: #5641F2
+
 .nav__submenu 
   display: none
 
@@ -114,11 +130,29 @@ nav
   // HERO
 
   .hero-section 
-    background: url(../resources/hero-bg.png) no-repeat
-    background-size: contain
-    background-position: center center
+    // background: url(../resources/hero-bg.png) no-repeat
+    // background-size: contain
+    // background-position: center center
     width: 100%
     height: 80vh
+    position: relative
+    padding: 0
+
+    .hero-bg
+      position: absolute
+      display: flex
+      justify-content: space-between
+      width: 100vw
+    
+    .hero-left, .hero-right
+      height: 80vh
+      width: 20vw
+
+    .hero-left
+      transform: translateX(-32px)
+
+    .hero-right
+      transform: translateX(32px)
 
     .title-container
       height: 100%

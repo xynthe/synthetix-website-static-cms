@@ -4,6 +4,9 @@ import "./index.sass";
 import Layout from "../components/layout";
 import Logo from "../resources/logo-synthetix.svg";
 
+import heroLeft from "../resources/hero-left.png";
+import heroRight from "../resources/hero-right.png";
+
 import icoUser1 from "../resources/ico-user-level-1.svg";
 import icoUser2 from "../resources/ico-user-level-2.svg";
 import icoUser3 from "../resources/ico-user-level-3.svg";
@@ -194,6 +197,9 @@ class IndexPage extends React.Component {
 					<meta name="description" content={metaDescription} />
 				</Helmet>
 				<div className="home-page">
+					<div className="news-banner">
+						NEW: sDEFI, sLINK, sLTC, sXRP AND THEIR INVERSES AVAILABLE TO TRADE NOW!
+					</div>
 					<div className="navbar">
 						<div className="container" style={{ position: "static" }}>
 							<a className="navbar-item site-title" href="/">
@@ -212,6 +218,14 @@ class IndexPage extends React.Component {
 						</div>
 					</div>
 					<section className="section hero-section">
+						<div className="hero-bg">
+							<div className="hero-left">
+								<img src={heroLeft}></img>
+							</div>
+							<div className="hero-right">
+								<img src={heroRight}></img>
+							</div>
+						</div>
 						<div className="title-container">
 							<h1 className="hero page-title">
 								A protocol for issuing and trading synthetic assets on Ethereum
