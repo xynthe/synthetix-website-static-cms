@@ -37,7 +37,7 @@ export default class Header extends React.Component {
 					});
 					let topMenuItems = allMenuItems.filter(el => !el.parentMenu).sort(numCompare);
 					return (
-						<nav className="navbar" role="navigation" aria-label="main navigation">
+						<nav className="old-navbar" role="navigation" aria-label="main navigation">
 							<div className="container">
 								<div className="navbar-brand">
 									<a className="navbar-item site-title" href="/">
