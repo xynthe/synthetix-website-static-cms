@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { graphql, Link, withPrefix } from "gatsby";
 import "./index.sass";
 import Layout from "../components/layout";
+import Logo from "../resources/logo-synthetix.svg";
 
 import icoUser1 from "../resources/ico-user-level-1.svg";
 import icoUser2 from "../resources/ico-user-level-2.svg";
@@ -53,6 +54,55 @@ const cryptoCurrencies = [
 const commodities = ["sxau", "sxag"];
 const comingSoon = ["sappl", "10x"];
 const arrow = withPrefix("/img/arrow-vertical.svg");
+
+class Menu extends React.Component {
+	render() {
+		return (
+			<nav className="nav">
+				<ul className="nav__menu">
+					<li className="nav__menu-item">
+						<a>Foundation</a>
+						<Submenu />
+					</li>
+					<li className="nav__menu-item">
+						<a>Developers</a>
+						<Submenu />
+					</li>
+					<li className="nav__menu-item">
+						<a>Learn</a>
+						<Submenu />
+					</li>
+					<li className="nav__menu-item">
+						<a>Products</a>
+						<Submenu />
+					</li>
+					<li className="nav__menu-item">
+						<a>Connect</a>
+						<Submenu />
+					</li>
+				</ul>
+			</nav>
+		);
+	}
+}
+
+class Submenu extends React.Component {
+	render() {
+		return (
+			<ul className="nav__submenu">
+				<li className="nav__submenu-item ">
+					<a>Litepaper</a>
+				</li>
+				<li className="nav__submenu-item ">
+					<a>Tokens</a>
+				</li>
+				<li className="nav__submenu-item ">
+					<a>Blog</a>
+				</li>
+			</ul>
+		);
+	}
+}
 
 class IndexPage extends React.Component {
 	constructor(props) {
@@ -131,6 +181,23 @@ class IndexPage extends React.Component {
 					<meta name="description" content={metaDescription} />
 				</Helmet>
 				<div className="home-page">
+					<div className="navbar">
+						<div className="container" style={{ position: "static" }}>
+							<a className="navbar-item site-title" href="/">
+								<img src={Logo} alt="Synthetix" />
+							</a>
+							<Menu />
+							<div className="navbar-trade">
+								<a
+									className="trade-button"
+									href="alpha.synthetix.exchange"
+									target="_blank"
+								>
+									Trade now
+								</a>
+							</div>
+						</div>
+					</div>
 					<section className="section hero-section">
 						<div className="title-container">
 							<h1 className="hero page-title">
@@ -321,8 +388,8 @@ class IndexPage extends React.Component {
 										data-netlify-honeypot="bot-field"
 										onSubmit={this.submitEmail}
 									>
-										<div className="columns sub-inputs">
-											<div className="column is-narrow lh-1">
+										<div className="sub-inputs">
+											<div className="lh-1 input-field">
 												<input type="hidden" name="bot-field" />
 												<input
 													name="emailAddress"
@@ -334,8 +401,8 @@ class IndexPage extends React.Component {
 													onInvalid={this.onInvalid}
 												/>
 											</div>
-											<div className="column is-narrow lh-1">
-												<button className="purple-button ">
+											<div className="lh-1">
+												<button className="purple-button subscribe-button">
 													Subscribe
 												</button>
 											</div>

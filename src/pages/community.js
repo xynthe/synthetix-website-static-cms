@@ -146,8 +146,8 @@ class CommunityPage extends React.Component {
 										data-netlify-honeypot="bot-field"
 										onSubmit={this.submitEmail}
 									>
-										<div className="columns sub-inputs">
-											<div className="column is-narrow lh-1">
+										<div className="sub-inputs">
+											<div className="lh-1 input-field">
 												<input type="hidden" name="bot-field" />
 												<input
 													name="emailAddress"
@@ -159,8 +159,10 @@ class CommunityPage extends React.Component {
 													onChange={this.handleChange}
 												/>
 											</div>
-											<div className="column is-narrow lh-1">
-												<button className="is-button ">Subscribe</button>
+											<div className="lh-1">
+												<button className="purple-button subscribe-button">
+													Subscribe
+												</button>
 											</div>
 										</div>
 									</form>
