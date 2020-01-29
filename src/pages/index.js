@@ -197,23 +197,6 @@ class IndexPage extends React.Component {
 					<meta name="description" content={metaDescription} />
 				</Helmet>
 				<div className="home-page">
-					<div className="navbar">
-						<div className="container" style={{ position: "static" }}>
-							<a className="navbar-item site-title" href="/">
-								<img src={Logo} alt="Synthetix" />
-							</a>
-							<Menu />
-							<div className="navbar-trade">
-								<a
-									className="trade-button"
-									href="alpha.synthetix.exchange"
-									target="_blank"
-								>
-									Trade now
-								</a>
-							</div>
-						</div>
-					</div>
 					<section className="section hero-section">
 						<div className="hero-bg">
 							<div className="hero-left">
@@ -315,7 +298,7 @@ class IndexPage extends React.Component {
 							Learn more about the Synthetix protocol
 						</div>
 						<div className="columns is-centered learn-columns">
-							<div className="column">
+							<div className="column learn-litepaper">
 								<div className="c-img">
 									<div className="icon-img">
 										<img src={litepaper}></img>
@@ -330,7 +313,7 @@ class IndexPage extends React.Component {
 									Read it now
 								</a>
 							</div>
-							<div className="column">
+							<div className="column learn-community">
 								<div className="c-img">
 									<div className="icon-img">
 										<img src={community}></img>
@@ -354,7 +337,7 @@ class IndexPage extends React.Component {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<div className="c-top">TRADING</div>
+								<div className="c-top">TRADING:</div>
 								<div className="c-mid">
 									<img src={icoUser4} alt="Synthetix.Exchange" />
 								</div>
@@ -370,7 +353,7 @@ class IndexPage extends React.Component {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<div className="c-top">STAKING</div>
+								<div className="c-top">STAKING:</div>
 								<div className="c-mid">
 									<img src={icoUser3} alt="For experienced users" />
 								</div>
@@ -387,7 +370,7 @@ class IndexPage extends React.Component {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<div className="c-top">ANALYSIS</div>
+								<div className="c-top">ANALYSIS:</div>
 								<div className="c-mid">
 									<img src={icoUser2} alt="For new and experienced users" />
 								</div>
