@@ -1,8 +1,8 @@
 {
-  "title": "Staking Rewards",
-  "key": "stakingrewards",
-  "link": "/stakingrewards",
-  "isExt": false,
-  "order": 5,
-  "parentMenu": "learn"
+	"title": "Staking Rewards",
+	"key": "stakingrewards",
+	"link": "",
+	"isExt": false,
+	"order": 5,
+	"parentMenu": ""
 }

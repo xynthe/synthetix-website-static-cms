@@ -6,6 +6,7 @@ import "../styles/bulma/bulma.sass";
 import "../styles/main.sass";
 import Header from "./Header";
 import Footer from "./Footer";
+import NewsBanner from "./NewsBanner";
 
 let siteUrl = process.env.SITE_URL || "https://synthetix.io";
 
@@ -42,6 +43,7 @@ const Layout = ({ children, ...rest }) => (
 						<meta property="og:image" content={siteUrl + withPrefix(ogImage)} />
 						<meta property="og:description" content={description} />
 					</Helmet>
+					<NewsBanner />
 					<Header siteTitle={title} />
 					<>{children}</>
 					<Footer {...data.site.siteMetadata} />

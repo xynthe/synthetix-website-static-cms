@@ -197,9 +197,6 @@ class IndexPage extends React.Component {
 					<meta name="description" content={metaDescription} />
 				</Helmet>
 				<div className="home-page">
-					<div className="news-banner">
-						NEW: sDEFI, sLINK, sLTC, sXRP AND THEIR INVERSES AVAILABLE TO TRADE NOW!
-					</div>
 					<div className="navbar">
 						<div className="container" style={{ position: "static" }}>
 							<a className="navbar-item site-title" href="/">
