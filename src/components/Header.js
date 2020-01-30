@@ -51,7 +51,7 @@ export default class Header extends React.Component {
 										href="alpha.synthetix.exchange"
 										target="_blank"
 									>
-										Trade now
+										Trade now WOO
 									</a>
 								</div>
 							</div>
