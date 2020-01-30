@@ -1,5 +1,6 @@
 .nav__submenu 
   display: none
+  transition: 0.2s ease-in all
 
 .nav__menu-item:hover 
   .nav__submenu 
@@ -43,6 +44,8 @@ nav
   font-weight: 700
   
 .nav__menu-item 
+  font-size: 20px
+  margin: 0 16px
   display: inline-block
 
   &:hover 
@@ -64,13 +67,21 @@ nav
   align-items: center
   left: 0
   box-shadow: rgba(9, 8, 24, 0.64) 0px 10px 20px 0px
-  margin-top: 16px
+  margin-top: 22px
     
 .nav__submenu-item 
-  padding: 0 64px
+  padding: 0 40px
+
+  a 
+    font-size: 16px
+    text-transform: none
+    font-weight: 400
 
 .menu-img
-  margin-bottom: -8px
+  margin-bottom: -12px
 
 .navbar-trade
   width: 140px
+
+  a
+    color: #fff

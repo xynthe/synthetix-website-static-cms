@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { graphql, Link, withPrefix } from "gatsby";
 import "./index.sass";
 import Layout from "../components/layout";
-import Logo from "../resources/logo-synthetix.svg";
 
 import heroLeft from "../resources/hero-left.png";
 import heroRight from "../resources/hero-right.png";
@@ -11,14 +10,6 @@ import icoUser1 from "../resources/ico-user-level-1.svg";
 import icoUser2 from "../resources/ico-user-level-2.svg";
 import icoUser3 from "../resources/ico-user-level-3.svg";
 import icoUser4 from "../resources/ico-user-level-4.svg";
-import icoTriangle from "../resources/ico-triangle.svg";
-import icoShield from "../resources/ico-shield.svg";
-import icoEye from "../resources/ico-eye.svg";
-import icoHandout from "../resources/homepage-handout.svg";
-import icoLock from "../resources/homepage-lock.svg";
-import icoContract from "../resources/contract.svg";
-import icoLiquidity from "../resources/liquidity.svg";
-import icoCollateral from "../resources/collateral.svg";
 import exchangeLogo from "../resources/exchange-logo.svg";
 import exchange from "../resources/exchange.png";
 
@@ -30,12 +21,8 @@ import synthInverse from "../resources/synth-inverse.svg";
 import sxLiquidity from "../resources/sx-liquidity.svg";
 import sxContract from "../resources/sx-contract.svg";
 import sxDistributed from "../resources/sx-distributed.svg";
-import community from "../resources/community.svg";
-import litepaper from "../resources/litepaper.svg";
-
-import menuBlog from "../resources/menu-blog.svg";
-import menuLitepaper from "../resources/menu-litepaper.svg";
-import menuTokens from "../resources/menu-tokens.svg";
+import community from "../resources/learn-community.svg";
+import litepaper from "../resources/learn-litepaper.svg";
 
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
@@ -61,64 +48,6 @@ const cryptoCurrencies = [
 const commodities = ["sxau", "sxag"];
 const comingSoon = ["sappl", "10x"];
 const arrow = withPrefix("/img/arrow-vertical.svg");
-
-class Menu extends React.Component {
-	render() {
-		return (
-			<nav className="nav">
-				<ul className="nav__menu">
-					<li className="nav__menu-item">
-						<a>Foundation</a>
-						<Submenu />
-					</li>
-					<li className="nav__menu-item">
-						<a>Developers</a>
-						<Submenu />
-					</li>
-					<li className="nav__menu-item">
-						<a>Learn</a>
-						<Submenu />
-					</li>
-					<li className="nav__menu-item">
-						<a>Products</a>
-						<Submenu />
-					</li>
-					<li className="nav__menu-item">
-						<a>Connect</a>
-						<Submenu />
-					</li>
-				</ul>
-			</nav>
-		);
-	}
-}
-
-class Submenu extends React.Component {
-	render() {
-		return (
-			<ul className="nav__submenu">
-				<li className="nav__submenu-item ">
-					<div className="menu-img">
-						<img src={menuLitepaper}></img>
-					</div>
-					<a>Litepaper</a>
-				</li>
-				<li className="nav__submenu-item ">
-					<div className="menu-img">
-						<img src={menuTokens}></img>
-					</div>
-					<a>Tokens</a>
-				</li>
-				<li className="nav__submenu-item ">
-					<div className="menu-img">
-						<img src={menuBlog}></img>
-					</div>
-					<a>Blog</a>
-				</li>
-			</ul>
-		);
-	}
-}
 
 class IndexPage extends React.Component {
 	constructor(props) {
@@ -293,134 +222,140 @@ class IndexPage extends React.Component {
 							Learn more
 						</a>
 					</section>
-					<section className="section learn-section">
-						<div className="section-title is-large w-auto fs-56">
-							Learn more about the Synthetix protocol
-						</div>
-						<div className="columns is-centered learn-columns">
-							<div className="column learn-litepaper">
-								<div className="c-img">
-									<div className="icon-img">
-										<img src={litepaper}></img>
+					<div className="background-gradient">
+						<section className="section learn-section">
+							<div className="section-title is-large w-auto fs-56">
+								Learn more about the Synthetix protocol
+							</div>
+							<div className="columns is-centered learn-columns">
+								<div className="column learn-litepaper">
+									<div className="c-img">
+										<div className="icon-img">
+											<img src={litepaper}></img>
+										</div>
 									</div>
+									<div className="p1">Litepaper</div>
+									<a
+										className="purple-button centered"
+										href="https://www.synthetix.io/stakingrewards"
+										target="_blank"
+									>
+										Read it now
+									</a>
 								</div>
-								<div className="p1">Litepaper</div>
+								<div className="column learn-community">
+									<div className="c-img">
+										<div className="icon-img">
+											<img src={community}></img>
+										</div>
+									</div>
+									<div className="p1">Community</div>
+									<Link className="purple-button centered" to="/how-it-works">
+										Visit the docs
+									</Link>
+								</div>
+							</div>
+						</section>
+						<section className="product-section section is-padded">
+							<div className="section-title is-white is-large w-auto fs-48 pb-60">
+								State of the art dApps to interact with Synthetix
+							</div>
+							<div className="columns is-centered product-boxes">
 								<a
-									className="purple-button centered"
-									href="https://www.synthetix.io/stakingrewards"
+									className="product-column"
+									href={synthetixExchangeUrl}
 									target="_blank"
+									rel="noopener noreferrer"
 								>
-									Read it now
+									<div className="c-top">TRADING:</div>
+									<div className="c-mid">
+										<img src={icoUser4} alt="Synthetix.Exchange" />
+									</div>
+									<div className="c-bottom">
+										<div className="p2">EXCHANGE</div>
+										<div className="beta-badge"></div>
+										<div className="p3">
+											Exchange Synths without a counterparty
+										</div>
+									</div>
+								</a>
+								<a
+									className="product-column"
+									href={mintrUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<div className="c-top">STAKING:</div>
+									<div className="c-mid">
+										<img src={icoUser3} alt="For experienced users" />
+									</div>
+									<div className="c-bottom">
+										<div className="p2">MINTR</div>
+										<div className="p3">
+											Lock SNX to mint Synths and collect fees
+										</div>
+									</div>
+								</a>
+								<a
+									className="product-column"
+									href={dashboardUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<div className="c-top">ANALYSIS:</div>
+									<div className="c-mid">
+										<img src={icoUser2} alt="For new and experienced users" />
+									</div>
+									<div className="c-bottom">
+										<div className="p2">DASHBOARD</div>
+										<div className="p3">
+											An overview of the Synthetix network
+										</div>
+									</div>
 								</a>
 							</div>
-							<div className="column learn-community">
-								<div className="c-img">
-									<div className="icon-img">
-										<img src={community}></img>
-									</div>
-								</div>
-								<div className="p1">Community</div>
-								<Link className="purple-button centered" to="/how-it-works">
-									Visit the docs
-								</Link>
-							</div>
-						</div>
-					</section>
-					<section className="product-section section is-padded">
-						<div className="section-title is-white is-large w-auto fs-48 pb-60">
-							State of the art dApps to interact with Synthetix
-						</div>
-						<div className="columns is-centered product-boxes">
-							<a
-								className="product-column"
-								href={synthetixExchangeUrl}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<div className="c-top">TRADING:</div>
-								<div className="c-mid">
-									<img src={icoUser4} alt="Synthetix.Exchange" />
-								</div>
-								<div className="c-bottom">
-									<div className="p2">EXCHANGE</div>
-									<div className="beta-badge"></div>
-									<div className="p3">Exchange Synths without a counterparty</div>
-								</div>
-							</a>
-							<a
-								className="product-column"
-								href={mintrUrl}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<div className="c-top">STAKING:</div>
-								<div className="c-mid">
-									<img src={icoUser3} alt="For experienced users" />
-								</div>
-								<div className="c-bottom">
-									<div className="p2">MINTR</div>
-									<div className="p3">
-										Lock SNX to mint Synths and collect fees
-									</div>
-								</div>
-							</a>
-							<a
-								className="product-column"
-								href={dashboardUrl}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<div className="c-top">ANALYSIS:</div>
-								<div className="c-mid">
-									<img src={icoUser2} alt="For new and experienced users" />
-								</div>
-								<div className="c-bottom">
-									<div className="p2">DASHBOARD</div>
-									<div className="p3">An overview of the Synthetix network</div>
-								</div>
-							</a>
-						</div>
-					</section>
-					<section className="section subscribe-section is-padded">
-						<div className="container">
-							{!showThanks ? (
-								<Fragment>
-									<div className="section-title is-white fs-36 pb-40">
-										Subscribe to the Synthetix Mailing List
-									</div>
-									<form
-										name="mailing-list"
-										method="post"
-										data-netlify="true"
-										data-netlify-honeypot="bot-field"
-										onSubmit={this.submitEmail}
-									>
-										<div className="sub-inputs">
-											<div className="lh-1 input-field">
-												<input type="hidden" name="bot-field" />
-												<input
-													name="emailAddress"
-													type="email"
-													className="input"
-													placeholder="Enter your Email Address"
-													value={emailAddress}
-													onChange={this.handleChange}
-													onInvalid={this.onInvalid}
-												/>
-											</div>
-											<div className="lh-1">
-												<button className="purple-button subscribe-button">
-													Subscribe
-												</button>
-											</div>
+						</section>
+						<section className="section subscribe-section is-padded">
+							<div className="container">
+								{!showThanks ? (
+									<Fragment>
+										<div className="section-title is-white fs-36 pb-40">
+											Subscribe to the Synthetix Mailing List
 										</div>
-									</form>
-								</Fragment>
-							) : (
-								<div className="sub-title pb-30">Thanks for Subscribing!</div>
-							)}
-						</div>
-					</section>
+										<form
+											name="mailing-list"
+											method="post"
+											data-netlify="true"
+											data-netlify-honeypot="bot-field"
+											onSubmit={this.submitEmail}
+										>
+											<div className="sub-inputs">
+												<div className="lh-1 input-field">
+													<input type="hidden" name="bot-field" />
+													<input
+														name="emailAddress"
+														type="email"
+														className="input"
+														placeholder="Enter your Email Address"
+														value={emailAddress}
+														onChange={this.handleChange}
+														onInvalid={this.onInvalid}
+													/>
+												</div>
+												<div className="lh-1">
+													<button className="purple-button subscribe-button">
+														Subscribe
+													</button>
+												</div>
+											</div>
+										</form>
+									</Fragment>
+								) : (
+									<div className="sub-title pb-30">Thanks for Subscribing!</div>
+								)}
+							</div>
+						</section>
+					</div>
 				</div>
 				<Modal
 					isOpen={isOpen}

@@ -35,7 +35,7 @@ const Submenu = ({ items }) => {
 	return (
 		<ul className="nav__submenu">
 			{items.map(item => (
-				<li className="nav__submenu-item ">
+				<li className="nav__submenu-item">
 					<div className="menu-img">
 						<img src={withPrefix(`/img/${item.icon}.svg`)}></img>
 					</div>

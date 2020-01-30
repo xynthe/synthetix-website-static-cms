@@ -3,6 +3,7 @@ import { graphql, Link, StaticQuery } from "gatsby";
 import Logo from "../resources/logo-synthetix.svg";
 import cx from "classnames";
 import Menu from "./Menu";
+import "./Header.sass";
 
 export default class Header extends React.Component {
 	state = {
@@ -51,7 +52,7 @@ export default class Header extends React.Component {
 										href="alpha.synthetix.exchange"
 										target="_blank"
 									>
-										Trade now WOO
+										Trade now
 									</a>
 								</div>
 							</div>

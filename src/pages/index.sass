@@ -2,107 +2,13 @@
 @import "../styles/shortcuts"
 @import "../styles/_buttons"
 
-// NAVIGATION MENU
-
-.nav__submenu 
-  display: none
-
-.nav__menu-item:hover 
-  .nav__submenu 
-    display: flex
-    justify-content: center
-  
-$submenu-width: 100vw
-
-html 
-  box-sizing: border-box
-
-*, *:before, *:after 
-  box-sizing: border-box
-
-.menu-container 
-  text-align: center
-
-nav 
-  ul 
-    list-style: none
-    padding-left: 0
-    margin-top: 0
-    margin-bottom: 0
-
-.nav 
-  display: inline-block
-  margin: 8px auto 0 auto
-  background: #090818
-  color: #fff
-  text-align: center
-  text-transform: uppercase
-  
-  a 
-    display: block
-    padding: 0 16px
-    line-height: inherit
-    cursor: pointer
-  
-.nav__menu 
-  line-height: 45px
-  font-weight: 700
-  
-.nav__menu-item 
-  display: inline-block
-
-  &:hover 
-    color: #fff
-
-    .nav__submenu 
-      display: flex
-    
-.nav__submenu 
-  font-weight: 300
-  text-transform: none
-  display: none
-  position: absolute
-  // transform: translateX(-50%)
-  width: $submenu-width
-  height: 160px
-  background-color: #14131E
-  border-bottom: 1px solid #090818
-  align-items: center
-  left: 0
-  box-shadow: rgba(9, 8, 24, 0.64) 0px 10px 20px 0px
-  margin-top: 16px
-    
-.nav__submenu-item 
-  padding: 0 64px
-
-.menu-img
-  margin-bottom: -8px
-
-.navbar-trade
-  width: 140px
-
 
 .home-page
 
-  // NAVBAR
-
-  .navbar 
-    height: 80px
-    width: 100%
-    background-color: #090818
-    border-bottom: 1px solid #262439
-
-    a
-      font-size: 18px
-      letter-spacing: 0.5px
-
-    .navbar-trade
-      align-self: center
-
-    .trade-button
-      color: #fff
-
   // HERO
+
+  .page-title 
+    padding-top: 0
 
   .hero-section 
     // background: url(../resources/hero-bg.png) no-repeat
@@ -140,12 +46,11 @@ nav
       .page-title
         font-size: 4vw
         width: 40vw
-        padding-top: 0
+        margin-bottom: 20px
     
       .page-subtitle 
         font-size: 1.2vw
         width: 45vw
-
 
   // SYNTHS
 
@@ -165,11 +70,11 @@ nav
       margin: 16px
       padding: 24px
       text-align: center
-      transition: 200ms all ease
+      // transition: 200ms all ease
 
-      &:hover
-        transform: translateY(-4px)
-        box-shadow: 0 5px 5px 0 rgba(64,43,220,0.09)
+      // &:hover
+      //   transform: translateY(-4px)
+      //   box-shadow: 0 5px 5px 0 rgba(64,43,220,0.09)
 
     .synth-img 
       height: 80px
@@ -214,11 +119,12 @@ nav
         text-align: center
 
         .p1
-          color: #FFFFFF
+          color: #CACAF1
           max-width: 300px
           text-align: center
           margin: 20px auto 0 auto
-          font-size: 18px
+          font-size: 20px
+          font-weight: 500
           letter-spacing: 0.5px
 
         +mobile
@@ -243,8 +149,13 @@ nav
 
       margin-top: 50px
       margin-bottom: 30px
+  
+  .background-gradient
+    // background-color: #1E1A31
+    // background-image: linear-gradient(to bottom right, rgba(30, 26, 49, 0), rgba(15, 14, 37, 1))
+    // background-image: linear-gradient(to bottom right, #1E1A31, #0F0E25)
 
-      // LEARN MORE
+  // LEARN MORE
 
   .learn-section
     display: flex
@@ -316,6 +227,7 @@ nav
       text-align: center
       border-radius: 4px
       background-color: #1E1A31
+      background-image: linear-gradient(to bottom right, #1E1A31, #0F0E25)
       box-shadow: 0 10px 20px 0 rgba(9,8,24,0.64)
       margin: 24px
       display: flex
@@ -407,13 +319,12 @@ nav
         padding-right: 20px
 
   .subscribe-section
+    background-color: #1E1A31
     color: #000
     font-size: 36px
     font-weight: 500
     letter-spacing: -0.42px
     text-align: center
-    background-color: #1E1A31
-    background-image: linear-gradient(to bottom right, #1E1A31, #0F0E25)
 
     .sub-title
       color: #FFF
