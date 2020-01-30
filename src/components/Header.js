@@ -26,6 +26,7 @@ export default class Header extends React.Component {
 										isExt
 										order
 										parentMenu
+										icon
 									}
 								}
 							}

@@ -4,5 +4,6 @@
 	"link": "",
 	"isExt": false,
 	"order": 3,
-	"parentMenu": "learn"
+	"parentMenu": "learn",
+	"icon": ""
 }

@@ -1,8 +1,9 @@
 {
-  "title": "Mintr",
-  "key": "mintr",
-  "link": "/products/mintr",
-  "isExt": false,
-  "order": 2,
-  "parentMenu": "products"
+	"title": "Mintr",
+	"key": "mintr",
+	"link": "/products/mintr",
+	"isExt": false,
+	"order": 2,
+	"parentMenu": "products",
+	"icon": "menu-mintr"
 }

@@ -1,8 +1,9 @@
 {
-  "title": "Connect",
-  "key": "connect",
-  "link": "",
-  "isExt": false,
-  "order": 5,
-  "parentMenu": ""
+	"title": "Connect",
+	"key": "connect",
+	"link": "",
+	"isExt": false,
+	"order": 5,
+	"parentMenu": "",
+	"icon": ""
 }

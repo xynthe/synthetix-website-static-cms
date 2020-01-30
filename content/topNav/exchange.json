@@ -1,8 +1,9 @@
 {
-  "title": "Exchange",
-  "key": "Exchange",
-  "link": "/products/exchange",
-  "isExt": false,
-  "order": 1,
-  "parentMenu": "products"
+	"title": "Exchange",
+	"key": "Exchange",
+	"link": "/products/exchange",
+	"isExt": false,
+	"order": 1,
+	"parentMenu": "products",
+	"icon": "menu-sx"
 }

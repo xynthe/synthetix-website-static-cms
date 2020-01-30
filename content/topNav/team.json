@@ -1,8 +1,9 @@
 {
-  "title": "Team",
-  "key": "team",
-  "link": "/team",
-  "isExt": false,
-  "order": 1,
-  "parentMenu": "foundation"
+	"title": "Team",
+	"key": "team",
+	"link": "/team",
+	"isExt": false,
+	"order": 1,
+	"parentMenu": "foundation",
+	"icon": "menu-team"
 }
