@@ -123,3 +123,4 @@ collections:
   - {label: "Is External", name: "isExt", widget: "boolean", required: false, default: false}
   - {label: "Order", name: "order", widget: "number", required: false, valueType: "float", default: 1 }
   - {label: "Parent", name: "parentMenu", widget: "relation", collection: "topNav", searchFields: ["title","key"],valueField: "key", displayFields: ["key"], required: false, default: "", hint: "Specify a key of the parent menu item."}
+  - {label: "Icon", name: "icon", widget: "string"}
