@@ -34,17 +34,31 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 									</a>
 								</li>
 								<li>
-									<a href={mintrUrl} target="_blank" rel="noopener noreferrer">
+									<a
+										href={"https://developer.synthetix.io/"}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										Synthetix-JS Lib
 									</a>
 								</li>
 								<li>
-									<a href={mintrUrl} target="_blank" rel="noopener noreferrer">
+									<a
+										href={
+											"https://developer.synthetix.io/api/docs/deployed-contracts.html"
+										}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										Contracts
 									</a>
 								</li>
 								<li>
-									<a href={mintrUrl} target="_blank" rel="noopener noreferrer">
+									<a
+										href={"https://github.com/Synthetixio"}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										Github
 									</a>
 								</li>
@@ -60,7 +74,11 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 									<Link to="/tokens">Tokens</Link>
 								</li>
 								<li>
-									<a href={mintrUrl} target="_blank" rel="noopener noreferrer">
+									<a
+										href={"https://blog.synthetix.io/"}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										Blog
 									</a>
 								</li>
@@ -70,18 +88,14 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 							<ul className="links">
 								<div className="category">Products</div>
 								<li>
-									<a href={mintrUrl} target="_blank" rel="noopener noreferrer">
-										Synthetix.Exchange
-									</a>
+									<Link to="/products/exchange">Synthetix.Exchange</Link>
 								</li>
 								<li>
-									<a href={mintrUrl} target="_blank" rel="noopener noreferrer">
-										Mintr
-									</a>
+									<Link to="/products/mintr">Mintr</Link>
 								</li>
 								<li>
 									<a
-										href={dashboardUrl}
+										href={"https://dashboard.synthetix.io/"}
 										target="_blank"
 										rel="noopener noreferrer"
 									>

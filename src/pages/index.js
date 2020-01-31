@@ -228,7 +228,12 @@ class IndexPage extends React.Component {
 								Learn more about the Synthetix protocol
 							</div>
 							<div className="columns is-centered learn-columns">
-								<div className="column learn-litepaper">
+								<a
+									className="column learn-litepaper"
+									href={"/litepaper"}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									<div className="c-img">
 										<div className="icon-img">
 											<img src={litepaper}></img>
@@ -237,23 +242,33 @@ class IndexPage extends React.Component {
 									<div className="p1">Litepaper</div>
 									<a
 										className="purple-button centered"
-										href="https://www.synthetix.io/stakingrewards"
+										href="/litepaper"
 										target="_blank"
 									>
 										Read it now
 									</a>
-								</div>
-								<div className="column learn-community">
+								</a>
+								<a
+									className="column learn-community"
+									href={"https://synthetix.community/docs/intro"}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									<div className="c-img">
 										<div className="icon-img">
 											<img src={community}></img>
 										</div>
 									</div>
 									<div className="p1">Community</div>
-									<Link className="purple-button centered" to="/how-it-works">
+									<a
+										className="purple-button centered"
+										to="https://synthetix.community/docs/intro"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										Visit the docs
-									</Link>
-								</div>
+									</a>
+								</a>
 							</div>
 						</section>
 						<section className="product-section section is-padded">
