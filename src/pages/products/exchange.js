@@ -167,6 +167,7 @@ const ExchangePage = props => {
 		</Layout>
 	);
 };
+
 export const query = graphql`
 	query ExchangePageQuery {
 		site {

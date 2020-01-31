@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link, StaticQuery, withPrefix } from "gatsby";
+import { Link, withPrefix } from "gatsby";
 import "./Menu.sass";
 
 const numCompare = function(a, b) {
@@ -20,7 +20,8 @@ class Menu extends React.Component {
 	};
 
 	render() {
-		let topMenuItems = this.props.allMenuItems.filter(el => !el.parentMenu).sort(numCompare);
+		const { allMenuItems } = this.props;
+		let topMenuItems = allMenuItems.filter(el => !el.parentMenu).sort(numCompare);
 
 		return (
 			<nav className="nav">

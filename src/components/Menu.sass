@@ -35,7 +35,7 @@ nav
   text-align: center
   text-transform: uppercase
   
-  a 
+  .nav a 
     display: block
     padding: 0 16px
     line-height: inherit
@@ -45,13 +45,27 @@ nav
   line-height: 45px
   font-weight: 700
 
-  +smaller-than-desktop
-    display: none
+  +mobile
+    // display: none
+    background-color: #14131E
+    height: 100vh
+    width: 100vw
+    position: absolute
+    left: 0
+    top: 94px
+
+    .nav__menu-item
+      display: block
+      text-align: left
+      margin-top: 16px
   
-.nav__menu-item 
+.nav__menu-item
   font-size: 20px
   margin: 0 16px
   display: inline-block
+
+  +tablet 
+    font-size: 16px
  
   .nav__menu-item-wrapper
     position: relative
