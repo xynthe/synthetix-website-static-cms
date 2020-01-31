@@ -52,6 +52,11 @@
         font-size: 1.2vw
         width: 45vw
 
+    @media (min-width: 1400px)
+
+      .title-container
+        top: 10vw
+
   // SYNTHS
 
   .synth-section
@@ -119,13 +124,12 @@
         text-align: center
 
         .p1
-          color: #CACAF1
-          max-width: 300px
+          color: #D1D1E8
+          letter-spacing: 0.2px
+          font-weight: 400
           text-align: center
           margin: 20px auto 0 auto
           font-size: 20px
-          font-weight: 500
-          letter-spacing: 0.5px
 
         +mobile
           width: auto
@@ -211,6 +215,22 @@
         width: 80%
         transform: none
 
+  @media (max-width: 1200px)
+    .learn-section
+      display: block
+      margin: 48px auto
+
+
+      .column
+        max-width: 320px
+        margin: 24px
+
+      .section-title
+        max-width: unset
+        font-size: 36.54px !important
+        text-align: center
+        margin-bottom: 24px
+
   // .product-section
   //     background-color: #0F0E25
   //     background-image: linear-gradient(#0F0E25, #1E1A31)
@@ -287,7 +307,14 @@
           position: absolute
           left: 132px
           top: 56px
+    
+  @media (max-width: 1300px)
 
+    .product-section
+      margin: 48px auto
+
+    .section-title
+      font-size: 36.54px
 
   .page-title
     +desktop
