@@ -8,28 +8,42 @@ const numCompare = function(a, b) {
 	return 0;
 };
 
-const Menu = ({ allMenuItems }) => {
-	let topMenuItems = allMenuItems.filter(el => !el.parentMenu).sort(numCompare);
+class Menu extends React.Component {
+	state = {
+		menuIsVisible: false
+	};
 
-	return (
-		<nav className="nav">
-			<ul className="nav__menu">
-				{topMenuItems.map(topMenuItem => {
-					const subMenuItems = allMenuItems
-						.filter(el2 => el2.parentMenu === topMenuItem.key)
-						.sort(numCompare);
+	toggleVisible = () => {
+		this.setState({
+			menuIsVisible: !this.state.menuIsVisible
+		});
+	};
 
-					return (
-						<li className="nav__menu-item">
-							<UiLink to={topMenuItem.link}>{topMenuItem.title}</UiLink>
-							<Submenu items={subMenuItems} />
-						</li>
-					);
-				})}
-			</ul>
-		</nav>
-	);
-};
+	render() {
+		let topMenuItems = this.props.allMenuItems.filter(el => !el.parentMenu).sort(numCompare);
+
+		return (
+			<nav className="nav">
+				<ul className="nav__menu">
+					{topMenuItems.map(topMenuItem => {
+						const subMenuItems = allMenuItems
+							.filter(el2 => el2.parentMenu === topMenuItem.key)
+							.sort(numCompare);
+
+						return (
+							<li className="nav__menu-item">
+								<div className="nav__menu-item-wrapper">
+									<UiLink to={topMenuItem.link}>{topMenuItem.title}</UiLink>
+								</div>
+								<Submenu items={subMenuItems} />
+							</li>
+						);
+					})}
+				</ul>
+			</nav>
+		);
+	}
+}
 
 const Submenu = ({ items }) => {
 	return (

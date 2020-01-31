@@ -1,3 +1,5 @@
+@import "../styles/bulma/utilities/_all"
+  
 .nav__submenu 
   display: none
   transition: 0.2s ease-in all
@@ -42,18 +44,32 @@ nav
 .nav__menu 
   line-height: 45px
   font-weight: 700
+
+  +smaller-than-desktop
+    display: none
   
 .nav__menu-item 
   font-size: 20px
   margin: 0 16px
   display: inline-block
+ 
+  .nav__menu-item-wrapper
+    position: relative
 
+    &:before
+        content: ""
+        position: absolute
+        top: -35px
+        bottom: -35px
+        left: -10px
+        right: -10px
+        // background-color: red
   &:hover 
     color: #fff
 
     .nav__submenu 
       display: flex
-    
+
 .nav__submenu 
   font-weight: 300
   text-transform: none
