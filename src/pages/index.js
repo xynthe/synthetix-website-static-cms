@@ -23,7 +23,7 @@ import UiImg from "../components/UiImg";
 import { Helmet } from "react-helmet";
 
 const bottomLabelTx = "Q4 2018";
-const fiatCurrencies = ["susd", "seur", "sjpy", "saud", "skrw", "sgbp", "schf", "scad"];
+const fiatCurrencies = ["susd", "seur", "sjpy", "saud", "sgbp", "schf"];
 const cryptoCurrencies = [
 	"sbtc",
 	"seth",
@@ -31,10 +31,10 @@ const cryptoCurrencies = [
 	"ibtc",
 	"ieth",
 	"ibnb",
-	"smkr",
+	"slink",
 	"sxtz",
 	"strx",
-	"imkr",
+	"ilink",
 	"ixtz",
 	"itrx"
 ];
@@ -151,7 +151,7 @@ class IndexPage extends React.Component {
 										))}
 									</div>
 								</div>
-								<img src={arrow} className={`arrow`} />
+								{/* <img src={arrow} className={`arrow`} /> */}
 							</div>
 							<div className="currency-box">
 								<div className="currency-title">
