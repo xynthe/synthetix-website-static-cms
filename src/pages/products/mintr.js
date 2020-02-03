@@ -68,7 +68,7 @@ const MintrPage = props => {
 								<img src={stepOne}></img>
 							</div>
 							<div className="p1">
-								Connect your wallet (MetaMask, Trezor, Ledger, Coinbase, etc)
+								Connect a wallet (e.g. MetaMask, Trezor) containing SNX tokens
 							</div>
 						</div>
 						<div className="column">
@@ -76,7 +76,7 @@ const MintrPage = props => {
 								<img src={stepTwo}></img>
 							</div>
 							<div className="p1">
-								Choose a Synth to convert from and to convert to, and confirm
+								Click “Mint” and decide how much sUSD you would like to mint
 							</div>
 						</div>
 						<div className="column">
@@ -84,7 +84,7 @@ const MintrPage = props => {
 								<img src={stepThree}></img>
 							</div>
 							<div className="p1">
-								Once processed on the blockchain, the exchange is complete
+								Use your new sUSD to trade, or stake SNX, to claim weekly rewards
 							</div>
 						</div>
 					</div>
@@ -116,9 +116,9 @@ const MintrPage = props => {
 					</div>
 				</section>
 				<section className="section discord">
-				<a class="discord-button" href={discordUrl} target="_blank">
-							<img src={joinDiscordButton} />
-						</a>
+					<a class="discord-button" href={discordUrl} target="_blank">
+						<img src={joinDiscordButton} />
+					</a>
 				</section>
 			</div>
 		</Layout>
