@@ -1,11 +1,10 @@
 @import "../styles/bulma/utilities/_all"
 
 .team-member-box
-  +tablet
-    flex-basis: 280px
-    margin: 20px auto
-    flex-grow: 0
-    flex-shrink: 0
+  flex-basis: 280px
+  margin: 20px auto
+  flex-grow: 0
+  flex-shrink: 0
 
   .tm-img
     height: 125px
@@ -41,3 +40,7 @@
     line-height: 26px
     padding-bottom: 10px
 
+@media (max-width: 1300px)
+
+  .team-member-box   
+    flex-basis: 220px
