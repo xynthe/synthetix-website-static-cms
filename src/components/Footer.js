@@ -6,6 +6,7 @@ import logoMedium from "../resources/logo-medium.svg";
 import logoDiscord from "../resources/logo-discord.svg";
 import logoReddit from "../resources/logo-reddit.svg";
 import UiImg from "./UiImg";
+import Logo from "../resources/logo-synthetix.svg";
 
 const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mintrUrl }) => (
 	<footer>
@@ -15,9 +16,48 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 					<div className="columns">
 						<div className="column has-text-centered-mobile">
 							<ul className="links">
-								<div className="category">Foundation</div>
+								<a className="footer-item site-title" href="/">
+									<img src={Logo} alt="Synthetix" />
+								</a>
+							</ul>
+						</div>
+						<div className="column has-text-centered-mobile">
+							<ul className="links">
+								<div className="category">Learn</div>
 								<li>
-									<Link to="/team">Team</Link>
+									<Link to="/litepaper">Litepaper</Link>
+								</li>
+								<li>
+									<Link to="/tokens">Tokens</Link>
+								</li>
+								<li>
+									<a
+										href={"https://blog.synthetix.io/"}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Blog
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div className="column has-text-centered-mobile">
+							<ul className="links">
+								<div className="category">Products</div>
+								<li>
+									<Link to="/products/exchange">Synthetix.Exchange</Link>
+								</li>
+								<li>
+									<Link to="/products/mintr">Mintr</Link>
+								</li>
+								<li>
+									<a
+										href={"https://dashboard.synthetix.io/"}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Dashboard
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -66,47 +106,10 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 						</div>
 						<div className="column has-text-centered-mobile">
 							<ul className="links">
-								<div className="category">Learn</div>
-								<li>
-									<Link to="/litepaper">Litepaper</Link>
-								</li>
-								<li>
-									<Link to="/tokens">Tokens</Link>
-								</li>
-								<li>
-									<a
-										href={"https://blog.synthetix.io/"}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										Blog
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div className="column has-text-centered-mobile">
-							<ul className="links">
-								<div className="category">Products</div>
-								<li>
-									<Link to="/products/exchange">Synthetix.Exchange</Link>
-								</li>
-								<li>
-									<Link to="/products/mintr">Mintr</Link>
-								</li>
-								<li>
-									<a
-										href={"https://dashboard.synthetix.io/"}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										Dashboard
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div className="column has-text-centered-mobile">
-							<ul className="links">
 								<div className="category">Connect</div>
+								<li>
+									<Link to="/team">Team</Link>
+								</li>
 								<li>
 									<Link to="/community">Community</Link>
 								</li>

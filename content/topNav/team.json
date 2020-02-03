@@ -4,6 +4,6 @@
 	"link": "/team",
 	"isExt": false,
 	"order": 1,
-	"parentMenu": "foundation",
+	"parentMenu": "connect",
 	"icon": "menu-team"
 }

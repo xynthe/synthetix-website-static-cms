@@ -3,7 +3,7 @@
 	"key": "community",
 	"link": "/community",
 	"isExt": false,
-	"order": 1,
+	"order": 2,
 	"parentMenu": "connect",
 	"icon": "menu-community"
 }

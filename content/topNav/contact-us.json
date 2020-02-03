@@ -3,7 +3,7 @@
 	"key": "contact-us",
 	"link": "/contact-us",
 	"isExt": false,
-	"order": 2,
+	"order": 3,
 	"parentMenu": "connect",
 	"icon": "menu-contact"
 }
