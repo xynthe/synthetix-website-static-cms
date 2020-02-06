@@ -55,6 +55,7 @@ export default class Header extends React.Component {
 										Trade now
 									</a>
 								</div>
+								<div className="menu-button">X</div>
 							</div>
 						</div>
 						// <nav className="navbar" role="navigation" aria-label="main navigation">

@@ -46,18 +46,44 @@ nav
   font-weight: 700
 
   +mobile
-    // display: none
+    display: none
     background-color: #14131E
     height: 100vh
     width: 100vw
     position: absolute
     left: 0
-    top: 94px
+
+    .navbar .container
+      margin: unset
 
     .nav__menu-item
       display: block
       text-align: left
       margin-top: 16px
+
+    .nav__submenu 
+      display: block
+      position: unset
+      background-color: transparent
+      box-shadow: none
+      border-bottom: none
+      height: auto
+      padding: 0px
+      margin: 16px auto 40px auto
+
+      a
+        color: #fff
+
+      img 
+        display: none
+
+    .nav__submenu-item
+      padding: unset
+      margin-top: 16px
+
+    .navbar .nav a
+      padding: 16px 16px 4px 16px
+
   
 .nav__menu-item
   font-size: 18px

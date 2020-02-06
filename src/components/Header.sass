@@ -1,6 +1,17 @@
+@import "../styles/bulma/utilities/_all"
+
+.menu-button
+  display: none
+
+  +mobile 
+    display: unset
+    position: absolute
+    top: 20px
+    right: 40px
+  
 .navbar
-    border-bottom: 1px solid #262439
-    padding: 20px
+  border-bottom: 1px solid #262439
+  padding: 20px
     
 .nav__submenu 
   display: none
@@ -102,5 +113,8 @@ nav
     .site-title, .navbar-trade
       width: 130px
 
+  +mobile
 
+    .navbar .container
+      margin: unset
 

@@ -4,6 +4,7 @@
 
 
 .home-page
+  overflow-x: hidden
 
   // HERO
 
@@ -57,6 +58,11 @@
       .title-container
         top: 8vh
 
+    @media (max-width: 1200px)
+      .page-title
+        font-size: 56px
+        max-width: 600px
+
   // SYNTHS
 
   .synth-section
@@ -97,6 +103,16 @@
       margin: 16px auto 0 auto
       @extend .purple-button
 
+    @media (max-width: 1200px)
+      .synth-type
+        width: 160px
+        height: 200px
+
+      .synth-img
+        height: 50px 
+        width: 60px
+        margin: 18px auto 40px auto
+
   // EXCHANGE
 
   .exchange-section
@@ -131,6 +147,10 @@
           margin: 20px auto 0 auto
           font-size: 20px
 
+        @media (max-width: 1200px)
+          .p1
+            font-size: 18px
+
         +mobile
           width: auto
 
@@ -154,6 +174,15 @@
       margin-top: 50px
       margin-bottom: 30px
   
+    @media (max-width: 1200px)
+      .icon-img 
+        width: 72px
+        height: 60px
+        margin: 40px auto
+
+      .exchange-columns
+        max-width: 900px
+
   .background-gradient
     // background-color: #1E1A31
     // background-image: linear-gradient(to bottom right, rgba(30, 26, 49, 0), rgba(15, 14, 37, 1))
@@ -219,7 +248,6 @@
     .learn-section
       display: block
       margin: 48px auto
-
 
       .column
         max-width: 320px
@@ -310,6 +338,9 @@
     
   @media (max-width: 1300px)
 
+    .hero-section
+      height: 50vh
+
     .product-section
       margin: 48px auto
 
@@ -380,6 +411,34 @@
       font-size: 16px
       letter-spacing: 0.5px
       cursor: pointer
+
+  @media screen and (max-width: 1087px)
+    .synth-section
+      .section-desc 
+        padding: 0 1.5rem
+
+      .synth-categories
+        display: block
+
+      .synth-type
+        width: 320px
+        height: auto
+        margin: 24px auto
+        padding: 40px 40px 50px 40px
+
+      .synth-img 
+        height: auto
+        width: 80px
+
+      .synth-p2
+        font-size: 18px
+
+      .product-boxes
+        display: block
+
+      .product-column
+        margin: 32px auto
+        width: 40vw
 
   +desktop
     .get-rewarded-boxes .column, .feature-boxes .column
