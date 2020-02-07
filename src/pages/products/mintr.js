@@ -63,7 +63,7 @@ const MintrPage = props => {
 				<section className="section how-it-works">
 					<div className="section-title is-white sp5">How it works</div>
 					<div className="steps is-centered how-steps">
-						<div className="column">
+						<div className="column number-box">
 							<div className="number-img">
 								<img src={stepOne}></img>
 							</div>
@@ -71,7 +71,7 @@ const MintrPage = props => {
 								Connect a wallet (e.g. MetaMask, Trezor) containing SNX tokens
 							</div>
 						</div>
-						<div className="column">
+						<div className="column number-box">
 							<div className="number-img">
 								<img src={stepTwo}></img>
 							</div>
@@ -79,7 +79,7 @@ const MintrPage = props => {
 								Click “Mint” and decide how much sUSD you would like to mint
 							</div>
 						</div>
-						<div className="column">
+						<div className="column number-box">
 							<div className="number-img">
 								<img src={stepThree}></img>
 							</div>

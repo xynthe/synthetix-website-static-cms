@@ -58,8 +58,37 @@
           transform: translateY(4px)
           box-shadow: 0 5px 5px 0 rgba(64,43,220,0.09)
 
-        +touch
-          max-height: 144px
-
         +mobile
           max-height: 98px
+
+  @media (max-width: 1087px)
+    .flags-section
+      padding: 100px
+
+      .s-title
+        width: auto
+
+      .flags-container
+        width: 100%
+
+        a 
+          width: 45%
+
+  @media (max-width: 768px)
+    .flags-section
+      padding: 40px
+
+      .s-title
+        width: 80vw
+
+      .flags-container
+        width: 100%
+        justify-content: center
+
+        a 
+          text-align: center
+          margin: 24px
+          width: unset
+
+        img 
+          max-height: unset

@@ -357,7 +357,7 @@ class IndexPage extends React.Component {
 														onInvalid={this.onInvalid}
 													/>
 												</div>
-												<div className="lh-1">
+												<div className="lh-1 input-button">
 													<button className="purple-button subscribe-button">
 														Subscribe
 													</button>

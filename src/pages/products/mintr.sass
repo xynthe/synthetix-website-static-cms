@@ -50,9 +50,6 @@
       margin: 32px auto 64px auto
       text-align: center
 
-      +mobile
-        padding: 0 20px
-
   .section.how-it-works
     height: auto
     margin-top: 120px
@@ -172,5 +169,40 @@
       img
         display: block
         max-width: auto
+
+  @media (max-width: 1024px) 
+    .mintr-about
+      margin: 0px 40px
+
+      .how-it-works
+        .p1
+          max-width: 280px
+
+    .collat-ratio
+      margin: 40px
+
+      .section-title
+        font-size: 40px
+
+  @media (max-width: 786px)
+    .header-section
+      height: 50vh
+
+    .product-desc
+      padding: 0px
+
+    .mintr-columns
+      .column
+        margin: 32px auto
+
+    .section-image
+      width: 100%
+
+    .steps
+      display: block
+
+    .number-box
+      width: 100%
+      margin: auto
 
 

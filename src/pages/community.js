@@ -67,7 +67,7 @@ class CommunityPage extends React.Component {
 							<h1 className="page-title">Join our Community</h1>
 						</div>
 					</section>
-					<section className="section is-white is-padded">
+					<section className="section is-white is-padded main-content">
 						<div className="container">
 							<div className="s-title pb-40">
 								Discord is the primary destination for all things Synthetix.

@@ -11,7 +11,7 @@ import Logo from "../resources/logo-synthetix.svg";
 const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mintrUrl }) => (
 	<footer>
 		<section className="section ph-20 pv-0">
-			<div className="container">
+			<div className="container footer-container">
 				<div className="columns justify-content--space-between footer-rows">
 					<div className="columns">
 						<div className="column has-text-centered-mobile">
