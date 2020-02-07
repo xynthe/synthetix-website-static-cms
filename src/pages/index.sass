@@ -412,10 +412,14 @@
       letter-spacing: 0.5px
       cursor: pointer
 
-  @media screen and (max-width: 1087px)
+  @media (max-width: 1087px)
     .synth-section
+      margin-top: 0px 
+
       .section-desc 
         padding: 0 1.5rem
+        max-width: 70vw
+        font-size: 20px
 
       .synth-categories
         display: block
@@ -439,6 +443,64 @@
       .product-column
         margin: 32px auto
         width: 40vw
+    
+    .product-section
+      .product-column 
+        width: 240px
+        padding: 0 20px 0 20px
+
+        .c-top
+          font-size: 20px
+
+        .c-mid 
+          img 
+            max-width: 160px
+            width: 160px
+
+        .p2 
+          font-size: 24px
+
+        .p3
+          font-size: 18px 
+
+  @media (max-width: 786px)
+    .exchange-section
+      .exchange-columns 
+        .column 
+          .p1
+            font-size: 16px
+
+    .learn-section
+      .learn-columns
+        display: block
+
+        .column
+          margin: 32px auto
+
+    .product-section
+      .product-boxes
+        display: block
+
+      .product-column
+        width: 320px
+        margin: 32px auto 
+
+        .c-top
+          padding: 40px 0 0 0
+
+        .c-mid 
+          padding: 32px 24px 16px 24px
+
+          img 
+            width: 180px  
+            max-width: 180px
+
+        .c-bottom
+          .p2 
+            font-size: 32px
+          .p3 
+            font-size: 20px
+    
 
   +desktop
     .get-rewarded-boxes .column, .feature-boxes .column
