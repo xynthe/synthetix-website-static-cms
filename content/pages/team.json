@@ -31,13 +31,6 @@
 			"image": "/img/clinton.png"
 		},
 		{
-			"fullName": "Garth Travers",
-			"title": "Communications Manager",
-			"bio": "Garth graduated in Communications from the University of Sydney and has experience managing a national payments network.",
-			"linkedInUrl": "https://www.linkedin.com/in/garth-travers-266b5339/",
-			"image": "/img/garth_travers.png"
-		},
-		{
 			"fullName": "Clement Balestrat",
 			"title": "dApp Engineer",
 			"bio": "Clement completed his Masters in Maths and Computer Science before finding his passion in the start-up world. He has a strong background in full-stack engineering and crypto.",
@@ -57,6 +50,13 @@
 			"bio": "Zoe has considerable experience in a variety of roles at a national payments network, including management roles in design, development, and operations. ",
 			"linkedInUrl": "https://www.linkedin.com/in/zoearcher/",
 			"image": "/img/0.jpg"
+		},
+		{
+			"fullName": "Garth Travers",
+			"title": "Communications Manager",
+			"bio": "Garth graduated in Communications from the University of Sydney and has experience managing a national payments network.",
+			"linkedInUrl": "https://www.linkedin.com/in/garth-travers-266b5339/",
+			"image": "/img/garth_travers.png"
 		}
 	],
 	"openPositions": []

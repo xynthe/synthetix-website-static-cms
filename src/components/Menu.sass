@@ -1,4 +1,25 @@
 @import "../styles/bulma/utilities/_all"
+
+.trade-mobile
+  display: none
+  background-color: #4525D0
+  color: #fff
+  font-weight: 500
+  font-size: 20px
+  letter-spacing: 0.5px
+  width: 100vw
+  height: auto
+  position: absolute
+  left: 0
+  text-align: left
+  padding: 16px 24px
+
+  .trade-mobile-button
+    color: #fff
+    padding: 0
+    
+  +mobile 
+    display: unset
   
 .nav__submenu 
   display: none
@@ -46,9 +67,10 @@ nav
   font-weight: 700
 
   +mobile
+    // display: block triggers mobile menu to be shown 
     display: none
     background-color: #14131E
-    height: 100vh
+    height: auto
     width: 100vw
     position: absolute
     left: 0

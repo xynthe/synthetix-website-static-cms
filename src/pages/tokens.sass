@@ -4,11 +4,11 @@
 
 .tokens-page
 
-    .header-section
-        padding: 140px 1.5rem
+  .header-section
+    padding: 140px 1.5rem
 
-    .discord
-        margin: -3rem auto 64px auto
+  .discord
+    margin: -3rem auto 64px auto
     
     .discord-button
       @extend %light-bg-hover
@@ -19,10 +19,15 @@
       margin: 24px auto 100px auto
       display: block
 
-      +mobile
-        margin: auto
-
       img
         display: block
         width: 100%
-        
+
+  @media (max-width: 768px)
+    .header-section
+      padding: 64px
+
+    .discord
+      .discord-button
+        margin: 0 auto 64px auto
+          

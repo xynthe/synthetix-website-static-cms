@@ -41,12 +41,19 @@ footer
           padding: 3px 10px
       a
         white-space: nowrap
+    +mobile
+      display: block
+      margin: 32px auto
+      text-align: center
+
 
     .media-links
       padding-bottom: 10px
       a
         padding: 0 0 0 20px
-
+        +mobile
+          padding: 12px
+      
   .footer-rows
     display: flex
     flex-wrap: wrap
@@ -79,9 +86,13 @@ footer
 
     img
 
+  .footer-container
+    +mobile
+      margin: 48px auto 0 auto
 
-
-
+  .footer-rows
+    +mobile
+      margin-bottom: -64px
 
   +tablet 
     .footer-rows > div
@@ -94,10 +105,26 @@ footer
     flex-direction: row
     display: flex
     width: 100%
-    margin-top: 80px
+    margin-bottom: 80px
 
     +mobile
+      display: block
       align-items: center
+
+  .logo-box
+    .row
+      +mobile 
+        display: block
+
+  .logo-box
+    .row
+      a 
+        +mobile
+          display: block
+          margin: 24px auto
+          width: auto
+          text-align: center
+          width: 200px
 
 @media (max-width: 1350px)
 

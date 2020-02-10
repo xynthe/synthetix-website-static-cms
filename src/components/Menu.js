@@ -40,6 +40,15 @@ class Menu extends React.Component {
 							</li>
 						);
 					})}
+					<div className="trade-mobile">
+						<a
+							className="trade-mobile-button"
+							href="https://beta.synthetix.exchange/"
+							target="_blank"
+						>
+							TRADE NOW
+						</a>
+					</div>
 				</ul>
 			</nav>
 		);

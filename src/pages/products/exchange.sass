@@ -129,6 +129,7 @@
       font-size: 22px
       letter-spacing: 0
       line-height: 32px
+      text-align: left
 
     p.subtitle
       color: #fff
@@ -143,9 +144,6 @@
 
       margin: 100px auto 0 auto
       display: block
-
-      +mobile
-        margin: auto
 
       img
         display: block
@@ -185,4 +183,26 @@
     line-height: 1.4em
     text-align: center
     @include font-size(56)
+
+
+  @media (max-width: 768px)
+    .header-section
+      height: 400px
+
+    .column
+      margin: auto
+
+    .product-desc
+      padding: 0px
+
+    .section.how-it-works
+      .steps
+        display: block
+      .column
+        width: auto
+      .p1 
+        max-width: 400px
+
+    .discord-button
+      margin: 40px auto
 
