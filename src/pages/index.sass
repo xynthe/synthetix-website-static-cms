@@ -508,8 +508,11 @@
 
   @media (max-width: 786px)
     .hero-section
+      height: auto
       .title-container
-        height: 360px
+        margin-top: 64px
+        height: auto
+        position: unset
 
       .hero-bg
         display: none
@@ -518,6 +521,7 @@
         display: unset
       
     .synth-section
+      margin-top: 24px
       .section-desc
         max-width: 90vw
 
@@ -578,6 +582,41 @@
 
     .hero-bg
       display: none
+
+  @media (max-width: 450px)
+
+    .synth-section
+      .synth-type
+        width: 100%
+
+      .view-synths-button 
+        width: 74vw
+
+    .learn-section
+      .learn-columns
+        margin: auto
+
+    .exchange-section
+
+      .exchange-logo
+        margin-top: 20px
+        width: 80vw
+
+      .section-image
+        width: 80vw
+        margin: 24px auto 32px auto
+
+      .purple-button
+        width: 74vw
+
+    .learn-section
+      .column
+        width: 100%
+
+    .product-section  
+      .product-column
+        width: 100% 
+        max-width: 320px
 
   +desktop
     .get-rewarded-boxes .column, .feature-boxes .column
