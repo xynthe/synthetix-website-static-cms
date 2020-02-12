@@ -86,7 +86,7 @@ class CommunityPage extends React.Component {
 									<div className="column is-narrow">
 										<img src={icoDiscord} alt="Discord" />
 									</div>
-									<div className="column">Join our Discord Server</div>
+									<div className="column join-text">Join our Discord Server</div>
 								</div>
 							</a>
 							<div className="has-text-centered pv-50">

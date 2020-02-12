@@ -21,10 +21,6 @@
     height: auto
     transform: translateY(50%)
 
-  // .background-gradient
-  //   background-color: #1E1A31
-  //   background-image: linear-gradient(to bottom right, rgba(30, 26, 49, 0), rgba(15, 14, 37, 1))
-
   .section.exchange-about
     .exchange-columns
       max-width: 1130px
@@ -62,9 +58,6 @@
       margin: 100px auto
       text-align: center
 
-      +mobile
-        padding: 0 20px
-
   .section.how-it-works
     height: auto
     margin-top: 120px
@@ -93,23 +86,23 @@
         .number-img 
           margin: 24px auto
 
-  .section
-    .columns
-      .column
-        .section-title
-          width: auto
+    .section
+      .columns
+        .column
+          .section-title
+            width: auto
 
-        .section-desc
+          .section-desc
 
-          color: #5E597F
-          letter-spacing: 0
-          text-align: center
-          line-height: 32px
+            color: #5E597F
+            letter-spacing: 0
+            text-align: center
+            line-height: 32px
 
-        .exchange-screenshot
-          display: flex
-          height: 100%
-          align-items: center
+          .exchange-screenshot
+            display: flex
+            height: 100%
+            align-items: center
 
   .section.exchange-faq
     margin: 20px
@@ -189,11 +182,14 @@
     .header-section
       height: 400px
 
+      .product-logo
+        width: 80%
+
     .column
       margin: auto
 
-    .product-desc
-      padding: 0px
+    .section-image
+      width: 90vw
 
     .section.how-it-works
       .steps
@@ -205,4 +201,16 @@
 
     .discord-button
       margin: 40px auto
+
+  @media (max-width: 450px)
+    .header-section
+      height: 300px
+
+    .exchange-columns
+      margin: auto
+
+    .section.exchange-faq
+      margin: 0px
+
+  
 
