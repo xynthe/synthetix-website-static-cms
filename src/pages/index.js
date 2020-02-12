@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 
 import heroLeft from "../resources/hero-left.png";
 import heroRight from "../resources/hero-right.png";
+import heroTablet from "../resources/hero-bg-tablet.png";
 
 import icoUser1 from "../resources/ico-user-level-1.svg";
 import icoUser2 from "../resources/ico-user-level-2.svg";
@@ -142,6 +143,9 @@ class IndexPage extends React.Component {
 							<div className="hero page-subtitle">
 								Gain on-chain exposure to any asset class
 							</div>
+						</div>
+						<div className="hero-tablet">
+							<img src={heroTablet}></img>
 						</div>
 					</section>
 					<section className="section synth-section pb-60 pt-30">

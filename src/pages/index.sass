@@ -45,6 +45,9 @@
       position: relative
       top: 200px
 
+    .hero-tablet 
+      display: none
+
     @media (min-width: 1800px)
 
       .page-title
@@ -504,9 +507,19 @@
 
 
   @media (max-width: 786px)
+    .hero-section
+      .title-container
+        height: 360px
 
-    .hero-bg
-      margin-top: 64px
+      .hero-bg
+        display: none
+
+      .hero-tablet
+        display: unset
+      
+    .synth-section
+      .section-desc
+        max-width: 90vw
 
     .exchange-section
       .exchange-columns 
@@ -550,15 +563,15 @@
 
       .sub-inputs
         display: block
-        max-width: 90vw
+        max-width: 80vw
 
         .input-field
-          width: 100%
+          width: 80vw
           margin: auto
         
         .input-button
           .subscribe-button
-            width: 100%
+            width: 80vw
             margin: 16px auto
 
   @media (max-width: 670px)

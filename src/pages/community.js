@@ -159,7 +159,7 @@ class CommunityPage extends React.Component {
 													onChange={this.handleChange}
 												/>
 											</div>
-											<div className="lh-1">
+											<div className="lh-1 input-button">
 												<button className="purple-button subscribe-button">
 													Subscribe
 												</button>
