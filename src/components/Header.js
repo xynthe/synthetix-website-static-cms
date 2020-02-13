@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql, Link, StaticQuery } from "gatsby";
 import Logo from "../resources/logo-synthetix.svg";
 import cx from "classnames";
@@ -12,6 +12,8 @@ export default class Header extends React.Component {
 	};
 
 	render() {
+		// const [NavOpened, setNameOpened] = useState(false);
+		// const navClassNames = navOpened ? "nav-links nav-active" : "nav-links";
 		const { isOpen, menuIsVisible } = this.state;
 		const { onMenuToggle } = this.props;
 		return (
@@ -59,12 +61,16 @@ export default class Header extends React.Component {
 								</div>
 								<div
 									onClick={() => {
+										// setNavOpened(!navOpened);
+
 										onMenuToggle(!menuIsVisible);
 										this.setState({ menuIsVisible: !menuIsVisible });
 									}}
 									className="menu-button"
 								>
-									X
+									<div class="bar1"></div>
+									<div class="bar2"></div>
+									<div class="bar3"></div>
 								</div>
 							</div>
 						</div>

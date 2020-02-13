@@ -72,7 +72,10 @@ nav
     left: 0
 
     &.nav__menu-visible
-      display: unset
+      display: block
+
+    &.nav__submenu
+      display: block !important
 
     .navbar .container
       margin: unset
@@ -83,7 +86,7 @@ nav
       margin-top: 16px
 
     .nav__submenu
-      display: block
+      display: block !important
       position: unset
       background-color: transparent
       box-shadow: none
@@ -91,12 +94,15 @@ nav
       height: auto
       padding: 0px
       margin: 16px auto 40px auto
-
       a
         color: #fff
-
       img
         display: none
+
+      .nav__menu-item:hover
+        .nav__submenu
+          display: block !important
+          justify-content: unset
 
     .nav__submenu-item
       padding: unset
