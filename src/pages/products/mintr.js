@@ -7,7 +7,7 @@ import mintrLogo from "../../resources/products/mintr.svg";
 import mintrButton from "../../resources/products/mintr-button.svg";
 import joinDiscordButton from "../../resources/products/join-discord.svg";
 import collatRatio from "../../resources/collat-ratio.svg";
-import collatRatioMobile from "../../resources/collat-ratio-mobile.png";
+import collatRatioMobile from "../../resources/collat-ratio-mobile.svg";
 import stepOne from "../../resources/1.svg";
 import stepTwo from "../../resources/2.svg";
 import stepThree from "../../resources/3.svg";
