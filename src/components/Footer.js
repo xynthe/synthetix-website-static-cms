@@ -13,7 +13,7 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 		<section className="section ph-20 pv-0">
 			<div className="container footer-container">
 				<div className="columns justify-content--space-between footer-rows">
-					<div className="columns">
+					<div className="columns footer-columns">
 						<div className="column has-text-centered-mobile">
 							<ul className="links">
 								<a className="footer-item site-title" href="/">

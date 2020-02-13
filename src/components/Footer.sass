@@ -149,5 +149,34 @@ footer
     max-width: unset
     margin: 40px
 
+    .columns
+      justify-content: space-between
+
+      .column
+        flex-basis: unset
+        flex-grow: unset
+        flex-shrink: unset
+
+@media (max-width: 950px)
+
+  footer
+    .footer-container
+      .footer-columns
+        display: block
+        text-align: center
+
+        .last-column
+          margin: 24px auto 0 auto
+          display: block
+          text-align: center
+
+          .media-links
+            text-align: center
+            a
+              padding: 8px
+
+    .logo-box
+      margin-top: 100px
+
 
 
