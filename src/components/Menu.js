@@ -9,23 +9,13 @@ const numCompare = function(a, b) {
 };
 
 class Menu extends React.Component {
-	state = {
-		menuIsVisible: false
-	};
-
-	toggleVisible = () => {
-		this.setState({
-			menuIsVisible: !this.state.menuIsVisible
-		});
-	};
-
 	render() {
-		const { allMenuItems } = this.props;
+		const { allMenuItems, isVisible } = this.props;
 		let topMenuItems = allMenuItems.filter(el => !el.parentMenu).sort(numCompare);
 
 		return (
 			<nav className="nav">
-				<ul className="nav__menu">
+				<ul className={`nav__menu ${isVisible ? "nav__menu-visible" : ""}`}>
 					{topMenuItems.map(topMenuItem => {
 						const subMenuItems = allMenuItems
 							.filter(el2 => el2.parentMenu === topMenuItem.key)
@@ -40,7 +30,7 @@ class Menu extends React.Component {
 							</li>
 						);
 					})}
-					<div className="trade-mobile">
+					<li className="trade-mobile">
 						<a
 							className="trade-mobile-button"
 							href="https://beta.synthetix.exchange/"
@@ -48,7 +38,7 @@ class Menu extends React.Component {
 						>
 							TRADE NOW
 						</a>
-					</div>
+					</li>
 				</ul>
 			</nav>
 		);

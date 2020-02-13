@@ -7,73 +7,72 @@
   font-weight: 500
   font-size: 20px
   letter-spacing: 0.5px
-  width: 100vw
-  height: auto
-  position: absolute
-  left: 0
-  text-align: left
   padding: 16px 24px
+  text-align: left
 
   .trade-mobile-button
     color: #fff
     padding: 0
-    
-  +mobile 
-    display: unset
-  
-.nav__submenu 
+
+  +mobile
+    display: block
+
+.nav__submenu
   display: none
   transition: 0.2s ease-in all
 
-.nav__menu-item:hover 
-  .nav__submenu 
+.nav__menu-item:hover
+  .nav__submenu
     display: flex
     justify-content: center
-  
+
 $submenu-width: 100vw
 
-html 
+html
   box-sizing: border-box
 
-*, *:before, *:after 
+*, *:before, *:after
   box-sizing: border-box
 
-.menu-container 
+.menu-container
   text-align: center
 
-nav 
-  ul 
+nav
+  ul
     list-style: none
     padding-left: 0
     margin-top: 0
     margin-bottom: 0
 
-// .nav 
+// .nav
 //   display: inline-block
 //   margin: 8px auto 0 auto
 //   background: #090818
 //   color: #fff
 //   text-align: center
 //   text-transform: uppercase
-  
-//   .nav a 
+
+//   .nav a
 //     display: block
 //     padding: 0 16px
 //     line-height: inherit
 //     cursor: pointer
-  
-.nav__menu 
+
+.nav__menu
   line-height: 45px
   font-weight: 700
 
   +mobile
-    // display: block triggers mobile menu to be shown 
+    // display: block triggers mobile menu to be shown
     display: none
     background-color: #14131E
     height: auto
     width: 100vw
     position: absolute
     left: 0
+
+    &.nav__menu-visible
+      display: unset
 
     .navbar .container
       margin: unset
@@ -83,7 +82,7 @@ nav
       text-align: left
       margin-top: 16px
 
-    .nav__submenu 
+    .nav__submenu
       display: block
       position: unset
       background-color: transparent
@@ -96,7 +95,7 @@ nav
       a
         color: #fff
 
-      img 
+      img
         display: none
 
     .nav__submenu-item
@@ -106,19 +105,19 @@ nav
     .navbar .nav a
       padding: 16px 16px 4px 16px
 
-  
+
 .nav__menu-item
   font-size: 18px
-  margin: 0 16px
+  padding: 0 16px
   display: inline-block
   cursor: pointer
 
-  a 
+  a
     color: #9492C4
 
-  +tablet 
+  +tablet
     font-size: 16px
- 
+
   .nav__menu-item-wrapper
     position: relative
 
@@ -130,13 +129,13 @@ nav
         left: -10px
         right: -10px
         // background-color: red
-  &:hover 
+  &:hover
     color: #fff
 
-    .nav__submenu 
+    .nav__submenu
       display: flex
 
-.nav__submenu 
+.nav__submenu
   font-weight: 300
   text-transform: none
   display: none
@@ -150,11 +149,11 @@ nav
   left: 0
   box-shadow: rgba(9, 8, 24, 0.64) 0px 10px 20px 0px
   margin-top: 22px
-    
-.nav__submenu-item 
+
+.nav__submenu-item
   padding: 0 40px
 
-  a 
+  a
     font-size: 16px
     text-transform: none
     font-weight: 400

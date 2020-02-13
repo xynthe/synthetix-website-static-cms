@@ -7,11 +7,13 @@ import "./Header.sass";
 
 export default class Header extends React.Component {
 	state = {
-		isOpen: false
+		isOpen: false,
+		menuIsVisible: false
 	};
 
 	render() {
-		const { isOpen } = this.state;
+		const { isOpen, menuIsVisible } = this.state;
+		const { onMenuToggle } = this.props;
 		return (
 			<StaticQuery
 				query={graphql`
@@ -45,7 +47,7 @@ export default class Header extends React.Component {
 								<a className="navbar-item site-title" href="/">
 									<img src={Logo} alt="Synthetix" />
 								</a>
-								<Menu allMenuItems={allMenuItems}></Menu>
+								<Menu allMenuItems={allMenuItems} isVisible={menuIsVisible}></Menu>
 								<div className="navbar-trade">
 									<a
 										className="trade-button"
@@ -55,7 +57,15 @@ export default class Header extends React.Component {
 										Trade now
 									</a>
 								</div>
-								<div className="menu-button">X</div>
+								<div
+									onClick={() => {
+										onMenuToggle(!menuIsVisible);
+										this.setState({ menuIsVisible: !menuIsVisible });
+									}}
+									className="menu-button"
+								>
+									X
+								</div>
 							</div>
 						</div>
 						// <nav className="navbar" role="navigation" aria-label="main navigation">
