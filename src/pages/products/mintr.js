@@ -7,6 +7,7 @@ import mintrLogo from "../../resources/products/mintr.svg";
 import mintrButton from "../../resources/products/mintr-button.svg";
 import joinDiscordButton from "../../resources/products/join-discord.svg";
 import collatRatio from "../../resources/collat-ratio.svg";
+import collatRatioMobile from "../../resources/collat-ratio-mobile.png";
 import stepOne from "../../resources/1.svg";
 import stepTwo from "../../resources/2.svg";
 import stepThree from "../../resources/3.svg";
@@ -95,7 +96,8 @@ const MintrPage = props => {
 							Minting Synths and the Collateralisation Ratio
 						</div>
 						<div className="section-image">
-							<img src={collatRatio}></img>
+							<img className="image-desktop" src={collatRatio}></img>
+							<img className="image-mobile" src={collatRatioMobile}></img>
 						</div>
 						<div className="section-desc is-white sp4">
 							Synthetix allows synthetic assets (Synths) to be minted against the

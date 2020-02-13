@@ -115,6 +115,9 @@
     .section-title
       width: auto
       font-size: 48px
+
+    .image-mobile
+      display: none
     
     .section-image 
       width: 60%
@@ -222,7 +225,13 @@
     .product-desc
       width: 80vw
 
-    .collat-ratio
+    .section.collat-ratio
+      .image-mobile
+        display: block
+
+      .image-desktop
+        display: none
+
       .sp4
         font-size: 18px
         line-height: 1.5
@@ -233,8 +242,27 @@
     .header-section 
       height: 300px
 
-    .collat-ratio
+    .section.mintr-about
+      .product-desc
+        font-size: 24px
+
+    .section.how-it-works
+      margin-bottom: 0px
       .section-title
+        font-size: 48px
+      .steps
+        .column
+          width: auto
+
+    p.subtitle
+      color: #fff
+      font-weight: 500
+      font-size: 22px
+
+    .section.collat-ratio
+      margin: auto
+      .section-title
+        font-size: 40px
         overflow-wrap: break-word
         word-wrap: break-word
         -ms-hyphens: auto

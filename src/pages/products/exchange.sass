@@ -178,39 +178,61 @@
     @include font-size(56)
 
 
-  @media (max-width: 768px)
-    .header-section
-      height: 400px
+@media (max-width: 768px)
+    .exchange-page
+      .header-section
+        height: 400px
 
-      .product-logo
-        width: 80%
+        .product-logo
+          width: 80%
 
-    .column
-      margin: auto
-
-    .section-image
-      width: 90vw
-
-    .section.how-it-works
-      .steps
-        display: block
       .column
-        width: auto
-      .p1 
-        max-width: 400px
+        margin: auto
 
-    .discord-button
-      margin: 40px auto
+      .section-image
+        width: 90vw
 
-  @media (max-width: 450px)
-    .header-section
-      height: 300px
+      .section.how-it-works
+        .steps
+          display: block
+          .column
+            max-width: unset
+            width: auto
+          .p1 
+            max-width: 400px
 
-    .exchange-columns
-      margin: auto
+      .discord-button
+        margin: 40px auto
 
-    .section.exchange-faq
-      margin: 0px
+@media (max-width: 450px)
+    .exchange-page
+      .header-section
+        height: 300px
+
+      .section.exchange-about
+        .product-desc
+          font-size: 24px
+          margin: 64px auto
+
+        .exchange-columns
+          margin: auto
+
+      .section.how-it-works
+        .section-title
+          font-size: 48px
+
+      .section.exchange-faq
+        margin: 0px
+
+        .section-title
+          font-size: 48px
+          margin-bottom: 24px
+
+        p
+          font-size: 18px
+
+        p.subtitle
+          font-size: 16px
 
   
 
