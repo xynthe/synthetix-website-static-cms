@@ -243,7 +243,7 @@ class IndexPage extends React.Component {
 									</div>
 									<div className="p1">Litepaper</div>
 									<a
-										className="purple-button centered"
+										className="learn-button centered"
 										href="/litepaper"
 										target="_blank"
 									>
@@ -263,7 +263,7 @@ class IndexPage extends React.Component {
 									</div>
 									<div className="p1">Community</div>
 									<a
-										className="purple-button centered"
+										className="learn-button centered"
 										href="https://synthetix.community/docs/intro"
 										target="_blank"
 									>
