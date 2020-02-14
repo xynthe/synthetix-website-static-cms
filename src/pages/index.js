@@ -264,13 +264,33 @@ class IndexPage extends React.Component {
 									<div className="p1">Community</div>
 									<a
 										className="purple-button centered"
+										href="https://synthetix.community/docs/intro"
+										target="_blank"
+									>
+										Visit the docs
+									</a>
+								</a>
+								{/* <a
+									className="column learn-community"
+									href={"https://synthetix.community/docs/intro"}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<div className="c-img">
+										<div className="icon-img">
+											<img src={community}></img>
+										</div>
+									</div>
+									<div className="p1">Community</div>
+									<a
+										className="purple-button centered"
 										to="https://synthetix.community/docs/intro"
 										target="_blank"
 										rel="noopener noreferrer"
 									>
 										Visit the docs
 									</a>
-								</a>
+								</a> */}
 							</div>
 						</section>
 						<section className="product-section section is-padded">
