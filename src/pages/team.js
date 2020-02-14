@@ -17,15 +17,12 @@ const TeamPage = ({ data }) => {
 			<div className="team-page">
 				<section className="header-section">
 					<div className="container">
-						<h1 className="page-title">
-							A multidisciplinary team with proven ability to deliver complex
-							solutions
-						</h1>
+						<h1 className="page-title">The Synthetix Team</h1>
 					</div>
 				</section>
 				<section className="section team-members">
 					<div className="container team-container">
-						<div className="columns is-multiline">
+						<div className="columns is-multiline team-bios">
 							{teamMembers.map(el => (
 								<TeamMember
 									name={el.fullName}

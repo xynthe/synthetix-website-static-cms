@@ -14,9 +14,7 @@ const TokensPage = ({ data }) => {
 			<div className="tokens-page">
 				<section className="section header-section">
 					<div className="container">
-						<h1 className="page-title">
-							Contract information about the tokens within the Synthetix Network
-						</h1>
+						<h1 className="page-title">Token information</h1>
 					</div>
 				</section>
 				<section className="section is-white minting-synths">

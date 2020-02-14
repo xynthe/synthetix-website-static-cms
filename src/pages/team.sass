@@ -14,10 +14,7 @@
     padding: 8rem
 
   .team-container
-    max-width: 1400px
-
-    @media (max-width: 1300px)
-      max-width: 1000px
+    max-width: 1200px
 
   .gallery-section
     background-color: #fff
@@ -79,6 +76,10 @@
       +tablet
         width: 680px
 
+  @media (max-width: 1300px)
+    .team-container
+      max-width: unset
+      width: 100%
 
   @media (max-width: 1081px)
     .header-section
@@ -93,6 +94,12 @@
 
       .page-title
         width: auto
+
+      .team-bios
+        justify-content: space-between
+
+        .column
+          margin: 20px
 
   @media (max-width: 550px)
 

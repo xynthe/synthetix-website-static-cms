@@ -138,11 +138,9 @@ class IndexPage extends React.Component {
 						</div>
 						<div className="title-container">
 							<h1 className="hero page-title">
-								A protocol for issuing and trading synthetic assets on Ethereum
+								A protocol for trading synthetic assets on Ethereum
 							</h1>
-							<div className="hero page-subtitle">
-								Gain on-chain exposure to any asset class
-							</div>
+							<div className="hero page-subtitle">On-chain exposure to any asset</div>
 						</div>
 						<div className="hero-tablet">
 							<img src={heroTablet}></img>
