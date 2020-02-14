@@ -1,8 +1,9 @@
 {
-  "title": "Dashboard",
-  "key": "dashboard",
-  "link": "https://dashboard.synthetix.io/",
-  "isExt": true,
-  "order": 3,
-  "parentMenu": "products"
+	"title": "Dashboard",
+	"key": "dashboard",
+	"link": "https://dashboard.synthetix.io/",
+	"isExt": true,
+	"order": 3,
+	"parentMenu": "products",
+	"icon": "menu-dash"
 }

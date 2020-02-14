@@ -1,8 +1,9 @@
 {
-  "title": "Contracts",
-  "key": "contracts",
-  "link": "https://developer.synthetix.io/api/docs/deployed-contracts.html",
-  "isExt": true,
-  "order": 3,
-  "parentMenu": "developers"
+	"title": "Contracts",
+	"key": "contracts",
+	"link": "https://developer.synthetix.io/api/docs/deployed-contracts.html",
+	"isExt": true,
+	"order": 3,
+	"parentMenu": "developers",
+	"icon": "menu-contracts"
 }

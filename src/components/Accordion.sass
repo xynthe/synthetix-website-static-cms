@@ -1,0 +1,78 @@
+/* accordion section */
+.accordion__section 
+  display: flex
+  flex-direction: column
+
+.no-select
+    -webkit-tap-highlight-color: transparent
+
+/* buttons used to open and close the accordion panel */
+.accordion 
+  width: 100%
+  background-color: #1e1a31
+  color: #fff
+  cursor: pointer
+  padding: 40px
+  border: none
+  border-radius: 5px
+  outline: none
+  transition: all 0.3s ease
+  margin: 8px auto
+
+
+.accordion-top
+    display: flex
+    justify-content: space-between
+    width: 100%
+    margin-bottom: 12px
+
+
+/* background color for button if clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover,
+.active 
+  background-color: #1e1a31
+
+
+/*accordion content title */
+.accordion-title 
+  font-weight: 500
+  font-size: 14px
+  color: #fff
+  width: 90%
+
+
+/* accordion chevron icon */
+.accordion-icon 
+  margin-left: auto
+  transition: transform 0.2s ease
+
+
+/* rotate icon when state is active */
+.rotate 
+  transform: rotate(90deg)
+
+
+/* accordion content panel. Note: hidden by default */
+.accordion-content 
+  background-color: #1e1a31
+  overflow: hidden
+  transition: max-height 0.3s ease
+  text-align: left
+  width: 90%
+
+
+/* accordion content text */
+.accordion-text 
+  font-weight: 400
+  font-size: 22px
+  color: #CACAF1
+
+@media (max-width: 450px)
+  .accordion
+    padding: 32px 24px 24px 24px
+
+  .accordion-text
+    font-size: 18px
+    line-height: 1.5
+  
+

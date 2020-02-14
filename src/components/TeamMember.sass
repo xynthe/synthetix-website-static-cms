@@ -1,10 +1,10 @@
 @import "../styles/bulma/utilities/_all"
 
 .team-member-box
-  +tablet
-    flex-basis: 250px
-    flex-grow: 0
-    flex-shrink: 0
+  flex-basis: 340px
+  margin: 32px auto
+  flex-grow: 0
+  flex-shrink: 0
 
   .tm-img
     height: 125px
@@ -14,12 +14,10 @@
     background-size: cover
     background-position: center center
     margin-bottom: 40px
-    margin-left: auto
-    margin-right: auto
+    align-items: left
 
   .tm-name
     color: #25244B
-    font-family: Aeonik
     font-size: 22px
     font-weight: 500
     letter-spacing: -0.46px
@@ -28,17 +26,34 @@
 
   .tm-title
     color: #5641F2
-    font-family: Aeonik
     font-size: 16px
+    font-weight: 500
     letter-spacing: -0.19px
     line-height: 26px
     margin-bottom: 10px
 
   .tm-bio
     color: #6F6DA0
-    font-family: Aeonik
     font-size: 16px
     letter-spacing: -0.19px
     line-height: 26px
     padding-bottom: 10px
 
+@media (max-width: 1300px)
+  .team-member-box
+    flex-basis: 300px
+    margin: 32px auto
+
+@media (max-width: 1200px)
+  .team-member-box
+    margin: 20px
+    flex-basis: 45%
+
+@media (max-width: 936px)
+
+  .team-container
+    margin-bottom: 48px
+
+  .team-member-box
+    flex-basis: 40%
+    margin: 20px

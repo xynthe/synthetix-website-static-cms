@@ -3,19 +3,27 @@ import { graphql, Link, withPrefix } from "gatsby";
 import "./index.sass";
 import Layout from "../components/layout";
 
+import heroLeft from "../resources/hero-left.png";
+import heroRight from "../resources/hero-right.png";
+import heroTablet from "../resources/hero-bg-tablet.png";
+
 import icoUser1 from "../resources/ico-user-level-1.svg";
 import icoUser2 from "../resources/ico-user-level-2.svg";
 import icoUser3 from "../resources/ico-user-level-3.svg";
 import icoUser4 from "../resources/ico-user-level-4.svg";
-import icoTriangle from "../resources/ico-triangle.svg";
-import icoShield from "../resources/ico-shield.svg";
-import icoEye from "../resources/ico-eye.svg";
-import icoHandout from "../resources/homepage-handout.svg";
-import icoLock from "../resources/homepage-lock.svg";
-import icoContract from "../resources/contract.svg";
-import icoLiquidity from "../resources/liquidity.svg";
-import icoCollateral from "../resources/collateral.svg";
 import exchangeLogo from "../resources/exchange-logo.svg";
+import exchange from "../resources/exchange.png";
+
+import synthCrypto from "../resources/synth-crypto.svg";
+import synthCommodity from "../resources/synth-commodity.svg";
+import synthFiat from "../resources/synth-fiat.svg";
+import synthIndex from "../resources/synth-index.svg";
+import synthInverse from "../resources/synth-inverse.svg";
+import sxLiquidity from "../resources/sx-liquidity.svg";
+import sxContract from "../resources/sx-contract.svg";
+import sxDistributed from "../resources/sx-distributed.svg";
+import community from "../resources/learn-community.svg";
+import litepaper from "../resources/learn-litepaper.svg";
 
 import Modal from "../components/Modal";
 import Player from "@vimeo/player";
@@ -119,116 +127,93 @@ class IndexPage extends React.Component {
 					<meta name="description" content={metaDescription} />
 				</Helmet>
 				<div className="home-page">
-					<section className="section pb-30">
-						<div className="container">
-							<h1 className="page-title">
-								<UiImg
-									className="title-logo"
-									src={"/assets/synthetix-title.svg"}
-									alt="Synthetix"
-								/>
-							</h1>
-							<div className="page-subtitle">Decentralised synthetic assets</div>
-							<div className="has-text-centered pb-10">
-								<Link to="/products/exchange" className="is-button is-announcement">
-									<span>NEW</span>
-									<span>
-										Trade crypto, commodities, and forex on Synthetix.Exchange!
-									</span>
-								</Link>
+					<section className="section hero-section">
+						<div className="hero-bg">
+							<div className="hero-left">
+								<img src={heroLeft}></img>
 							</div>
+							<div className="hero-right">
+								<img src={heroRight}></img>
+							</div>
+						</div>
+						<div className="title-container">
+							<h1 className="hero page-title">
+								A protocol for trading synthetic assets on Ethereum
+							</h1>
+							<div className="hero page-subtitle">On-chain exposure to any asset</div>
+						</div>
+						<div className="hero-tablet">
+							<img src={heroTablet}></img>
 						</div>
 					</section>
-					<section className="section currency-section pb-60 pt-30">
-						<div className="container wide">
-							<div className={`currency-box`}>
-								<div className="currency-title">Fiat currency stablecoins</div>
-
-								<div className="scroll-container">
-									<div className="assets-container">
-										{fiatCurrencies.map(c => (
-											<img src={withPrefix(`/img/${c}_blue.svg`)} />
-										))}
-									</div>
-								</div>
-								{/* <img src={arrow} className={`arrow`} /> */}
-							</div>
-							<div className="currency-box">
-								<div className="currency-title">
-									Cryptocurrencies (long & short)
-								</div>
-
-								<div className="scroll-container">
-									<div className="assets-container">
-										{cryptoCurrencies.map(c => (
-											<img src={withPrefix(`/img/${c}.svg`)} />
-										))}
-									</div>
-									<img src={arrow} className={`arrow`} />
-								</div>
-							</div>
-							<div className="currency-box">
-								<div className="currency-title">Commodities</div>
-								<div className="small-assets-container">
-									{commodities.map(c => (
-										<img src={withPrefix(`/img/${c}.svg`)} />
-									))}
-								</div>
-								<div className="currency-title">And coming soon:</div>
-								<div className="small-assets-container">
-									{comingSoon.map(c => (
-										<img src={withPrefix(`/img/${c}.svg`)} />
-									))}
-								</div>
-							</div>
-						</div>
-
-						<div className="section-title">Introducing Synths</div>
+					<section className="section synth-section pb-60 pt-30">
+						<div className="section-title is-white">Introducing Synths</div>
 						<div className="section-desc">
 							Synths are tokens that provide exposure to assets such as gold, Bitcoin,
 							U.S. Dollars, TESLA, and AAPL within the Ethereum blockchain.
+						</div>
+						<div className="section synth-categories">
+							<div className="synth-type">
+								<div className="synth-img">
+									<img src={synthCrypto}></img>
+								</div>
+								<div className="synth-p2">Crypto</div>
+							</div>
+							<div className="synth-type">
+								<div className="synth-img">
+									<img src={synthCommodity}></img>
+								</div>
+								<div className="synth-p2">Commodity</div>
+							</div>
+							<div className="synth-type">
+								<div className="synth-img">
+									<img src={synthFiat}></img>
+								</div>
+								<div className="synth-p2">Forex</div>
+							</div>
+							<div className="synth-type">
+								<div className="synth-img">
+									<img src={synthIndex}></img>
+								</div>
+								<div className="synth-p2">Index</div>
+							</div>
+							<div className="synth-type">
+								<div className="synth-img">
+									<img src={synthInverse}></img>
+								</div>
+								<div className="synth-p2">Inverse</div>
+							</div>
 						</div>
 						<Link to="/tokens" className="view-synths-button">
 							View Synths
 						</Link>
 					</section>
 					<section className="section exchange-section">
+						<div className="section-desc">TRADE SYNTHS ON THE</div>
 						<div className="section-title">
 							<img className="exchange-logo" src={exchangeLogo} />
 						</div>
-						<div className="section-desc pb-70">
-							A decentralised trading platform dApp
+						<div className="section-image">
+							<img className="screenshot" src={exchange}></img>
 						</div>
 						<div className="columns is-centered exchange-columns">
 							<div className="column">
-								<div className="c-img">
-									<img src={icoLiquidity} alt="Stable" />
+								<div className="icon-img">
+									<img src={sxLiquidity}></img>
 								</div>
-								<div className="p1">Infinite Liquidity</div>
-								<div className="p2">
-									Over 20 different Synths are available without liquidity
-									limitations.
-								</div>
+								<div className="p1">Infinite liquidity</div>
 							</div>
 							<div className="column">
-								<div className="c-img">
-									<img src={icoContract} alt="Stable" />
+								<div className="icon-img">
+									<img src={sxContract}></img>
 								</div>
-								<div className="p1">P2C (peer-to-contract) trading</div>
-								<div className="p2">
-									Trades are executed quickly and easily, all without an
-									orderbook.
-								</div>
+								<div className="p1">Peer-to-contract trading</div>
 							</div>
 							<div className="column">
-								<div className="c-img">
-									<img src={icoCollateral} alt="Stable" />
+								<div className="icon-img">
+									<img src={sxDistributed}></img>
 								</div>
-								<div className="p1">Distributed Collateral Pool</div>
-								<div className="p2">
-									A distributed pool of token holders are responsible for
-									providing collateral and maintaining stability.
-								</div>
+								<div className="p1">Distributed collateral pool</div>
 							</div>
 						</div>
 						<a
@@ -236,134 +221,178 @@ class IndexPage extends React.Component {
 							href="https://synthetix.exchange"
 							target="_blank"
 						>
-							Take me there
+							Learn more
 						</a>
 					</section>
-					<section className="section is-white is-padded pb-110">
-						<div className="section-title is-large w-auto fs-56 bold">
-							Get rewarded for contributing to the system
-						</div>
-						<div className="section-desc pb-70">
-							Become a part of the Synthetix Network today.
-						</div>
-						<div className="columns is-centered get-rewarded-columns">
-							<div className="column">
-								<div className="c-img">
-									<img src={icoLock} alt="Stable" />
-								</div>
-								<div className="p1">Receive SNX in exchange for staking</div>
+					<div className="background-gradient">
+						<section className="section learn-section">
+							<div className="section-title is-large w-auto fs-56">
+								Learn more about the Synthetix protocol
+							</div>
+							<div className="columns is-centered learn-columns">
 								<a
-									className="button"
-									href="https://www.synthetix.io/stakingrewards"
+									className="column learn-litepaper"
+									href={"/litepaper"}
 									target="_blank"
+									rel="noopener noreferrer"
 								>
-									Learn More
+									<div className="c-img">
+										<div className="icon-img">
+											<img src={litepaper}></img>
+										</div>
+									</div>
+									<div className="p1">Litepaper</div>
+									<div
+										className="learn-button centered"
+										href="/litepaper"
+										target="_blank"
+									>
+										Read it now
+									</div>
+								</a>
+								<a
+									className="column learn-community"
+									href={"https://synthetix.community/docs/intro"}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<div className="c-img">
+										<div className="icon-img">
+											<img src={community}></img>
+										</div>
+									</div>
+									<div className="p1">Community</div>
+									<div
+										className="learn-button centered"
+										href="https://synthetix.community/docs/intro"
+										target="_blank"
+									>
+										Visit the docs
+									</div>
+								</a>
+								{/* <a
+									className="column learn-community"
+									href={"https://synthetix.community/docs/intro"}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<div className="c-img">
+										<div className="icon-img">
+											<img src={community}></img>
+										</div>
+									</div>
+									<div className="p1">Community</div>
+									<a
+										className="purple-button centered"
+										to="https://synthetix.community/docs/intro"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Visit the docs
+									</a>
+								</a> */}
+							</div>
+						</section>
+						<section className="product-section section is-padded">
+							<div className="section-title is-white is-large w-auto fs-48 pb-60">
+								State of the art dApps to interact with Synthetix
+							</div>
+							<div className="columns is-centered product-boxes">
+								<a
+									className="product-column"
+									href={synthetixExchangeUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<div className="c-top">TRADING:</div>
+									<div className="c-mid">
+										<img src={icoUser4} alt="Synthetix.Exchange" />
+									</div>
+									<div className="c-bottom">
+										<div className="p2">EXCHANGE</div>
+										<div className="beta-badge"></div>
+										<div className="p3">
+											Exchange Synths without a counterparty
+										</div>
+									</div>
+								</a>
+								<a
+									className="product-column"
+									href={mintrUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<div className="c-top">STAKING:</div>
+									<div className="c-mid">
+										<img src={icoUser3} alt="For experienced users" />
+									</div>
+									<div className="c-bottom">
+										<div className="p2">MINTR</div>
+										<div className="p3">
+											Lock SNX to mint Synths and collect fees
+										</div>
+									</div>
+								</a>
+								<a
+									className="product-column"
+									href={dashboardUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<div className="c-top">ANALYSIS:</div>
+									<div className="c-mid">
+										<img src={icoUser2} alt="For new and experienced users" />
+									</div>
+									<div className="c-bottom">
+										<div className="p2">DASHBOARD</div>
+										<div className="p3">
+											An overview of the Synthetix network
+										</div>
+									</div>
 								</a>
 							</div>
-							<div className="column">
-								<div className="c-img">
-									<img src={icoHandout} alt="Stable" />
-								</div>
-								<div className="p1">Receive exchange fees for staking</div>
-								<Link className="button" to="/how-it-works">
-									Learn More
-								</Link>
-							</div>
-						</div>
-					</section>
-					<section className="section is-padded pb-110">
-						<div className="section-title is-white is-large w-auto fs-56 bold">
-							Meet our products
-						</div>
-						<div className="section-desc pb-70">
-							Here are the dApps and tools for SNX holders and Synth users
-						</div>
-						<div className="columns is-centered get-rewarded-boxes">
-							<a
-								className="column"
-								href={synthetixExchangeUrl}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<div className="c-top">
-									<img src={icoUser4} alt="Synthetix.Exchange" />
-								</div>
-								<div className="c-bottom">
-									<div className="p2">Synthetix.Exchange</div>
-									<div className="beta-badge"></div>
-									<div className="p3">Exchange Synths without a counterparty</div>
-								</div>
-							</a>
-							<a
-								className="column"
-								href={mintrUrl}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<div className="c-top">
-									<img src={icoUser3} alt="For experienced users" />
-								</div>
-								<div className="c-bottom">
-									<div className="p2">Mintr</div>
-									<div className="p3">
-										Lock SNX to mint Synths and collect fees
-									</div>
-								</div>
-							</a>
-							<a
-								className="column"
-								href={dashboardUrl}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<div className="c-top">
-									<img src={icoUser2} alt="For new and experienced users" />
-								</div>
-								<div className="c-bottom">
-									<div className="p2">Dashboard</div>
-									<div className="p3">An overview of the Synthetix network</div>
-								</div>
-							</a>
-						</div>
-					</section>
-					<section className="section subscribe-section is-padded">
-						<div className="container">
-							{!showThanks ? (
-								<Fragment>
-									<div className="section-title fs-36 pb-40">
-										Subscribe to the Synthetix Mailing List
-									</div>
-									<form
-										name="mailing-list"
-										method="post"
-										data-netlify="true"
-										data-netlify-honeypot="bot-field"
-										onSubmit={this.submitEmail}
-									>
-										<div className="columns sub-inputs">
-											<div className="column is-narrow lh-1">
-												<input type="hidden" name="bot-field" />
-												<input
-													name="emailAddress"
-													type="email"
-													className="input"
-													placeholder="Enter your Email Address"
-													value={emailAddress}
-													onChange={this.handleChange}
-													onInvalid={this.onInvalid}
-												/>
-											</div>
-											<div className="column is-narrow lh-1">
-												<button className="is-button ">Subscribe</button>
-											</div>
+						</section>
+						<section className="section subscribe-section is-padded">
+							<div className="container">
+								{!showThanks ? (
+									<Fragment>
+										<div className="section-title is-white fs-36 pb-40">
+											Subscribe to the Synthetix Mailing List
 										</div>
-									</form>
-								</Fragment>
-							) : (
-								<div className="sub-title pb-30">Thanks for Subscribing!</div>
-							)}
-						</div>
-					</section>
+										<form
+											name="mailing-list"
+											method="post"
+											data-netlify="true"
+											data-netlify-honeypot="bot-field"
+											onSubmit={this.submitEmail}
+										>
+											<div className="sub-inputs">
+												<div className="lh-1 input-field">
+													<input type="hidden" name="bot-field" />
+													<input
+														name="emailAddress"
+														type="email"
+														className="input"
+														placeholder="Enter your Email Address"
+														value={emailAddress}
+														onChange={this.handleChange}
+														onInvalid={this.onInvalid}
+													/>
+												</div>
+												<div className="lh-1 input-button">
+													<button className="purple-button subscribe-button">
+														Subscribe
+													</button>
+												</div>
+											</div>
+										</form>
+									</Fragment>
+								) : (
+									<div className="sub-title pb-30">Thanks for Subscribing!</div>
+								)}
+							</div>
+						</section>
+					</div>
 				</div>
 				<Modal
 					isOpen={isOpen}

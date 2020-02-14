@@ -1,0 +1,139 @@
+@import "../styles/bulma/utilities/_all"
+
+.menu-button
+  cursor: pointer
+  display: none
+
+  .bar1, .bar2, .bar3 
+    width: 24px
+    height: 2px
+    background-color: #ffffff
+    margin: 6px 0
+    transition: 0.2s
+
+  &.menu-opened 
+    .bar1
+      transform: rotate(45deg) translate(4px, 5px)
+
+    .bar2
+      opacity: 0
+
+    .bar3
+      transform: rotate(-45deg) translate(6px, -8px)
+
+  +mobile 
+    display: unset
+    position: absolute
+    top: 22px
+    right: 32px
+
+.navbar-trade
+  +mobile
+    display: none
+
+.navbar
+  border-bottom: 1px solid #262439
+  padding: 20px
+  +mobile
+    height: 80px
+  
+$submenu-width: 100vw
+
+html 
+  box-sizing: border-box
+
+*, *:before, *:after 
+  box-sizing: border-box
+
+.menu-container 
+  text-align: center
+
+nav 
+  ul 
+    list-style: none
+    padding-left: 0
+    margin-top: 0
+    margin-bottom: 0
+
+.nav 
+  display: inline-block
+  margin: auto
+  background: #090818
+  color: #D1D1E8
+  text-align: center
+  text-transform: uppercase
+  
+  a 
+    display: block
+    padding: 0 16px
+    line-height: inherit
+    cursor: pointer
+    font-size: 20px
+  
+.nav__menu 
+  line-height: 45px
+  font-weight: 700
+  
+.nav__menu-item 
+  display: inline-block
+  cursor: pointer
+
+  &:hover 
+    color: #fff
+    
+.nav__submenu 
+  font-weight: 300
+  text-transform: none
+  display: none
+  position: absolute
+  // transform: translateX(-50%)
+  width: $submenu-width
+  height: 160px
+  background-color: #14131E
+  border-bottom: 1px solid #090818
+  align-items: center
+  left: 0
+  box-shadow: rgba(9, 8, 24, 0.64) 0px 10px 20px 0px
+  margin-top: 22px
+    
+.nav__submenu-item 
+  padding: 0 64px
+
+.menu-img
+  margin-bottom: -8px
+
+.navbar-trade
+  width: 140px
+  align-self: center
+
+.trade-button
+    font-size: 20px
+    letter-spacing: 1px
+
+@media (max-width: 1470px)
+
+  .navbar
+    .container
+      max-width: 100vw
+      margin: 0 40px
+
+    .nav a
+      padding: 0 4px
+
+    .nav a, .trade-button
+      font-size: 16px
+
+    .site-title, .navbar-trade
+      width: 130px
+
+  +mobile
+
+    .navbar .container
+      margin: unset
+
+@media (max-width: 905px)
+
+  .navbar
+    .container
+      margin: 0px
+

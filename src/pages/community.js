@@ -65,13 +65,9 @@ class CommunityPage extends React.Component {
 					<section className="section header-section">
 						<div className="container">
 							<h1 className="page-title">Join our Community</h1>
-							<div className="page-subtitle">
-								Join the conversation with the rest of the Synthetix community, and
-								get updates on recent news and activity across the Synthetix Network.
-							</div>
 						</div>
 					</section>
-					<section className="section is-white is-padded">
+					<section className="section is-white is-padded main-content">
 						<div className="container">
 							<div className="s-title pb-40">
 								Discord is the primary destination for all things Synthetix.
@@ -90,11 +86,11 @@ class CommunityPage extends React.Component {
 									<div className="column is-narrow">
 										<img src={icoDiscord} alt="Discord" />
 									</div>
-									<div className="column">Join our Discord Server</div>
+									<div className="column join-text">Join our Discord Server</div>
 								</div>
 							</a>
 							<div className="has-text-centered pv-50">
-								or follow us on our other social channels for updates
+								or follow us on our other social channels for updates:
 							</div>
 							<div className="columns channels">
 								<a
@@ -150,8 +146,8 @@ class CommunityPage extends React.Component {
 										data-netlify-honeypot="bot-field"
 										onSubmit={this.submitEmail}
 									>
-										<div className="columns sub-inputs">
-											<div className="column is-narrow lh-1">
+										<div className="sub-inputs">
+											<div className="lh-1 input-field">
 												<input type="hidden" name="bot-field" />
 												<input
 													name="emailAddress"
@@ -163,8 +159,10 @@ class CommunityPage extends React.Component {
 													onChange={this.handleChange}
 												/>
 											</div>
-											<div className="column is-narrow lh-1">
-												<button className="is-button ">Subscribe</button>
+											<div className="lh-1 input-button">
+												<button className="purple-button subscribe-button">
+													Subscribe
+												</button>
 											</div>
 										</div>
 									</form>

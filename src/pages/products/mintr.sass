@@ -3,14 +3,14 @@
 @import "../../styles/functions"
 
 .mintr-page
-  .header-image
-    text-align: center
-    width: 524
-    height: 182
-    margin-bottom: 38px
 
-  .page-subtitle
-    max-width: 523px
+  .header-section
+    background: url(../../resources/mintr-hero.png) no-repeat
+    background-size: contain
+    background-position: center center
+    width: 100%
+    height: 100vh
+    max-height: 88vh
 
   .section-desc
     width: auto
@@ -19,11 +19,64 @@
       width: auto
 
   .section.mintr-about
-    .section-desc
-      max-width: 720px
+    .mintr-columns
+      max-width: 1130px
+      margin: 64px auto
 
-      +mobile
-        padding: 0 20px
+      .column
+        width: 320px
+        text-align: center
+
+        .p1
+          color: #FFFFFF
+          max-width: 300px
+          text-align: center
+          margin: 20px auto 0 auto
+          font-size: 24px
+          letter-spacing: 0.5px
+          font-weight: 500
+
+        .p2 
+          color: #CACAF1
+          font-size: 22px
+
+        .icon-img 
+          margin: 24px auto
+
+    .product-desc
+      color: #FFF
+      font-size: 32px
+      max-width: 1100px
+      margin: 32px auto 64px auto
+      text-align: center
+
+  .section.how-it-works
+    height: auto
+    margin-top: 120px
+    margin-bottom: 64px
+
+    .section-title
+      font-size: 64px
+
+    .steps
+      max-width: 1300px
+      margin: 32px auto 64px auto
+      display: flex
+
+      .column
+        width: 310px
+        text-align: center
+
+        .p1
+          color: #FFFFFF
+          max-width: 310px
+          text-align: center
+          margin: 20px auto 0 auto
+          font-size: 18px
+          letter-spacing: 0.5px
+
+        .number-img 
+          margin: 24px auto
 
     .mintr-button
 
@@ -55,17 +108,21 @@
           text-align: center
           line-height: 32px
 
-        .mintr-screenshot
-          display: flex
-          height: 100%
-          align-items: center
-
-
-  .section.minting-synths
+  .section.collat-ratio
+    .container
+      max-width: 1300px
 
     .section-title
       width: auto
+      font-size: 48px
 
+    .image-mobile
+      display: none
+    
+    .section-image 
+      width: 60%
+      max-width: 1400px
+      margin: 24px auto 64px auto
 
   .sp2
     color: #0A0817
@@ -84,7 +141,6 @@
       width: 580px
 
   .sp4
-    color: #6F6DA0
     line-height: 1.45em
     text-align: center
     @include font-size(22)
@@ -100,4 +156,129 @@
     line-height: 1.4em
     text-align: center
     @include font-size(56)
+
+  .discord-button
+      @extend %light-bg-hover
+      box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
+      max-width: 525px
+      max-height: auto
+
+      margin: 27px auto 0 auto
+      display: block
+
+      +mobile
+        margin: auto
+
+      img
+        display: block
+        max-width: auto
+
+  @media (max-width: 1024px) 
+    .mintr-about
+      margin: 0px 40px
+
+      .how-it-works
+        .p1
+          max-width: 280px
+
+    .collat-ratio
+      margin: 40px
+
+      .section-title
+        font-size: 40px
+
+  @media (max-width: 786px)
+    .header-section
+      height: 500px
+
+    .product-desc
+      padding: 0px
+
+    .mintr-columns
+      .column
+        margin: 32px auto
+
+    .section.how-it-works
+      .steps
+        display: block
+      .column
+        width: auto
+      .p1 
+        max-width: 400px
+
+    .section.collat-ratio
+      .section-image
+        width: 80vw
+
+    .number-box
+      width: 100%
+      margin: auto
+
+  @media (max-width: 600px)
+
+    .header-section
+      background: url(../../resources/mintr-hero-mobile.png) no-repeat
+      background-size: contain
+      background-position: center center
+      width: 90%
+      height: 300px
+      margin: 24px auto 0 auto
+
+    .section.mintr-about
+      margin: auto
+
+      .mintr-columns
+        margin: 0 auto 80px auto
+
+      .product-desc
+        width: 80vw
+
+    .section.collat-ratio
+      .image-mobile
+        display: block
+
+      .image-desktop
+        display: none
+
+      .sp4
+        font-size: 18px
+        line-height: 1.5
+        margin: auto
+  
+  @media (max-width: 450px)
+
+    .header-section 
+      height: 300px
+
+    .section.mintr-about
+      .product-desc
+        font-size: 24px
+
+    .section.how-it-works
+      margin-bottom: 0px
+      .section-title
+        font-size: 48px
+      .steps
+        .column
+          width: auto
+
+    p.subtitle
+      color: #fff
+      font-weight: 500
+      font-size: 22px
+
+    .section.collat-ratio
+      margin: auto
+      .section-title
+        font-size: 40px
+        overflow-wrap: break-word
+        word-wrap: break-word
+        -ms-hyphens: auto
+        -moz-hyphens: auto
+        -webkit-hyphens: auto
+        hyphens: auto
+
+      .section-image
+        width: 70vw
+
 

@@ -1,8 +1,9 @@
 {
-  "title": "Blog",
-  "key": "blog",
-  "link": "https://blog.synthetix.io/",
-  "isExt": true,
-  "order": 2,
-  "parentMenu": "learn"
+	"title": "Blog",
+	"key": "blog",
+	"link": "https://blog.synthetix.io/",
+	"isExt": true,
+	"order": 3,
+	"parentMenu": "learn",
+	"icon": "menu-blog"
 }
