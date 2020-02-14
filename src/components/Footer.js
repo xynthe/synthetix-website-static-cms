@@ -75,7 +75,7 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 								</li>
 								<li>
 									<a
-										href={"https://developer.synthetix.io/"}
+										href={"https://developer.synthetix.io/api/docs/home.html"}
 										target="_blank"
 										rel="noopener noreferrer"
 									>
