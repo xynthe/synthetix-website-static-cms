@@ -12,8 +12,6 @@ export default class Header extends React.Component {
 	};
 
 	render() {
-		// const [NavOpened, setNameOpened] = useState(false);
-		// const navClassNames = navOpened ? "nav-links nav-active" : "nav-links";
 		const { isOpen, menuIsVisible } = this.state;
 		const { onMenuToggle } = this.props;
 		return (
@@ -61,12 +59,10 @@ export default class Header extends React.Component {
 								</div>
 								<div
 									onClick={() => {
-										// setNavOpened(!navOpened);
-
 										onMenuToggle(!menuIsVisible);
 										this.setState({ menuIsVisible: !menuIsVisible });
 									}}
-									className="menu-button"
+									className={`menu-button ${menuIsVisible ? "menu-opened" : ""}`}
 								>
 									<div class="bar1"></div>
 									<div class="bar2"></div>

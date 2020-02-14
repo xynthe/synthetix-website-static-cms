@@ -11,14 +11,15 @@
     margin: 6px 0
     transition: 0.2s
 
-  .change .bar1
-    transform: rotate(-45deg) translate(-9px, 6px)
+  &.menu-opened 
+    .bar1
+      transform: rotate(45deg) translate(4px, 5px)
 
-  .change .bar2
-    opacity: 0
+    .bar2
+      opacity: 0
 
-  .change .bar3
-    transform: rotate(45deg) translate(-8px, 8px)
+    .bar3
+      transform: rotate(-45deg) translate(6px, -8px)
 
   +mobile 
     display: unset
