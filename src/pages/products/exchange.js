@@ -61,7 +61,7 @@ const ExchangePage = props => {
 					</section>
 					<a
 						className="purple-button centered"
-						href="https://synthetix.exchange"
+						href="https://beta.synthetix.exchange/"
 						target="_blank"
 					>
 						Visit the dApp
