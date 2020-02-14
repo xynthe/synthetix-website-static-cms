@@ -242,13 +242,13 @@ class IndexPage extends React.Component {
 										</div>
 									</div>
 									<div className="p1">Litepaper</div>
-									<a
+									<div
 										className="learn-button centered"
 										href="/litepaper"
 										target="_blank"
 									>
 										Read it now
-									</a>
+									</div>
 								</a>
 								<a
 									className="column learn-community"
@@ -262,13 +262,13 @@ class IndexPage extends React.Component {
 										</div>
 									</div>
 									<div className="p1">Community</div>
-									<a
+									<div
 										className="learn-button centered"
 										href="https://synthetix.community/docs/intro"
 										target="_blank"
 									>
 										Visit the docs
-									</a>
+									</div>
 								</a>
 								{/* <a
 									className="column learn-community"
