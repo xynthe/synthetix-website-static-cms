@@ -2,12 +2,28 @@
 @import "../styles/partials"
 
 .contact-us-page
-  .page-subtitle
-    +tablet
-      width: 550px
+  .header-section
+    height: 400px
+
+    h1
+      margin: 20px auto
+      transform: translateY(50%)
 
   .contacts-section
     justify-content: center
+
+  .s-desc
+    margin-bottom: 
+
+  .body-section
+    color: #6F6DA0
+    font-size: 18px
+    letter-spacing: -0.21px
+    line-height: 30px
+    text-align: center
+    margin: auto
+    padding-top: 120px
+    
     .column
       @extend %box
       cursor: pointer
@@ -30,3 +46,27 @@
     font-size: 22px
     letter-spacing: -0.26px
     line-height: 36px
+
+  @media (max-width: 1087px)
+    .body-section
+      padding: 64px
+
+
+  @media (max-width: 768px)
+
+    .header-section
+      height: auto
+      padding: 64px
+
+      h1 
+        transform: unset
+
+  @media (max-width: 450px)
+    .body-section
+      padding: 40px
+
+    .contacts-section 
+      margin: 32px auto
+        
+      .is-half
+        margin: 24px auto

@@ -1,7 +1,7 @@
 @import "../styles/bulma/utilities/_all"
 
 footer
-  background-color: #1E1A31
+  background-color: #090818
   color: #ffffff
   padding-top: 100px
   padding-bottom: 120px
@@ -9,8 +9,16 @@ footer
     padding-top: 100px*0.4
     padding-bottom: 120px*0.4
 
+  .site-title img
+    max-height: 14px
+
   a
-    color: #fff
+    color: #D1D1E8
+    letter-spacing: 0.2px
+    margin-bottom: 8px
+    transition: 0.2s ease all
+  &:hover 
+    color: #ffffff
 
   .links
     li
@@ -18,6 +26,8 @@ footer
 
   .last-column
     display: flex
+    text-align: right
+    padding: 0.75rem 0
     & > div
       display: flex
       flex-grow: 1
@@ -31,22 +41,33 @@ footer
           padding: 3px 10px
       a
         white-space: nowrap
+    +mobile
+      display: block
+      margin: 32px auto
+      text-align: center
+
 
     .media-links
-      padding-bottom: 30px
+      padding-bottom: 10px
       a
-        padding: 0 10px
+        padding: 0 0 0 20px
+        +mobile
+          padding: 12px
+      
+  .footer-rows
+    display: flex
+    flex-wrap: wrap
 
+    .columns
+      width: 100%
 
   .row
     display: flex
     align-items: center
     justify-content: space-between
-    width: 334px
+    max-width: 334px
 
     margin-top: 20px
-    &:first-child
-      margin-top: 0
 
     a
       display: inline-block
@@ -65,26 +86,97 @@ footer
 
     img
 
+  .footer-container
+    +mobile
+      margin: 48px auto 0 auto
 
+  .footer-rows
+    +mobile
+      margin-bottom: -64px
 
-
-
-  +tablet
-    .links
-      width: 140px
-    .footer-columns > div
+  +tablet 
+    .footer-rows > div
       min-width: 240px
     .media-links
       text-align: right
 
   .logo-box
     justify-content: space-between
-    flex-direction: column
+    flex-direction: row
     display: flex
+    width: 100%
+    margin-bottom: 80px
 
     +mobile
+      display: block
       align-items: center
 
+  .logo-box
+    .row
+      +mobile 
+        display: block
+        max-width: unset
+
+  .logo-box
+    .row
+      a 
+        +mobile
+          display: block
+          margin: 24px auto
+          width: auto
+          text-align: center
+          width: 200px
+
+@media (max-width: 1350px)
+
+  .footer 
+    .container 
+      width: auto
+      // margin: 40px
+
+    .columns 
+      display: flex
+      justify-content: space-between
+
+@media (max-width: 1280px)
+
+  footer
+    padding-top: 64px
+    padding-bottom: 64px
+
+  .footer-container
+    width: auto
+    max-width: unset
+    margin: 40px
+
+    .columns
+      justify-content: space-between
+
+      .column
+        flex-basis: unset
+        flex-grow: unset
+        flex-shrink: unset
+
+@media (max-width: 950px)
+
+  footer
+    .footer-container
+      .footer-columns
+        display: block
+        text-align: center
+
+        .last-column
+          margin: 24px auto 0 auto
+          display: block
+          text-align: center
+
+          .media-links
+            text-align: center
+            a
+              padding: 8px
+
+    .logo-box
+      margin-top: 100px
 
 
 

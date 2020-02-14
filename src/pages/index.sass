@@ -2,241 +2,353 @@
 @import "../styles/shortcuts"
 @import "../styles/_buttons"
 
+
 .home-page
-  .currency-row
-    margin-top: 0
-    margin-bottom: 0
+  overflow-x: hidden
 
-  .currency-section
-    background-color: #fff
-    background-image: url(../resources/bg-blue-line.png)
-    background-position: 0 -640px
-    background-repeat: repeat-x
+  // HERO
 
-    .container
+  .page-title 
+    padding-top: 0
+    width: 700px
+
+  .page-subtitle 
+    letter-spacing: 0px
+
+  .hero-section 
+    // background: url(../resources/hero-bg.png) no-repeat
+    // background-size: contain
+    // background-position: center center
+    width: 100%
+    height: 80vh
+    position: relative
+    padding: 0
+
+    .hero-bg
+      position: absolute
+      display: flex
+      justify-content: space-between
+      width: 100vw
+    
+    .hero-left, .hero-right
+      height: 80vh
+      width: 20vw
+
+    .hero-left
+      transform: translateX(-32px)
+
+    .hero-right
+      transform: translateX(32px)
+
+    .title-container
+      height: 100%
+      margin: auto
+      position: relative
+      top: 200px
+
+    .hero-tablet 
+      display: none
+
+    @media (min-width: 1800px)
+
+      .page-title
+        font-size: 4vw
+        width: 38vw
+        margin-bottom: 20px
+    
+      .page-subtitle 
+        color: #CACAF1
+        font-size: 1.2vw
+        width: 45vw
+
+    @media (max-width: 1440px)
+      .title-container
+        top: 8vh
+
+    @media (max-width: 1200px)
+      .page-title
+        font-size: 56px
+        max-width: 500px
+
+  // SYNTHS
+
+  .synth-section
+    margin-top: 200px
+
+    .synth-categories 
       display: flex
       justify-content: center
-      height: 282px
 
-      &.wide
-        +desktop
-          min-width: 1030px
-          width: 1030px
+    .synth-type
+      background-color: #1E1A31
+      box-shadow: 0 10px 20px 0 rgba(9,8,24,0.64)
+      border-radius: 5px
+      width: 180px
+      height: 240px
+      margin: 16px
+      padding: 24px
+      text-align: center
+      // transition: 200ms all ease
 
-      margin-bottom: 108px
+      // &:hover
+      //   transform: translateY(-4px)
+      //   box-shadow: 0 5px 5px 0 rgba(64,43,220,0.09)
 
-      +touch
-        flex-direction: column
-        height: auto
-        align-items: center
+    .synth-img 
+      height: 80px
+      width: 80px
+      margin: 24px auto 40px auto
 
-      .currency-box
-        $box-padding: 32px
-
-        background: #FFFFFF
-        border: 2px solid #D1D1E8
-        box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
-        border-radius: 4px
-        width: 330px
-        height: 288px
-        margin-right: 20px
-        padding: 18px 0
-        text-align: center
-        position: relative
-        overflow: hidden
-
-
-        transition: height 0.4s ease
-
-        +touch
-          margin-right: 0
-          margin-top: 50px
-
-        &.clickable
-          cursor: pointer
-
-        &.centered
-          display: flex
-          justify-content: center
-          align-items: center
-
-        &:last-child
-          margin-right: 0
-
-          .assets-container
-            overflow: auto
-            max-height: 1000px
-
-        .currency-title
-          font-family: Guillon
-          font-weight: 600
-          font-size: 30px
-          color: #25244B
-          letter-spacing: -0.62px
-          text-align: center
-          line-height: 32px
-          padding: 0 $box-padding
-
-        .scroll-container
-          margin-top: 14px
-          height: 161px
-          overflow-y: scroll
-          padding: 0 $box-padding 18px $box-padding
-
-          scrollbar-width: none
-          -ms-overflow-style: none
-
-          &::-webkit-scrollbar
-            width: 0px  /* Remove scrollbar space */
-            background: transparent  /* Optional: just make scrollbar invisible */
-
-
-
-        .assets-container
-          display: grid
-          grid-template-columns: 60px 60px 60px
-          grid-gap: 21px 43px
-          justify-content: space-between
-          transition: max-height 0.4s ease
-
-        .small-assets-container
-          margin-top: 9px
-          margin-bottom: 11px
-
-          img
-            margin: 0 20px
-            width: 60px
-            height: 60px
-
-        .arrow
-          position: absolute
-          top: 150.5px
-          right: 18px
-
+    .synth-p2 
+      color: #ffffff
+      font-weight: 500
+      font-size: 16px
+      text-transform: uppercase
+      letter-spacing: 0.5px
 
     .view-synths-button
-      margin: 38px auto 0 auto
+      margin: 16px auto 0 auto
       @extend .purple-button
 
+    @media (max-width: 1200px)
+      .synth-type
+        width: 160px
+        height: 200px
+
+      .synth-img
+        height: 50px 
+        width: 60px
+        margin: 18px auto 40px auto
+
+  // EXCHANGE
+
   .exchange-section
+    background: url(../resources/graph.png) no-repeat
+    background-size: cover
+    background-position: top
+    height: auto
+    width: 100%
+    padding-top: 480px
+
+    .section-desc
+      letter-spacing: 1px
 
     .exchange-logo
-      margin-top: 4px
+      margin-top: 40px
+      width: 60vw
+      max-width: 640px
 
     .exchange-columns
       max-width: 1130px
-      margin: 0 auto
+      margin: 0 auto 100px auto
 
       .column
         width: 320px
         text-align: center
 
+        .p1
+          color: #D1D1E8
+          letter-spacing: 0.2px
+          font-weight: 400
+          text-align: center
+          margin: 20px auto 0 auto
+          font-size: 20px
+
+        @media (max-width: 1200px)
+          .p1
+            font-size: 18px
+
         +mobile
           width: auto
 
-      .p1
-        color: white
-        max-width: 300px
-        text-align: center
-        margin: 20px auto 0 auto
+    .section-image 
+      width: 80%
+      max-width: 1400px
+      margin: 32px auto 64px auto
 
-      .p2
-        color: #6F6DA0
-        margin: 13px auto 0 auto
-        max-width: 300px
-        text-align: center
+    .icon-img 
+      height: 80px
+      margin: 40px auto
+
 
     .centered
       margin: 0 auto
 
     .purple-button
-      width: 239px
+      width: 320px
       height: 62px
 
       margin-top: 50px
       margin-bottom: 30px
+  
+    @media (max-width: 1200px)
+      .icon-img 
+        width: 72px
+        height: 60px
+        margin: 40px auto
 
-  .get-rewarded-columns
-    max-width: 720px
-    margin: auto
+      .exchange-columns
+        max-width: 900px
 
+  .background-gradient
+    // background-color: #1E1A31
+    // background-image: linear-gradient(to bottom right, rgba(30, 26, 49, 0), rgba(15, 14, 37, 1))
+    // background-image: linear-gradient(to bottom right, #1E1A31, #0F0E25)
+
+  // LEARN MORE
+
+  .learn-section
+    display: flex
+    max-width: 1300px
+    margin: 16vh auto
+
+    .section-title
+      text-align: left
+      max-width: 320px
+      color: #FFFFFF
+
+    .learn-columns
+      margin-right: auto
+
+    .learn-litepaper
+      // transform: translateY(-24px)
+      // transition: 200ms all ease
+
+    .learn-community
+      // transform: translateY(24px)
 
     .column
-      width: 380px
+      background-color: #1E1A31
+      background-image: linear-gradient(to bottom right, #1E1A31, #0F0E25)
+      box-shadow: 0 10px 20px 0 rgba(9,8,24,0.64)
+      border-radius: 5px
+      width: 320px
+      height: 420px
+      margin: 24px
+      padding: 24px
       text-align: center
+      transition: 200ms all ease
 
-      +mobile
-        width: auto
-    .c-img
-      img
-        min-height: 161px
-    .p1
-      font-size: 18px
-      color: #1E1A31
-      letter-spacing: 0
-      text-align: center
-      line-height: 26px
-      max-width: 200px
-      margin: 23px auto 0 auto
+      &:hover
+        transform: translateY(-4px)
+        box-shadow: 0 10px 20px 0 rgba(9,8,24,0.80)
 
-    .button
-      margin: 46px auto 0 auto
-      @extend .purple-button
+      .icon-img
+        margin: 40px auto
 
-  .get-rewarded-boxes
-    .column
+      .p1
+        font-size: 32px
+        font-weight: 500
+        color: #fff
+        text-transform: uppercase
+        letter-spacing: 0
+        text-align: center
+        line-height: 26px
+        max-width: 200px
+        margin: 40px auto 48px auto
+
+      .learn-button 
+          width: 80%
+          height: 64px
+          text-transform: uppercase
+          display: inline-flex
+
+          background: #4525D0
+          font-size: 14px
+          font-weight: 700
+          color: #FFFFFF
+          letter-spacing: 1px
+          display: flex
+
+          align-items: center
+          justify-content: center 
+          margin: auto
+
+          transition: ease-in 0.1s
+
+          &:hover
+            transform: translateY(-4px)
+            background-color: #5641F2
+
+  @media (max-width: 1200px)
+    .learn-section
+      display: block
+      margin: 48px auto
+
+      .column
+        max-width: 320px
+        margin: 24px
+
+      .section-title
+        max-width: unset
+        font-size: 36.54px !important
+        text-align: center
+        margin-bottom: 24px
+
+  // .product-section
+  //     background-color: #0F0E25
+  //     background-image: linear-gradient(#0F0E25, #1E1A31)
+
+  // PRODUCTS
+
+  .product-section
+    margin: 16vh auto
+
+  .product-boxes
+    .product-column
       cursor: pointer
-      width: 270px
-      height: 334px
-
-      border: 1px solid #D7D6E7
+      width: 290px
+      height: auto
       position: relative
-
+      text-align: center
       border-radius: 4px
-      background-color: #FFFFFF
-      box-shadow: 0 10px 20px 0 rgba(64,43,220,0.11)
-      margin: 10px
-      padding: 40px 24px 50px 24px
+      background-color: #1E1A31
+      background-image: linear-gradient(to bottom right, #1E1A31, #0F0E25)
+      box-shadow: 0 10px 20px 0 rgba(9,8,24,0.64)
+      margin: 24px
       display: flex
       flex-direction: column
       transition: 200ms all ease
 
-      +tablet
-        padding: 40px 12px 50px 24px
-
       &:hover
-        transform: translateY(4px)
-        box-shadow: 0 5px 5px 0 rgba(64,43,220,0.09)
+        transform: translateY(-4px)
+        box-shadow: 0 10px 20px 0 rgba(9,8,24,0.80)
 
-      .c-top
+      .c-top 
+        color: #D1D1E8
+        padding: 32px 0 0 0
+        font-size: 24px
+
+      .c-mid
         flex-grow: 0
-        padding-bottom: 30px
+        padding: 32px 24px 64px 24px 
 
         img
-          max-width: 76px
+          max-width: 140px
 
         +tablet
           padding-bottom: 10px
+
       .c-bottom
         flex-grow: 0
+        margin-top: 32px
+        margin-bottom: 48px
       .p1
         float: right
-        font-size: 16px
-        letter-spacing: -0.33px
+        font-size: 24px
         text-align: right
         line-height: 24px
       .p2
-        font-size: 24px
+        font-size: 32px
         font-weight: 500
-        letter-spacing: -0.5px
         line-height: 26px
-        padding-bottom: 10px
-        color: #0A0817
+        padding-bottom: 16px
+        color: #FFFFFF
       .p3
         font-size: 20px
-        letter-spacing: -0.42px
-        line-height: 24px
-        color: #6F6E98
+        color: #9492C4
+        max-width: 222px
+        margin: auto
         +widescreen
           line-height: 31px
         +tablet
@@ -245,11 +357,21 @@
           font-size: 28.79px
           color: #4A4762
           text-align: left
-          font-family: 'Aeonik'
+          font-family: 'apercu'
           position: absolute
           left: 132px
           top: 56px
+    
+  @media (max-width: 1300px)
 
+    .hero-section
+      height: 50vh
+
+    .product-section
+      margin: 48px auto
+
+    .section-title
+      font-size: 36.54px
 
   .page-title
     +desktop
@@ -283,15 +405,226 @@
         padding-right: 20px
 
   .subscribe-section
+    background-color: #1E1A31
     color: #000
     font-size: 36px
     font-weight: 500
     letter-spacing: -0.42px
     text-align: center
-    background-color: #ffffff
+
+    .sub-title
+      color: #FFF
+
+    .mailing-list
+      margin: auto
+      display: flex
+      width: 100%
 
     .sub-inputs
-      justify-content: center
+      display: flex
+      width: auto
+      max-width: 1100px
+      align-items: center
+      margin: auto
+      justify-content: space-around
+
+    .input-field
+      width: 64%
+      margin-left: 24px
+
+    .subscribe-button 
+      border: none
+      font-size: 16px
+      letter-spacing: 0.5px
+      cursor: pointer
+  
+  @media (max-width: 1281px)
+    .subscribe-section
+      .sub-inputs
+        max-width: 900px
+
+        .input-field
+          width: 65%
+          margin-right: 24px 
+        
+        .input-button
+          width: 35%
+
+  @media (max-width: 1087px)
+    .synth-section
+      margin-top: 0px 
+
+      .section-desc 
+        padding: 0 1.5rem
+        max-width: 70vw
+        font-size: 20px
+
+      .synth-categories
+        display: block
+
+      .synth-type
+        width: 320px
+        height: auto
+        margin: 24px auto
+        padding: 40px 40px 50px 40px
+
+      .synth-img 
+        height: auto
+        width: 80px
+
+      .synth-p2
+        font-size: 18px
+
+      .product-boxes
+        display: block
+
+      .product-column
+        margin: 32px auto
+        width: 40vw
+    
+    .product-section
+      .product-column 
+        width: 240px
+        padding: 0 20px 0 20px
+
+        .c-top
+          font-size: 20px
+
+        .c-mid 
+          img 
+            max-width: 160px
+            width: 160px
+
+        .p2 
+          font-size: 24px
+
+        .p3
+          font-size: 18px
+
+    .subscribe-section
+      .sub-inputs
+        max-width: 900px
+
+        .input-field
+          width: 65%
+          margin-right: 24px 
+        
+        .input-button
+          width: 35%
+
+  @media (max-width: 1024px)
+    .subscribe-section
+      height: auto
+
+      .sub-inputs
+        display: block
+        max-width: 80vw
+
+        .input-field
+          width: 80vw
+          margin: auto
+        
+        .input-button
+          .subscribe-button
+            width: 80vw
+            margin: 16px auto
+
+
+  @media (max-width: 786px)
+    .hero-section
+      height: auto
+      .title-container
+        margin-top: 64px
+        height: auto
+        position: unset
+
+      .hero-bg
+        display: none
+
+      .hero-tablet
+        display: unset
+      
+    .synth-section
+      margin-top: 24px
+      .section-desc
+        max-width: 90vw
+
+    .exchange-section
+      .exchange-columns 
+        .column 
+          .p1
+            font-size: 16px
+
+    .learn-section
+      .learn-columns
+        display: block
+
+        .column
+          margin: 32px auto
+
+    .product-section
+      .product-boxes
+        display: block
+
+      .product-column
+        width: 320px
+        margin: 32px auto 
+
+        .c-top
+          padding: 40px 0 0 0
+
+        .c-mid 
+          padding: 32px 24px 16px 24px
+
+          img 
+            width: 180px  
+            max-width: 180px
+
+        .c-bottom
+          .p2 
+            font-size: 32px
+          .p3 
+            font-size: 20px
+
+  @media (max-width: 670px)
+
+    .hero-bg
+      display: none
+
+  @media (max-width: 450px)
+
+    .synth-section
+      .synth-type
+        width: 100%
+
+      .view-synths-button 
+        width: 74vw
+
+    .learn-section
+      .learn-columns
+        margin: auto
+
+    .exchange-section
+
+      .exchange-logo
+        margin-top: 20px
+        width: 80vw
+
+      .section-image
+        width: 80vw
+        margin: 24px auto 32px auto
+
+      .purple-button
+        width: 74vw
+
+    .learn-section
+      .column
+        width: 100%
+
+    .product-section  
+      .product-column
+        width: 100% 
+        max-width: 320px
 
   +desktop
     .get-rewarded-boxes .column, .feature-boxes .column

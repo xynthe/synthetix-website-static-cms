@@ -1,0 +1,177 @@
+@import "../styles/bulma/utilities/_all"
+
+.trade-mobile
+  display: none
+  background-color: #4525D0
+  color: #fff
+  font-weight: 500
+  font-size: 20px
+  letter-spacing: 0.5px
+  padding: 16px 24px
+  text-align: left
+
+  .trade-mobile-button
+    color: #fff
+    padding: 0
+
+  +mobile
+    display: block
+
+.nav__submenu
+  display: none
+  transition: 0.2s ease-in all
+
+.nav__menu-item:hover
+  .nav__submenu
+    display: flex
+    justify-content: center
+
+$submenu-width: 100vw
+
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: border-box
+
+.menu-container
+  text-align: center
+
+nav
+  ul
+    list-style: none
+    padding-left: 0
+    margin-top: 0
+    margin-bottom: 0
+
+// .nav
+//   display: inline-block
+//   margin: 8px auto 0 auto
+//   background: #090818
+//   color: #fff
+//   text-align: center
+//   text-transform: uppercase
+
+//   .nav a
+//     display: block
+//     padding: 0 16px
+//     line-height: inherit
+//     cursor: pointer
+
+.nav__menu
+  line-height: 45px
+  font-weight: 700
+
+  +mobile
+    // display: block triggers mobile menu to be shown
+    display: none
+    background-color: #14131E
+    height: auto
+    width: 100vw
+    position: absolute
+    left: 0
+
+    &.nav__menu-visible
+      display: block
+
+    &.nav__submenu
+      display: block !important
+
+    .navbar .container
+      margin: unset
+
+    .nav__menu-item
+      display: block
+      text-align: left
+      margin-top: 16px
+
+    .nav__submenu
+      display: block !important
+      position: unset
+      background-color: transparent
+      box-shadow: none
+      border-bottom: none
+      height: auto
+      padding: 0px
+      margin: 16px auto 40px auto
+      a
+        color: #fff
+      img
+        display: none
+
+      .nav__menu-item:hover
+        .nav__submenu
+          display: block !important
+          justify-content: unset
+
+    .nav__submenu-item
+      padding: unset
+      margin-top: 16px
+
+    .navbar .nav a
+      padding: 16px 16px 4px 16px
+
+
+.nav__menu-item
+  font-size: 18px
+  padding: 0 16px
+  display: inline-block
+  cursor: pointer
+
+  a
+    color: #9492C4
+    
+    &:hover
+      color: #fff
+
+  +tablet
+    font-size: 16px
+
+  .nav__menu-item-wrapper
+    position: relative
+
+    &:before
+        content: ""
+        position: absolute
+        top: -35px
+        bottom: -35px
+        left: -10px
+        right: -10px
+        // background-color: red
+  &:hover
+    color: #fff
+
+    .nav__submenu
+      display: flex
+
+.nav__submenu
+  font-weight: 300
+  text-transform: none
+  display: none
+  position: absolute
+  // transform: translateX(-50%)
+  width: $submenu-width
+  height: 160px
+  background-color: #14131E
+  border-bottom: 1px solid #090818
+  align-items: center
+  left: 0
+  box-shadow: rgba(9, 8, 24, 0.64) 0px 10px 20px 0px
+  margin-top: 22px
+
+.nav__submenu-item
+  padding: 0 40px
+
+  a
+    font-size: 16px
+    text-transform: none
+    font-weight: 400
+
+.menu-img
+  margin-bottom: -12px
+
+.navbar-trade
+  width: 140px
+
+  a
+    color: #fff

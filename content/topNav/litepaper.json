@@ -1,8 +1,9 @@
 {
-  "title": "Litepaper",
-  "key": "litepaper",
-  "link": "/litepaper",
-  "isExt": false,
-  "order": 1,
-  "parentMenu": "learn"
+	"title": "Litepaper",
+	"key": "litepaper",
+	"link": "/litepaper",
+	"isExt": false,
+	"order": 1,
+	"parentMenu": "learn",
+	"icon": "menu-litepaper"
 }

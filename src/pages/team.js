@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import "./team.sass";
 import TeamMember from "../components/TeamMember";
 
+import teamAll from "../resources/team-all.png";
+
 const TeamPage = ({ data }) => {
 	let teamMembers = data.allFile.edges[0].node.childPagesJson.teamMembers;
 	// let openPositions = data.allFile.edges[0].node.childPagesJson.openPositions;
@@ -13,18 +15,14 @@ const TeamPage = ({ data }) => {
 	return (
 		<Layout>
 			<div className="team-page">
-				<section className="section header-section">
+				<section className="header-section">
 					<div className="container">
-						<h1 className="page-title">Meet the Team</h1>
-						<div className="page-subtitle">
-							A multidisciplinary team with proven ability to deliver complex
-							solutions
-						</div>
+						<h1 className="page-title">The Synthetix Team</h1>
 					</div>
 				</section>
 				<section className="section team-members">
-					<div className="container">
-						<div className="columns is-multiline">
+					<div className="container team-container">
+						<div className="columns is-multiline team-bios">
 							{teamMembers.map(el => (
 								<TeamMember
 									name={el.fullName}
@@ -37,9 +35,22 @@ const TeamPage = ({ data }) => {
 						</div>
 					</div>
 				</section>
+				<section className="section gallery-section">
+					<div className="team-photo">
+						<img src={teamAll}></img>
+					</div>
+					{/* <div className="photos">
+							<div className="photo one"></div>
+							<div className="photo two"></div>
+							<div className="photo three"></div>
+							<div className="photo four"></div>
+							<div className="photo five"></div>
+							<div className="photo six"></div>
+						</div> */}
+				</section>
 				<section className="section join-team-section pt-100 pb-100">
 					<div className="container">
-						<div className="section-title white pb-30">Join the Team</div>
+						<div className="section-title white pb-30">Join the Synthetix team</div>
 						<div className="section-desc pb-50">
 							We are looking for highly skilled individuals to join the Synthetix team
 							and help us deliver a decentralised synthetic assets protocol to

@@ -9,22 +9,21 @@ const NotFoundPage = () => {
 			<div className="not-found-page">
 				<section className="section header-section">
 					<div className="container">
-						<h1 className="page-title">404 — Page not found</h1>
-						<div className="page-subtitle">
-							The page you are looking for has a different URL or no longer
-							<br />
-							exists.
-							<br />
-							Try checking the URL, using the navigation bar above, or returning to
-							our homepage.
-						</div>
+						<h1 className="page-title">Page not found</h1>
 					</div>
 				</section>
-				<section className="section is-white pb-120">
-					<div className="container pb-70">
+				<section className="section is-white">
+					<div className="container pb-70 pt-30">
 						<div className="section pv-0 ph-20">
 							<div className="content main-img">
 								<img src={img404} alt="404" />
+							</div>
+							<div className="s-desc pb-50 error-message">
+								The page you are looking for has a different URL or no longer
+								exists.
+								<br />
+								Try checking the URL, using the navigation bar above, or returning
+								to our homepage.
 							</div>
 						</div>
 					</div>

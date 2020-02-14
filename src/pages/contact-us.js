@@ -10,14 +10,13 @@ const ContactUsPage = ({ data }) => {
 				<section className="section header-section">
 					<div className="container">
 						<h1 className="page-title">Contact Us</h1>
-						<div className="page-subtitle">
-							If you’d like to reach out to the Synthetix team in any way, please get
-							in touch with us via the following options.
-						</div>
 					</div>
 				</section>
-				<section className="section is-white pb-120 pt-80">
+				<section className="section body-section is-white pb-120 pt-80">
 					<div className="container pb-70">
+					<div className="s-desc pb-50">
+					If you’d like to reach out to the Synthetix team in any way, please get in touch with us via the following options.
+							</div>
 						<div className="columns contacts-section">
 							<div
 								className="column is-half"

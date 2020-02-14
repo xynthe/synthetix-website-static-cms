@@ -4,20 +4,17 @@ import "./index.sass";
 import Layout from "../components/layout";
 import "./tokens.sass";
 import TokenBox from "../components/TokenBox";
+import joinDiscordButton from "../resources/products/join-discord.svg";
 
 const TokensPage = ({ data }) => {
 	let tokens = data && data.allFile && data.allFile.edges[0].node.childPagesJson.tokens;
 	let otherTokens = tokens && tokens.slice(1, tokens.length);
-
 	return (
 		<Layout>
 			<div className="tokens-page">
 				<section className="section header-section">
 					<div className="container">
-						<h1 className="page-title">Tokens</h1>
-						<div className="page-subtitle">
-							Contract information about the tokens in the Synthetix Network.
-						</div>
+						<h1 className="page-title">Token information</h1>
 					</div>
 				</section>
 				<section className="section is-white minting-synths">
@@ -32,6 +29,15 @@ const TokensPage = ({ data }) => {
 						</div>
 					) : null}
 				</section>
+				<div className="section is-white discord">
+					<a
+						class="discord-button"
+						href={"https://discordapp.com/invite/AEdUHzt"}
+						target="_blank"
+					>
+						<img src={joinDiscordButton} />
+					</a>
+				</div>
 			</div>
 		</Layout>
 	);
@@ -39,6 +45,11 @@ const TokensPage = ({ data }) => {
 
 export const query = graphql`
 	query TokensPageQuery {
+		site {
+			siteMetadata {
+				discordUrl
+			}
+		}
 		allFile(filter: { absolutePath: { regex: "/(pages)/tokens.json$/" } }) {
 			edges {
 				node {

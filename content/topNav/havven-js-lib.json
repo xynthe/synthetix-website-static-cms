@@ -1,8 +1,9 @@
 {
-  "title": "Synthetix-JS Lib",
-  "key": "synthetix-js-lib",
-  "link": "https://developer.synthetix.io/api/docs/home.html",
-  "isExt": true,
-  "order": 2,
-  "parentMenu": "developers"
+	"title": "Synthetix-JS Lib",
+	"key": "synthetix-js-lib",
+	"link": "https://developer.synthetix.io/api/docs/home.html",
+	"isExt": true,
+	"order": 2,
+	"parentMenu": "developers",
+	"icon": "menu-js"
 }

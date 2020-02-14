@@ -12,7 +12,7 @@ const PrivacyPolicyPage = () => {
 					</div>
 				</section>
 				<section className="section is-white pb-120">
-					<div className="container pb-70">
+					<div className="container pb-70 pt-70">
 						<div className="section pv-0">
 							<div className="content">
 								<ol type="a" className="privacy-policy-list">

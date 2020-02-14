@@ -3,6 +3,14 @@
 @import "../styles/functions"
 
 .community-page
+
+  .header-section
+    height: 400px
+
+    h1
+      margin: 20px auto
+      transform: translateY(50%)
+
   .page-subtitle
     +tablet
       width: 500px
@@ -14,7 +22,7 @@
     line-height: 1.3em
     text-align: center
     margin: auto
-    font-weight: bold
+    font-weight: 500
     @include font-size(56)
     +tablet
       width: 850px
@@ -26,8 +34,6 @@
     line-height: 30px
     text-align: center
     margin: auto
-    +tablet
-      width: 350px
 
   .join-our-discord-box
     @extend %box
@@ -63,11 +69,89 @@
 
 
   .subscribe-section
+    background-color: #1E1A31
     color: #FFFFFF
     font-size: 36px
     font-weight: 500
     letter-spacing: -0.42px
     text-align: center
 
+    .mailing-list
+      margin: auto
+      display: flex
+      width: 100%
+
     .sub-inputs
-      justify-content: center
+      display: flex
+      width: auto
+      max-width: 1100px
+      align-items: center
+      margin: auto
+      justify-content: space-around
+
+    .input-field
+      width: 64%
+      margin-left: 24px
+
+    .subscribe-button 
+      border: none
+      font-size: 16px
+      letter-spacing: 0.5px
+      cursor: pointer
+
+  @media (max-width: 1300px)
+    .subscribe-section
+      height: auto
+
+      .sub-inputs
+        display: block
+        max-width: 80vw
+
+        .input-field
+          width: 80vw
+          margin: auto
+        
+        .input-button
+          .subscribe-button
+            width: 80vw
+            margin: 16px auto
+  
+
+  @media (max-width: 1087px)
+    .main-content 
+      padding: 64px
+
+  @media (max-width: 768px)
+
+    .header-section
+      height: auto
+      padding: 64px
+
+      h1 
+        transform: unset
+
+    .subscribe-section
+      .sub-inputs
+        display: block
+
+        .input-field
+          margin: auto
+          width: 80vw
+        
+        .input-button 
+          width: 80vw
+          margin: auto
+
+          .subscribe-button
+            width: 100%
+            margin-top: 24px
+
+  @media (max-width: 530px)
+    .join-our-discord-box
+      .join-text
+        text-align: center
+        font-size: 24px
+
+    
+
+        
