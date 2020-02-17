@@ -43,13 +43,16 @@
     .title-container
       height: 100%
       margin: auto
-      position: relative
-      top: 200px
+      position: absolute
+      width: 100%
+      top: 15%
 
     .hero-tablet 
       display: none
 
     @media (min-width: 1800px)
+      .title-container
+        top: 18vh
 
       .page-title
         font-size: 4vw
@@ -232,6 +235,8 @@
       &:hover
         transform: translateY(-4px)
         box-shadow: 0 10px 20px 0 rgba(9,8,24,0.80)
+        .learn-button 
+          background-color: #5641F2
 
       .icon-img
         margin: 40px auto
@@ -266,10 +271,6 @@
 
           transition: ease-in 0.1s
 
-          &:hover
-            transform: translateY(-4px)
-            background-color: #5641F2
-
   @media (max-width: 1200px)
     .learn-section
       display: block
@@ -293,6 +294,8 @@
 
   .product-section
     margin: 16vh auto
+    // .section-title
+    //   font-size: 56px
 
   .product-boxes
     .product-column
@@ -388,8 +391,6 @@
     letter-spacing: -0.75px
     text-align: center
     @include font-size(26)
-    +tablet
-      width: 850px
 
   .main-buttons
     .main-button
@@ -452,7 +453,6 @@
 
   @media (max-width: 1087px)
     .synth-section
-      margin-top: 0px 
 
       .section-desc 
         padding: 0 1.5rem

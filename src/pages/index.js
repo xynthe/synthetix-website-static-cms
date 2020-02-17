@@ -295,7 +295,7 @@ class IndexPage extends React.Component {
 						</section>
 						<section className="product-section section is-padded">
 							<div className="section-title is-white is-large w-auto fs-48 pb-60">
-								State of the art dApps to interact with Synthetix
+								The Synthetix dApps
 							</div>
 							<div className="columns is-centered product-boxes">
 								<a
