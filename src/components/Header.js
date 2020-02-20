@@ -51,7 +51,7 @@ export default class Header extends React.Component {
 								<div className="navbar-trade">
 									<a
 										className="trade-button"
-										href="https://beta.synthetix.exchange/"
+										href="https://synthetix.exchange/"
 										target="_blank"
 									>
 										Trade now

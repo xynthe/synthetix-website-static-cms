@@ -3,7 +3,7 @@ import "./NewsBanner.sass";
 
 function NewsBanner(props) {
 	return (
-		<a className="banner" href="https://beta.synthetix.exchange/" target="_blank">
+		<a className="banner" href="https://synthetix.exchange/" target="_blank">
 			<p className="text">
 				NEW: sDEFI, sLINK, sLTC, sXRP AND THEIR INVERSES AVAILABLE TO TRADE NOW!
 			</p>
