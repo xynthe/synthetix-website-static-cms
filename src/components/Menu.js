@@ -33,7 +33,7 @@ class Menu extends React.Component {
 					<li className="trade-mobile">
 						<a
 							className="trade-mobile-button"
-							href="https://beta.synthetix.exchange/"
+							href="https://synthetix.exchange/"
 							target="_blank"
 						>
 							TRADE NOW
