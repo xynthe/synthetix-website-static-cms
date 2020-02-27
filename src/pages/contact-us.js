@@ -14,9 +14,10 @@ const ContactUsPage = ({ data }) => {
 				</section>
 				<section className="section body-section is-white pb-120 pt-80">
 					<div className="container pb-70">
-					<div className="s-desc pb-50">
-					If you’d like to reach out to the Synthetix team in any way, please get in touch with us via the following options.
-							</div>
+						<div className="s-desc pb-50">
+							If you’d like to reach out to the Synthetix team in any way, please get
+							in touch with us via the following options.
+						</div>
 						<div className="columns contacts-section">
 							<div
 								className="column is-half"

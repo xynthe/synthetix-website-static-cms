@@ -51,10 +51,11 @@ const Submenu = ({ items }) => {
 			{items.map(item => (
 				<li className="nav__submenu-item">
 					<UiLink to={item.link}>
-					<div className="menu-img">
-						<img src={withPrefix(`/img/${item.icon}.svg`)}></img>
-					</div>
-					{item.title}</UiLink>
+						<div className="menu-img">
+							<img src={withPrefix(`/img/${item.icon}.svg`)}></img>
+						</div>
+						{item.title}
+					</UiLink>
 				</li>
 			))}
 		</ul>
