@@ -53,9 +53,9 @@ const TeamPage = ({ data }) => {
 						<div className="section-title white pb-30">Join the Synthetix team</div>
 						<div className="section-desc pb-50">
 							We are looking for highly skilled individuals to join the Synthetix team
-							and help us deliver a decentralised payment network and stablecoin to
+							and help us deliver a decentralised synthetic assets protocol to
 							the world. If you're looking for a challenging project and want to
-							contribute to building a critical layer of the blockchain ecosystem,
+							contribute to building a critical layer of the DeFi ecosystem,
 							then please get in touch!
 						</div>
 						{openPositions && openPositions.length > 0 && (
