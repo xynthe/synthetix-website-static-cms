@@ -1,7 +1,7 @@
 {
-	"title": "Dev Portal",
-	"key": "dev-portal",
-	"link": "https://developer.synthetix.io/",
+	"title": "Docs",
+	"key": "docs",
+	"link": "https://docs.synthetix.io/",
 	"isExt": true,
 	"order": 1,
 	"parentMenu": "developers",
