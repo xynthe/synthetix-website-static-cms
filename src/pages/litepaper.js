@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import UiImg from "../components/UiImg";
 
 const LITEPAPER_GB = "https://www.synthetix.io/uploads/synthetix_litepaper.pdf";
-const LITEPAPER_KR = "https://www.synthetix.io/uploads/synthetix_litepaper.pdf";
+const LITEPAPER_KR = "https://www.synthetix.io/uploads/synthetix_litepaper_korean.pdf";
 const LITEPAPER_CN = "https://www.synthetix.io/uploads/synthetix_litepaper_mandarin.pdf";
 
 export default class LitepaperPage extends React.Component {
