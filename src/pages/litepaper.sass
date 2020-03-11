@@ -41,22 +41,24 @@
     .flags-container
       display: flex
       justify-content: space-around
-      max-width: 900px
+      max-width: 1000px
       margin: 24px auto 70px auto
 
       +touch
         margin-top: 20px
 
+      a
+        margin: 24px
 
       img
         max-height: 196px
-        border-radius: 10px
-
+        border-radius: 5px
+        box-shadow: 0 5px 5px 0 rgba(64,43,220,0.08)
         transition: 200ms all ease
 
         &:hover
-          transform: translateY(4px)
-          box-shadow: 0 5px 5px 0 rgba(64,43,220,0.09)
+          transform: translateY(-4px)
+          box-shadow: 0 5px 5px 4px rgba(64,43,220,0.08)
 
         +mobile
           max-height: 98px
@@ -71,8 +73,8 @@
       .flags-container
         width: 100%
 
-        a 
-          width: 45%
+        a
+          margin: 8px
 
   @media (max-width: 768px)
 
@@ -92,7 +94,9 @@
 
       .flags-container
         width: 100%
-        justify-content: center
+        display: block
+        margin: auto
+        text-align: center
 
         a 
           text-align: center
@@ -101,6 +105,7 @@
 
         img 
           max-height: unset
+          margin: 16px
 
   @media (max-width: 450px)
     .flags-section

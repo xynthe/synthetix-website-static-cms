@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import UiImg from "../components/UiImg";
 
 const LITEPAPER_GB = "https://www.synthetix.io/uploads/synthetix_litepaper.pdf";
+const LITEPAPER_KR = "https://www.synthetix.io/uploads/synthetix_litepaper_korean.pdf";
 const LITEPAPER_CN = "https://www.synthetix.io/uploads/synthetix_litepaper_mandarin.pdf";
 
 export default class LitepaperPage extends React.Component {
@@ -25,6 +26,9 @@ export default class LitepaperPage extends React.Component {
 							<div className="flags-container">
 								<a href={LITEPAPER_GB} target="_blank" rel="noopener noreferrer">
 									<UiImg src="/img/flag-gb.svg" alt="litepaper-english"></UiImg>
+								</a>
+								<a href={LITEPAPER_KR} target="_blank" rel="noopener noreferrer">
+									<UiImg src="/img/flag-kr.svg" alt="litepaper-korean"></UiImg>
 								</a>
 								<a href={LITEPAPER_CN} target="_blank" rel="noopener noreferrer">
 									<UiImg src="/img/flag-cn.svg" alt="litepaper-mandarin"></UiImg>
