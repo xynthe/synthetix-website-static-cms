@@ -49,13 +49,6 @@ module.exports = {
 		"gatsby-transformer-json",
 		"gatsby-plugin-react-helmet",
 		{
-			resolve: `gatsby-plugin-google-analytics`,
-			options: {
-				trackingId: "UA-105320791-1",
-				head: true
-			}
-		},
-		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
 				short_name: "Synthetix",
@@ -77,13 +70,6 @@ module.exports = {
 		"gatsby-plugin-offline",
 		"gatsby-plugin-sass",
 		// "gatsby-plugin-netlify-cms",
-		"gatsby-plugin-netlify",
-		{
-			resolve: `gatsby-plugin-google-tagmanager`,
-			options: {
-				id: "GTM-P99WHXN",
-				includeInDevelopment: false
-			}
-		}
+		"gatsby-plugin-netlify"
 	]
 };
