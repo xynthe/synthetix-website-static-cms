@@ -1,9 +1,0 @@
-{
-	"title": "Synthetix-JS Lib",
-	"key": "synthetix-js-lib",
-	"link": "https://docs.synthetix.io/libraries/synthetix-js/",
-	"isExt": true,
-	"order": 2,
-	"parentMenu": "developers",
-	"icon": "menu-js"
-}

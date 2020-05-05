@@ -85,13 +85,13 @@ collections:
         - {label: "Title", name: "title", widget: "string"}
 
   # -------- How it works --------
-  - name: "how-it-works"
-    label: "How it works page"
-    description: "Content for How it works page"
-    file: "content/pages/how-it-works.json"
-    fields:
-    - {label: "Page Title", name: "pageTitle", widget: "string"}
-    - {label: "Page Description", name: "pageDescription", widget: "string"}
+  # - name: "how-it-works"
+  #   label: "How it works page"
+  #   description: "Content for How it works page"
+  #   file: "content/pages/how-it-works.json"
+  #   fields:
+  #   - {label: "Page Title", name: "pageTitle", widget: "string"}
+  #   - {label: "Page Description", name: "pageDescription", widget: "string"}
 
   # -------- tokens --------
   - name: "tokens"

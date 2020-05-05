@@ -75,15 +75,6 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 								</li>
 								<li>
 									<a
-										href={"https://developer.synthetix.io/api/docs/home.html"}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										Synthetix-JS Lib
-									</a>
-								</li>
-								<li>
-									<a
 										href={
 											"https://developer.synthetix.io/api/docs/deployed-contracts.html"
 										}
@@ -107,9 +98,6 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 						<div className="column has-text-centered-mobile">
 							<ul className="links">
 								<div className="category">Connect</div>
-								<li>
-									<Link to="/team">Team</Link>
-								</li>
 								<li>
 									<Link to="/community">Community</Link>
 								</li>
