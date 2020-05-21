@@ -150,7 +150,7 @@ class IndexPage extends React.Component {
 						<div className="section-title is-white">Introducing Synths</div>
 						<div className="section-desc">
 							Synths are tokens that provide exposure to assets such as gold, Bitcoin,
-							U.S. Dollars, TESLA, and AAPL within the Ethereum blockchain.
+							U.S. Dollars, TESLA (coming soon), and AAPL (coming soon) within the Ethereum blockchain.
 						</div>
 						<div className="section synth-categories">
 							<div className="synth-type">
