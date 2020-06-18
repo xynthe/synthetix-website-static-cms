@@ -28,7 +28,13 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 									<Link to="/litepaper">Litepaper</Link>
 								</li>
 								<li>
-									<Link to="/tokens">Tokens</Link>
+								<a
+										href={"https://docs.synthetix.io/tokens/"}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Tokens
+									</a>
 								</li>
 								<li>
 									<a
