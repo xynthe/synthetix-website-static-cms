@@ -17,7 +17,7 @@ footer
     letter-spacing: 0.2px
     margin-bottom: 8px
     transition: 0.2s ease all
-  &:hover 
+  &:hover
     color: #ffffff
 
   .links
@@ -53,7 +53,19 @@ footer
         padding: 0 0 0 20px
         +mobile
           padding: 12px
-      
+
+  .cmc-block
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    .cmc-link
+      display: flex
+      align-items: center
+      &:hover
+        text-decoration: underline
+      img
+        margin: 0 0 0 10px
+
   .footer-rows
     display: flex
     flex-wrap: wrap
@@ -94,7 +106,7 @@ footer
     +mobile
       margin-bottom: -64px
 
-  +tablet 
+  +tablet
     .footer-rows > div
       min-width: 240px
     .media-links
@@ -113,13 +125,13 @@ footer
 
   .logo-box
     .row
-      +mobile 
+      +mobile
         display: block
         max-width: unset
 
   .logo-box
     .row
-      a 
+      a
         +mobile
           display: block
           margin: 24px auto
@@ -129,12 +141,12 @@ footer
 
 @media (max-width: 1350px)
 
-  .footer 
-    .container 
+  .footer
+    .container
       width: auto
       // margin: 40px
 
-    .columns 
+    .columns
       display: flex
       justify-content: space-between
 
@@ -177,6 +189,11 @@ footer
 
     .logo-box
       margin-top: 100px
+
+    .cmc-block
+      justify-content: center
+
+
 
 
 

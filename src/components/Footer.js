@@ -28,7 +28,7 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 									<Link to="/litepaper">Litepaper</Link>
 								</li>
 								<li>
-								<a
+									<a
 										href={"https://docs.synthetix.io/tokens/"}
 										target="_blank"
 										rel="noopener noreferrer"
@@ -128,6 +128,18 @@ const Footer = ({ twitterUrl, mediumUrl, redditUrl, discordUrl, dashboardUrl, mi
 										<img src={logoReddit} alt="Reddit" />
 									</a>
 								</div>
+								<li style={{ marginBottom: "-5px" }} className="cmc-block">
+									<a
+										href="https://coinmarketcap.com/currencies/synthetix-network-token/markets"
+										target="_blank"
+										rel="noopener"
+									>
+										<div className="cmc-link">
+											<span>Find us on </span>
+											<img height="20" width="20" src="/img/cmc_logo.png" />
+										</div>
+									</a>
+								</li>
 								<li>
 									<Link to="/terms-of-use">Terms of Use</Link>
 								</li>
