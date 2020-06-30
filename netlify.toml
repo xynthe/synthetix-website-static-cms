@@ -11,3 +11,6 @@
   from = "/uploads/litepaper.pdf"
   to = "/uploads/synthetix_litepaper.pdf"
 
+[[redirects]]
+  from = "/tokens"
+  to = "https://docs.synthetix.io/tokens/list/"
