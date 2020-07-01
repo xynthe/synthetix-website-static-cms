@@ -185,6 +185,7 @@ class IndexPage extends React.Component {
 							</div>
 						</div>
 						<a href="https://docs.synthetix.io/tokens/" target="_blank" rel="noopener" className="view-synths-button" />
+							View Synths
 					</section>
 					<section className="section exchange-section">
 						<div className="section-desc">TRADE SYNTHS ON THE</div>
