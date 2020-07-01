@@ -28,7 +28,7 @@
 		"react": "16.13.0",
 		"react-dom": "16.13.0",
 		"react-helmet": "^5.2.0",
-		"synthetix": "2.24.0-alpha"
+		"synthetix": "2.24.0-beta"
 	},
 	"keywords": [
 		"Synthetix",
